@@ -13,6 +13,11 @@ export class NavbarComponent {
   iscoll: boolean = false;
   logscoll: boolean = false;
 
+  openDropdown: string | null = null;
+
+  toggleDropdown(dropdown: string): void {
+    this.openDropdown = this.openDropdown === dropdown ? null : dropdown;
+  }
 
   // logout() {
   //   this.authSvc.logout();

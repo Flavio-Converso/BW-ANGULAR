@@ -1,5 +1,8 @@
 <nav class="navbar navbar-expand-lg bg-warning position-sticky top-0 z-3">
-  <div class="container">
+  <div class="container justify-content-around">
+    <a class="" href="#">
+      <img class="cla1" src="" alt="Bootstrap" />
+    </a>
     <button
       (click)="isCollapsed = !isCollapsed"
       [attr.aria-expanded]="!isCollapsed"
@@ -24,62 +27,65 @@
               type="button"
               id="dropdownMenuButton"
               aria-expanded="false"
-              (click)="iscoll = !iscoll"
-              [attr.aria-expanded]="iscoll"
+              (click)="toggleDropdown('shop')"
+              [attr.aria-expanded]="openDropdown === 'shop'"
             >
               Shop
             </a>
             <ul
               class="dropdown-menu"
-              [ngbCollapse]="!iscoll"
+              [ngbCollapse]="openDropdown !== 'shop'"
               aria-labelledby="dropdownMenuButton"
             >
-              <li><a class="dropdown-item" href="#">opzione1</a></li>
-              <li><a class="dropdown-item" href="#">opzione2</a></li>
+              <li><a class="dropdown-item" routerLink="">Marketplace</a></li>
+              <li><a class="dropdown-item" routerLink="">Eventi</a></li>
             </ul>
           </div>
         </li>
       </ul>
-      <div class="dropdown me-auto mb-2 mb-lg-0 fs-2 fw-bold">
-        <a
-          class="nav-link dropdown-toggle"
-          type="button"
-          id="dropdownMenuButton"
-          aria-expanded="false"
-          (click)="logscoll = !logscoll"
-          [attr.aria-expanded]="logscoll"
-        >
-          Accedi
-        </a>
-        <ul
-          class="dropdown-menu"
-          [ngbCollapse]="!logscoll"
-          aria-labelledby="dropdownMenuButton"
-        >
-          <li><a class="dropdown-item" href="#">Login</a></li>
-          <li><a class="dropdown-item" href="#">Registrati</a></li>
-        </ul>
-      </div>
-      <!--utente-->
-      <div class="dropdown me-auto mb-2 mb-lg-0 fs-2 fw-bold">
-        <a
-          class="nav-link dropdown-toggle"
-          type="button"
-          id="dropdownMenuButton"
-          aria-expanded="false"
-          (click)="iscoll2 = !iscoll2"
-          [attr.aria-expanded]="iscoll2"
-        >
-          Nome utente
-        </a>
-        <ul
-          class="dropdown-menu"
-          [ngbCollapse]="!iscoll2"
-          aria-labelledby="dropdownMenuButton"
-        >
-          <li><a class="dropdown-item" href="#">Account</a></li>
-          <li><a class="dropdown-item" href="#">Personaggi</a></li>
-        </ul>
+      <div class="d-flex">
+        <div class="dropdown me-auto mb-2 mb-lg-0 fs-2 fw-bold">
+          <a
+            class="nav-link dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            aria-expanded="false"
+            (click)="toggleDropdown('login')"
+            [attr.aria-expanded]="openDropdown === 'login'"
+          >
+            Accedi
+          </a>
+          <ul
+            class="dropdown-menu"
+            [ngbCollapse]="openDropdown !== 'login'"
+            aria-labelledby="dropdownMenuButton"
+          >
+            <li><a class="dropdown-item" routerLink="">Login</a></li>
+            <li><a class="dropdown-item" routerLink="">Registrati</a></li>
+          </ul>
+        </div>
+        <!--utente-->
+        <div class="dropdown me-auto mb-2 mb-lg-0 fs-2 fw-bold">
+          <a
+            class="nav-link dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            aria-expanded="false"
+            (click)="toggleDropdown('user')"
+            [attr.aria-expanded]="openDropdown === 'user'"
+          >
+            Nome utente
+          </a>
+          <ul
+            class="dropdown-menu"
+            [ngbCollapse]="openDropdown !== 'user'"
+            aria-labelledby="dropdownMenuButton"
+          >
+            <li><a class="dropdown-item" href="#">Account</a></li>
+            <li><a class="dropdown-item" href="#">Schede personaggio</a></li>
+            <li><a class="dropdown-item" href="#">Giocatori attivi</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
