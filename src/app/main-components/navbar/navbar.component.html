@@ -60,8 +60,12 @@
             [ngbCollapse]="openDropdown !== 'login'"
             aria-labelledby="dropdownMenuButton"
           >
-            <li><a class="dropdown-item" routerLink="">Login</a></li>
-            <li><a class="dropdown-item" routerLink="">Registrati</a></li>
+            <li><a class="dropdown-item" routerLink="/auth/login">Login</a></li>
+            <li>
+              <a class="dropdown-item" routerLink="/auth/register"
+                >Registrati</a
+              >
+            </li>
           </ul>
         </div>
         <!--utente-->
