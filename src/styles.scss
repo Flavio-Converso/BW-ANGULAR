@@ -2,3 +2,8 @@
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500&display=swap');
+
+body{
+  font-family: "Saira Condensed", sans-serif;
+}
