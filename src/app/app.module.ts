@@ -8,6 +8,10 @@ import { NavbarComponent } from './main-components/navbar/navbar.component';
 import { FooterComponent } from './main-components/footer/footer.component';
 import { Page404Component } from './dashboard/page404/page404.component';
 
+import { AuthModule } from './auth/auth.module';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +19,7 @@ import { Page404Component } from './dashboard/page404/page404.component';
     FooterComponent,
     Page404Component,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule,AuthModule],
   providers: [],
   bootstrap: [AppComponent],
 })
