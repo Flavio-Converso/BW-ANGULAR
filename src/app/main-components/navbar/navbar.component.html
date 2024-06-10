@@ -7,7 +7,7 @@
       class="navbar-toggler" type="button">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" [ngClass]="{ 'show': !isCollapsed }">
+    <div class="collapse navbar-collapse" [ngClass]="{ show: !isCollapsed }">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-2 fw-bold">
         <li class="nav-item">
           <a class="nav-link" routerLink="" routerLinkActive="active-link">Home</a>
@@ -17,8 +17,7 @@
             (click)="toggleDropdown('shop')" [attr.aria-expanded]="openDropdown === 'shop'">
             Shop
           </a>
-          <ul class="dropdown-menu" [ngClass]="{ 'show': openDropdown === 'shop' }"
-            aria-labelledby="dropdownMenuButton">
+          <ul class="dropdown-menu" [ngClass]="{ show: openDropdown === 'shop' }" aria-labelledby="dropdownMenuButton">
             <li><a class="dropdown-item" routerLink="">Marketplace</a></li>
             <li><a class="dropdown-item" routerLink="">Eventi</a></li>
           </ul>
@@ -31,10 +30,12 @@
             (click)="toggleDropdown('login')" [attr.aria-expanded]="openDropdown === 'login'">
             Accedi
           </a>
-          <ul class="dropdown-menu" [ngClass]="{ 'show': openDropdown === 'login' }"
+          <ul class="dropdown-menu" [ngClass]="{ show: openDropdown === 'login' }"
             aria-labelledby="dropdownMenuButtonLogin">
             <li><a class="dropdown-item" routerLink="/auth/login">Login</a></li>
-            <li><a class="dropdown-item" routerLink="/auth/register">Registrati</a></li>
+            <li>
+              <a class="dropdown-item" routerLink="/auth/register">Registrati</a>
+            </li>
           </ul>
         </div>
         <div class="nav-item dropdown me-auto mb-2 mb-lg-0 fs-2 fw-bold"
