@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './main-components/navbar/navbar.component';
 import { FooterComponent } from './main-components/footer/footer.component';
 import { Page404Component } from './dashboard/page404/page404.component';
+import { FormsModule } from '@angular/forms';
 
 import { AuthModule } from './auth/auth.module';
 
@@ -19,7 +20,7 @@ import { AuthModule } from './auth/auth.module';
     FooterComponent,
     Page404Component,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule,AuthModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule,AuthModule],
   providers: [],
   bootstrap: [AppComponent],
 })
