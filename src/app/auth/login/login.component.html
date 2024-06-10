@@ -1,1 +1,32 @@
-<p>login works!</p>
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input id="email" formControlName="email" type="email" class="form-control"
+      [ngClass]="{ 'is-invalid': isTouchedInvalid('email') }" />
+    <div *ngIf="isTouchedInvalid('email')" class="invalid-feedback">
+      L'email è richiesta e deve essere valida.
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="password">Password</label>
+    <div class="input-group">
+      <input id="password" formControlName="password" [type]="hidePassword ? 'password' : 'text'" class="form-control"
+        [ngClass]="{ 'is-invalid': isTouchedInvalid('password') }" />
+      <button type="button" class="btn btn-outline-secondary" (click)="togglePasswordVisibility()">
+        {{ hidePassword ? 'Show' : 'Hide' }}
+      </button>
+    </div>
+    <div *ngIf="isTouchedInvalid('password')" class="invalid-feedback">
+      La password è richiesta e deve rispettare i criteri di sicurezza.
+    </div>
+  </div>
+
+  <div *ngIf="errorMessage" class="alert alert-danger">
+    {{ errorMessage }}
+  </div>
+
+  <button type="submit" class="btn btn-primary">
+    Accedi
+  </button>
+</form>
