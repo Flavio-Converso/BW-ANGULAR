@@ -21,33 +21,28 @@ export class RegisterComponent {
   ) {}
 
   ngOnInit() {
-    this.registerForm = this.fb.group({
-      nome: [null, [Validators.required]],
-      cognome: [null, [Validators.required]],
-      authData: this.fb.group(
-        {
-          email: [
-            null,
-            [Validators.required, this.validatorSvc.isValidEmail()],
-          ],
-          confermaEmail: [null, [Validators.required]],
-          password: [
-            null,
-            [Validators.required, this.validatorSvc.isValidPassword()],
-          ],
-          confermaPassword: [null, [Validators.required]],
-        },
-        {
-          validators: [
-            this.validatorSvc.emailMatch,
-            this.validatorSvc.passwordMatch,
-          ],
-        }
-      ),
-      genere: ['selectPlaceholder', [Validators.required]],
-      immagine: [null],
-      username: [null, [Validators.required]],
-    });
+    this.registerForm = this.fb.group(
+      {
+        nome: [null, [Validators.required]],
+        cognome: [null, [Validators.required]],
+        email: [null, [Validators.required, this.validatorSvc.isValidEmail()]],
+        confermaEmail: [null, [Validators.required]],
+        password: [
+          null,
+          [Validators.required, this.validatorSvc.isValidPassword()],
+        ],
+        confermaPassword: [null, [Validators.required]],
+        genere: ['selectPlaceholder', [Validators.required]],
+        immagine: [null],
+        username: [null, [Validators.required]],
+      },
+      {
+        validators: [
+          this.validatorSvc.emailMatch,
+          this.validatorSvc.passwordMatch,
+        ],
+      }
+    );
   }
 
   register() {

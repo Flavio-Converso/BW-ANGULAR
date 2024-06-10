@@ -24,8 +24,8 @@ export class AuthService {
     tap((user) => (this.syncIsLoggedIn = user))
   );
 
-  loginUrl: string = 'http://localhost:3000/api/login';
-  registerUrl: string = 'http://localhost:3000/api/register';
+  loginUrl: string = 'http://localhost:3000/login';
+  registerUrl: string = 'http://localhost:3000/register';
 
   register(newUser: Partial<iUsers>): Observable<iAuthResponse> {
     return this.http.post<iAuthResponse>(this.registerUrl, newUser);
