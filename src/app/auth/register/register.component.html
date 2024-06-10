@@ -17,57 +17,51 @@
     </div>
   </div>
 
-  <div formGroupName="authData">
-    <div class="form-group">
-      <label for="email">Email</label>
-      <input id="email" formControlName="email" type="email" class="form-control" [ngClass]="{
-          'is-invalid': isTouchedInvalid('authData.email') || registerForm.get('authData')?.hasError('isValidEmail')
-        }" />
-      <div *ngIf="isTouchedInvalid('authData.email')" class="invalid-feedback">
-        L'email è richiesta.
-      </div>
-      <div *ngIf="registerForm.get('authData')?.hasError('isValidEmail')" class="invalid-feedback">
-        L'email selezionata non è valida.
-      </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input id="email" formControlName="email" type="email" class="form-control"
+      [ngClass]="{ 'is-invalid': isTouchedInvalid('email') || registerForm.hasError('isValidEmail') }" />
+    <div *ngIf="isTouchedInvalid('email')" class="invalid-feedback">
+      L'email è richiesta.
     </div>
-
-    <div class="form-group">
-      <label for="confermaEmail">Conferma Email</label>
-      <input id="confermaEmail" formControlName="confermaEmail" type="email" class="form-control" [ngClass]="{
-          'is-invalid': isTouchedInvalid('authData.confermaEmail') || registerForm.get('authData')?.hasError('emailMatch')
-        }" />
-      <div *ngIf="isTouchedInvalid('authData.confermaEmail')" class="invalid-feedback">
-        Conferma email è richiesta.
-      </div>
-      <div *ngIf="registerForm.get('authData')?.hasError('emailMatch')" class="invalid-feedback">
-        Le email non corrispondono.
-      </div>
+    <div *ngIf="registerForm.hasError('isValidEmail')" class="invalid-feedback">
+      L'email selezionata non è valida.
     </div>
+  </div>
 
-    <div class="form-group">
-      <label for="password">Password</label>
-      <input id="password" formControlName="password" type="password" class="form-control" [ngClass]="{
-          'is-invalid': isTouchedInvalid('authData.password') || registerForm.get('authData')?.hasError('isValidPassword')
-        }" />
-      <div *ngIf="isTouchedInvalid('authData.password')" class="invalid-feedback">
-        La password è richiesta.
-      </div>
-      <div *ngIf="registerForm.get('authData')?.hasError('isValidPassword')" class="invalid-feedback">
-        La password deve contenere caratteri speciali, un numero, una maiuscola e deve essere tra 8 e 16 caratteri.
-      </div>
+  <div class="form-group">
+    <label for="confermaEmail">Conferma Email</label>
+    <input id="confermaEmail" formControlName="confermaEmail" type="email" class="form-control"
+      [ngClass]="{ 'is-invalid': isTouchedInvalid('confermaEmail') || registerForm.hasError('emailMatch') }" />
+    <div *ngIf="isTouchedInvalid('confermaEmail')" class="invalid-feedback">
+      Conferma email è richiesta.
     </div>
+    <div *ngIf="registerForm.hasError('emailMatch')" class="invalid-feedback">
+      Le email non corrispondono.
+    </div>
+  </div>
 
-    <div class="form-group">
-      <label for="confermaPassword">Conferma Password</label>
-      <input id="confermaPassword" formControlName="confermaPassword" type="password" class="form-control" [ngClass]="{
-          'is-invalid': isTouchedInvalid('authData.confermaPassword') || registerForm.get('authData')?.hasError('passwordMatch')
-        }" />
-      <div *ngIf="isTouchedInvalid('authData.confermaPassword')" class="invalid-feedback">
-        Conferma password è richiesta.
-      </div>
-      <div *ngIf="registerForm.get('authData')?.hasError('passwordMatch')" class="invalid-feedback">
-        Le password non corrispondono.
-      </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input id="password" formControlName="password" type="password" class="form-control"
+      [ngClass]="{ 'is-invalid': isTouchedInvalid('password') || registerForm.hasError('isValidPassword') }" />
+    <div *ngIf="isTouchedInvalid('password')" class="invalid-feedback">
+      La password è richiesta.
+    </div>
+    <div *ngIf="registerForm.hasError('isValidPassword')" class="invalid-feedback">
+      La password deve contenere caratteri speciali, un numero, una maiuscola e deve essere tra 8 e 16 caratteri.
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="confermaPassword">Conferma Password</label>
+    <input id="confermaPassword" formControlName="confermaPassword" type="password" class="form-control"
+      [ngClass]="{ 'is-invalid': isTouchedInvalid('confermaPassword') || registerForm.hasError('passwordMatch') }" />
+    <div *ngIf="isTouchedInvalid('confermaPassword')" class="invalid-feedback">
+      Conferma password è richiesta.
+    </div>
+    <div *ngIf="registerForm.hasError('passwordMatch')" class="invalid-feedback">
+      Le password non corrispondono.
     </div>
   </div>
 
