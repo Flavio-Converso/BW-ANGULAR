@@ -3,88 +3,48 @@
     <a class="" href="#">
       <img class="cla1" src="" alt="Bootstrap" />
     </a>
-    <button
-      (click)="isCollapsed = !isCollapsed"
-      [attr.aria-expanded]="!isCollapsed"
-      aria-controls="collapseExample"
-      class="navbar-toggler"
-      type="button"
-    >
+    <button (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample"
+      class="navbar-toggler" type="button">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed">
+    <div class="collapse navbar-collapse" [ngClass]="{ 'show': !isCollapsed }">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-2 fw-bold">
         <li class="nav-item">
-          <a class="nav-link" routerLink="" routerLinkActive="active-link"
-            >Home</a
-          >
+          <a class="nav-link" routerLink="" routerLinkActive="active-link">Home</a>
         </li>
-        <li class="nav-item">
-          <!-- Bottone dropdown -->
-          <div class="dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              aria-expanded="false"
-              (click)="toggleDropdown('shop')"
-              [attr.aria-expanded]="openDropdown === 'shop'"
-            >
-              Shop
-            </a>
-            <ul
-              class="dropdown-menu"
-              [ngbCollapse]="openDropdown !== 'shop'"
-              aria-labelledby="dropdownMenuButton"
-            >
-              <li><a class="dropdown-item" routerLink="">Marketplace</a></li>
-              <li><a class="dropdown-item" routerLink="">Eventi</a></li>
-            </ul>
-          </div>
+        <li class="nav-item dropdown" [ngClass]="{ 'show': openDropdown === 'shop' }">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" aria-expanded="false"
+            (click)="toggleDropdown('shop')" [attr.aria-expanded]="openDropdown === 'shop'">
+            Shop
+          </a>
+          <ul class="dropdown-menu" [ngClass]="{ 'show': openDropdown === 'shop' }"
+            aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" routerLink="">Marketplace</a></li>
+            <li><a class="dropdown-item" routerLink="">Eventi</a></li>
+          </ul>
         </li>
       </ul>
       <div class="d-flex">
-        <div class="dropdown me-auto mb-2 mb-lg-0 fs-2 fw-bold">
-          <a
-            class="nav-link dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            aria-expanded="false"
-            (click)="toggleDropdown('login')"
-            [attr.aria-expanded]="openDropdown === 'login'"
-          >
+        <div class="nav-item dropdown me-auto mb-2 mb-lg-0 fs-2 fw-bold"
+          [ngClass]="{ 'show': openDropdown === 'login' }">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButtonLogin" aria-expanded="false"
+            (click)="toggleDropdown('login')" [attr.aria-expanded]="openDropdown === 'login'">
             Accedi
           </a>
-          <ul
-            class="dropdown-menu"
-            [ngbCollapse]="openDropdown !== 'login'"
-            aria-labelledby="dropdownMenuButton"
-          >
+          <ul class="dropdown-menu" [ngClass]="{ 'show': openDropdown === 'login' }"
+            aria-labelledby="dropdownMenuButtonLogin">
             <li><a class="dropdown-item" routerLink="/auth/login">Login</a></li>
-            <li>
-              <a class="dropdown-item" routerLink="/auth/register"
-                >Registrati</a
-              >
-            </li>
+            <li><a class="dropdown-item" routerLink="/auth/register">Registrati</a></li>
           </ul>
         </div>
-        <!--utente-->
-        <div class="dropdown me-auto mb-2 mb-lg-0 fs-2 fw-bold">
-          <a
-            class="nav-link dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            aria-expanded="false"
-            (click)="toggleDropdown('user')"
-            [attr.aria-expanded]="openDropdown === 'user'"
-          >
+        <div class="nav-item dropdown me-auto mb-2 mb-lg-0 fs-2 fw-bold"
+          [ngClass]="{ 'show': openDropdown === 'user' }">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButtonUser" aria-expanded="false"
+            (click)="toggleDropdown('user')" [attr.aria-expanded]="openDropdown === 'user'">
             Nome utente
           </a>
-          <ul
-            class="dropdown-menu"
-            [ngbCollapse]="openDropdown !== 'user'"
-            aria-labelledby="dropdownMenuButton"
-          >
+          <ul class="dropdown-menu" [ngClass]="{ 'show': openDropdown === 'user' }"
+            aria-labelledby="dropdownMenuButtonUser">
             <li><a class="dropdown-item" href="#">Account</a></li>
             <li><a class="dropdown-item" href="#">Schede personaggio</a></li>
             <li><a class="dropdown-item" href="#">Giocatori attivi</a></li>
