@@ -1,13 +1,99 @@
-<h1>Registrati</h1>
+<form [formGroup]="registerForm" (ngSubmit)="register()">
+  <div class="form-group">
+    <label for="nome">Nome</label>
+    <input id="nome" formControlName="nome" type="text" class="form-control"
+      [ngClass]="{ 'is-invalid': isTouchedInvalid('nome') }" />
+    <div *ngIf="isTouchedInvalid('nome')" class="invalid-feedback">
+      Il nome è richiesto.
+    </div>
+  </div>
 
-<form>
+  <div class="form-group">
+    <label for="cognome">Cognome</label>
+    <input id="cognome" formControlName="cognome" type="text" class="form-control"
+      [ngClass]="{ 'is-invalid': isTouchedInvalid('cognome') }" />
+    <div *ngIf="isTouchedInvalid('cognome')" class="invalid-feedback">
+      Il cognome è richiesto.
+    </div>
+  </div>
 
-  <input type="text" name="nome" placeholder="Il tuo nome" class="form-control">
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input id="email" formControlName="email" type="email" class="form-control"
+      [ngClass]="{ 'is-invalid': isTouchedInvalid('email') || registerForm.hasError('isValidEmail') }" />
+    <div *ngIf="isTouchedInvalid('email')" class="invalid-feedback">
+      L'email è richiesta.
+    </div>
+    <div *ngIf="registerForm.hasError('isValidEmail')" class="invalid-feedback">
+      L'email selezionata non è valida.
+    </div>
+  </div>
 
-  <input type="email" name="email"  placeholder="email" class="form-control mt-3">
+  <div class="form-group">
+    <label for="confermaEmail">Conferma Email</label>
+    <input id="confermaEmail" formControlName="confermaEmail" type="email" class="form-control"
+      [ngClass]="{ 'is-invalid': isTouchedInvalid('confermaEmail') || registerForm.hasError('emailMatch') }" />
+    <div *ngIf="isTouchedInvalid('confermaEmail')" class="invalid-feedback">
+      Conferma email è richiesta.
+    </div>
+    <div *ngIf="registerForm.hasError('emailMatch')" class="invalid-feedback">
+      Le email non corrispondono.
+    </div>
+  </div>
 
-  <input type="password" name="password"  placeholder="password" class="form-control mt-3">
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input id="password" formControlName="password" type="password" class="form-control"
+      [ngClass]="{ 'is-invalid': isTouchedInvalid('password') || registerForm.hasError('isValidPassword') }" />
+    <div *ngIf="isTouchedInvalid('password')" class="invalid-feedback">
+      La password è richiesta.
+    </div>
+    <div *ngIf="registerForm.hasError('isValidPassword')" class="invalid-feedback">
+      La password deve contenere caratteri speciali, un numero, una maiuscola e deve essere tra 8 e 16 caratteri.
+    </div>
+  </div>
 
-  <button  class="btn btn-primary mt-3">Registrati</button>
+  <div class="form-group">
+    <label for="confermaPassword">Conferma Password</label>
+    <input id="confermaPassword" formControlName="confermaPassword" type="password" class="form-control"
+      [ngClass]="{ 'is-invalid': isTouchedInvalid('confermaPassword') || registerForm.hasError('passwordMatch') }" />
+    <div *ngIf="isTouchedInvalid('confermaPassword')" class="invalid-feedback">
+      Conferma password è richiesta.
+    </div>
+    <div *ngIf="registerForm.hasError('passwordMatch')" class="invalid-feedback">
+      Le password non corrispondono.
+    </div>
+  </div>
 
+  <div class="form-group">
+    <label for="genere">Genere</label>
+    <select id="genere" formControlName="genere" class="form-control"
+      [ngClass]="{ 'is-invalid': isTouchedInvalid('genere') }">
+      <option value="selectPlaceholder" disabled>Seleziona...</option>
+      <option value="maschio">Maschio</option>
+      <option value="femmina">Femmina</option>
+      <option value="altro">Altro</option>
+    </select>
+    <div *ngIf="isTouchedInvalid('genere')" class="invalid-feedback">
+      Il genere è richiesto.
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="immagine">Immagine</label>
+    <input id="immagine" formControlName="immagine" type="file" class="form-control" />
+  </div>
+
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input id="username" formControlName="username" type="text" class="form-control"
+      [ngClass]="{ 'is-invalid': isTouchedInvalid('username') }" />
+    <div *ngIf="isTouchedInvalid('username')" class="invalid-feedback">
+      L'username è richiesto.
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary" [disabled]="formSubmitted && registerForm.invalid">
+    Invia
+  </button>
 </form>
