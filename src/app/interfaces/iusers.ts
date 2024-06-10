@@ -2,8 +2,9 @@ export interface iUsers {
   id: number;
   email: string;
   password: string;
-  //altro
-  //altro
-  //altro
-  //altro
+  nome: string;
+  cognome: string;
+  genere: string;
+  immagine: string | null;
+  username: string;
 }
