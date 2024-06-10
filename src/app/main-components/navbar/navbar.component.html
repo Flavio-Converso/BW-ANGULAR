@@ -1,1 +1,86 @@
-<p>navbar works!</p>
+<nav class="navbar navbar-expand-lg bg-warning position-sticky top-0 z-3">
+  <div class="container">
+    <button
+      (click)="isCollapsed = !isCollapsed"
+      [attr.aria-expanded]="!isCollapsed"
+      aria-controls="collapseExample"
+      class="navbar-toggler"
+      type="button"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-2 fw-bold">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="" routerLinkActive="active-link"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <!-- Bottone dropdown -->
+          <div class="dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              aria-expanded="false"
+              (click)="iscoll = !iscoll"
+              [attr.aria-expanded]="iscoll"
+            >
+              Shop
+            </a>
+            <ul
+              class="dropdown-menu"
+              [ngbCollapse]="!iscoll"
+              aria-labelledby="dropdownMenuButton"
+            >
+              <li><a class="dropdown-item" href="#">opzione1</a></li>
+              <li><a class="dropdown-item" href="#">opzione2</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="dropdown me-auto mb-2 mb-lg-0 fs-2 fw-bold">
+        <a
+          class="nav-link dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          aria-expanded="false"
+          (click)="logscoll = !logscoll"
+          [attr.aria-expanded]="logscoll"
+        >
+          Accedi
+        </a>
+        <ul
+          class="dropdown-menu"
+          [ngbCollapse]="!logscoll"
+          aria-labelledby="dropdownMenuButton"
+        >
+          <li><a class="dropdown-item" href="#">Login</a></li>
+          <li><a class="dropdown-item" href="#">Registrati</a></li>
+        </ul>
+      </div>
+      <!--utente-->
+      <div class="dropdown me-auto mb-2 mb-lg-0 fs-2 fw-bold">
+        <a
+          class="nav-link dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          aria-expanded="false"
+          (click)="iscoll2 = !iscoll2"
+          [attr.aria-expanded]="iscoll2"
+        >
+          Nome utente
+        </a>
+        <ul
+          class="dropdown-menu"
+          [ngbCollapse]="!iscoll2"
+          aria-labelledby="dropdownMenuButton"
+        >
+          <li><a class="dropdown-item" href="#">Account</a></li>
+          <li><a class="dropdown-item" href="#">Personaggi</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
