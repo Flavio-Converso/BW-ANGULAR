@@ -11,7 +11,7 @@ import { ClassesService } from '../../services/classes.service';
 @Component({
   selector: 'app-creazione-pg',
   templateUrl: './creazione-pg.component.html',
-  styleUrl: './creazione-pg.component.scss'
+  styleUrl: './creazione-pg.component.scss',
 })
 export class CreazionePgComponent {
   characterForm!: FormGroup;
@@ -30,12 +30,10 @@ export class CreazionePgComponent {
 
   ngOnInit(): void {
     this.characterForm = this.fb.group({
-      characterName: ['',Validators.required],
-      classId: ['',
-        //Validators.required
-      ],
+      characterName: ['', Validators.required],
+      classId: ['', Validators.required],
       selectedSkills: [[]],
-      expTot: [100,Validators.required],
+      expTot: [100, Validators.required],
     });
 
     this.loadClasses();
