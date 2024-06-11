@@ -1,1 +1,25 @@
 <p>profile works!</p>
+
+<!--utente loggato-->
+<p>{{user?.nome}}</p>
+<p>{{user?.cognome}}</p>
+<p>{{user?.email}}</p>
+<p>{{user?.genere}}</p>
+<p>{{user?.id}}</p>
+<p>{{user?.immagine}}</p>
+<p>{{user?.username}}</p>
+
+
+<!--altri utenti iscritti -->
+<ul *ngFor="let iscritto of users">
+  <li>
+    {{iscritto?.nome}}
+    {{iscritto?.cognome}}
+    {{iscritto?.email}}
+    {{iscritto?.genere}}
+    {{iscritto?.id}}
+    {{iscritto?.immagine}}
+    {{iscritto?.username}}
+  </li>
+
+</ul>
