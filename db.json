@@ -77,13 +77,47 @@
       "expTot": 90,
       "userId": 1,
       "id": 5
+    },
+    {
+      "characterName": "luca",
+      "classId": "",
+      "selectedSkills": [
+        3,
+        4
+      ],
+      "expTot": 90,
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "characterName": "amed",
+      "classId": "",
+      "selectedSkills": [
+        4,
+        3
+      ],
+      "expTot": 90,
+      "userId": 1,
+      "id": 7
+    },
+    {
+      "characterName": "ao",
+      "classId": "",
+      "selectedSkills": [
+        1,
+        2
+      ],
+      "expTot": 97,
+      "userId": 1,
+      "id": 8
     }
   ],
   "classes": [
     {
       "classId": 1,
       "className": "Warrior",
-      "bio": "Il guerriero era molto potente nei tempi andati",
+      "bio": "Il Guerriero è un combattente robusto e coraggioso, in grado di affrontare i nemici in prima linea con forza bruta e abilità nel corpo a corpo.",
+      "img": "https://th.bing.com/th/id/OIG2.Ip.LAra1eCHTU9Ea3Wxw?pid=ImgGn",
       "skills": [
         1,
         2
@@ -92,10 +126,21 @@
     {
       "classId": 2,
       "className": "Mage",
-      "bio": "Il mago ha padronanza degli incantesimi",
+      "bio": "Maestro delle arti arcane, il Mago lancia incantesimi potenti da lontano, ma è vulnerabile negli scontri ravvicinati.",
+      "img": "https://th.bing.com/th/id/OIG2.giN_VixGaT5nHdJ58EaN?pid=ImgGn",
       "skills": [
         3,
         4
+      ]
+    },
+    {
+      "classId": 3,
+      "className": "Hunter",
+      "bio": "L'Arciere, esperto di tiro con l'arco, colpisce i nemici a distanza con precisione letale e può muoversi furtivamente sul campo di battaglia.",
+      "img": "https://th.bing.com/th/id/OIG1.ndTSh3IP6PIYPRpplv_Z?pid=ImgGn",
+      "skills": [
+        5,
+        6
       ]
     }
   ],
@@ -122,6 +167,18 @@
       "skillId": 4,
       "skillName": "Ice Shield",
       "skillDescription": "Creates a protective barrier of ice.",
+      "exp": 7
+    },
+    {
+      "skillId": 5,
+      "skillName": "Lightning Shield",
+      "skillDescription": "Creates a protective barrier of lightning.",
+      "exp": 9
+    },
+    {
+      "skillId": 6,
+      "skillName": "Wind Shield",
+      "skillDescription": "Creates a protective barrier of wind.",
       "exp": 7
     }
   ]
