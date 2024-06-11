@@ -82,4 +82,9 @@ export class AuthService {
 
     return accessData;
   }
+
+  //funzione per la creazione del personaggio dopo il login
+  getCurrentUser(): iUsers | null {
+    return this.authSubject.getValue();
+  }
 }

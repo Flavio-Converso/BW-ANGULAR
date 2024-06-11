@@ -1,25 +1,85 @@
-<p>profile works!</p>
+<div class="containern myBg">
+  <h1 class="text-center pt-5 fw-bolder gradtitolo">PROFILO PERSONALE</h1>
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <div class="mb-3 cd my-5">
+        <div class="row">
+          <div class="col-md-4">
+            <img
+              src="https://i0.wp.com/essereuomo.it/wp-content/uploads/2021/10/sdsdsd.jpg?fit=1080%2C1245&ssl=1"
+              class="img-fluid rounded-start rounded-circle"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8 myGradient rounded-5 p-4">
+            <div class="card-body text-light">
+              <label class="fs-5"> nome:</label>
+              <h5 class="card-title fw-bolder mb-3 fs-2 gradtitolo">Bulubu</h5>
+              <label class="fs-5"> cognome:</label>
+              <h5 class="card-title mb-2 fw-bolder fs-2 gradtitolo">Abello</h5>
+              <label class="fs-5">User name:</label>
+              <h3 class="card-text mb-2 fw-bolder fs-2 gradtitolo">
+                Grognak il Frantuma culi
+              </h3>
+              <label for="">Email:</label>
+              <p class="card-text mb-2 fw-bolder">
+                Banana chiocciola libero.ban
+              </p>
+              <label for="">Genere:</label>
+              <p class="card-text mb-2 fw-bolder">COSO</p>
+              <label for="">Identificativo:</label>
+              <p class="card-text gradtitolo">1000 {{ user?.id }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <h1 class="text-center pt-5 fw-bolder gradtitolo pt-5">
+      I TUOI PERSONAGGI
+    </h1>
+    <div class="col"></div>
+  </div>
+</div>
 
-<!--utente loggato-->
-<p>{{user?.nome}}</p>
-<p>{{user?.cognome}}</p>
-<p>{{user?.email}}</p>
-<p>{{user?.genere}}</p>
-<p>{{user?.id}}</p>
-<p>{{user?.immagine}}</p>
-<p>{{user?.username}}</p>
+<!--       quello sotto è quello collegato, sopra è per lavorare
+<div class="container">
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <div class="card mb-3 cd">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              [src]="[user?.immagine]"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{ user?.nome }} {{ user?.cognome }}</h5>
+              <h3 class="card-text">
+                {{ user?.username }}
+              </h3>
 
+              <p class="card-text">
+                {{ user?.email }}
+              </p>
+              <p class="card-text">
+                {{ user?.genere }}
+              </p>
 
-<!--altri utenti iscritti -->
-<ul *ngFor="let iscritto of users">
-  <li>
-    {{iscritto?.nome}}
-    {{iscritto?.cognome}}
-    {{iscritto?.email}}
-    {{iscritto?.genere}}
-    {{iscritto?.id}}
-    {{iscritto?.immagine}}
-    {{iscritto?.username}}
-  </li>
-
-</ul>
+              <p class="card-text">
+                <small class="text-body-secondary"
+                  >Identificativo {{ user?.id }}</small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+-->
