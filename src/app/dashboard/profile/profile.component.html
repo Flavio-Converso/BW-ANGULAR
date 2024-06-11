@@ -1,25 +1,48 @@
-<p>profile works!</p>
-
-<!--utente loggato-->
-<p>{{user?.nome}}</p>
-<p>{{user?.cognome}}</p>
-<p>{{user?.email}}</p>
-<p>{{user?.genere}}</p>
-<p>{{user?.id}}</p>
-<p>{{user?.immagine}}</p>
-<p>{{user?.username}}</p>
-
-
-<!--altri utenti iscritti -->
-<ul *ngFor="let iscritto of users">
-  <li>
-    {{iscritto?.nome}}
-    {{iscritto?.cognome}}
-    {{iscritto?.email}}
-    {{iscritto?.genere}}
-    {{iscritto?.id}}
-    {{iscritto?.immagine}}
-    {{iscritto?.username}}
-  </li>
-
-</ul>
+<div class="containern myBg">
+  <h1 class="text-center pt-5 fw-bolder gradtitolo">PROFILO PERSONALE</h1>
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <div class="mb-3 cd my-5">
+        <div class="row">
+          <div class="col-md-4">
+            <img
+              [src]="[user?.immagine]"
+              class="img-fluid rounded-start rounded-circle"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8 myGradient rounded-5 p-4">
+            <div class="card-body text-light">
+              <label class="fs-5"> nome:</label>
+              <h5 class="card-title fw-bolder mb-3 fs-2 gradtitolo">
+                {{ user?.nome }}
+              </h5>
+              <label class="fs-5"> cognome:</label>
+              <h5 class="card-title mb-2 fw-bolder fs-2 gradtitolo">
+                {{ user?.cognome }}
+              </h5>
+              <label class="fs-5">User name:</label>
+              <h3 class="card-text mb-2 fw-bolder fs-2 gradtitolo">
+                {{ user?.username }}
+              </h3>
+              <label for="">Email:</label>
+              <p class="card-text mb-2 fw-bolder">
+                {{ user?.email }}
+              </p>
+              <label for="">Genere:</label>
+              <p class="card-text mb-2 fw-bolder">{{ user?.genere }}</p>
+              <label for="">Identificativo:</label>
+              <p class="card-text gradtitolo">{{ user?.id }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <h1 class="text-center pt-5 fw-bolder gradtitolo pt-5">
+      I TUOI PERSONAGGI
+    </h1>
+    <div class="col"></div>
+  </div>
+</div>

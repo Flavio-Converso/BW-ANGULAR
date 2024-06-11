@@ -1,0 +1,46 @@
+<div class="activebg">
+  <h1 class="text-center pt-2">
+    Contatta gli altri utenti attivi per avviare con loro fantastiche campagne !
+  </h1>
+  <h6 class="text-center pb-2">Sempre se vogliono giocare con te</h6>
+  <div class="row m-0">
+    <div class="col-12">
+      <ul class="list-group p-2" *ngFor="let iscritto of users">
+        <li class="m-2 fs-3 d-flex justify-content-center">
+          {{ iscritto?.nome }}
+          {{ iscritto?.cognome }}
+          {{ iscritto?.email }}
+          {{ iscritto?.genere }}
+          {{ iscritto?.id }}
+          {{ iscritto?.immagine }}
+          {{ iscritto?.username }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div
+  class="nav-item dropdown me-auto mb-2 mb-lg-0 fs-2 fw-bold"
+  [ngClass]="{ show: openDropdown === 'login' }"
+>
+  <a
+    class="nav-link dropdown-toggle"
+    id="dropdownMenuButtonLogin"
+    aria-expanded="false"
+    (click)="toggleDropdown('login')"
+    [attr.aria-expanded]="openDropdown === 'login'"
+  >
+    Accedi
+  </a>
+  <ul
+    class="dropdown-menu"
+    [ngClass]="{ show: openDropdown === 'login' }"
+    aria-labelledby="dropdownMenuButtonLogin"
+  >
+    <li><a class="dropdown-item" routerLink="/auth/login">Login</a></li>
+    <li>
+      <a class="dropdown-item" routerLink="/auth/register">Registrati</a>
+    </li>
+  </ul>
+</div>

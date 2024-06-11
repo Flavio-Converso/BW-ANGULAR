@@ -6,6 +6,8 @@ import { DashboardComponent } from './dashboard.component';
 import { ProfileComponent } from './profile/profile.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { CreazionePgComponent } from './creazione-pg/creazione-pg.component';
+import { ActiveUsersComponent } from './active-users/active-users.component';
+
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { CreazionePgComponent } from './creazione-pg/creazione-pg.component';
     DashboardComponent,
     ProfileComponent,
     MarketplaceComponent,
-    CreazionePgComponent
+    CreazionePgComponent,
+    ActiveUsersComponent
+
   ],
   imports: [
     CommonModule,

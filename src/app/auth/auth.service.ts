@@ -13,7 +13,7 @@ import { iAuthdata } from '../interfaces/iauthdata';
 export class AuthService {
   jwtHelper: JwtHelperService = new JwtHelperService();
 
-  constructor(private http: HttpClient, private router: Router) {}
+  constructor(private http: HttpClient, private router: Router) {this.restoreUser()}
 
   authSubject = new BehaviorSubject<iUsers | null>(null);
 
@@ -81,5 +81,10 @@ export class AuthService {
     const accessData: iAuthResponse = JSON.parse(accessDataJson);
 
     return accessData;
+  }
+
+  //funzione per la creazione del personaggio dopo il login
+  getCurrentUser(): iUsers | null {
+    return this.authSubject.getValue();
   }
 }
