@@ -1,25 +1,84 @@
-<p>profile works!</p>
+<div class="containern myBg">
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <div class="mb-3 cd my-5">
+        <div class="row">
+          <div class="col-md-4">
+            <img
+              src="https://i0.wp.com/essereuomo.it/wp-content/uploads/2021/10/sdsdsd.jpg?fit=1080%2C1245&ssl=1"
+              class="img-fluid rounded-start rounded-circle"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8 myGradient rounded-5 p-4">
+            <div class="card-body text-light">
+              <h5 class="card-title fw-bolder mt-3">Nome: Bulubu</h5>
+              <h5 class="card-title my-2">Cognome: Abello</h5>
+              <h3 class="card-text my-2">Grognak</h3>
+              <label for="">user name</label>
+              <p class="card-text my-2">MAILLLL</p>
+              <p class="card-text my-2">COSSSOOO</p>
 
-<!--utente loggato-->
-<p>{{user?.nome}}</p>
-<p>{{user?.cognome}}</p>
-<p>{{user?.email}}</p>
-<p>{{user?.genere}}</p>
-<p>{{user?.id}}</p>
-<p>{{user?.immagine}}</p>
-<p>{{user?.username}}</p>
+              <p class="card-text">
+                <small class="text-info">1000 {{ user?.id }}</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!--       quello sotto è quello collegato, sopra è per lavorare-->
+<div class="container">
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <div class="card mb-3 cd">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              [src]="[user?.immagine]"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{ user?.nome }} {{ user?.cognome }}</h5>
+              <h3 class="card-text">
+                {{ user?.username }}
+              </h3>
+
+              <p class="card-text">
+                {{ user?.email }}
+              </p>
+              <p class="card-text">
+                {{ user?.genere }}
+              </p>
+
+              <p class="card-text">
+                <small class="text-body-secondary"
+                  >Identificativo {{ user?.id }}</small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!--altri utenti iscritti -->
 <ul *ngFor="let iscritto of users">
   <li>
-    {{iscritto?.nome}}
-    {{iscritto?.cognome}}
-    {{iscritto?.email}}
-    {{iscritto?.genere}}
-    {{iscritto?.id}}
-    {{iscritto?.immagine}}
-    {{iscritto?.username}}
+    {{ iscritto?.nome }}
+    {{ iscritto?.cognome }}
+    {{ iscritto?.email }}
+    {{ iscritto?.genere }}
+    {{ iscritto?.id }}
+    {{ iscritto?.immagine }}
+    {{ iscritto?.username }}
   </li>
-
 </ul>

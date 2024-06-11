@@ -90,7 +90,11 @@
             [ngClass]="{ show: openDropdown === 'user' }"
             aria-labelledby="dropdownMenuButtonUser"
           >
-            <li><a class="dropdown-item">Account</a></li>
+            <li>
+              <a class="dropdown-item" routerLink="/dashboard/profile"
+                >Account</a
+              >
+            </li>
             <li><a class="dropdown-item">Schede personaggio</a></li>
             <li><a class="dropdown-item">Giocatori attivi</a></li>
           </ul>
