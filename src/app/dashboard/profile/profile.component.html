@@ -12,13 +12,19 @@
           </div>
           <div class="col-md-8 myGradient rounded-5 p-4">
             <div class="card-body text-light">
-              <h5 class="card-title fw-bolder mt-3">Nome: Bulubu</h5>
-              <h5 class="card-title my-2">Cognome: Abello</h5>
-              <h3 class="card-text my-2">Grognak</h3>
-              <label for="">user name</label>
-              <p class="card-text my-2">MAILLLL</p>
-              <p class="card-text my-2">COSSSOOO</p>
-
+              <label class="fs-5"> nome:</label>
+              <h5 class="card-title fw-bolder mb-3 fs-2">Bulubu</h5>
+              <label class="fs-5"> cognome:</label>
+              <h5 class="card-title mb-2 fw-bolder fs-2">Abello</h5>
+              <label class="fs-5">User name:</label>
+              <h3 class="card-text mb-2 fw-bolder fs-2">Grognak</h3>
+              <label for="">Email:</label>
+              <p class="card-text mb-2 fw-bolder">
+                Banana chiocciola libero.ban
+              </p>
+              <label for="">Genere:</label>
+              <p class="card-text mb-2 fw-bolder">COSO</p>
+              <label for="">Identificativo:</label>
               <p class="card-text">
                 <small class="text-info">1000 {{ user?.id }}</small>
               </p>
@@ -30,7 +36,7 @@
   </div>
 </div>
 
-<!--       quello sotto è quello collegato, sopra è per lavorare-->
+<!--       quello sotto è quello collegato, sopra è per lavorare
 <div class="container">
   <div class="row">
     <div class="col-12 d-flex justify-content-center">
@@ -69,16 +75,4 @@
     </div>
   </div>
 </div>
-
-<!--altri utenti iscritti -->
-<ul *ngFor="let iscritto of users">
-  <li>
-    {{ iscritto?.nome }}
-    {{ iscritto?.cognome }}
-    {{ iscritto?.email }}
-    {{ iscritto?.genere }}
-    {{ iscritto?.id }}
-    {{ iscritto?.immagine }}
-    {{ iscritto?.username }}
-  </li>
-</ul>
+-->
