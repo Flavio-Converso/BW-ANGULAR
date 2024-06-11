@@ -12,5 +12,59 @@
       "username": "user",
       "id": 1
     }
+  ],
+
+  "characters": [
+    {
+      "characterId": 1,
+      "characterName": "Aragorn",
+      "classId": 1,
+      "epxtot": 100,
+      "userId": 1
+    }
+  ],
+
+  "classes": [
+    {
+      "classId": 1,
+      "className": "Warrior",
+      "bio": "Il guerriero era molto potente nei tempi andati",
+      "skills": [1, 2]
+    },
+    {
+      "classId": 2,
+      "className": "Mage",
+      "bio": "Il mago ha padronanza degli incantesimi",
+      "skills": [3,4]
+    }
+  ],
+
+  "skills": [
+    {
+      "skillId": 1,
+      "skillName": "Slash",
+      "skillDescription": "A powerful sword attack.",
+      "exp": 1
+    },
+    {
+      "skillId": 2,
+      "skillName": "Shield Block",
+      "skillDescription": "Blocks incoming attacks.",
+      "exp": 2
+    },
+    {
+      "skillId": 3,
+      "skillName": "Fireball",
+      "skillDescription": "Casts a fiery projectile.",
+      "exp": 3
+    },
+    {
+      "skillId": 4,
+      "skillName": "Ice Shield",
+      "skillDescription": "Creates a protective barrier of ice.",
+      "exp": 7
+    }
   ]
+
+
 }

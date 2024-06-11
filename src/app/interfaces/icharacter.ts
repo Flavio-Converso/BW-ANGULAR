@@ -2,6 +2,6 @@ export interface iCharacter {
   userId: number;
   characterId: number;
   classId: number;
-  name: string;
+  characterName: string;
   expTot: number; //da dare fisso eventualmente
 }
