@@ -11,6 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AuthModule } from './auth/auth.module';
 import { HttpClientModule } from '@angular/common/http';
+import { CharactersTestComponent } from './characters-test/characters-test.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
     NavbarComponent,
     FooterComponent,
     Page404Component,
+    CharactersTestComponent,
   ],
   imports: [
     BrowserModule,
