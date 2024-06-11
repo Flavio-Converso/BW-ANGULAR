@@ -89,6 +89,50 @@
       "expTot": 90,
       "userId": 1,
       "id": 5
+    },
+    {
+      "characterName": "ciao",
+      "classId": "1",
+      "selectedSkills": [
+        1,
+        2
+      ],
+      "expTot": 97,
+      "userId": 3,
+      "id": 6
+    },
+    {
+      "characterName": "ciao",
+      "classId": "1",
+      "selectedSkills": [
+        1,
+        2
+      ],
+      "expTot": 97,
+      "userId": 3,
+      "id": 7
+    },
+    {
+      "characterName": "ciao",
+      "classId": "1",
+      "selectedSkills": [
+        1,
+        2
+      ],
+      "expTot": 97,
+      "userId": 3,
+      "id": 8
+    },
+    {
+      "characterName": "ciao",
+      "classId": "1",
+      "selectedSkills": [
+        1,
+        2
+      ],
+      "expTot": 97,
+      "userId": 3,
+      "id": 9
     }
   ],
   "classes": [
