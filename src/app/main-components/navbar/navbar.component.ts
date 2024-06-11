@@ -26,7 +26,10 @@ this.authSvc.isLoggedIn$
     this.openDropdown = this.openDropdown === dropdown ? null : dropdown;
   }
 
-  // logout() {
-  //   this.authSvc.logout();
-  // }
+
+
+
+   logout() {
+     this.authSvc.logout();
+ }
 }

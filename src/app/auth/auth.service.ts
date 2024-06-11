@@ -13,7 +13,7 @@ import { iAuthdata } from '../interfaces/iauthdata';
 export class AuthService {
   jwtHelper: JwtHelperService = new JwtHelperService();
 
-  constructor(private http: HttpClient, private router: Router) {}
+  constructor(private http: HttpClient, private router: Router) {this.restoreUser()}
 
   authSubject = new BehaviorSubject<iUsers | null>(null);
 
