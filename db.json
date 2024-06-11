@@ -11,17 +11,81 @@
       "immagine": "https://i0.wp.com/essereuomo.it/wp-content/uploads/2021/10/sdsdsd.jpg?fit=1080%2C1245&ssl=1",
       "username": "user",
       "id": 1
+    },
+    {
+      "email": "admin@admin.com",
+      "password": "$2a$10$.UoWbs.FisjXZIG2io7DsuYcGjFRHw7h8DUr//hyEhc3IqDl4vjaC",
+      "nome": "admin",
+      "cognome": "admin",
+      "confermaEmail": "admin@admin.com",
+      "confermaPassword": "Pa$$w0rd!",
+      "genere": "maschio",
+      "immagine": null,
+      "username": "admin",
+      "id": 2
     }
   ],
   "characters": [
     {
-      "characterName": "Giorgio",
+      "characterName": "Denton Puckett",
+      "classId": "2",
+      "selectedSkills": [
+        1,
+        2,
+        3,
+        4,
+        2
+      ],
+      "expTot": 85,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "characterName": "AdminPG",
+      "classId": "2",
+      "selectedSkills": [
+        1,
+        2,
+        3,
+        4,
+        2,
+        1,
+        2,
+        3,
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "expTot": 59,
+      "userId": 2,
+      "id": 2
+    },
+    {
+      "characterName": "AdminPG2",
       "classId": "1",
       "selectedSkills": [
-        1
+        1,
+        2,
+        3,
+        4,
+        2,
+        1,
+        2,
+        3,
+        4,
+        1,
+        2,
+        3,
+        4,
+        1,
+        2,
+        4
       ],
-      "expTot": 99,
-      "id": 1
+      "expTot": 49,
+      "userId": 2,
+      "id": 3
     }
   ],
   "classes": [

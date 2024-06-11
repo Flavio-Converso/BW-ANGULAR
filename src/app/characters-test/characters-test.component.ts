@@ -42,7 +42,6 @@ export class CharactersTestComponent implements OnInit {
     // Carica le classi disponibili dal server
     this.loadClasses();
     this.loadSkills();
-    this.authSvc.getCurrentUser();
   }
 
   // Metodo per caricare le classi disponibili dal server
@@ -104,11 +103,18 @@ export class CharactersTestComponent implements OnInit {
   // Metodo per creare il personaggio quando il form viene inviato
   createCharacter(): void {
     if (this.characterForm.valid) {
-      this.charactersSvc
-        .addCharacter(this.characterForm.value)
-        .subscribe((character: iCharacter) => {
-          console.log('Character created:', character);
-        });
+      const user = this.authSvc.getCurrentUser(); // Ottieni l'oggetto utente corrente
+      if (user) {
+        const userId = user.id; // Ottieni l'userId dall'oggetto utente
+        const characterData = { ...this.characterForm.value, userId }; // Aggiungi userId ai dati del personaggio
+        this.charactersSvc
+          .addCharacter(characterData)
+          .subscribe((character: iCharacter) => {
+            console.log('Character created:', character);
+          });
+      } else {
+        console.log('User not logged in');
+      }
     } else {
       console.log('Form is invalid');
     }

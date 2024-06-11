@@ -24,7 +24,6 @@
           *ngIf="isLoggedIn"
           [ngClass]="{ show: openDropdown === 'shop' }"
         >
-
           <a
             class="nav-link dropdown-toggle text-white"
             id="dropdownMenuButton"
@@ -33,7 +32,6 @@
             [attr.aria-expanded]="openDropdown === 'shop'"
           >
             Shop
-
           </a>
 
           <ul
@@ -79,7 +77,6 @@
           *ngIf="isLoggedIn"
           [ngClass]="{ show: openDropdown === 'user' }"
         >
-
           <a
             class="nav-link dropdown-toggle text-white"
             id="dropdownMenuButtonUser"
@@ -87,8 +84,9 @@
             (click)="toggleDropdown('user')"
             [attr.aria-expanded]="openDropdown === 'user'"
           >
-          <img id="imgP" src="../../../assets/img_logo/ProfilePictureTemplate.jpg" alt="immagine profilo"> <!-- qui ci va l'immagine del profilo (dinamica) metto temporaneamente un template con un immagine finta -->
-            Nome utente
+            <img id="imgP" [src]="[user?.immagine]" alt="immagine profilo" />
+            <!-- qui ci va l'immagine del profilo (dinamica) metto temporaneamente un template con un immagine finta -->
+            {{ user?.username }}
           </a>
           <ul
             class="dropdown-menu"
