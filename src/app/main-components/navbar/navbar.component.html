@@ -87,13 +87,9 @@
             (click)="toggleDropdown('user')"
             [attr.aria-expanded]="openDropdown === 'user'"
           >
-            <img
-              id="imgP"
-              src="../../../assets/ProfilePictureTemplate.jpg"
-              alt="immagine profilo"
-            />
+            <img id="imgP" [src]="[user?.immagine]" alt="immagine profilo" />
             <!-- qui ci va l'immagine del profilo (dinamica) metto temporaneamente un template con un immagine finta -->
-            Nome utente
+            {{ user?.username }}
           </a>
           <ul
             class="dropdown-menu"
