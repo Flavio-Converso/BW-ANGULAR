@@ -17,8 +17,6 @@ export class ProfileComponent {
     this.authSvc.user$.subscribe((user: iUsers | null) => {
       this.user = user;
     });
-    this.userSvc.getAllUsers().subscribe((users) => {
-      this.users = users;
-    });
+
   }
 }
