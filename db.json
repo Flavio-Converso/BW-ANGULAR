@@ -39,65 +39,56 @@
   ],
   "characters": [
     {
-      "characterName": "Denton Puckett",
-      "classId": "2",
+      "characterName": "warrior1",
+      "classId": "1",
       "selectedSkills": [
-        1,
-        2,
-        3,
-        4,
-        2
+        1
       ],
-      "expTot": 85,
+      "expTot": 99,
       "userId": 1,
       "id": 1
     },
     {
-      "characterName": "AdminPG",
-      "classId": "2",
-      "selectedSkills": [
-        1,
-        2,
-        3,
-        4,
-        2,
-        1,
-        2,
-        3,
-        4,
-        1,
-        2,
-        3,
-        4
-      ],
-      "expTot": 59,
-      "userId": 2,
-      "id": 2
-    },
-    {
-      "characterName": "AdminPG2",
+      "characterName": "warrior2",
       "classId": "1",
       "selectedSkills": [
         1,
-        2,
+        2
+      ],
+      "expTot": 97,
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "characterName": "warrior3",
+      "classId": "1",
+      "selectedSkills": [
+        2
+      ],
+      "expTot": 98,
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "characterName": "mago1",
+      "classId": "2",
+      "selectedSkills": [
+        3
+      ],
+      "expTot": 97,
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "characterName": "mago2",
+      "classId": "2",
+      "selectedSkills": [
         3,
-        4,
-        2,
-        1,
-        2,
-        3,
-        4,
-        1,
-        2,
-        3,
-        4,
-        1,
-        2,
         4
       ],
-      "expTot": 49,
-      "userId": 2,
-      "id": 3
+      "expTot": 90,
+      "userId": 1,
+      "id": 5
     }
   ],
   "classes": [
