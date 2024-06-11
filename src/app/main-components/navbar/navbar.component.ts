@@ -11,38 +11,35 @@ import { iUsers } from '../../interfaces/iusers';
 export class NavbarComponent {
   isCollapsed: boolean = true;
   openDropdown: string | null = null;
-  isLoggedIn:boolean = false
+  isLoggedIn: boolean = false;
 
-//test
+  //test
   user!: iUsers | null;
   users: iUsers[] = [];
-//test
+  //test
 
-  constructor(private authSvc:AuthService, private userSvc: UsersService){}
+  constructor(private authSvc: AuthService, private userSvc: UsersService) {}
 
-  ngOnInit(){
-this.authSvc.isLoggedIn$
-.subscribe(isLoggedIn => this.isLoggedIn = isLoggedIn)
+  ngOnInit() {
+    this.authSvc.isLoggedIn$.subscribe(
+      (isLoggedIn) => (this.isLoggedIn = isLoggedIn)
+    );
 
-
-//test
-this.authSvc.user$.subscribe((user: iUsers | null) => {
-  this.user = user;
-});
-
-
-
+    //test
+    this.authSvc.user$.subscribe((user: iUsers | null) => {
+      this.user = user;
+    });
   }
-
 
   toggleDropdown(dropdown: string): void {
     this.openDropdown = this.openDropdown === dropdown ? null : dropdown;
   }
 
+  closeDropdown(): void {
+    this.openDropdown = '';
+  }
 
-
-
-   logout() {
-     this.authSvc.logout();
- }
+  logout() {
+    this.authSvc.logout();
+  }
 }

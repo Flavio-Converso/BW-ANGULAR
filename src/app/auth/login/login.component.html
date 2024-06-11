@@ -6,13 +6,12 @@
           <input
             type="email"
             class="form-control"
-            id="floatingInput"
+            formControlName="email"
+            id="email"
             placeholder="name@example.com"
-            name="email"
             [ngClass]="{ 'is-invalid': isTouchedInvalid('email') }"
-            required
           />
-          <label for="floatingInput">Email</label>
+          <label for="email">Email</label>
           <div *ngIf="isTouchedInvalid('email')" class="invalid-feedback">
             L'email è richiesta e deve essere valida.
           </div>
@@ -22,11 +21,10 @@
           <input
             [type]="hidePassword ? 'password' : 'text'"
             class="form-control"
-            id="floatingPassword"
+            id="password"
+            formControlName="password"
             placeholder="Password"
-            name="password"
             [ngClass]="{ 'is-invalid': isTouchedInvalid('password') }"
-            required
           />
           <!-- <button
             type="button"
@@ -36,7 +34,7 @@
             {{ hidePassword ? "Show" : "Hide" }}
           </button> -->
 
-          <label for="floatingPassword">Password</label>
+          <label for="password">Password</label>
           <div *ngIf="isTouchedInvalid('password')" class="invalid-feedback">
             La password è richiesta e deve rispettare i criteri di sicurezza.
           </div>

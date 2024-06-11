@@ -9,6 +9,7 @@ import { FooterComponent } from './main-components/footer/footer.component';
 import { Page404Component } from './dashboard/page404/page404.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+
 import { AuthModule } from './auth/auth.module';
 import { HttpClientModule } from '@angular/common/http';
 import { CharactersTestComponent } from './characters-test/characters-test.component';
@@ -19,7 +20,7 @@ import { CharactersTestComponent } from './characters-test/characters-test.compo
     NavbarComponent,
     FooterComponent,
     Page404Component,
-    CharactersTestComponent,
+    CharactersTestComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +29,7 @@ import { CharactersTestComponent } from './characters-test/characters-test.compo
     FormsModule,
     AuthModule,
     ReactiveFormsModule,
-    HttpClientModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
