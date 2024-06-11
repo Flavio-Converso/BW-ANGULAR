@@ -7,20 +7,20 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class CharactersService {
-  private baseUrl = 'http://localhost:3000/characters';
+  private apiUrl = 'http://localhost:3000/characters';
 
   constructor(private http: HttpClient) {}
 
   getCharacters(): Observable<iCharacter[]> {
-    return this.http.get<iCharacter[]>(this.baseUrl);
+    return this.http.get<iCharacter[]>(this.apiUrl);
   }
 
   getCharacterById(characterId: number): Observable<iCharacter> {
-    return this.http.get<iCharacter>(`${this.baseUrl}/${characterId}`);
+    return this.http.get<iCharacter>(`${this.apiUrl}/${characterId}`);
   }
 
   addCharacter(newCharacter: iCharacter): Observable<iCharacter> {
-    return this.http.post<iCharacter>(this.baseUrl, newCharacter);
+    return this.http.post<iCharacter>(this.apiUrl, newCharacter);
   }
 
   updateCharacter(
@@ -28,12 +28,12 @@ export class CharactersService {
     updatedCharacter: iCharacter
   ): Observable<iCharacter> {
     return this.http.put<iCharacter>(
-      `${this.baseUrl}/${characterId}`,
+      `${this.apiUrl}/${characterId}`,
       updatedCharacter
     );
   }
 
   deleteCharacter(characterId: number): Observable<void> {
-    return this.http.delete<void>(`${this.baseUrl}/${characterId}`);
+    return this.http.delete<void>(`${this.apiUrl}/${characterId}`);
   }
 }

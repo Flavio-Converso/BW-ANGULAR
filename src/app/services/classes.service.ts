@@ -7,27 +7,27 @@ import { iClassi } from '../interfaces/classe';
   providedIn: 'root',
 })
 export class ClassesService {
-  private baseUrl = 'http://localhost:3000/classes';
+  private apiUrl = 'http://localhost:3000/classes';
 
   constructor(private http: HttpClient) {}
 
   getClasses(): Observable<iClassi[]> {
-    return this.http.get<iClassi[]>(this.baseUrl);
+    return this.http.get<iClassi[]>(this.apiUrl);
   }
 
   getClassById(classId: number): Observable<iClassi> {
-    return this.http.get<iClassi>(`${this.baseUrl}/${classId}`);
+    return this.http.get<iClassi>(`${this.apiUrl}/${classId}`);
   }
 
   addClass(newClass: iClassi): Observable<iClassi> {
-    return this.http.post<iClassi>(this.baseUrl, newClass);
+    return this.http.post<iClassi>(this.apiUrl, newClass);
   }
 
   updateClass(classId: number, updatedClass: iClassi): Observable<iClassi> {
-    return this.http.put<iClassi>(`${this.baseUrl}/${classId}`, updatedClass);
+    return this.http.put<iClassi>(`${this.apiUrl}/${classId}`, updatedClass);
   }
 
   deleteClass(classId: number): Observable<void> {
-    return this.http.delete<void>(`${this.baseUrl}/${classId}`);
+    return this.http.delete<void>(`${this.apiUrl}/${classId}`);
   }
 }
