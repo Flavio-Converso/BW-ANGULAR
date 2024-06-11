@@ -70,34 +70,34 @@ export class CharactersTestComponent implements OnInit {
   }
 
   // Metodo chiamato quando l'utente seleziona un'abilità
-  onSkillSelect(skill: iSkills): void {
-    if (this.availableExp >= skill.exp) {
-      // Aggiunge l'abilità selezionata all'array `selectedSkills`
-      this.selectedSkills.push(skill);
-      // Riduce i punti esperienza disponibili
-      this.availableExp -= skill.exp;
-      // Aggiorna il form con le abilità selezionate e i punti esperienza rimanenti
-      this.characterForm.patchValue({
-        selectedSkills: this.selectedSkills.map((s) => s.skillId),
-        expTot: this.availableExp,
-      });
+  onSkillSelect(event: any, skill: iSkills): void {
+    if (event.target.checked) {
+      // The checkbox is checked, add the skill to selectedSkills
+      if (
+        this.availableExp >= skill.exp &&
+        !this.selectedSkills.includes(skill)
+      ) {
+        this.selectedSkills.push(skill);
+        this.availableExp -= skill.exp;
+      }
+    } else {
+      // The checkbox is unchecked, remove the skill from selectedSkills
+      const index = this.selectedSkills.findIndex(
+        (s) => s.skillId === skill.skillId
+      );
+      if (index !== -1) {
+        this.selectedSkills.splice(index, 1);
+        this.availableExp += skill.exp;
+      }
     }
+    this.updateFormValues();
   }
 
-  // Metodo chiamato quando l'utente deseleziona un'abilità
-  onSkillDeselect(skill: iSkills): void {
-    const index = this.selectedSkills.indexOf(skill); // Trova l'indice dell'abilità da deselezionare
-    if (index !== -1) {
-      // Rimuove l'abilità dall'array `selectedSkills`
-      this.selectedSkills.splice(index, 1);
-      // Aumenta i punti esperienza disponibili
-      this.availableExp += skill.exp;
-      // Aggiorna il form con le abilità selezionate e i punti esperienza rimanenti
-      this.characterForm.patchValue({
-        selectedSkills: this.selectedSkills.map((s) => s.skillId),
-        expTot: this.availableExp,
-      });
-    }
+  updateFormValues(): void {
+    this.characterForm.patchValue({
+      selectedSkills: this.selectedSkills.map((s) => s.skillId),
+      expTot: this.availableExp,
+    });
   }
 
   // Metodo per creare il personaggio quando il form viene inviato
