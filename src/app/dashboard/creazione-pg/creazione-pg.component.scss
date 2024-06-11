@@ -1,0 +1,15 @@
+.myBg{
+  background-color: #10111A;
+}
+
+.myTextColor{
+  color:#51566B
+}
+
+input[type="checkbox"] { /* change "blue" browser chrome to yellow */
+  filter: invert(100%) hue-rotate(18deg) brightness(1.7);
+}
+
+input[type="checkbox"]:checked{
+  filter:none;
+}
