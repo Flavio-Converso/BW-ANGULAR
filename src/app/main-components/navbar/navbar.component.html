@@ -1,7 +1,11 @@
-<nav class="navbar navbar-expand-lg bg-warning position-sticky top-0 z-3">
+<nav id="sfondo" class="navbar navbar-expand-lg position-sticky top-0 z-3">
   <div class="container justify-content-around">
-    <a class="">
-      <img class="cla1" src="" alt="Bootstrap" />
+    <a class="" href="#">
+      <img
+        class="cla1"
+        src="../../../assets/img_logo/Logo ridimensionato.png"
+        alt="Logo"
+      />
     </a>
     <button
       (click)="isCollapsed = !isCollapsed"
@@ -15,7 +19,10 @@
     <div class="collapse navbar-collapse" [ngClass]="{ show: !isCollapsed }">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-2 fw-bold">
         <li class="nav-item">
-          <a class="nav-link" routerLink="" routerLinkActive="active-link"
+          <a
+            class="nav-link text-white"
+            routerLink=""
+            routerLinkActive="active-link"
             >Home</a
           >
         </li>
@@ -25,7 +32,7 @@
           [ngClass]="{ show: openDropdown === 'shop' }"
         >
           <a
-            class="nav-link dropdown-toggle"
+            class="nav-link dropdown-toggle text-white"
             id="dropdownMenuButton"
             aria-expanded="false"
             (click)="toggleDropdown('shop')"
@@ -33,6 +40,7 @@
           >
             Shop
           </a>
+
           <ul
             class="dropdown-menu"
             [ngClass]="{ show: openDropdown === 'shop' }"
@@ -50,7 +58,7 @@
           [ngClass]="{ show: openDropdown === 'login' }"
         >
           <a
-            class="nav-link dropdown-toggle"
+            class="nav-link dropdown-toggle text-white"
             id="dropdownMenuButtonLogin"
             aria-expanded="false"
             (click)="toggleDropdown('login')"
@@ -77,13 +85,15 @@
           [ngClass]="{ show: openDropdown === 'user' }"
         >
           <a
-            class="nav-link dropdown-toggle"
+            class="nav-link dropdown-toggle text-white"
             id="dropdownMenuButtonUser"
             aria-expanded="false"
             (click)="toggleDropdown('user')"
             [attr.aria-expanded]="openDropdown === 'user'"
           >
-            Nome utente
+            <img id="imgP" [src]="[user?.immagine]" alt="immagine profilo" />
+            <!-- qui ci va l'immagine del profilo (dinamica) metto temporaneamente un template con un immagine finta -->
+            {{ user?.username }}
           </a>
           <ul
             class="dropdown-menu"

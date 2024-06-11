@@ -1,8 +1,11 @@
 <div class="container-fluid m-0 p-0">
   <footer
-    class="bg-warning d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+    id="backgroundC"
+    class="bg-warning d-flex flex-wrap justify-content-between align-items-center py-4 myBorder shadow"
   >
-    <p class="col-md-4 col-12 mb-0 text-dark text-center d-none d-md-block fw-bold">
+    <p
+      class="col-md-4 col-12 mb-0 text-white text-center d-none d-md-block fw-bold"
+    >
       © 2024 Company, Inc
     </p>
     <div class="col-md-4 col-12 d-flex justify-content-center">
@@ -11,9 +14,9 @@
         class="col-md-4 col-sm-12 d-flex align-items-center justify-content-center mb-3 mb-md-0 link-body-emphasis text-decoration-none"
       >
         <img
-          src="data:image/png;base64,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"
-          class="img-fluid "
-          alt="Logo del nostro sito"
+          class="cla1"
+          src="../../../assets/img_logo/Logo ridimensionato.png"
+          alt="Logo"
         />
       </a>
     </div>
@@ -21,18 +24,24 @@
       class="nav col-md-4 col-12 justify-content-center text-center text-md-right p-0 m-0"
     >
       <li class="nav-item">
-        <a routerLink="" class="nav-link px-2 text-dark fw-bold">Home</a>
+        <a routerLink="" class="nav-link px-2 text-white fw-bold">Home</a>
       </li>
       <li class="nav-item">
-        <a routerLink="" class="nav-link px-2 text-dark fw-bold">Personaggio</a>
+        <a routerLink="" class="nav-link px-2 text-white fw-bold"
+          >Personaggio</a
+        >
       </li>
       <li class="nav-item">
-        <a routerLink="" class="nav-link px-2 text-dark fw-bold">FAQs</a>
+        <a routerLink="" class="nav-link px-2 text-white fw-bold">FAQs</a>
       </li>
       <li class="nav-item">
-        <a routerLink="" class="nav-link px-2 text-dark fw-bold">Contatti</a>
+        <a routerLink="" class="nav-link px-2 text-white fw-bold">Contatti</a>
       </li>
     </ul>
-    <p class="col-md-4 col-12 mb-0 text-dark text-center d-block d-md-none fw-bold">© 2024 Company, Inc</p>
+    <p
+      class="col-md-4 col-12 mb-0 text-dark text-center d-block d-md-none fw-bold"
+    >
+      © 2024 Company, Inc
+    </p>
   </footer>
 </div>

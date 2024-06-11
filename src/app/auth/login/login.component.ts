@@ -35,7 +35,7 @@ export class LoginComponent {
     if (this.loginForm.valid) {
       this.authSvc.login(this.loginForm.value).subscribe(
         () => {
-          this.router.navigate(['/dashboard']);
+          this.router.navigate(['/']);
         },
         (error) => {
           if (error.status === 400) {
