@@ -18,7 +18,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MarketplaceComponent,
     CreazionePgComponent,
     ActiveUsersComponent
-
   ],
   imports: [
     CommonModule,
