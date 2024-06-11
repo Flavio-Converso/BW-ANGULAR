@@ -27,73 +27,56 @@
   ],
   "characters": [
     {
-      "characterName": "prova1",
-      "classId": "2",
-      "selectedSkills": [
-        4,
-        1
-      ],
-      "expTot": 92,
-      "userId": 1,
-      "id": 1
-    },
-    {
-      "characterName": "prova2",
-      "classId": "2",
-      "selectedSkills": [
-        4
-      ],
-      "expTot": 93,
-      "userId": 1,
-      "id": 2
-    },
-    {
-      "characterName": "prova3",
-      "classId": "2",
-      "selectedSkills": [
-        4,
-        1,
-        2
-      ],
-      "expTot": 90,
-      "userId": 1,
-      "id": 3
-    },
-    {
-      "characterName": "prova4",
-      "classId": "2",
-      "selectedSkills": [
-        4,
-        1,
-        2,
-        3
-      ],
-      "expTot": 87,
-      "userId": 1,
-      "id": 4
-    },
-    {
-      "characterName": "adminpg1",
-      "classId": "1",
-      "selectedSkills": [
-        1,
-        2,
-        3,
-        4
-      ],
-      "expTot": 87,
-      "userId": 2,
-      "id": 5
-    },
-    {
-      "characterName": "adminpg2",
+      "characterName": "warrior1",
       "classId": "1",
       "selectedSkills": [
         1
       ],
       "expTot": 99,
-      "userId": 2,
-      "id": 6
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "characterName": "warrior2",
+      "classId": "1",
+      "selectedSkills": [
+        1,
+        2
+      ],
+      "expTot": 97,
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "characterName": "warrior3",
+      "classId": "1",
+      "selectedSkills": [
+        2
+      ],
+      "expTot": 98,
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "characterName": "mago1",
+      "classId": "2",
+      "selectedSkills": [
+        3
+      ],
+      "expTot": 97,
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "characterName": "mago2",
+      "classId": "2",
+      "selectedSkills": [
+        3,
+        4
+      ],
+      "expTot": 90,
+      "userId": 1,
+      "id": 5
     }
   ],
   "classes": [
