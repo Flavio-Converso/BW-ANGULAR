@@ -110,6 +110,17 @@
       "expTot": 97,
       "userId": 1,
       "id": 8
+    },
+    {
+      "characterName": "poppo",
+      "classId": "",
+      "selectedSkills": [
+        3,
+        4
+      ],
+      "expTot": 90,
+      "userId": 1,
+      "id": 9
     }
   ],
   "classes": [
