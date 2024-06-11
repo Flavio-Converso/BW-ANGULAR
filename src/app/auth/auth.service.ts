@@ -46,6 +46,7 @@ export class AuthService {
   logout(): void {
     this.authSubject.next(null);
     localStorage.removeItem('datiUser');
+    this.router.navigate(['/login'])
     //DA AGGIUNGERE ROTTA UNA VOLTA CHE SLOGGO this.router.navigate(['']);
   }
 
