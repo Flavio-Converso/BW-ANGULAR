@@ -1,7 +1,11 @@
-<nav id="sfondo" class="navbar navbar-expand-lg bg-warning position-sticky top-0 z-3 border-bottom myBorder shadow">
+<nav id="sfondo" class="navbar navbar-expand-lg position-sticky top-0 z-3">
   <div class="container justify-content-around">
     <a class="" href="#">
-      <img class="cla1" src="../../../assets/img_logo/Logo ridimensionato.png" alt="Logo" />
+      <img
+        class="cla1"
+        src="../../../assets/img_logo/Logo ridimensionato.png"
+        alt="Logo"
+      />
     </a>
     <button
       (click)="isCollapsed = !isCollapsed"
@@ -15,12 +19,15 @@
     <div class="collapse navbar-collapse" [ngClass]="{ show: !isCollapsed }">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-2 fw-bold">
         <li class="nav-item">
-          <a class="nav-link text-white" routerLink="" routerLinkActive="active-link"
+          <a
+            class="nav-link text-white"
+            routerLink=""
+            routerLinkActive="active-link"
             >Home</a
           >
         </li>
         <li
-          class="nav-item dropdown "
+          class="nav-item dropdown"
           *ngIf="isLoggedIn"
           [ngClass]="{ show: openDropdown === 'shop' }"
         >
