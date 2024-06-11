@@ -17,7 +17,6 @@ import { ActiveUsersComponent } from './active-users/active-users.component';
     MarketplaceComponent,
     CreazionePgComponent,
     ActiveUsersComponent
-
   ],
   imports: [
     CommonModule,
