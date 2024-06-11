@@ -23,6 +23,18 @@
       "immagine": null,
       "username": "admin",
       "id": 2
+    },
+    {
+      "email": "misterpeppe64@gmail.com",
+      "password": "$2a$10$QWBtM9hYkXSxiYEvugk0y.I9EzFau67sV857eYYZ5E.78V0yJh2cu",
+      "nome": "giampaolo",
+      "cognome": "paladino",
+      "confermaEmail": "misterpeppe64@gmail.com",
+      "confermaPassword": "Giampaolo1!",
+      "genere": "femmina",
+      "immagine": "https://w0.peakpx.com/wallpaper/539/562/HD-wallpaper-kingdom-hearts-kingdom-hearts-iii.jpg",
+      "username": "GiampyLux",
+      "id": 3
     }
   ],
   "characters": [
