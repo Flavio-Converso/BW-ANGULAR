@@ -24,16 +24,18 @@
           *ngIf="isLoggedIn"
           [ngClass]="{ show: openDropdown === 'shop' }"
         >
+
           <a
             class="nav-link dropdown-toggle"
-            href="#"
             id="dropdownMenuButton"
             aria-expanded="false"
             (click)="toggleDropdown('shop')"
             [attr.aria-expanded]="openDropdown === 'shop'"
           >
             Shop
+
           </a>
+
           <ul
             class="dropdown-menu"
             [ngClass]="{ show: openDropdown === 'shop' }"
@@ -52,7 +54,6 @@
         >
           <a
             class="nav-link dropdown-toggle"
-            href="#"
             id="dropdownMenuButtonLogin"
             aria-expanded="false"
             (click)="toggleDropdown('login')"
@@ -78,14 +79,15 @@
           *ngIf="isLoggedIn"
           [ngClass]="{ show: openDropdown === 'user' }"
         >
+
           <a
             class="nav-link dropdown-toggle"
-            href="#"
             id="dropdownMenuButtonUser"
             aria-expanded="false"
             (click)="toggleDropdown('user')"
             [attr.aria-expanded]="openDropdown === 'user'"
           >
+          <img id="imgP" src="../../../assets/ProfilePictureTemplate.jpg" alt="immagine profilo"> <!-- qui ci va l'immagine del profilo (dinamica) metto temporaneamente un template con un immagine finta -->
             Nome utente
           </a>
           <ul
@@ -93,9 +95,9 @@
             [ngClass]="{ show: openDropdown === 'user' }"
             aria-labelledby="dropdownMenuButtonUser"
           >
-            <li><a class="dropdown-item" href="#">Account</a></li>
-            <li><a class="dropdown-item" href="#">Schede personaggio</a></li>
-            <li><a class="dropdown-item" href="#">Giocatori attivi</a></li>
+            <li><a class="dropdown-item" >Account</a></li>
+            <li><a class="dropdown-item" >Schede personaggio</a></li>
+            <li><a class="dropdown-item" >Giocatori attivi</a></li>
           </ul>
         </div>
       </div>
