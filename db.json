@@ -121,6 +121,36 @@
       "expTot": 90,
       "userId": 1,
       "id": 9
+    },
+    {
+      "characterName": "fix",
+      "classId": true,
+      "selectedSkills": [
+        1
+      ],
+      "expTot": 99,
+      "userId": 1,
+      "id": 10
+    },
+    {
+      "characterName": "speriamofix",
+      "classId": 2,
+      "selectedSkills": [
+        3
+      ],
+      "expTot": 97,
+      "userId": 1,
+      "id": 11
+    },
+    {
+      "characterName": "speriamofix2",
+      "classId": 3,
+      "selectedSkills": [
+        6
+      ],
+      "expTot": 93,
+      "userId": 1,
+      "id": 12
     }
   ],
   "classes": [

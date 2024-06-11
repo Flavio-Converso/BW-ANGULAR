@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { iCharacter } from '../../interfaces/icharacter';
 import { iSkills } from '../../interfaces/skills';
 import { iClassi } from '../../interfaces/classe';
@@ -11,9 +11,9 @@ import { ClassesService } from '../../services/classes.service';
 @Component({
   selector: 'app-creazione-pg',
   templateUrl: './creazione-pg.component.html',
-  styleUrl: './creazione-pg.component.scss',
+  styleUrls: ['./creazione-pg.component.scss'],
 })
-export class CreazionePgComponent {
+export class CreazionePgComponent implements OnInit {
   characterForm!: FormGroup;
   classes: iClassi[] = [];
   skills: iSkills[] = [];
@@ -45,8 +45,7 @@ export class CreazionePgComponent {
     });
   }
 
-  onClassChange(event: any): void {
-    const classId = +event.target.value;
+  onClassChange(classId: number): void {
     const selectedClass = this.classes.find((c) => c.classId === classId);
     if (selectedClass) {
       this.skillsSvc.getSkills().subscribe((allSkills: iSkills[]) => {
@@ -55,6 +54,7 @@ export class CreazionePgComponent {
         );
         console.log('Filtered skills:', this.skills);
       });
+      this.characterForm.patchValue({ classId });
       this.selectedSkills = [];
       this.availableExp = 100;
       this.updateFormValues();
