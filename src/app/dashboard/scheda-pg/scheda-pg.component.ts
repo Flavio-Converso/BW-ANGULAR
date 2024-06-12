@@ -17,7 +17,7 @@ export class SchedaPgComponent {
   character!: iCharacter;
   allSkills: iSkills[] = [];
   characterSkills: iSkills[] = [];
-  class!: string
+  class!: iClassi
 
 
 
@@ -61,13 +61,14 @@ export class SchedaPgComponent {
   loadCharacterClass(): void {
     if (this.character && this.character.classId) {
       this.classSrc.getClassById(this.character.classId).subscribe((classChar: iClassi) => {
-        this.class = classChar.className;
+        console.log('Classe:', classChar);
+        this.class = classChar; // Assegna l'intero oggetto della classe
         console.log('Character class:', this.class);
       }, error => {
-        console.error('Error loading class:', error);
+        console.error('Errore durante il caricamento della classe:', error);
       });
     } else {
-      console.warn('Class ID is missing in character object');
+      console.warn('ID della classe mancante nell\'oggetto del personaggio');
     }
   }
 

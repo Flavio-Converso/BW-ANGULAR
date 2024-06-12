@@ -58,6 +58,17 @@
       "expTot": 34,
       "userId": 1,
       "id": 3
+    },
+    {
+      "characterName": "amed",
+      "classId": 2,
+      "selectedSkills": [
+        47,
+        51
+      ],
+      "expTot": 40,
+      "userId": 1,
+      "id": 4
     }
   ],
   "classes": [
