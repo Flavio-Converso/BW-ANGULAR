@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { iCharacter } from '../../interfaces/icharacter';
 import { iSkills } from '../../interfaces/skills';
 import { iClassi } from '../../interfaces/classe';
@@ -13,13 +13,13 @@ import { ClassesService } from '../../services/classes.service';
   templateUrl: './creazione-pg.component.html',
   styleUrls: ['./creazione-pg.component.scss'],
 })
-export class CreazionePgComponent implements OnInit {
+export class CreazionePgComponent {
   characterForm!: FormGroup;
   classes: iClassi[] = [];
   skills: iSkills[] = [];
   selectedSkills: iSkills[] = [];
   availableExp: number = 50;
-
+  selectedClassIndex: number = -1;
   constructor(
     private fb: FormBuilder,
     private classesSvc: ClassesService,
@@ -58,6 +58,9 @@ export class CreazionePgComponent implements OnInit {
       this.selectedSkills = [];
       this.availableExp = 50;
       this.updateFormValues();
+      this.selectedClassIndex = this.classes.findIndex(
+        (c) => c.classId === classId
+      );
     }
   }
 
@@ -106,5 +109,26 @@ export class CreazionePgComponent implements OnInit {
     } else {
       console.log('Form is invalid');
     }
+  }
+
+  resetSkills(): void {
+    // Deseleziona tutte le checkbox
+    this.skills.forEach((skill) => {
+      const checkbox = document.getElementById(
+        `checkbox-${skill.skillId}`
+      ) as HTMLInputElement;
+      if (checkbox) {
+        checkbox.checked = false;
+      }
+    });
+    // Resetta l'array delle abilità selezionate e l'exp disponibile
+    this.selectedSkills = [];
+    this.availableExp = 50;
+    // Aggiorna i valori del form
+    this.updateFormValues();
+  }
+
+  isSelected(skill: iSkills): boolean {
+    return this.selectedSkills.includes(skill);
   }
 }
