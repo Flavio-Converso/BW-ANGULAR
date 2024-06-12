@@ -158,4 +158,10 @@ export class CreazionePgComponent {
     // Update form values
     this.updateFormValues();
   }
+  ngOnDestroy(): void {
+    // Rimuovi le classi del modale e lo sfondo scuro quando il componente viene distrutto
+    document.body.classList.remove('modal-open');
+    const modals = document.querySelectorAll('.modal-backdrop');
+    modals.forEach(modal => modal.remove());
+  }
 }
