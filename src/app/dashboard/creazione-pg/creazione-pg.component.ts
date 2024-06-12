@@ -9,6 +9,7 @@ import { SkillsService } from '../../services/skills.service';
 import { CharactersService } from '../../services/characters.service';
 import { ClassesService } from '../../services/classes.service';
 import { RacesService } from '../../services/races.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-creazione-pg',
@@ -23,6 +24,7 @@ export class CreazionePgComponent {
   selectedSkills: iSkills[] = [];
   availableExp: number = 50;
   selectedClassIndex: number = -1;
+  selectedRaceIndex: number = -1;
   selectedRaceId: number = -1;
   classSelected: boolean = false;
   raceSelected: boolean = false;
@@ -33,7 +35,8 @@ export class CreazionePgComponent {
     private charactersSvc: CharactersService,
     private skillsSvc: SkillsService,
     private authSvc: AuthService,
-    private racesSvc: RacesService
+    private racesSvc: RacesService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -83,6 +86,7 @@ export class CreazionePgComponent {
   onRaceChange(raceId: number): void {
     this.characterForm.patchValue({ raceId });
     this.selectedRaceId = raceId; // Assicurati di impostare selectedRaceId
+    this.selectedRaceIndex = this.races.findIndex((r) => r.raceId === raceId);
   }
 
   onSkillSelect(event: any, skill: iSkills): void {
@@ -123,6 +127,7 @@ export class CreazionePgComponent {
           .addCharacter(characterData)
           .subscribe((character: iCharacter) => {
             console.log('Character created:', character);
+            // this.router.navigate(['']);
           });
       } else {
         console.log('User not logged in');
@@ -146,6 +151,11 @@ export class CreazionePgComponent {
         checkbox.checked = false;
       }
     });
-    // Reset the selected skills array and available experience
+    // Reset the selected skills array
+    this.selectedSkills = [];
+    // Reset available experience points to 50
+    this.availableExp = 50;
+    // Update form values
+    this.updateFormValues();
   }
 }

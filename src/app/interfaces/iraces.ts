@@ -4,7 +4,7 @@ export interface iRaces {
   raceBio: string;
   traits: {
     Forza: number;
-    Agilità: number;
+    Agilita: number;
     Intelligenza: number;
     Resistenza: number;
     Carisma: number;

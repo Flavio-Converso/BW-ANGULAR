@@ -45,6 +45,17 @@
       "expTot": 1,
       "userId": 1,
       "id": 2
+    },
+    {
+      "characterName": "Giorgiodiprova",
+      "classId": 2,
+      "raceId": 2,
+      "selectedSkills": [
+        47, 53, 60, 59, 52, 58, 96, 97, 98, 99, 100, 91, 92, 55, 49, 45
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 3
     }
   ],
   "classes": [
@@ -122,7 +133,7 @@
       "raceBio": "Con una natura versatile e una resistenza innata, gli umani si adattano facilmente a una vasta gamma di situazioni e ambienti.",
       "traits": {
         "Forza": 7,
-        "Agilità": 6,
+        "Agilita": 6,
         "Intelligenza": 7,
         "Resistenza": 7,
         "Carisma": 8
@@ -135,7 +146,7 @@
       "raceBio": "Noti per la loro agilità e connessione con la natura, eccellono nelle arti magiche e nell'arcieria.",
       "traits": {
         "Forza": 5,
-        "Agilità": 9,
+        "Agilita": 9,
         "Intelligenza": 10,
         "Resistenza": 6,
         "Carisma": 7
@@ -148,7 +159,7 @@
       "raceBio": "Robusti e forti, i nani sono famosi per la loro abilità nella metallurgia e nel combattimento corpo a corpo.",
       "traits": {
         "Forza": 8,
-        "Agilità": 5,
+        "Agilita": 5,
         "Intelligenza": 6,
         "Resistenza": 9,
         "Carisma": 6
@@ -161,7 +172,7 @@
       "raceBio": "Come guerrieri brutali e possenti, gli orchi sono famigerati per la loro forza bruta e la resistenza straordinaria in battaglia.",
       "traits": {
         "Forza": 10,
-        "Agilità": 6,
+        "Agilita": 6,
         "Intelligenza": 5,
         "Resistenza": 8,
         "Carisma": 4
@@ -174,7 +185,7 @@
       "raceBio": "Piccoli ma ingegnosi, gli gnomi sono abili nell'ingegneria e nell'utilizzo delle tecnologie magiche.",
       "traits": {
         "Forza": 4,
-        "Agilità": 7,
+        "Agilita": 7,
         "Intelligenza": 9,
         "Resistenza": 5,
         "Carisma": 8
@@ -187,7 +198,7 @@
       "raceBio": "Creature risorte dalla morte, gli undead sono animate da un'energia oscura e spesso dotate di abilità sovrannaturali.",
       "traits": {
         "Forza": 6,
-        "Agilità": 5,
+        "Agilita": 5,
         "Intelligenza": 7,
         "Resistenza": 10,
         "Carisma": 3

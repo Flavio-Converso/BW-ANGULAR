@@ -4,36 +4,47 @@
       <!-- SELEZIONE CLASSE PG -->
       <div class="col-12">
         <h1 class="text-white text-center">CREA IL TUO PERSONAGGIO</h1>
-        <h3 class="text-white text-center mb-5">1. SCEGLI LA CLASSE</h3>
+        <h3 class="text-white text-center mb-3">1. SCEGLI LA TUA <span class="myTextColor3">CLASSE</span></h3>
         <div class="row mt-4 justify-content-center">
           <div class="col-3 d-flex flex-column align-items-center justify-content-center mx-4 mt-5"
             *ngFor="let class of classes">
             <!-- Avvolgere l'intera card in un'etichetta -->
-            <label class="card-container">
+            <label class="card-container mb-4">
               <input type="radio" formControlName="classId" [value]="class.classId" style="display: none;" />
               <div class="card" (click)="onClassChange(class.classId)">
                 <img [src]="class.img" alt="class" class="img-fluid" />
                 <div class="card-body myBg">
                   <h4 class="text-white text-center mt-3">{{ class.className }}</h4>
-                  <p class="myTextColor fs-4 text-center">{{ class.bio }}</p>
+                  <p class="myTextColor2 fs-4 text-center ">{{ class.bio }}</p>
                 </div>
               </div>
             </label>
           </div>
         </div>
         <!-- SELEZIONE RAZZA -->
-        <h3 class="text-white text-center mb-5 mt-5" *ngIf="selectedClassIndex >= 0">2. SCEGLI LA RAZZA</h3>
+        <h3 class="text-white text-center mt-5" *ngIf="selectedClassIndex >= 0">2. SCEGLI LA TUA <span
+            class="myTextColor3">RAZZA</span></h3>
         <div class="row mt-5 justify-content-center" *ngIf="selectedClassIndex >= 0">
           <div class="col-3 d-flex flex-column align-items-center justify-content-center mx-4 mt-5"
             *ngFor="let race of races">
             <!-- Avvolgere l'intera card in un'etichetta -->
-            <label class="card-container">
+            <label class="card-container mb-4">
               <input type="radio" formControlName="raceId" [value]="race.raceId" style="display: none;" />
               <div class="card" (click)="onRaceChange(race.raceId)">
                 <img [src]="race.img" alt="class" class="img-fluid" />
                 <div class="card-body myBg">
-                  <h4 class="text-white text-center mt-3">{{ race.raceName }}</h4>
-                  <p class="myTextColor fs-4 text-center">{{ race.raceBio }}</p>
+                  <h4 class="text-white text-center mt-3 ">{{ race.raceName }}</h4>
+                  <p class="myTextColor fs-4 text-center myTextColor2">{{ race.raceBio }}</p>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <p class="text-white ms-1 fs-4">Agilità : <span class="traits">{{race.traits.Agilita}}</span> -</p>
+                    <p class="text-white ms-1 fs-4">Carisma : <span class="traits">{{race.traits.Carisma}}</span> -</p>
+                    <p class="text-white ms-1 fs-4">Forza : <span class="traits">{{race.traits.Forza}}</span> -</p>
+                    <p class="text-white ms-1 fs-4">Inteligenza : <span
+                        class="traits">{{race.traits.Intelligenza}}</span> -
+                    </p>
+                    <p class="text-white ms-1 fs-4">Resistenza : <span class="traits">{{race.traits.Resistenza}}</span>
+                    </p>
+                  </div>
                 </div>
               </div>
             </label>
@@ -49,10 +60,12 @@
         <div class="form-group mt-5">
           <div class="mt-3 d-flex justify-content-center">
             <label class="text-white fs-2">
-              Abilità della razza selezionata
+              3. Scegli le <span class="myTextColor3">abilità</span> del tuo <span class="myTextColor3"> {{
+                races[selectedRaceIndex].raceName}} {{
+                classes[selectedClassIndex].className }} </span>
             </label>
             <span class="ms-2 text-white fs-2" *ngIf="characterForm.get('expTot')?.value > 0">
-              - {{ characterForm.get('expTot')?.value }} Exp disponibili
+              - <span class="myTextColor2">{{ characterForm.get('expTot')?.value }}</span> Exp disponibili
             </span>
           </div>
 
@@ -85,7 +98,7 @@
 
 
       <!--TASTO PER APRIRE IL MODALE-->
-      <div class="d-flex justify-content-center form-group" *ngIf="selectedSkills.length > 4">
+      <div class="d-flex justify-content-center form-group" *ngIf="availableExp === 0">
         <button type="button" class="btn myBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">PROCEDI</button>
 
         <!--MODALE-->
@@ -94,7 +107,9 @@
           <div class="modal-dialog">
             <div class="modal-content myBg">
               <div class="modal-header">
-                <h1 class="modal-title text-center text-white fs-5" id="exampleModalLabel">INSERISCI IL NOME DEL TUO
+                <h1 class="modal-title text-center text-white fs-5" id="exampleModalLabel">SCEGLI IL <span
+                    class="myTextColor3">NOME</span>
+                  DEL TUO
                   PERSONAGGIO</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
@@ -102,14 +117,16 @@
                 <input type="text" formControlName="characterName" class="form-control" id="characterName" />
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn myBtnSmallTwo" data-bs-dismiss="modal">CHIUDI</button>
-                <button type="submit" class="btn myBtnSmall">PARTIAMO!</button>
+                <button type="button" class="btn btn-resetSmall" data-bs-dismiss="modal">INDIETRO</button>
+                <button type="submit" class="btn myBtnSmall"
+                  [disabled]="characterForm.get('characterName')?.value.length < 3">PARTIAMO!</button>
               </div>
             </div>
           </div>
         </div>
         <!--FINE MODALE-->
       </div>
+
     </div>
   </form>
 </div>
