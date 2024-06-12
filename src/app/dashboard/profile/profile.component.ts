@@ -40,24 +40,25 @@ combina: iCombinazione[] = [];
           this.addToCombina();
         });
 
-        this.classSvc.getClassByUserId(this.user.id).subscribe((caClass: iClassi[]) => {
+         this.classSvc.getClassByUserId(this.user.id).subscribe((caClass: iClassi[]) => {
           this.class = caClass;
           this.addToCombina();
         });
 
-
-this.skillSvc.getSkillByUserId(this.user.id).subscribe((kSkills:iSkills[])=>{
-  this.iSkills =kSkills;
-  this.addToCombina();
-})
+         this.skillSvc.getSkillByUserId(this.user.id).subscribe((kSkills:iSkills[])=>{
+         this.iSkills =kSkills;
+         this.addToCombina();
+        });
 
 
       }
     });
+
+
   }
 
   addToCombina() {
-    if (this.characters.length > 0 && this.class.length > 0) {
+    if (this.characters.length > 0 && this.class.length > 0 && this.iSkills.length > 0) {
       // Chiamata al servizio per combinare i dati
       this.combina = this.combinaSvc.combineData(this.characters, this.class, this.iSkills);
     }

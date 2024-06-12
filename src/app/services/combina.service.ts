@@ -22,17 +22,15 @@ export class CombinaService {
       const classe = classes.find((c) => c.classId === character.classId);
       if (classe) {
         // Crea una combinazione con il personaggio, la classe e le skills
-
         const selectedSkills = character.selectedSkills.map(skillId => {
           const skill = skills.find(skill => skill.skillId === skillId);
-          return skill ? {...skill} : null; // Restituiamo una copia dell'oggetto skill
+          return skill ? { ...skill } : skill!; // Restituiamo una copia dell'oggetto skill
         }).filter(skill => !!skill);
-
 
         const combinazione: iCombinazione = {
           characters: character,
           classe: classe,
-         skills: skills
+          skills: selectedSkills
         };
         // Aggiungi la combinazione al array di combinazioni
         combinazioni.push(combinazione);

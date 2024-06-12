@@ -74,7 +74,7 @@
                   </div>
                   <div class="col-6 d-flex justify-content-center">
                     <img
-                      src="https://staticfanpage.akamaized.net/wp-content/uploads/sites/25/2023/10/Schermata-2023-10-16-alle-08.33.17-1200x675.jpg"
+                      [src]="[pg.classe.img]"
                       class="img-fluid rad"
                       alt="immagine avventuriero"
                     />
@@ -85,11 +85,7 @@
                   <div class="col-12 px-5">
                     <label for="">BG</label>
                     <p class="card-text mb-2 fw-bolder">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nam repudiandae sapiente exercitationem id tenetur dicta,
-                      placeat vitae eveniet quas cupiditate, nesciunt
-                      consequuntur quam quo nemo, aut reiciendis perferendis
-                      saepe eius.
+                      {{ pg.classe.bio }}
                     </p>
                   </div>
                   <div class="col-12 text-center">
@@ -103,12 +99,12 @@
                             <th>Costo XP</th>
                           </tr>
                         </thead>
-                        <tbody *ngFor="let sk of combina">
+                        <tbody *ngFor="let sk of pg.skills">
                           <!--ng for per le abilità legate al pc-->
                           <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>{{ sk.skillName }}</td>
+                            <td>{{ sk.skillDescription }}</td>
+                            <td>{{ sk.exp }}</td>
                           </tr>
                         </tbody>
                       </table>
