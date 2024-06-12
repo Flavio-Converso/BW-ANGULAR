@@ -1,52 +1,146 @@
-.myBg{
-  background-color: #10111A;
+.myBg {
+  background-color: #10111a;
 }
 
-.myTextColor{
-  color:#51566B
+.myTextColor {
+  color: #51566b;
 }
 
-.myBtn{
-  background: linear-gradient(180deg, rgba(39,124,251,1) 19%, rgba(87,73,238,1) 77%);
-  color:white;
+.myBtn {
+  background: linear-gradient(
+    180deg,
+    rgba(39, 124, 251, 1) 19%,
+    rgba(87, 73, 238, 1) 77%
+  );
+  color: white;
   border: 2px solid white;
   font-size: 1.5rem;
 }
 
-.myBtn:hover{
+.myBtn:hover {
   opacity: 0.5;
 }
 
-.myBtnSmall{
-  background: linear-gradient(180deg, rgba(39,124,251,1) 19%, rgba(87,73,238,1) 77%);
-  color:white;
+.myBtnSmall {
+  background: linear-gradient(
+    180deg,
+    rgba(39, 124, 251, 1) 19%,
+    rgba(87, 73, 238, 1) 77%
+  );
+  color: white;
   border: 2px solid white;
   font-size: 1rem;
 }
 
-.myBtnSmall:hover{
+.myBtnSmall:hover {
   opacity: 0.5;
 }
 
-.myBtnSmallTwo{
-  background: linear-gradient(180deg, rgba(140,142,144,1) 19%, rgba(58,58,70,1) 87%);
-  color:white;
+.myBtnSmallTwo {
+  background: linear-gradient(
+    180deg,
+    rgba(140, 142, 144, 1) 19%,
+    rgba(58, 58, 70, 1) 87%
+  );
+  color: white;
   border: 2px solid white;
   font-size: 1rem;
 }
 
-.myBtnSmallTwo:hover{
+.myBtnSmallTwo:hover {
   opacity: 0.5;
 }
 
-.myGradient{
-  background: linear-gradient(180deg, rgba(27,28,43,0.6054796918767507) 19%, rgba(16,17,26,0.6138830532212884) 77%);
+.myGradient {
+  background: linear-gradient(
+    180deg,
+    rgba(27, 28, 43, 0.6054796918767507) 19%,
+    rgba(16, 17, 26, 0.6138830532212884) 77%
+  );
 }
 
-.fantasy{
-  background: linear-gradient(90deg, rgba(39,124,251,1) 19%, rgba(87,73,238,1) 58%);
+.fantasy {
+  background: linear-gradient(
+    90deg,
+    rgba(39, 124, 251, 1) 19%,
+    rgba(87, 73, 238, 1) 58%
+  );
   -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-size: 1.4em;
-    font-weight: 800;
+  -webkit-background-clip: text;
+  font-size: 1.4em;
+  font-weight: 800;
+}
+/*MODIFICHE FLAVIO*/
+/**/
+/**/
+/**/
+/**/
+/**/
+/*CARD CLASSE*/
+.card-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card-container:hover {
+  transform: scale(1.07);
+}
+
+.card-container:not(:checked) .card {
+  opacity: 0.7;
+}
+
+.card-container input[type="radio"]:checked + .card {
+  transform: scale(1.07);
+  opacity: 1;
+  border: 5px solid;
+  border-image: linear-gradient(
+    135deg,
+    rgba(39, 124, 251, 0.8) 50%,
+    rgba(87, 73, 238, 0.8) 100%
+  );
+  border-image-slice: 1;
+}
+
+.other-elements {
+  z-index: 0;
+}
+/*BOTTONI SKILL*/
+.custom-checkbox {
+  display: inline-block;
+  margin: 0 5px !important;
+}
+
+/* Stile del segno di spunta quando la checkbox è selezionata */
+.skill-label input[type="checkbox"]:checked + .custom-checkbox::after {
+  margin: 2px 0 !important;
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #ff0000; /* Colore del segno di spunta */
+  border-radius: 50%;
+  margin: 4px;
+}
+.btn-reset {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 79, 79, 1) 19%,
+    /* Rosso */ rgba(187, 0, 0, 1) 77%
+  );
+  color: white;
+  border: 2px solid white;
+  font-size: 1.5rem;
+}
+
+.btn-reset:hover {
+  opacity: 0.5;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
 }

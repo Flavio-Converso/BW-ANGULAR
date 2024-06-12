@@ -1,120 +1,65 @@
 <nav id="sfondo" class="navbar navbar-expand-lg position-sticky top-0 z-3">
   <div class="container justify-content-around">
     <a class="" href="#">
-      <img
-        class="cla1"
-        src="../../../assets/img_logo/Logo ridimensionato.png"
-        alt="Logo"
-      />
+      <img class="cla1" src="../../../assets/img_logo/Logo ridimensionato.png" alt="Logo" />
     </a>
-    <button
-      (click)="isCollapsed = !isCollapsed"
-      [attr.aria-expanded]="!isCollapsed"
-      aria-controls="collapseExample"
-      class="navbar-toggler"
-      type="button"
-    >
+    <button (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample"
+      class="navbar-toggler" type="button">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" [ngClass]="{ show: !isCollapsed }">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-2 fw-bold">
         <li class="nav-item">
-          <a
-            class="nav-link text-white"
-            routerLink=""
-            routerLinkActive="active-link"
-            >Home</a
-          >
+          <a class="nav-link text-white" routerLink="" routerLinkActive="active-link">Home</a>
         </li>
-        <li
-          class="nav-item dropdown"
-          *ngIf="isLoggedIn"
-          [ngClass]="{ show: openDropdown === 'shop' }"
-        >
-          <a
-            class="nav-link dropdown-toggle text-white"
-            id="dropdownMenuButton"
-            aria-expanded="false"
-            (click)="toggleDropdown('shop')"
-            [attr.aria-expanded]="openDropdown === 'shop'"
-          >
+        <li class="nav-item">
+          <a class="nav-link text-white" routerLink="dashboard/newpg" routerLinkActive="active-link">Creazione pg</a>
+        </li>
+        <li class="nav-item dropdown" *ngIf="isLoggedIn" [ngClass]="{ show: openDropdown === 'shop' }">
+          <a class="nav-link dropdown-toggle text-white" id="dropdownMenuButton" aria-expanded="false"
+            (click)="toggleDropdown('shop')" [attr.aria-expanded]="openDropdown === 'shop'">
             Shop
           </a>
 
-          <ul
-            class="dropdown-menu"
-            [ngClass]="{ show: openDropdown === 'shop' }"
-            aria-labelledby="dropdownMenuButton"
-          >
+          <ul class="dropdown-menu" [ngClass]="{ show: openDropdown === 'shop' }" aria-labelledby="dropdownMenuButton">
             <li><a class="dropdown-item" routerLink="">Marketplace</a></li>
             <li><a class="dropdown-item" routerLink="">Eventi</a></li>
           </ul>
         </li>
       </ul>
       <div class="d-flex">
-        <div
-          class="nav-item dropdown me-auto mb-2 mb-lg-0 fs-2 fw-bold"
-          *ngIf="!isLoggedIn"
-          [ngClass]="{ show: openDropdown === 'login' }"
-          (mouseleave)="closeDropdown()"
-        >
-          <a
-            class="nav-link dropdown-toggle text-white"
-            id="dropdownMenuButtonLogin"
-            aria-expanded="false"
-            (click)="toggleDropdown('login')"
-            [attr.aria-expanded]="openDropdown === 'login'"
-          >
+        <div class="nav-item dropdown me-auto mb-2 mb-lg-0 fs-2 fw-bold" *ngIf="!isLoggedIn"
+          [ngClass]="{ show: openDropdown === 'login' }" (mouseleave)="closeDropdown()">
+          <a class="nav-link dropdown-toggle text-white" id="dropdownMenuButtonLogin" aria-expanded="false"
+            (click)="toggleDropdown('login')" [attr.aria-expanded]="openDropdown === 'login'">
             Accedi
           </a>
-          <ul
-            class="dropdown-menu"
-            [ngClass]="{ show: openDropdown === 'login' }"
-            aria-labelledby="dropdownMenuButtonLogin"
-          >
+          <ul class="dropdown-menu" [ngClass]="{ show: openDropdown === 'login' }"
+            aria-labelledby="dropdownMenuButtonLogin">
             <li><a class="dropdown-item" routerLink="/auth/login">Login</a></li>
             <li>
-              <a class="dropdown-item" routerLink="/auth/register"
-                >Registrati</a
-              >
+              <a class="dropdown-item" routerLink="/auth/register">Registrati</a>
             </li>
           </ul>
         </div>
 
-        <div
-          class="nav-item dropdown me-auto mb-2 mb-lg-0 fs-2 fw-bold"
-          *ngIf="isLoggedIn"
-          [ngClass]="{ show: openDropdown === 'user' }"
-        >
-          <a
-            class="nav-link dropdown-toggle text-white"
-            id="dropdownMenuButtonUser"
-            aria-expanded="false"
-            (click)="toggleDropdown('user')"
-            [attr.aria-expanded]="openDropdown === 'user'"
-          >
+        <div class="nav-item dropdown me-auto mb-2 mb-lg-0 fs-2 fw-bold" *ngIf="isLoggedIn"
+          [ngClass]="{ show: openDropdown === 'user' }">
+          <a class="nav-link dropdown-toggle text-white" id="dropdownMenuButtonUser" aria-expanded="false"
+            (click)="toggleDropdown('user')" [attr.aria-expanded]="openDropdown === 'user'">
             <img id="imgP" [src]="[user?.immagine]" alt="immagine profilo" />
             <!-- qui ci va l'immagine del profilo (dinamica) metto temporaneamente un template con un immagine finta -->
             {{ user?.username }}
           </a>
-          <ul
-            class="dropdown-menu"
-            [ngClass]="{ show: openDropdown === 'user' }"
-            aria-labelledby="dropdownMenuButtonUser"
-          >
+          <ul class="dropdown-menu" [ngClass]="{ show: openDropdown === 'user' }"
+            aria-labelledby="dropdownMenuButtonUser">
             <li>
-              <a class="dropdown-item" routerLink="/dashboard/profile"
-                >Account</a
-              >
+              <a class="dropdown-item" routerLink="/dashboard/profile">Account</a>
             </li>
             <li><a class="dropdown-item">Schede personaggio</a></li>
             <li><a class="dropdown-item">Giocatori attivi</a></li>
             <li class="dropdown-item" *ngIf="isLoggedIn">
-              <button
-                (click)="logout()"
-                class="nav-link"
-                routerLinkActive="active-link"
-              >
+              <button (click)="logout()" class="nav-link" routerLinkActive="active-link">
                 Logout
               </button>
             </li>
