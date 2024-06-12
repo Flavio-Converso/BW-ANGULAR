@@ -33,9 +33,6 @@
               - {{ characterForm.get('expTot')?.value }} Exp disponibili
             </span>
           </div>
-          <div *ngIf="selectedSkillsTotalExp> characterForm.get('expTot')?.value" class="text-danger mt-2">
-            Hai superato i punti disponibili. Deseleziona alcune abilità per continuare.
-          </div>
           <span class="custom-checkbox mx-3" *ngFor="let skill of skills">
             <label class="text-white skill-label btn myBtn mt-3">
               <input type="checkbox" [value]="skill.skillId" (change)="onSkillSelect($event, skill)"
@@ -49,8 +46,8 @@
             </label>
           </span>
 
-          <div class="d-flex justify-content-center mt-3">
-            <button type="button" class="btn btn-secondary" (click)="resetSkills()">Resetta Abilità</button>
+          <div class="d-flex justify-content-center mt-3 mb-5">
+            <button type="button" class="btn btn-reset" (click)="resetSkills()">Resetta Abilità</button>
           </div>
 
         </div>
