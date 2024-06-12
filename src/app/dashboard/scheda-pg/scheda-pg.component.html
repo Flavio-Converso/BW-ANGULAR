@@ -11,8 +11,8 @@
             <div class="flip-box-front">
               <img [src]="class.img" alt="img" class="img-fluid" />
             </div>
-            <div class="flip-box-back">
-              <img [src]="race?.img" alt="img" class="img-fluid" />
+            <div class="flip-box-back" *ngIf="race">
+              <img [src]="race.img" alt="img" class="img-fluid" />
               <p class="text-white">ciao</p>
             </div>
           </div>
