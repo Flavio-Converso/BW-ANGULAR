@@ -18,10 +18,10 @@ import { SkillsService } from '../../services/skills.service';
 })
 export class ActiveUsersComponent {
   user!: iUsers | null;
-  iSkills: iSkills[] = [];
-  characters: iCharacter[] = [];
-  class: iClassi[] = [];
-  combina: iCombinazione[] = [];
+  iSkills: { [userId: number]: iSkills[] } = {};
+  characters: { [userId: number]: iCharacter[] } = {};
+  class: { [userId: number]: iClassi[] } = {};
+  combina: { [userId: number]: iCombinazione[] } = {};
   users: iUsers[] = [];
   isCollapsed: boolean = true;
   openDropdown: string | null = null;
@@ -47,6 +47,7 @@ export class ActiveUsersComponent {
     this.userSvc.getAllUsers().subscribe((users) => {
       console.log("All users received:", users);
       this.users = users;
+      this.users.forEach(user => this.fetchClassAndSkills(user));
     });
   }
 
@@ -54,33 +55,33 @@ export class ActiveUsersComponent {
     console.log("Fetching all data for user:", this.user);
     this.characterSvc.getCharacters().subscribe((chars: iCharacter[]) => {
       console.log("All characters received:", chars);
-      this.characters = chars;
-      this.fetchClassAndSkills();
+      chars.forEach(char => {
+        if (!this.characters[char.userId]) {
+          this.characters[char.userId] = [];
+        }
+        this.characters[char.userId].push(char);
+      });
     });
   }
 
-  fetchClassAndSkills() {
-    console.log("Fetching class and skills for user:", this.user);
-    if (this.user !== null && this.user !== undefined) {
-      this.classSvc.getClassByUserId(this.user.id).subscribe((caClass: iClassi[]) => {
-        console.log("Classes received:", caClass);
-        this.class = caClass;
-        this.skillSvc.getSkillByUserId(this.user!.id).subscribe((kSkills: iSkills[]) => {
-          console.log("Skills received:", kSkills);
-          this.iSkills = kSkills;
-          this.addToCombina();
-        });
+  fetchClassAndSkills(user: iUsers) {
+    console.log("Fetching class and skills for user:", user);
+    this.classSvc.getClassByUserId(user.id).subscribe((caClass: iClassi[]) => {
+      console.log("Classes received:", caClass);
+      this.class[user.id] = caClass;
+      this.skillSvc.getSkillByUserId(user.id).subscribe((kSkills: iSkills[]) => {
+        console.log("Skills received:", kSkills);
+        this.iSkills[user.id] = kSkills;
+        this.addToCombina(user.id);
       });
-    } else {
-      console.error("User is null or undefined");
-    }
+    });
   }
 
-  addToCombina() {
-    console.log("Adding to combina...");
-    if (this.characters.length > 0 && this.class.length > 0 && this.iSkills.length > 0) {
-      console.log("Combining data...");
-      this.combina = this.combinaSvc.combineData(this.characters, this.class, this.iSkills);
+  addToCombina(userId: number) {
+    console.log("Adding to combina for user:", userId);
+    if (this.characters[userId] && this.class[userId] && this.iSkills[userId]) {
+      console.log("Combining data for user:", userId);
+      this.combina[userId] = this.combinaSvc.combineData(this.characters[userId], this.class[userId], this.iSkills[userId]);
     }
   }
 }
