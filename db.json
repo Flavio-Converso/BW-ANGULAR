@@ -99,6 +99,48 @@
       "expTot": 0,
       "userId": 1,
       "id": 3
+    },
+    {
+      "characterName": "amed",
+      "classId": 6,
+      "raceId": 6,
+      "selectedSkills": [
+        180,
+        179,
+        178,
+        177,
+        172,
+        173,
+        174,
+        175,
+        171,
+        170,
+        100
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "characterName": "amed",
+      "classId": 2,
+      "raceId": 2,
+      "selectedSkills": [
+        100,
+        99,
+        92,
+        56,
+        52,
+        43,
+        39,
+        34,
+        33,
+        38,
+        46
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 5
     }
   ],
   "classes": [

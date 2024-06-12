@@ -6,23 +6,22 @@
     >
       <h1 class="text-white fw-bolder">RECAP DEL PERSONAGGIO</h1>
       <div class="row justify-content-center align-items-center">
-        <div class="flip-box col-4 mt-3" id="img">
+        <div class="flip-box col-4 mt-3">
           <div class="flip-box-inner">
-            <div class="flip-box-front">
+            <div class="flip-box-front imgFade">
               <img [src]="class.img" alt="img" class="img-fluid" />
+              <p class="fs-2 text-white" id="raceText">{{ class.className }}</p>
             </div>
-            <div class="flip-box-back" *ngIf="race">
+            <div class="flip-box-back imgFade" *ngIf="race">
               <img [src]="race.img" alt="img" class="img-fluid" />
-              <p class="text-white">ciao</p>
+              <p class="fs-2" id="raceTextTwo">{{ race.raceName }}</p>
             </div>
           </div>
         </div>
         <p class="text-white fs-2 mb-4" id="name">
           <span class="fantasy">NOME</span> <br />{{ character.characterName }}
         </p>
-        <p class="text-white mb-4 fs-2" *ngIf="class">
-          <span class="fantasy">CLASSE</span> <br />{{ class.className }}
-        </p>
+
         <p class="text-white fs-2"><span class="fantasy">ABILITÀ</span></p>
         <div class="col-4 d-flex flex-column">
           <p

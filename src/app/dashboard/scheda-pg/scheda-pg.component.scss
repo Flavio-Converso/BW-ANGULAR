@@ -2,8 +2,22 @@
   background-color: #10111A;
 }
 
-#img{
+.imgFade{
   cursor: pointer;
+}
+
+#raceText{
+  position: relative;
+  bottom: 120px;
+  background-color: #000000ab;
+  padding: 0.5em 0;
+}
+
+#raceTextTwo{
+  position: relative;
+  bottom: 120px;
+  background-color: #000000ab;
+  padding: 0.5em 0;
 }
 
 .fantasy {
@@ -31,6 +45,7 @@
 #name{
   margin-top: 3.8em;
 }
+
 
 .flip-box {
   background-color: transparent;
