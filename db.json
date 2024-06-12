@@ -74,6 +74,31 @@
       "expTot": 1,
       "userId": 1,
       "id": 2
+    },
+    {
+      "characterName": "funzionaaaaa",
+      "classId": 5,
+      "raceId": 5,
+      "selectedSkills": [
+        132,
+        133,
+        138,
+        142,
+        137,
+        136,
+        131,
+        94,
+        93,
+        92,
+        100,
+        140,
+        141,
+        147,
+        150
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 3
     }
   ],
   "classes": [

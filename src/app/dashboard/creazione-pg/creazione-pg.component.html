@@ -85,7 +85,7 @@
 
 
       <!--TASTO PER APRIRE IL MODALE-->
-      <div class="d-flex justify-content-center form-group" *ngIf="selectedSkills.length > 4">
+      <div class="d-flex justify-content-center form-group" *ngIf="availableExp === 0">
         <button type="button" class="btn myBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">PROCEDI</button>
 
         <!--MODALE-->
@@ -110,6 +110,7 @@
         </div>
         <!--FINE MODALE-->
       </div>
+
     </div>
   </form>
 </div>

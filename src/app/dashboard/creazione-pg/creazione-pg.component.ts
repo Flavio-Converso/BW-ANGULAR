@@ -146,6 +146,11 @@ export class CreazionePgComponent {
         checkbox.checked = false;
       }
     });
-    // Reset the selected skills array and available experience
+    // Reset the selected skills array
+    this.selectedSkills = [];
+    // Reset available experience points to 50
+    this.availableExp = 50;
+    // Update form values
+    this.updateFormValues();
   }
 }
