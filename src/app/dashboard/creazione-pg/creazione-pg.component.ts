@@ -24,6 +24,7 @@ export class CreazionePgComponent {
   selectedSkills: iSkills[] = [];
   availableExp: number = 50;
   selectedClassIndex: number = -1;
+  selectedRaceIndex: number = -1;
   selectedRaceId: number = -1;
   classSelected: boolean = false;
   raceSelected: boolean = false;
@@ -85,6 +86,7 @@ export class CreazionePgComponent {
   onRaceChange(raceId: number): void {
     this.characterForm.patchValue({ raceId });
     this.selectedRaceId = raceId; // Assicurati di impostare selectedRaceId
+    this.selectedRaceIndex = this.races.findIndex((r) => r.raceId === raceId);
   }
 
   onSkillSelect(event: any, skill: iSkills): void {
@@ -125,7 +127,7 @@ export class CreazionePgComponent {
           .addCharacter(characterData)
           .subscribe((character: iCharacter) => {
             console.log('Character created:', character);
-            //  this.router.navigate(['']);
+            // this.router.navigate(['']);
           });
       } else {
         console.log('User not logged in');

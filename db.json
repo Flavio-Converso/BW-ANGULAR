@@ -52,8 +52,43 @@
       "expTot": 0,
       "userId": 1,
       "id": 1
+    },
+    {
+      "characterName": "a",
+      "classId": 5,
+      "selectedSkills": [
+        139
+      ],
+      "expTot": 48,
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "characterName": "Giorgiodiprova",
+      "classId": 2,
+      "raceId": 2,
+      "selectedSkills": [
+        47,
+        53,
+        60,
+        59,
+        52,
+        58,
+        96,
+        97,
+        98,
+        99,
+        100,
+        91,
+        92,
+        55,
+        49,
+        45
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 3
     }
-
   ],
   "classes": [
     {
