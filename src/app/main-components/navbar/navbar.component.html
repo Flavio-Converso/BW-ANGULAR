@@ -107,8 +107,16 @@
                 >Account</a
               >
             </li>
-            <li><a class="dropdown-item">Schede personaggio</a></li>
-            <li><a class="dropdown-item">Giocatori attivi</a></li>
+            <li>
+              <a class="dropdown-item" routerLink="/dashboard/newpg"
+                >Schede personaggio</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/dashboard/active_users"
+                >Giocatori attivi</a
+              >
+            </li>
             <li class="dropdown-item" *ngIf="isLoggedIn">
               <button
                 (click)="logout()"
