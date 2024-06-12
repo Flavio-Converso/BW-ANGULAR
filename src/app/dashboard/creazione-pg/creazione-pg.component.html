@@ -33,18 +33,24 @@
               - {{ characterForm.get('expTot')?.value }} Exp disponibili
             </span>
           </div>
-          <span class="custom-checkbox mx-3" *ngFor="let skill of skills">
-            <label class="text-white skill-label btn myBtn mt-3">
-              <input type="checkbox" [value]="skill.skillId" (change)="onSkillSelect($event, skill)"
-                style="display: none;" [disabled]="skill.exp > characterForm.get('expTot')?.value"
-                id="checkbox-{{skill.skillId}}" />
-              <span class="custom-checkbox"></span>
-              <span>
+
+          <div class="custom-checkbox-container">
+            <span class="custom-checkbox mx-3" *ngFor="let skill of skills">
+              <label class="text-white skill-label btn myBtn mt-3"
+                [ngStyle]="{ 'display': (!isSelected(skill) && skill.exp > characterForm.get('expTot')?.value) ? 'none' : 'inline-block' }">
+                <input type="checkbox" [value]="skill.skillId" (change)="onSkillSelect($event, skill)"
+                  style="display: none;" [disabled]="skill.exp > characterForm.get('expTot')?.value"
+                  id="checkbox-{{skill.skillId}}" />
                 <span class="custom-checkbox"></span>
-                {{ skill.skillName }} - Cost: {{ skill.exp }} Exp
-              </span>
-            </label>
-          </span>
+                <span>
+                  <span class="custom-checkbox"></span>
+                  {{ skill.skillName }} - Cost: {{ skill.exp }} Exp
+                </span>
+              </label>
+            </span>
+          </div>
+
+
 
           <div class="d-flex justify-content-center mt-3 mb-5">
             <button type="button" class="btn btn-reset" (click)="resetSkills()">Resetta Abilità</button>

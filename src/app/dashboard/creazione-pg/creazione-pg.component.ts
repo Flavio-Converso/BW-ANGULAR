@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { iCharacter } from '../../interfaces/icharacter';
 import { iSkills } from '../../interfaces/skills';
 import { iClassi } from '../../interfaces/classe';
@@ -13,7 +13,7 @@ import { ClassesService } from '../../services/classes.service';
   templateUrl: './creazione-pg.component.html',
   styleUrls: ['./creazione-pg.component.scss'],
 })
-export class CreazionePgComponent implements OnInit {
+export class CreazionePgComponent {
   characterForm!: FormGroup;
   classes: iClassi[] = [];
   skills: iSkills[] = [];
@@ -126,5 +126,9 @@ export class CreazionePgComponent implements OnInit {
     this.availableExp = 50;
     // Aggiorna i valori del form
     this.updateFormValues();
+  }
+
+  isSelected(skill: iSkills): boolean {
+    return this.selectedSkills.includes(skill);
   }
 }
