@@ -7,6 +7,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { CreazionePgComponent } from './creazione-pg/creazione-pg.component';
 import { ActiveUsersComponent } from './active-users/active-users.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -17,11 +18,12 @@ import { ActiveUsersComponent } from './active-users/active-users.component';
     MarketplaceComponent,
     CreazionePgComponent,
     ActiveUsersComponent
-
   ],
   imports: [
     CommonModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class DashboardModule { }

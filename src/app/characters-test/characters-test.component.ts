@@ -18,7 +18,7 @@ export class CharactersTestComponent implements OnInit {
   classes: iClassi[] = [];
   skills: iSkills[] = [];
   selectedSkills: iSkills[] = [];
-  availableExp: number = 100;
+  availableExp: number = 50;
 
   constructor(
     private fb: FormBuilder,
@@ -33,7 +33,7 @@ export class CharactersTestComponent implements OnInit {
       characterName: ['', Validators.required],
       classId: ['', Validators.required],
       selectedSkills: [[]],
-      expTot: [100, Validators.required],
+      expTot: [50, Validators.required],
     });
 
     this.loadClasses();
@@ -56,7 +56,7 @@ export class CharactersTestComponent implements OnInit {
         console.log('Filtered skills:', this.skills);
       });
       this.selectedSkills = [];
-      this.availableExp = 100;
+      this.availableExp = 50;
       this.updateFormValues();
     }
   }
