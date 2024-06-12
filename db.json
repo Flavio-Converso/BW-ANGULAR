@@ -67,6 +67,20 @@
       "expTot": 37,
       "userId": 1,
       "id": 14
+    },
+    {
+      "characterName": "provaprovaprova",
+      "classId": 2,
+      "selectedSkills": [
+        39,
+        34,
+        35,
+        44,
+        43
+      ],
+      "expTot": 27,
+      "userId": 1,
+      "id": 15
     }
   ],
   "classes": [

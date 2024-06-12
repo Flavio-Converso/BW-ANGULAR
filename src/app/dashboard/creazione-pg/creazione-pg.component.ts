@@ -20,6 +20,7 @@ export class CreazionePgComponent implements OnInit {
   selectedSkills: iSkills[] = [];
   availableExp: number = 50;
   selectedClassIndex: number = -1;
+  selectedSkillsTotalExp: number = 0;
   constructor(
     private fb: FormBuilder,
     private classesSvc: ClassesService,
@@ -65,24 +66,29 @@ export class CreazionePgComponent implements OnInit {
   }
 
   onSkillSelect(event: any, skill: iSkills): void {
-    if (event.target.checked) {
-      if (
-        this.availableExp >= skill.exp &&
-        !this.selectedSkills.includes(skill)
-      ) {
-        this.selectedSkills.push(skill);
-        this.availableExp -= skill.exp;
-      }
+    const isChecked = event.target.checked;
+    const expDifference = isChecked ? -skill.exp : skill.exp;
+
+    if (
+      isChecked &&
+      this.availableExp >= skill.exp &&
+      !this.selectedSkills.includes(skill)
+    ) {
+      this.selectedSkills.push(skill);
     } else {
       const index = this.selectedSkills.findIndex(
         (s) => s.skillId === skill.skillId
       );
       if (index !== -1) {
         this.selectedSkills.splice(index, 1);
-        this.availableExp += skill.exp;
       }
     }
+
+    // Aggiorniamo l'esperienza disponibile
+    this.availableExp += expDifference;
+
     this.updateFormValues();
+    this.updateSelectedSkillsTotalExp();
   }
 
   updateFormValues(): void {
@@ -90,6 +96,8 @@ export class CreazionePgComponent implements OnInit {
       selectedSkills: this.selectedSkills.map((s) => s.skillId),
       expTot: this.availableExp,
     });
+
+    this.updateSelectedSkillsTotalExp(); // Aggiorna la somma dei punti esperienza delle abilità selezionate
   }
 
   createCharacter(): void {
@@ -109,5 +117,30 @@ export class CreazionePgComponent implements OnInit {
     } else {
       console.log('Form is invalid');
     }
+  }
+
+  resetSkills(): void {
+    // Deseleziona tutte le checkbox
+    this.skills.forEach((skill) => {
+      const checkbox = document.getElementById(
+        `checkbox-${skill.skillId}`
+      ) as HTMLInputElement;
+      if (checkbox) {
+        checkbox.checked = false;
+      }
+    });
+    // Resetta l'array delle abilità selezionate e l'exp disponibile
+    this.selectedSkills = [];
+    this.availableExp = 50;
+    // Aggiorna i valori del form
+    this.updateFormValues();
+    this.updateSelectedSkillsTotalExp();
+  }
+
+  updateSelectedSkillsTotalExp(): void {
+    this.selectedSkillsTotalExp = this.selectedSkills.reduce(
+      (totalExp, skill) => totalExp + skill.exp,
+      0
+    );
   }
 }

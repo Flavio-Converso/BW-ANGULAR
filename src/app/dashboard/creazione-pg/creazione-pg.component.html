@@ -23,21 +23,41 @@
         </div>
       </div>
       <!--FINE IMMAGINI PG-->
-      <div class="form-group mt-5" *ngIf="selectedClassIndex >= 0">
-        <div class="mt-3 d-flex justify-content-center">
-          <label class="text-white fs-2">
-            Abilità del {{ classes[selectedClassIndex].className }}
-          </label>
+      <div class="col-10 mt-2">
+        <div class="form-group mt-5" *ngIf="selectedClassIndex >= 0">
+          <div class="mt-3 d-flex justify-content-center">
+            <label class="text-white fs-2">
+              Abilità del {{ classes[selectedClassIndex].className }}
+            </label>
+            <span class="ms-2 text-white fs-2" *ngIf="characterForm.get('expTot')?.value > 0">
+              - {{ characterForm.get('expTot')?.value }} Exp disponibili
+            </span>
+          </div>
+          <div *ngIf="selectedSkillsTotalExp> characterForm.get('expTot')?.value" class="text-danger mt-2">
+            Hai superato i punti disponibili. Deseleziona alcune abilità per continuare.
+          </div>
+          <span class="custom-checkbox mx-3" *ngFor="let skill of skills">
+            <label class="text-white skill-label btn myBtn mt-3">
+              <input type="checkbox" [value]="skill.skillId" (change)="onSkillSelect($event, skill)"
+                style="display: none;" [disabled]="skill.exp > characterForm.get('expTot')?.value"
+                id="checkbox-{{skill.skillId}}" />
+              <span class="custom-checkbox"></span>
+              <span>
+                <span class="custom-checkbox"></span>
+                {{ skill.skillName }} - Cost: {{ skill.exp }} Exp
+              </span>
+            </label>
+          </span>
+
+          <div class="d-flex justify-content-center mt-3">
+            <button type="button" class="btn btn-secondary" (click)="resetSkills()">Resetta Abilità</button>
+          </div>
+
         </div>
-        <span class="custom-checkbox mx-2" *ngFor="let skill of skills">
-          <label class="text-white skill-label btn myBtn mt-3">
-            <input type="checkbox" [value]="skill.skillId" (change)="onSkillSelect($event, skill)"
-              style="display: none;" />
-            <span class="custom-checkbox"></span>
-            <span>{{ skill.skillName }} - Cost: {{ skill.exp }} Exp</span>
-          </label>
-        </span>
       </div>
+
+
+
 
 
 
