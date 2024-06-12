@@ -25,29 +25,7 @@
       "id": 2
     }
   ],
-  "characters": [
-    {
-      "characterName": "ad",
-      "classId": 2,
-      "selectedSkills": [
-        33
-      ],
-      "expTot": 46,
-      "userId": 1,
-      "id": 1
-    },
-    {
-      "characterName": "amed",
-      "classId": 1,
-      "selectedSkills": [
-        23,
-        26
-      ],
-      "expTot": 39,
-      "userId": 1,
-      "id": 2
-    }
-  ],
+  "characters": [],
   "classes": [
     {
       "classId": 1,

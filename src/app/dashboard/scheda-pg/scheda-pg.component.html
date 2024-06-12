@@ -1,22 +1,27 @@
-<div class="container">
-  <div *ngIf="character">
-    <h1>Recap del Personaggio</h1>
-    <p><strong>Nome:</strong> {{ character.characterName }}</p>
-    <p><strong>Classe:</strong> {{ character.classId }}</p>
-    <p><strong>Abilità:</strong></p>
-    <ul>
-      <li *ngFor="let skill of character.selectedSkills">{{ skill }}</li>
-    </ul>
+<div class="row myBg">
+  <div class="col-12 mt-3">
+    <div *ngIf="character" class="text-center">
+      <h1 class="text-white fw-bolder">RECAP DEL PERSONAGGIO</h1>
 
-    <!-- Bottoni -->
-    <button class="btn btn-danger" (click)="deleteCharacter()">
-      Elimina Personaggio
-    </button>
-    <button class="btn btn-primary" (click)="goToHome()">
-      Torna alla Home
-    </button>
-  </div>
-  <div *ngIf="!character">
-    <p>Caricamento in corso...</p>
+      <p><strong>Nome:</strong> {{ character.characterName }}</p>
+      <p><strong>Classe:</strong> {{ character.classId }}</p>
+      <p><strong>Abilità:</strong></p>
+      <ul>
+        <li class="list-unstyled" *ngFor="let skill of characterSkills">
+          {{ skill.skillName }} - Exp {{ skill.exp }}
+        </li>
+      </ul>
+
+      <!-- Bottoni -->
+      <button class="btn btn-danger" (click)="deleteCharacter()">
+        Elimina Personaggio
+      </button>
+      <button class="btn btn-primary" (click)="goToHome()">
+        Torna alla Home
+      </button>
+    </div>
+    <div *ngIf="!character">
+      <p>Caricamento in corso...</p>
+    </div>
   </div>
 </div>
