@@ -6,6 +6,8 @@ import { iCharacter } from '../../interfaces/icharacter';
 import { SkillsService } from '../../services/skills.service';
 import { iSkills } from '../../interfaces/skills';
 import { iClassi } from '../../interfaces/classe';
+import { RacesService } from '../../services/races.service';
+import { iRaces } from '../../interfaces/iraces';
 
 @Component({
   selector: 'app-scheda-pg',
@@ -18,13 +20,15 @@ export class SchedaPgComponent {
   allSkills: iSkills[] = [];
   characterSkills: iSkills[] = [];
   class!: iClassi;
+  race!: iRaces;
 
   constructor(
     private route: ActivatedRoute,
     private router: Router,
     private charactersSvc: CharactersService,
     private skillSrc: SkillsService,
-    private classSrc: ClassesService
+    private classSrc: ClassesService,
+    private raceSrc: RacesService
   ) {}
 
   ngOnInit(): void {
@@ -43,6 +47,7 @@ export class SchedaPgComponent {
           console.log('Character details:', this.character);
           this.loadCharacterSkills();
           this.loadCharacterClass();
+          this.loadCharacterRace();
         } else {
           console.error('Character is undefined');
         }
@@ -75,6 +80,23 @@ export class SchedaPgComponent {
       );
     } else {
       console.warn("ID della classe mancante nell'oggetto del personaggio");
+    }
+  }
+
+  loadCharacterRace(): void {
+    if (this.character && this.character.racesId) { // Assumi che raceId sia una proprietà del personaggio
+      this.raceSrc.getRaceById(this.character.racesId).subscribe(
+        (raceChar: iRaces) => {
+          console.log('Razza:', raceChar);
+          this.race = raceChar; // Assegna l'intero oggetto della razza
+          console.log('Character race:', this.race);
+        },
+        (error) => {
+          console.error('Errore durante il caricamento della razza:', error);
+        }
+      );
+    } else {
+      console.warn("ID della razza mancante nell'oggetto del personaggio");
     }
   }
 

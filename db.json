@@ -25,7 +25,82 @@
       "id": 2
     }
   ],
-  "characters": [],
+  "characters": [
+    {
+      "characterName": "amed",
+      "classId": 5,
+      "raceId": 6,
+      "selectedSkills": [
+        138,
+        142,
+        150,
+        149,
+        148,
+        144,
+        145,
+        91,
+        92,
+        99,
+        93,
+        94,
+        95,
+        100,
+        98,
+        97
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "characterName": "amed",
+      "classId": 2,
+      "raceId": 2,
+      "selectedSkills": [
+        58,
+        54,
+        53,
+        51,
+        55,
+        59,
+        91,
+        92,
+        93,
+        94,
+        96,
+        95,
+        97,
+        98,
+        100,
+        99,
+        35,
+        39
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "characterName": "amed",
+      "classId": 5,
+      "raceId": 5,
+      "selectedSkills": [
+        142,
+        148,
+        150,
+        149,
+        147,
+        146,
+        143,
+        145,
+        140,
+        141
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 3
+    }
+  ],
   "classes": [
     {
       "classId": 1,
