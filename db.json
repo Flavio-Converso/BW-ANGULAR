@@ -103,6 +103,73 @@
       ]
     }
   ],
+  "races": [
+    {
+      "raceId": 1,
+      "raceName": "Umano",
+      "raceBio": "Gli umani sono una razza versatile e resistente, in grado di adattarsi a diverse situazioni e ambienti.",
+      "traits": {
+        "Forza": 7,
+        "Agilità": 6,
+        "Intelligenza": 7,
+        "Resistenza": 7,
+        "Carisma": 8
+      },
+      "img": "https://example.com/human.jpg"
+    },
+    {
+      "raceId": 2,
+      "raceName": "Elfo",
+      "raceBio": "Gli elfi sono noti per la loro agilità e connessione con la natura, eccellendo nelle arti magiche e nell'arcieria.",
+      "traits": {
+        "Forza": 5,
+        "Agilità": 9,
+        "Intelligenza": 10,
+        "Resistenza": 6,
+        "Carisma": 7
+      },
+      "img": "https://example.com/elf.jpg"
+    },
+    {
+      "raceId": 3,
+      "raceName": "Nano",
+      "raceBio": "I nani sono robusti e forti, famosi per la loro abilità nella metallurgia e nel combattimento corpo a corpo.",
+      "traits": {
+        "Forza": 8,
+        "Agilità": 5,
+        "Intelligenza": 6,
+        "Resistenza": 9,
+        "Carisma": 6
+      },
+      "img": "https://example.com/dwarf.jpg"
+    },
+    {
+      "raceId": 4,
+      "raceName": "Orco",
+      "raceBio": "Gli orchi sono guerrieri potenti e feroci, noti per la loro forza bruta e resistenza in battaglia.",
+      "traits": {
+        "Forza": 10,
+        "Agilità": 6,
+        "Intelligenza": 5,
+        "Resistenza": 8,
+        "Carisma": 4
+      },
+      "img": "https://example.com/orc.jpg"
+    },
+    {
+      "raceId": 5,
+      "raceName": "Gnomo",
+      "raceBio": "Gli gnomi sono piccoli ma ingegnosi, abili nell'ingegneria e nell'uso delle tecnologie magiche.",
+      "traits": {
+        "Forza": 4,
+        "Agilità": 7,
+        "Intelligenza": 9,
+        "Resistenza": 5,
+        "Carisma": 8
+      },
+      "img": "https://example.com/gnome.jpg"
+    }
+  ],
   "skills": [
     { "skillId": 1, "skillName": "Colpo Pesante", "skillDescription": "Un colpo potente che infligge danni extra.", "exp": 2 },
     { "skillId": 2, "skillName": "Urlo di Guerra", "skillDescription": "Un urlo che aumenta il morale degli alleati.", "exp": 3 },
