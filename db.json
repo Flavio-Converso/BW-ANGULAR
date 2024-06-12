@@ -170,6 +170,16 @@
     { "skillId": 87, "skillName": "Trappola Velenosa", "skillDescription": "Imposta una trappola che avvelena i nemici.", "exp": 7 },
     { "skillId": 88, "skillName": "Tiro di Precisione", "skillDescription": "Scocca una freccia con precisione assoluta.", "exp": 8 },
     { "skillId": 89, "skillName": "Tiro a Spargimento", "skillDescription": "Scocca frecce in una vasta area.", "exp": 5 },
-    { "skillId": 90, "skillName": "Riflessi del Cacciatore", "skillDescription": "Aumenta la possibilità di schivata.", "exp": 2 }
+    { "skillId": 90, "skillName": "Riflessi del Cacciatore", "skillDescription": "Aumenta la possibilità di schivata.", "exp": 2 },
+
+
+    { "skillId": 91, "skillName": "Calcio", "skillDescription": "Un calcio potente che può stordire il nemico.", "exp": 1},
+    { "skillId": 92, "skillName": "Schivata", "skillDescription": "Esegui una rapida schivata per evitare un attacco.", "exp": 2},
+    { "skillId": 93, "skillName": "Parata", "skillDescription": "Usa la tua arma o scudo per parare un attacco in arrivo.", "exp": 3},
+    { "skillId": 94, "skillName": "Colpo Rotante", "skillDescription": "Esegui un attacco rotante che colpisce tutti i nemici intorno a te.", "exp": 4},
+    { "skillId": 95, "skillName": "Sprint", "skillDescription": "Aumenta temporaneamente la tua velocità di movimento.", "exp": 1},
+    { "skillId": 96, "skillName": "Affondo", "skillDescription": "Esegui un attacco veloce con la tua arma per colpire un nemico.", "exp": 3},
+    { "skillId": 97, "skillName": "Urlo di Guerra","skillDescription": "Emetti un potente urlo che aumenta temporaneamente il morale e le capacità di combattimento.", "exp": 5},
+    { "skillId": 98, "skillName": "Meditazione", "skillDescription": "Rilassati e concentrati per recuperare energia e salute.", "exp": 2}
   ]
 }
