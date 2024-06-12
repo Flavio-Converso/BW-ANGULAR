@@ -15,7 +15,7 @@
                 <img [src]="class.img" alt="class" class="img-fluid" />
                 <div class="card-body myBg">
                   <h4 class="text-white text-center mt-3">{{ class.className }}</h4>
-                  <p class="myTextColor fs-4 text-center">{{ class.bio }}</p>
+                  <p class="myTextColor2 fs-4 text-center ">{{ class.bio }}</p>
                 </div>
               </div>
             </label>
@@ -32,8 +32,18 @@
               <div class="card" (click)="onRaceChange(race.raceId)">
                 <img [src]="race.img" alt="class" class="img-fluid" />
                 <div class="card-body myBg">
-                  <h4 class="text-white text-center mt-3">{{ race.raceName }}</h4>
-                  <p class="myTextColor fs-4 text-center">{{ race.raceBio }}</p>
+                  <h4 class="text-white text-center mt-3 ">{{ race.raceName }}</h4>
+                  <p class="myTextColor fs-4 text-center myTextColor2">{{ race.raceBio }}</p>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <p class="text-white ms-1 fs-4">Agilità : <span class="traits">{{race.traits.Agilita}}</span> -</p>
+                    <p class="text-white ms-1 fs-4">Carisma : <span class="traits">{{race.traits.Carisma}}</span> -</p>
+                    <p class="text-white ms-1 fs-4">Forza : <span class="traits">{{race.traits.Forza}}</span> -</p>
+                    <p class="text-white ms-1 fs-4">Inteligenza : <span
+                        class="traits">{{race.traits.Intelligenza}}</span> -
+                    </p>
+                    <p class="text-white ms-1 fs-4">Resistenza : <span class="traits">{{race.traits.Resistenza}}</span>
+                    </p>
+                  </div>
                 </div>
               </div>
             </label>

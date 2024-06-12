@@ -9,6 +9,7 @@ import { SkillsService } from '../../services/skills.service';
 import { CharactersService } from '../../services/characters.service';
 import { ClassesService } from '../../services/classes.service';
 import { RacesService } from '../../services/races.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-creazione-pg',
@@ -33,7 +34,8 @@ export class CreazionePgComponent {
     private charactersSvc: CharactersService,
     private skillsSvc: SkillsService,
     private authSvc: AuthService,
-    private racesSvc: RacesService
+    private racesSvc: RacesService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -123,6 +125,7 @@ export class CreazionePgComponent {
           .addCharacter(characterData)
           .subscribe((character: iCharacter) => {
             console.log('Character created:', character);
+            //  this.router.navigate(['']);
           });
       } else {
         console.log('User not logged in');
