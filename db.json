@@ -29,9 +29,7 @@
     {
       "characterName": "speriamofix",
       "classId": 2,
-      "selectedSkills": [
-        3
-      ],
+      "selectedSkills": [3],
       "expTot": 97,
       "userId": 1,
       "id": 11
@@ -39,12 +37,50 @@
     {
       "characterName": "speriamofix2",
       "classId": 3,
-      "selectedSkills": [
-        6
-      ],
+      "selectedSkills": [6],
       "expTot": 93,
       "userId": 1,
       "id": 12
+    },
+    {
+      "characterName": "test",
+      "classId": 1,
+      "selectedSkills": [1],
+      "expTot": 48,
+      "userId": 1,
+      "id": 13
+    },
+    {
+      "characterName": "anna",
+      "classId": 2,
+      "selectedSkills": [31, 33, 35],
+      "expTot": 42,
+      "userId": 1,
+      "id": 13
+    },
+    {
+      "characterName": "gianni",
+      "classId": 1,
+      "selectedSkills": [2, 3, 4],
+      "expTot": 37,
+      "userId": 1,
+      "id": 14
+    },
+    {
+      "characterName": "provaprovaprova",
+      "classId": 2,
+      "selectedSkills": [39, 34, 35, 44, 43],
+      "expTot": 27,
+      "userId": 1,
+      "id": 15
+    },
+    {
+      "characterName": "giannigiorgi",
+      "classId": 2,
+      "selectedSkills": [41, 47, 40, 36, 33, 39, 38, 31, 35],
+      "expTot": 0,
+      "userId": 1,
+      "id": 16
     }
   ],
   "classes": [
@@ -60,7 +96,7 @@
     {
       "classId": 2,
       "className": "Mago",
-      "bio": "Maestro delle arti arcane, il Mago lancia incantesimi potenti da lontano, ma è vulnerabile negli scontri ravvicinati.",
+      "bio": "Maestro delle arti arcane, il Mago lancia incantesimi potenti da lontano e manipola le energie magiche. Formidabile negli scontri a distanza, la sua debolezza risiede negli scontri ravvicinati.",
       "img": "https://th.bing.com/th/id/OIG2.giN_VixGaT5nHdJ58EaN?pid=ImgGn",
       "skills": [
         31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60,  91, 92, 93, 94, 95, 96, 97, 98, 99, 100
