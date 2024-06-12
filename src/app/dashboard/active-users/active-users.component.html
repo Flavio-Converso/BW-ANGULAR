@@ -1,46 +1,38 @@
-<div class="activebg">
-  <h1 class="text-center pt-2">
+<div class="activebg vh-100">
+  <h1 class="text-center py-5">
     Contatta gli altri utenti attivi per avviare con loro fantastiche campagne !
   </h1>
   <h6 class="text-center pb-2">Sempre se vogliono giocare con te</h6>
   <div class="row m-0">
     <div class="col-12">
-      <ul class="list-group p-2" *ngFor="let iscritto of users">
+      <ul class="list-group p-2" *ngFor="let iscritto of users; let i = index">
         <li class="m-2 fs-2 d-flex justify-content-center fw-bold">
-          <img [src]="iscritto?.immagine" width="50px" class="me-3" />
+          <img
+            [src]="iscritto?.immagine"
+            width="50px"
+            class="me-3 rounded-circle"
+          />
+          {{ iscritto?.username }}
+          {{ iscritto?.id }}
+          {{ iscritto?.email }}
           {{ iscritto?.nome }}
           {{ iscritto?.cognome }}
-          {{ iscritto?.email }}
           {{ iscritto?.genere }}
-          {{ iscritto?.id }}
-
-          {{ iscritto?.username }}
         </li>
-        <div
-          class="nav-item dropdown m-auto mb-2 mb-lg-0 fs-4 fw-bold"
-          [ngClass]="{ show: openDropdown === 'login' }"
-        >
-          <a
-            class="nav-link dropdown-toggle m-auto text-center"
-            id="dropdownMenuButtonLogin"
+        <p class="d-inline-flex gap-1 text-center m-auto fs-4">
+          <button
+            class="btn"
+            type="button"
+            data-bs-toggle="collapse"
+            [attr.data-bs-target]="'#collapseExample' + i"
             aria-expanded="false"
-            (click)="toggleDropdown('login')"
-            [attr.aria-expanded]="openDropdown === 'login'"
+            [attr.aria-controls]="'collapseExample' + i"
           >
             Personaggi
-          </a>
-          <ul
-            class="dropdown-menu"
-            [ngClass]="{ show: openDropdown === 'login' }"
-            aria-labelledby="dropdownMenuButtonLogin"
-          >
-            <li><a class="dropdown-item" routerLink="/auth/login">Login</a></li>
-            <li>
-              <a class="dropdown-item" routerLink="/auth/register"
-                >Registrati</a
-              >
-            </li>
-          </ul>
+          </button>
+        </p>
+        <div class="collapse" [id]="'collapseExample' + i">
+          <h1 class="text-center">ciao</h1>
         </div>
       </ul>
     </div>
