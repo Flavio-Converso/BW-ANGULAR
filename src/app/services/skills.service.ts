@@ -30,4 +30,9 @@ export class SkillsService {
   deleteSkill(skillId: number): Observable<void> {
     return this.http.delete<void>(`${this.apiUrl}/${skillId}`);
   }
+
+  getSkillByUserId(userId: number): Observable<iSkills[]> {
+    const url = `${this.apiUrl}?userId=${userId}`;
+    return this.http.get<iSkills[]>(url);
+  }
 }

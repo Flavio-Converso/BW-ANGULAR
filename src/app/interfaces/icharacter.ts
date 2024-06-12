@@ -4,5 +4,6 @@ export interface iCharacter {
   classId: number;
   characterName: string;
   expTot: number; //da dare fisso eventualmente
-  selectedSkills?:number[]
+  selectedSkills: number[];
+  racesId: number;
 }
