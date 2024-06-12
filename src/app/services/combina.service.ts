@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { iCharacter } from '../interfaces/icharacter';
 import { iClassi } from '../interfaces/classe';
-
 import { iCombinazione } from '../interfaces/icombinazione';
 import { iSkills } from '../interfaces/skills';
 
