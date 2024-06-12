@@ -5,6 +5,7 @@ import { CharactersService } from '../../services/characters.service';
 import { iCharacter } from '../../interfaces/icharacter';
 import { SkillsService } from '../../services/skills.service';
 import { iSkills } from '../../interfaces/skills';
+import { iClassi } from '../../interfaces/classe';
 
 @Component({
   selector: 'app-scheda-pg',
@@ -16,6 +17,8 @@ export class SchedaPgComponent {
   character!: iCharacter;
   allSkills: iSkills[] = [];
   characterSkills: iSkills[] = [];
+  class!: string
+
 
 
   constructor(
@@ -38,6 +41,8 @@ export class SchedaPgComponent {
       this.character = character;
       console.log('Character details:', this.character);
       this.loadCharacterSkills();
+      this.loadCharacterClass();
+
     });
   }
 
@@ -53,7 +58,18 @@ export class SchedaPgComponent {
     });
   }
 
-
+  loadCharacterClass(): void {
+    if (this.character && this.character.classId) {
+      this.classSrc.getClassById(this.character.classId).subscribe((classChar: iClassi) => {
+        this.class = classChar.className;
+        console.log('Character class:', this.class);
+      }, error => {
+        console.error('Error loading class:', error);
+      });
+    } else {
+      console.warn('Class ID is missing in character object');
+    }
+  }
 
 
   deleteCharacter(): void {

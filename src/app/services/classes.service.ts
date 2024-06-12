@@ -16,7 +16,7 @@ export class ClassesService {
   }
 
   getClassById(classId: number): Observable<iClassi> {
-    return this.http.get<iClassi>(`${this.apiUrl}/${classId}`);
+    return this.http.get<iClassi>(`${this.apiUrl}/?classId=${classId}`);
   }
 
   addClass(newClass: iClassi): Observable<iClassi> {
@@ -24,10 +24,10 @@ export class ClassesService {
   }
 
   updateClass(classId: number, updatedClass: iClassi): Observable<iClassi> {
-    return this.http.put<iClassi>(`${this.apiUrl}/${classId}`, updatedClass);
+    return this.http.put<iClassi>(`${this.apiUrl}/?classId=${classId}`, updatedClass);
   }
 
   deleteClass(classId: number): Observable<void> {
-    return this.http.delete<void>(`${this.apiUrl}/${classId}`);
+    return this.http.delete<void>(`${this.apiUrl}/?classId=${classId}`);
   }
 }

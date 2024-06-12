@@ -25,7 +25,41 @@
       "id": 2
     }
   ],
-  "characters": [],
+  "characters": [
+    {
+      "characterName": "luca",
+      "classId": 1,
+      "selectedSkills": [
+        18,
+        24
+      ],
+      "expTot": 43,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "characterName": "add",
+      "classId": 2,
+      "selectedSkills": [
+        54,
+        49
+      ],
+      "expTot": 36,
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "characterName": "adad",
+      "classId": 2,
+      "selectedSkills": [
+        46,
+        50
+      ],
+      "expTot": 34,
+      "userId": 1,
+      "id": 3
+    }
+  ],
   "classes": [
     {
       "classId": 1,
