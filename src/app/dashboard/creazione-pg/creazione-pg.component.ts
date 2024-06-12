@@ -19,7 +19,7 @@ export class CreazionePgComponent implements OnInit {
   skills: iSkills[] = [];
   selectedSkills: iSkills[] = [];
   availableExp: number = 50;
-
+  selectedClassIndex: number = -1;
   constructor(
     private fb: FormBuilder,
     private classesSvc: ClassesService,
@@ -58,6 +58,9 @@ export class CreazionePgComponent implements OnInit {
       this.selectedSkills = [];
       this.availableExp = 50;
       this.updateFormValues();
+      this.selectedClassIndex = this.classes.findIndex(
+        (c) => c.classId === classId
+      );
     }
   }
 

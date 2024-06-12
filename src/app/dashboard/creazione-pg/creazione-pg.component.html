@@ -23,9 +23,13 @@
         </div>
       </div>
       <!--FINE IMMAGINI PG-->
-      <div class="form-group mt-5">
-        <div class="mt-3 d-flex justify-content-center"><label class="text-white">Select Skills:</label></div>
-        <span class=" custom-checkbox mx-2" *ngFor="let skill of skills">
+      <div class="form-group mt-5" *ngIf="selectedClassIndex >= 0">
+        <div class="mt-3 d-flex justify-content-center">
+          <label class="text-white fs-2">
+            Abilità del {{ classes[selectedClassIndex].className }}
+          </label>
+        </div>
+        <span class="custom-checkbox mx-2" *ngFor="let skill of skills">
           <label class="text-white skill-label btn myBtn mt-3">
             <input type="checkbox" [value]="skill.skillId" (change)="onSkillSelect($event, skill)"
               style="display: none;" />
@@ -36,8 +40,9 @@
       </div>
 
 
+
       <!--TASTO PER APRIRE IL MODALE-->
-      <div class="d-flex justify-content-center form-group">
+      <div class="d-flex justify-content-center form-group" *ngIf="selectedSkills.length > 4">
         <button type="button" class="btn myBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">PROCEDI</button>
 
         <!--MODALE-->

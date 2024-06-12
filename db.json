@@ -55,6 +55,18 @@
       "expTot": 48,
       "userId": 1,
       "id": 13
+    },
+    {
+      "characterName": "gianni",
+      "classId": 1,
+      "selectedSkills": [
+        2,
+        3,
+        4
+      ],
+      "expTot": 37,
+      "userId": 1,
+      "id": 14
     }
   ],
   "classes": [
