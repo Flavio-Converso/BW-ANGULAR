@@ -19,6 +19,12 @@ export class ClassesService {
     return this.http.get<iClassi>(`${this.apiUrl}/${classId}`);
   }
 
+  getClassByUserId(userId: number): Observable<iClassi[]> {
+    const url = `${this.apiUrl}?userId=${userId}`;
+    return this.http.get<iClassi[]>(url);
+  }
+
+
   addClass(newClass: iClassi): Observable<iClassi> {
     return this.http.post<iClassi>(this.apiUrl, newClass);
   }

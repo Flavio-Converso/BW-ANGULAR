@@ -1,32 +1,57 @@
-<form [formGroup]="loginForm" (ngSubmit)="login()">
-  <div class="form-group">
-    <label for="email">Email</label>
-    <input id="email" formControlName="email" type="email" class="form-control"
-      [ngClass]="{ 'is-invalid': isTouchedInvalid('email') }" />
-    <div *ngIf="isTouchedInvalid('email')" class="invalid-feedback">
-      L'email è richiesta e deve essere valida.
+<div class="py-5 text-center vh-100 myBg">
+  <div class="container w-50">
+    <div class="form-accedi p-5">
+      <form class="m-2 mt-5" [formGroup]="loginForm" (ngSubmit)="login()">
+        <div class="form-floating mb-3">
+          <input
+            type="email"
+            class="form-control"
+            formControlName="email"
+            id="email"
+            placeholder="name@example.com"
+            [ngClass]="{ 'is-invalid': isTouchedInvalid('email') }"
+          />
+          <label for="email">Email</label>
+          <div *ngIf="isTouchedInvalid('email')" class="invalid-feedback">
+            L'email è richiesta e deve essere valida.
+          </div>
+        </div>
+
+        <div class="form-floating">
+          <input
+            [type]="hidePassword ? 'password' : 'text'"
+            class="form-control"
+            id="password"
+            formControlName="password"
+            placeholder="Password"
+            [ngClass]="{ 'is-invalid': isTouchedInvalid('password') }"
+          />
+          <!-- <button
+            type="button"
+            class="btn btn-outline-secondary"
+            (click)="togglePasswordVisibility()"
+          >
+            {{ hidePassword ? "Show" : "Hide" }}
+          </button> -->
+
+          <label for="password">Password</label>
+          <div *ngIf="isTouchedInvalid('password')" class="invalid-feedback">
+            La password è richiesta e deve rispettare i criteri di sicurezza.
+          </div>
+        </div>
+        <div *ngIf="errorMessage" class="alert alert-danger">
+          {{ errorMessage }}
+        </div>
+
+        <div class="my-3 text-center button-accedi">
+          <button type="submit" class="fantasy-btn-md">Accedi</button>
+        </div>
+
+        <p class="text-white">
+          Non hai un account?
+          <a class="clicca-qui" routerLink="/auth/register">Clicca qui</a>
+        </p>
+      </form>
     </div>
   </div>
-
-  <div class="form-group">
-    <label for="password">Password</label>
-    <div class="input-group">
-      <input id="password" formControlName="password" [type]="hidePassword ? 'password' : 'text'" class="form-control"
-        [ngClass]="{ 'is-invalid': isTouchedInvalid('password') }" />
-      <button type="button" class="btn btn-outline-secondary" (click)="togglePasswordVisibility()">
-        {{ hidePassword ? 'Show' : 'Hide' }}
-      </button>
-    </div>
-    <div *ngIf="isTouchedInvalid('password')" class="invalid-feedback">
-      La password è richiesta e deve rispettare i criteri di sicurezza.
-    </div>
-  </div>
-
-  <div *ngIf="errorMessage" class="alert alert-danger">
-    {{ errorMessage }}
-  </div>
-
-  <button type="submit" class="btn btn-primary">
-    Accedi
-  </button>
-</form>
+</div>

@@ -19,9 +19,14 @@ export class CharactersService {
     return this.http.get<iCharacter>(`${this.apiUrl}/${characterId}`);
   }
 
+
   getCharactersByUserId(userId: number): Observable<iCharacter[]> {
-    return this.http.get<iCharacter[]>(`${this.apiUrl}?userId=${userId}`);
+    const url = `${this.apiUrl}?userId=${userId}`;
+    return this.http.get<iCharacter[]>(url);
   }
+
+
+
 
   addCharacter(newCharacter: iCharacter): Observable<iCharacter> {
     return this.http.post<iCharacter>(this.apiUrl, newCharacter);

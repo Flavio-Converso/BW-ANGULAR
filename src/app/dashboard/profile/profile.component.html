@@ -1,48 +1,122 @@
-<div class="containern myBg">
-  <h1 class="text-center pt-5 fw-bolder gradtitolo">PROFILO PERSONALE</h1>
-  <div class="row">
-    <div class="col-12 d-flex justify-content-center">
-      <div class="mb-3 cd my-5">
-        <div class="row">
-          <div class="col-md-4">
-            <img
-              [src]="[user?.immagine]"
-              class="img-fluid rounded-start rounded-circle"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-8 myGradient rounded-5 p-4">
-            <div class="card-body text-light">
-              <label class="fs-5"> nome:</label>
-              <h5 class="card-title fw-bolder mb-3 fs-2 gradtitolo">
-                {{ user?.nome }}
-              </h5>
-              <label class="fs-5"> cognome:</label>
-              <h5 class="card-title mb-2 fw-bolder fs-2 gradtitolo">
-                {{ user?.cognome }}
-              </h5>
-              <label class="fs-5">User name:</label>
-              <h3 class="card-text mb-2 fw-bolder fs-2 gradtitolo">
-                {{ user?.username }}
-              </h3>
-              <label for="">Email:</label>
-              <p class="card-text mb-2 fw-bolder">
-                {{ user?.email }}
-              </p>
-              <label for="">Genere:</label>
-              <p class="card-text mb-2 fw-bolder">{{ user?.genere }}</p>
-              <label for="">Identificativo:</label>
-              <p class="card-text gradtitolo">{{ user?.id }}</p>
+<div class="myBg">
+  <div class="container">
+    <h1 class="text-center pt-5 fw-bolder gradtitolo">PROFILO PERSONALE</h1>
+    <div class="row p-0 m-0">
+      <div class="col-12 d-flex justify-content-center">
+        <div class="mb-3 cd my-5">
+          <div class="row">
+            <div class="col-md-4">
+              <img
+                [src]="[user?.immagine]"
+                class="img-fluid rounded-start rounded-circle"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8 myGradient rounded-5 p-4">
+              <div class="card-body text-light">
+                <label class="fs-5"> nome:</label>
+                <h5 class="card-title fw-bolder mb-3 fs-2 gradtitolo">
+                  {{ user?.nome }}
+                </h5>
+                <label class="fs-5"> cognome:</label>
+                <h5 class="card-title mb-2 fw-bolder fs-2 gradtitolo">
+                  {{ user?.cognome }}
+                </h5>
+                <label class="fs-5">User name:</label>
+                <h3 class="card-text mb-2 fw-bolder fs-2 gradtitolo">
+                  {{ user?.username }}
+                </h3>
+                <label for="">Email:</label>
+                <p class="card-text mb-2 fw-bolder">
+                  {{ user?.email }}
+                </p>
+                <label for="">Genere:</label>
+                <p class="card-text mb-2 fw-bolder">{{ user?.genere }}</p>
+                <label for="">Identificativo:</label>
+                <p class="card-text gradtitolo">{{ user?.id }}</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <h1 class="text-center pt-5 fw-bolder gradtitolo pt-5">
-      I TUOI PERSONAGGI
-    </h1>
-    <div class="col"></div>
+    <div class="row p-0 m-0">
+      <h1 class="text-center pt-5 fw-bolder gradtitolo pt-5">
+        I TUOI PERSONAGGI
+      </h1>
+
+      <div class="row">
+        <!--inserire dati  attualmente sono place older-->
+
+        <!--ngfor da inserire-->
+        <div
+          class="col d-flex justify-content-center px-0"
+          *ngFor="let pg of combina"
+        >
+          <div class="mb-3 cd my-5">
+            <div class="row">
+              <div class="col myGradient text-light rounded-5 p-4">
+                <div class="row">
+                  <div class="col-6 ps-5">
+                    <div class="card-body">
+                      <label class="fs-5"> nome avventuriero:</label>
+                      <h5 class="card-title fw-bolder mb-3 fs-1 gradtitolo">
+                        {{ pg.characters.characterName }}
+                      </h5>
+                      <label for="">Razza</label>
+                      <p class="card-text gradtitolo">Nano Ortodosso</p>
+
+                      <label class="fs-5">Classe</label>
+                      <h3 class="card-text mb-2 fw-bolder fs-2 gradtitolo">
+                        {{ pg.classe.className }}
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="col-6 d-flex justify-content-center">
+                    <img
+                      [src]="[pg.classe.img]"
+                      class="img-fluid rad"
+                      alt="immagine avventuriero"
+                    />
+                  </div>
+                </div>
+                <!--------------------------------------->
+                <div class="row">
+                  <div class="col-12 px-5">
+                    <label for="">BG</label>
+                    <p class="card-text mb-2 fw-bolder">
+                      {{ pg.classe.bio }}
+                    </p>
+                  </div>
+                  <div class="col-12 text-center">
+                    <label for="" class="py-2 fs-3">Abilità</label>
+                    <div class="table-container">
+                      <table class="skill-table">
+                        <thead>
+                          <tr>
+                            <th>Nome Abilità</th>
+                            <th>Effetto</th>
+                            <th>Costo XP</th>
+                          </tr>
+                        </thead>
+                        <tbody *ngFor="let sk of pg.skills">
+                          <!--ng for per le abilità legate al pc-->
+                          <tr>
+                            <td>{{ sk.skillName }}</td>
+                            <td>{{ sk.skillDescription }}</td>
+                            <td>{{ sk.exp }}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--fine col-->
+    </div>
   </div>
 </div>
