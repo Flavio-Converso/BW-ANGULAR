@@ -31,8 +31,14 @@
             Personaggi
           </button>
         </p>
-        <div class="collapse" [id]="'collapseExample' + i">
-          <h1 class="text-center">ciao</h1>
+        <div
+          class="collapse"
+          [id]="'collapseExample' + i"
+          *ngIf="user?.characters"
+        >
+          <h1 *ngFor="let character of user?.characters" class="text-center">
+            {{ character.characterName }}
+          </h1>
         </div>
       </ul>
     </div>
