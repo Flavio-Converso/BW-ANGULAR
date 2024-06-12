@@ -1,7 +1,8 @@
 export interface iCharacter {
   userId: number;
-  characterId: number;
+  id: number;
   classId: number;
   characterName: string;
   expTot: number; //da dare fisso eventualmente
+  selectedSkills?:number[]
 }

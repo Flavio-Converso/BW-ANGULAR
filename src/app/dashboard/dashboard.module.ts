@@ -8,6 +8,7 @@ import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { CreazionePgComponent } from './creazione-pg/creazione-pg.component';
 import { ActiveUsersComponent } from './active-users/active-users.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SchedaPgComponent } from './scheda-pg/scheda-pg.component';
 
 
 
@@ -17,7 +18,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ProfileComponent,
     MarketplaceComponent,
     CreazionePgComponent,
-    ActiveUsersComponent
+    ActiveUsersComponent,
+    SchedaPgComponent
   ],
   imports: [
     CommonModule,

@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { iCharacter } from '../../interfaces/icharacter';
 import { iSkills } from '../../interfaces/skills';
@@ -25,7 +26,8 @@ export class CreazionePgComponent implements OnInit {
     private classesSvc: ClassesService,
     private charactersSvc: CharactersService,
     private skillsSvc: SkillsService,
-    private authSvc: AuthService
+    private authSvc: AuthService,
+    private router:Router
   ) {}
 
   ngOnInit(): void {
@@ -99,6 +101,7 @@ export class CreazionePgComponent implements OnInit {
           .addCharacter(characterData)
           .subscribe((character: iCharacter) => {
             console.log('Character created:', character);
+            this.router.navigate(['dashboard/schedapg', character.id]);
           });
       } else {
         console.log('User not logged in');
@@ -106,5 +109,11 @@ export class CreazionePgComponent implements OnInit {
     } else {
       console.log('Form is invalid');
     }
+  }
+  ngOnDestroy(): void {
+    // Rimuovi le classi del modale e lo sfondo scuro quando il componente viene distrutto
+    document.body.classList.remove('modal-open');
+    const modals = document.querySelectorAll('.modal-backdrop');
+    modals.forEach(modal => modal.remove());
   }
 }

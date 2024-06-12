@@ -27,24 +27,25 @@
   ],
   "characters": [
     {
-      "characterName": "speriamofix",
+      "characterName": "ad",
       "classId": 2,
       "selectedSkills": [
-        3
+        33
       ],
-      "expTot": 97,
+      "expTot": 46,
       "userId": 1,
-      "id": 11
+      "id": 1
     },
     {
-      "characterName": "speriamofix2",
-      "classId": 3,
+      "characterName": "amed",
+      "classId": 1,
       "selectedSkills": [
-        6
+        23,
+        26
       ],
-      "expTot": 93,
+      "expTot": 39,
       "userId": 1,
-      "id": 12
+      "id": 2
     }
   ],
   "classes": [
@@ -54,7 +55,36 @@
       "bio": "Il Guerriero è un combattente robusto e coraggioso, in grado di affrontare i nemici in prima linea con forza bruta e abilità nel corpo a corpo.",
       "img": "https://th.bing.com/th/id/OIG2.Ip.LAra1eCHTU9Ea3Wxw?pid=ImgGn",
       "skills": [
-        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
       ]
     },
     {
@@ -63,7 +93,36 @@
       "bio": "Maestro delle arti arcane, il Mago lancia incantesimi potenti da lontano, ma è vulnerabile negli scontri ravvicinati.",
       "img": "https://th.bing.com/th/id/OIG2.giN_VixGaT5nHdJ58EaN?pid=ImgGn",
       "skills": [
-        31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
       ]
     },
     {
@@ -72,104 +131,579 @@
       "bio": "Il cacciatore, esperto di tiro con l'arco, colpisce i nemici a distanza con precisione letale e può muoversi furtivamente sul campo di battaglia.",
       "img": "https://th.bing.com/th/id/OIG1.ndTSh3IP6PIYPRpplv_Z?pid=ImgGn",
       "skills": [
-        61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
       ]
     }
   ],
   "skills": [
-    { "skillId": 1, "skillName": "Colpo Pesante", "skillDescription": "Un colpo potente che infligge danni extra.", "exp": 2 },
-    { "skillId": 2, "skillName": "Urlo di Guerra", "skillDescription": "Un urlo che aumenta il morale degli alleati.", "exp": 3 },
-    { "skillId": 3, "skillName": "Carica", "skillDescription": "Carica contro il nemico per infliggere danni e stordire.", "exp": 4 },
-    { "skillId": 4, "skillName": "Terremoto", "skillDescription": "Colpisce il terreno creando un'onda d'urto.", "exp": 6 },
-    { "skillId": 5, "skillName": "Turbine", "skillDescription": "Gira su se stesso colpendo tutti i nemici vicini.", "exp": 5 },
-    { "skillId": 6, "skillName": "Ruggito", "skillDescription": "Un ruggito che intimorisce i nemici.", "exp": 1 },
-    { "skillId": 7, "skillName": "Pelle di Pietra", "skillDescription": "Indurisce la pelle per ridurre i danni subiti.", "exp": 3 },
-    { "skillId": 8, "skillName": "Furia", "skillDescription": "Aumenta la velocità d'attacco e i danni.", "exp": 2 },
-    { "skillId": 9, "skillName": "Salto", "skillDescription": "Salta verso una posizione bersaglio, infliggendo danni all'impatto.", "exp": 4 },
-    { "skillId": 10, "skillName": "Frenesia", "skillDescription": "Entra in uno stato di frenesia per infliggere danni massicci.", "exp": 7 },
-    { "skillId": 11, "skillName": "Sete di Sangue", "skillDescription": "Ripristina la salute con ogni attacco.", "exp": 5 },
-    { "skillId": 12, "skillName": "Colpo Selvaggio", "skillDescription": "Un attacco brutale che infligge danni pesanti.", "exp": 6 },
-    { "skillId": 13, "skillName": "Urlo di Battaglia", "skillDescription": "Aumenta il morale degli alleati, aumentando i loro danni.", "exp": 3 },
-    { "skillId": 14, "skillName": "Trance di Battaglia", "skillDescription": "Entra in trance per ridurre i danni subiti.", "exp": 4 },
-    { "skillId": 15, "skillName": "Scudo", "skillDescription": "Colpisce un nemico con lo scudo.", "exp": 2 },
-    { "skillId": 16, "skillName": "Tuono", "skillDescription": "Colpisce creando un'onda d'urto.", "exp": 5 },
-    { "skillId": 17, "skillName": "Volontà di Ferro", "skillDescription": "Aumenta la resistenza agli effetti di controllo della folla.", "exp": 3 },
-    { "skillId": 18, "skillName": "Carica Avventata", "skillDescription": "Carica senza riguardo, infliggendo più danni ma subendo di più.", "exp": 4 },
-    { "skillId": 19, "skillName": "Invulnerabilità", "skillDescription": "Diventa temporaneamente invulnerabile.", "exp": 8 },
-    { "skillId": 20, "skillName": "Colpo Schiacciante", "skillDescription": "Un colpo potente che frantuma l'armatura.", "exp": 7 },
-    { "skillId": 21, "skillName": "Colosso", "skillDescription": "Aumenta la salute e la difesa.", "exp": 6 },
-    { "skillId": 22, "skillName": "Assalto", "skillDescription": "Una serie di attacchi brutali.", "exp": 5 },
-    { "skillId": 23, "skillName": "Presa del Titano", "skillDescription": "Impugna due armi pesanti contemporaneamente.", "exp": 7 },
-    { "skillId": 24, "skillName": "Ruggito Possente", "skillDescription": "Un ruggito forte che intimorisce e indebolisce i nemici.", "exp": 3 },
-    { "skillId": 25, "skillName": "Resistenza", "skillDescription": "Aumenta temporaneamente la resistenza e riduce la fatica.", "exp": 2 },
-    { "skillId": 26, "skillName": "Ruggito Selvaggio", "skillDescription": "Un ruggito terrificante che spaventa i nemici.", "exp": 4 },
-    { "skillId": 27, "skillName": "Colpo del Colosso", "skillDescription": "Un colpo devastante che ignora l'armatura.", "exp": 6 },
-    { "skillId": 28, "skillName": "Colpo Vendicativo", "skillDescription": "Un colpo potente alimentato dalla rabbia.", "exp": 5 },
-    { "skillId": 29, "skillName": "Rottura", "skillDescription": "Un attacco che causa sanguinamento nel tempo.", "exp": 3 },
-    { "skillId": 30, "skillName": "Sentiero di Guerra", "skillDescription": "Lascia un sentiero di distruzione mentre ti muovi.", "exp": 7 },
-
-
-    { "skillId": 31, "skillName": "Palla di Fuoco", "skillDescription": "Una palla di fuoco che brucia il nemico.", "exp": 3 },
-    { "skillId": 32, "skillName": "Spina di Ghiaccio", "skillDescription": "Una spina di ghiaccio che perfora il nemico.", "exp": 2 },
-    { "skillId": 33, "skillName": "Dardo Fulminante", "skillDescription": "Un dardo di fulmine che fulmina il nemico.", "exp": 4 },
-    { "skillId": 34, "skillName": "Esplosione Arcana", "skillDescription": "Una esplosione di energia arcana.", "exp": 6 },
-    { "skillId": 35, "skillName": "Cura", "skillDescription": "Ripristina la salute di un alleato.", "exp": 1 },
-    { "skillId": 36, "skillName": "Scudo di Mana", "skillDescription": "Uno scudo che assorbe i danni usando il mana.", "exp": 5 },
-    { "skillId": 37, "skillName": "Teletrasporto", "skillDescription": "Muoviti istantaneamente in una posizione vicina.", "exp": 2 },
-    { "skillId": 38, "skillName": "Evoca Familiare", "skillDescription": "Evoca una creatura magica per assistere in battaglia.", "exp": 7 },
-    { "skillId": 39, "skillName": "Tempesta di Ghiaccio", "skillDescription": "Una tempesta di ghiaccio che danneggia tutti i nemici in un'area.", "exp": 8 },
-    { "skillId": 40, "skillName": "Pioggia di Meteore", "skillDescription": "Evoca meteore per schiantarsi sui nemici.", "exp": 10 },
-    { "skillId": 41, "skillName": "Fulmine a Catena", "skillDescription": "Un fulmine che salta tra i nemici.", "exp": 6 },
-    { "skillId": 42, "skillName": "Scudo di Fiamme", "skillDescription": "Uno scudo di fiamme che brucia gli attaccanti.", "exp": 4 },
-    { "skillId": 43, "skillName": "Nova di Ghiaccio", "skillDescription": "Un'esplosione di ghiaccio che congela i nemici vicini.", "exp": 5 },
-    { "skillId": 44, "skillName": "Missili Arcani", "skillDescription": "Lancia più missili arcani.", "exp": 3 },
-    { "skillId": 45, "skillName": "Bruciatura di Mana", "skillDescription": "Brucia il mana del nemico.", "exp": 2 },
-    { "skillId": 46, "skillName": "Invisibilità", "skillDescription": "Rende l'incantatore invisibile.", "exp": 7 },
-    { "skillId": 47, "skillName": "Polimorfismo", "skillDescription": "Trasforma un nemico in una creatura innocua.", "exp": 6 },
-    { "skillId": 48, "skillName": "Armatura Magica", "skillDescription": "Aumenta le difese magiche.", "exp": 5 },
-    { "skillId": 49, "skillName": "Distorsione Temporale", "skillDescription": "Rallenta il tempo per i nemici.", "exp": 8 },
-    { "skillId": 50, "skillName": "Fenice", "skillDescription": "Evoca una fenice per combattere al tuo fianco.", "exp": 9 },
-    { "skillId": 51, "skillName": "Maestria Elementale", "skillDescription": "Aumenta i danni elementali.", "exp": 4 },
-    { "skillId": 52, "skillName": "Esplosione Mentale", "skillDescription": "Attacco mentale che stordisce il nemico.", "exp": 3 },
-    { "skillId": 53, "skillName": "Torrente di Acqua", "skillDescription": "Un getto d'acqua ad alta pressione.", "exp": 5 },
-    { "skillId": 54, "skillName": "Fuoco Spirituale", "skillDescription": "Fiamme che bruciano l'anima.", "exp": 6 },
-    { "skillId": 55, "skillName": "Raggio di Luce", "skillDescription": "Un raggio di luce purificante.", "exp": 2 },
-    { "skillId": 56, "skillName": "Portale", "skillDescription": "Crea un portale per una città amica.", "exp": 7 },
-    { "skillId": 57, "skillName": "Illusione", "skillDescription": "Crea un'illusione per confondere i nemici.", "exp": 4 },
-    { "skillId": 58, "skillName": "Tornado", "skillDescription": "Evoca un tornado che travolge i nemici.", "exp": 8 },
-    { "skillId": 59, "skillName": "Vampirismo", "skillDescription": "Drena la vita dai nemici.", "exp": 6 },
-    { "skillId": 60, "skillName": "Rigenerazione", "skillDescription": "Accelera la guarigione.", "exp": 3 },
-
-
-    { "skillId": 61, "skillName": "Tiro Rapido", "skillDescription": "Un tiro con l'arco rapido.", "exp": 1 },
-    { "skillId": 62, "skillName": "Tiro Potente", "skillDescription": "Un tiro con l'arco potente che infligge più danni.", "exp": 3 },
-    { "skillId": 63, "skillName": "Tiro Multiplo", "skillDescription": "Spara più frecce contemporaneamente.", "exp": 5 },
-    { "skillId": 64, "skillName": "Freccia Perforante", "skillDescription": "Una freccia che perfora i nemici.", "exp": 7 },
-    { "skillId": 65, "skillName": "Pioggia di Frecce", "skillDescription": "Una pioggia di frecce che colpisce più bersagli.", "exp": 9 },
-    { "skillId": 66, "skillName": "Freccia Esplosiva", "skillDescription": "Una freccia che esplode all'impatto.", "exp": 8 },
-    { "skillId": 67, "skillName": "Freccia Velenosa", "skillDescription": "Una freccia che avvelena il nemico.", "exp": 4 },
-    { "skillId": 68, "skillName": "Trappola a Strangolo", "skillDescription": "Imposta una trappola che immobilizza i nemici.", "exp": 2 },
-    { "skillId": 69, "skillName": "Occhio d'Aquila", "skillDescription": "Aumenta la precisione e la portata.", "exp": 6 },
-    { "skillId": 70, "skillName": "Mimetizzazione", "skillDescription": "Confonditi con l'ambiente per diventare meno visibile.", "exp": 1 },
-    { "skillId": 71, "skillName": "Raffica di Frecce", "skillDescription": "Una raffica di frecce.", "exp": 5 },
-    { "skillId": 72, "skillName": "Compagno Falco", "skillDescription": "Evoca un falco per attaccare i nemici.", "exp": 3 },
-    { "skillId": 73, "skillName": "Trappola a Rete", "skillDescription": "Imposta una trappola a rete per catturare i nemici.", "exp": 2 },
-    { "skillId": 74, "skillName": "Passo Silenzioso", "skillDescription": "Muoviti silenziosamente per evitare di essere rilevato.", "exp": 4 },
-    { "skillId": 75, "skillName": "Freccia di Fuoco", "skillDescription": "Scocca una freccia infuocata.", "exp": 6 },
-    { "skillId": 76, "skillName": "Freccia di Ghiaccio", "skillDescription": "Scocca una freccia congelante.", "exp": 5 },
-    { "skillId": 77, "skillName": "Freccia Elettrica", "skillDescription": "Scocca una freccia elettrica.", "exp": 7 },
-    { "skillId": 78, "skillName": "Tiro Intrappolante", "skillDescription": "Scocca una freccia che intrappola il nemico.", "exp": 3 },
-    { "skillId": 79, "skillName": "Esche", "skillDescription": "Crea un'esca per distrarre i nemici.", "exp": 2 },
-    { "skillId": 80, "skillName": "Corridore del Vento", "skillDescription": "Aumenta la velocità di movimento.", "exp": 1 },
-    { "skillId": 81, "skillName": "Maestria delle Trappole", "skillDescription": "Migliora l'efficacia delle trappole.", "exp": 4 },
-    { "skillId": 82, "skillName": "Marchio del Cacciatore", "skillDescription": "Segna un nemico per infliggere danni extra.", "exp": 3 },
-    { "skillId": 83, "skillName": "Bomba Flash", "skillDescription": "Acceca temporaneamente i nemici.", "exp": 2 },
-    { "skillId": 84, "skillName": "Tracciamento", "skillDescription": "Traccia i movimenti dei nemici.", "exp": 1 },
-    { "skillId": 85, "skillName": "Freccia Ombra", "skillDescription": "Scocca una freccia che oscura l'area.", "exp": 5 },
-    { "skillId": 86, "skillName": "Tiro a Raffica", "skillDescription": "Scocca più frecce in rapida successione.", "exp": 6 },
-    { "skillId": 87, "skillName": "Trappola Velenosa", "skillDescription": "Imposta una trappola che avvelena i nemici.", "exp": 7 },
-    { "skillId": 88, "skillName": "Tiro di Precisione", "skillDescription": "Scocca una freccia con precisione assoluta.", "exp": 8 },
-    { "skillId": 89, "skillName": "Tiro a Spargimento", "skillDescription": "Scocca frecce in una vasta area.", "exp": 5 },
-    { "skillId": 90, "skillName": "Riflessi del Cacciatore", "skillDescription": "Aumenta la possibilità di schivata.", "exp": 2 }
+    {
+      "skillId": 1,
+      "skillName": "Colpo Pesante",
+      "skillDescription": "Un colpo potente che infligge danni extra.",
+      "exp": 2
+    },
+    {
+      "skillId": 2,
+      "skillName": "Urlo di Guerra",
+      "skillDescription": "Un urlo che aumenta il morale degli alleati.",
+      "exp": 3
+    },
+    {
+      "skillId": 3,
+      "skillName": "Carica",
+      "skillDescription": "Carica contro il nemico per infliggere danni e stordire.",
+      "exp": 4
+    },
+    {
+      "skillId": 4,
+      "skillName": "Terremoto",
+      "skillDescription": "Colpisce il terreno creando un'onda d'urto.",
+      "exp": 6
+    },
+    {
+      "skillId": 5,
+      "skillName": "Turbine",
+      "skillDescription": "Gira su se stesso colpendo tutti i nemici vicini.",
+      "exp": 5
+    },
+    {
+      "skillId": 6,
+      "skillName": "Ruggito",
+      "skillDescription": "Un ruggito che intimorisce i nemici.",
+      "exp": 1
+    },
+    {
+      "skillId": 7,
+      "skillName": "Pelle di Pietra",
+      "skillDescription": "Indurisce la pelle per ridurre i danni subiti.",
+      "exp": 3
+    },
+    {
+      "skillId": 8,
+      "skillName": "Furia",
+      "skillDescription": "Aumenta la velocità d'attacco e i danni.",
+      "exp": 2
+    },
+    {
+      "skillId": 9,
+      "skillName": "Salto",
+      "skillDescription": "Salta verso una posizione bersaglio, infliggendo danni all'impatto.",
+      "exp": 4
+    },
+    {
+      "skillId": 10,
+      "skillName": "Frenesia",
+      "skillDescription": "Entra in uno stato di frenesia per infliggere danni massicci.",
+      "exp": 7
+    },
+    {
+      "skillId": 11,
+      "skillName": "Sete di Sangue",
+      "skillDescription": "Ripristina la salute con ogni attacco.",
+      "exp": 5
+    },
+    {
+      "skillId": 12,
+      "skillName": "Colpo Selvaggio",
+      "skillDescription": "Un attacco brutale che infligge danni pesanti.",
+      "exp": 6
+    },
+    {
+      "skillId": 13,
+      "skillName": "Urlo di Battaglia",
+      "skillDescription": "Aumenta il morale degli alleati, aumentando i loro danni.",
+      "exp": 3
+    },
+    {
+      "skillId": 14,
+      "skillName": "Trance di Battaglia",
+      "skillDescription": "Entra in trance per ridurre i danni subiti.",
+      "exp": 4
+    },
+    {
+      "skillId": 15,
+      "skillName": "Scudo",
+      "skillDescription": "Colpisce un nemico con lo scudo.",
+      "exp": 2
+    },
+    {
+      "skillId": 16,
+      "skillName": "Tuono",
+      "skillDescription": "Colpisce creando un'onda d'urto.",
+      "exp": 5
+    },
+    {
+      "skillId": 17,
+      "skillName": "Volontà di Ferro",
+      "skillDescription": "Aumenta la resistenza agli effetti di controllo della folla.",
+      "exp": 3
+    },
+    {
+      "skillId": 18,
+      "skillName": "Carica Avventata",
+      "skillDescription": "Carica senza riguardo, infliggendo più danni ma subendo di più.",
+      "exp": 4
+    },
+    {
+      "skillId": 19,
+      "skillName": "Invulnerabilità",
+      "skillDescription": "Diventa temporaneamente invulnerabile.",
+      "exp": 8
+    },
+    {
+      "skillId": 20,
+      "skillName": "Colpo Schiacciante",
+      "skillDescription": "Un colpo potente che frantuma l'armatura.",
+      "exp": 7
+    },
+    {
+      "skillId": 21,
+      "skillName": "Colosso",
+      "skillDescription": "Aumenta la salute e la difesa.",
+      "exp": 6
+    },
+    {
+      "skillId": 22,
+      "skillName": "Assalto",
+      "skillDescription": "Una serie di attacchi brutali.",
+      "exp": 5
+    },
+    {
+      "skillId": 23,
+      "skillName": "Presa del Titano",
+      "skillDescription": "Impugna due armi pesanti contemporaneamente.",
+      "exp": 7
+    },
+    {
+      "skillId": 24,
+      "skillName": "Ruggito Possente",
+      "skillDescription": "Un ruggito forte che intimorisce e indebolisce i nemici.",
+      "exp": 3
+    },
+    {
+      "skillId": 25,
+      "skillName": "Resistenza",
+      "skillDescription": "Aumenta temporaneamente la resistenza e riduce la fatica.",
+      "exp": 2
+    },
+    {
+      "skillId": 26,
+      "skillName": "Ruggito Selvaggio",
+      "skillDescription": "Un ruggito terrificante che spaventa i nemici.",
+      "exp": 4
+    },
+    {
+      "skillId": 27,
+      "skillName": "Colpo del Colosso",
+      "skillDescription": "Un colpo devastante che ignora l'armatura.",
+      "exp": 6
+    },
+    {
+      "skillId": 28,
+      "skillName": "Colpo Vendicativo",
+      "skillDescription": "Un colpo potente alimentato dalla rabbia.",
+      "exp": 5
+    },
+    {
+      "skillId": 29,
+      "skillName": "Rottura",
+      "skillDescription": "Un attacco che causa sanguinamento nel tempo.",
+      "exp": 3
+    },
+    {
+      "skillId": 30,
+      "skillName": "Sentiero di Guerra",
+      "skillDescription": "Lascia un sentiero di distruzione mentre ti muovi.",
+      "exp": 7
+    },
+    {
+      "skillId": 31,
+      "skillName": "Palla di Fuoco",
+      "skillDescription": "Una palla di fuoco che brucia il nemico.",
+      "exp": 3
+    },
+    {
+      "skillId": 32,
+      "skillName": "Spina di Ghiaccio",
+      "skillDescription": "Una spina di ghiaccio che perfora il nemico.",
+      "exp": 2
+    },
+    {
+      "skillId": 33,
+      "skillName": "Dardo Fulminante",
+      "skillDescription": "Un dardo di fulmine che fulmina il nemico.",
+      "exp": 4
+    },
+    {
+      "skillId": 34,
+      "skillName": "Esplosione Arcana",
+      "skillDescription": "Una esplosione di energia arcana.",
+      "exp": 6
+    },
+    {
+      "skillId": 35,
+      "skillName": "Cura",
+      "skillDescription": "Ripristina la salute di un alleato.",
+      "exp": 1
+    },
+    {
+      "skillId": 36,
+      "skillName": "Scudo di Mana",
+      "skillDescription": "Uno scudo che assorbe i danni usando il mana.",
+      "exp": 5
+    },
+    {
+      "skillId": 37,
+      "skillName": "Teletrasporto",
+      "skillDescription": "Muoviti istantaneamente in una posizione vicina.",
+      "exp": 2
+    },
+    {
+      "skillId": 38,
+      "skillName": "Evoca Familiare",
+      "skillDescription": "Evoca una creatura magica per assistere in battaglia.",
+      "exp": 7
+    },
+    {
+      "skillId": 39,
+      "skillName": "Tempesta di Ghiaccio",
+      "skillDescription": "Una tempesta di ghiaccio che danneggia tutti i nemici in un'area.",
+      "exp": 8
+    },
+    {
+      "skillId": 40,
+      "skillName": "Pioggia di Meteore",
+      "skillDescription": "Evoca meteore per schiantarsi sui nemici.",
+      "exp": 10
+    },
+    {
+      "skillId": 41,
+      "skillName": "Fulmine a Catena",
+      "skillDescription": "Un fulmine che salta tra i nemici.",
+      "exp": 6
+    },
+    {
+      "skillId": 42,
+      "skillName": "Scudo di Fiamme",
+      "skillDescription": "Uno scudo di fiamme che brucia gli attaccanti.",
+      "exp": 4
+    },
+    {
+      "skillId": 43,
+      "skillName": "Nova di Ghiaccio",
+      "skillDescription": "Un'esplosione di ghiaccio che congela i nemici vicini.",
+      "exp": 5
+    },
+    {
+      "skillId": 44,
+      "skillName": "Missili Arcani",
+      "skillDescription": "Lancia più missili arcani.",
+      "exp": 3
+    },
+    {
+      "skillId": 45,
+      "skillName": "Bruciatura di Mana",
+      "skillDescription": "Brucia il mana del nemico.",
+      "exp": 2
+    },
+    {
+      "skillId": 46,
+      "skillName": "Invisibilità",
+      "skillDescription": "Rende l'incantatore invisibile.",
+      "exp": 7
+    },
+    {
+      "skillId": 47,
+      "skillName": "Polimorfismo",
+      "skillDescription": "Trasforma un nemico in una creatura innocua.",
+      "exp": 6
+    },
+    {
+      "skillId": 48,
+      "skillName": "Armatura Magica",
+      "skillDescription": "Aumenta le difese magiche.",
+      "exp": 5
+    },
+    {
+      "skillId": 49,
+      "skillName": "Distorsione Temporale",
+      "skillDescription": "Rallenta il tempo per i nemici.",
+      "exp": 8
+    },
+    {
+      "skillId": 50,
+      "skillName": "Fenice",
+      "skillDescription": "Evoca una fenice per combattere al tuo fianco.",
+      "exp": 9
+    },
+    {
+      "skillId": 51,
+      "skillName": "Maestria Elementale",
+      "skillDescription": "Aumenta i danni elementali.",
+      "exp": 4
+    },
+    {
+      "skillId": 52,
+      "skillName": "Esplosione Mentale",
+      "skillDescription": "Attacco mentale che stordisce il nemico.",
+      "exp": 3
+    },
+    {
+      "skillId": 53,
+      "skillName": "Torrente di Acqua",
+      "skillDescription": "Un getto d'acqua ad alta pressione.",
+      "exp": 5
+    },
+    {
+      "skillId": 54,
+      "skillName": "Fuoco Spirituale",
+      "skillDescription": "Fiamme che bruciano l'anima.",
+      "exp": 6
+    },
+    {
+      "skillId": 55,
+      "skillName": "Raggio di Luce",
+      "skillDescription": "Un raggio di luce purificante.",
+      "exp": 2
+    },
+    {
+      "skillId": 56,
+      "skillName": "Portale",
+      "skillDescription": "Crea un portale per una città amica.",
+      "exp": 7
+    },
+    {
+      "skillId": 57,
+      "skillName": "Illusione",
+      "skillDescription": "Crea un'illusione per confondere i nemici.",
+      "exp": 4
+    },
+    {
+      "skillId": 58,
+      "skillName": "Tornado",
+      "skillDescription": "Evoca un tornado che travolge i nemici.",
+      "exp": 8
+    },
+    {
+      "skillId": 59,
+      "skillName": "Vampirismo",
+      "skillDescription": "Drena la vita dai nemici.",
+      "exp": 6
+    },
+    {
+      "skillId": 60,
+      "skillName": "Rigenerazione",
+      "skillDescription": "Accelera la guarigione.",
+      "exp": 3
+    },
+    {
+      "skillId": 61,
+      "skillName": "Tiro Rapido",
+      "skillDescription": "Un tiro con l'arco rapido.",
+      "exp": 1
+    },
+    {
+      "skillId": 62,
+      "skillName": "Tiro Potente",
+      "skillDescription": "Un tiro con l'arco potente che infligge più danni.",
+      "exp": 3
+    },
+    {
+      "skillId": 63,
+      "skillName": "Tiro Multiplo",
+      "skillDescription": "Spara più frecce contemporaneamente.",
+      "exp": 5
+    },
+    {
+      "skillId": 64,
+      "skillName": "Freccia Perforante",
+      "skillDescription": "Una freccia che perfora i nemici.",
+      "exp": 7
+    },
+    {
+      "skillId": 65,
+      "skillName": "Pioggia di Frecce",
+      "skillDescription": "Una pioggia di frecce che colpisce più bersagli.",
+      "exp": 9
+    },
+    {
+      "skillId": 66,
+      "skillName": "Freccia Esplosiva",
+      "skillDescription": "Una freccia che esplode all'impatto.",
+      "exp": 8
+    },
+    {
+      "skillId": 67,
+      "skillName": "Freccia Velenosa",
+      "skillDescription": "Una freccia che avvelena il nemico.",
+      "exp": 4
+    },
+    {
+      "skillId": 68,
+      "skillName": "Trappola a Strangolo",
+      "skillDescription": "Imposta una trappola che immobilizza i nemici.",
+      "exp": 2
+    },
+    {
+      "skillId": 69,
+      "skillName": "Occhio d'Aquila",
+      "skillDescription": "Aumenta la precisione e la portata.",
+      "exp": 6
+    },
+    {
+      "skillId": 70,
+      "skillName": "Mimetizzazione",
+      "skillDescription": "Confonditi con l'ambiente per diventare meno visibile.",
+      "exp": 1
+    },
+    {
+      "skillId": 71,
+      "skillName": "Raffica di Frecce",
+      "skillDescription": "Una raffica di frecce.",
+      "exp": 5
+    },
+    {
+      "skillId": 72,
+      "skillName": "Compagno Falco",
+      "skillDescription": "Evoca un falco per attaccare i nemici.",
+      "exp": 3
+    },
+    {
+      "skillId": 73,
+      "skillName": "Trappola a Rete",
+      "skillDescription": "Imposta una trappola a rete per catturare i nemici.",
+      "exp": 2
+    },
+    {
+      "skillId": 74,
+      "skillName": "Passo Silenzioso",
+      "skillDescription": "Muoviti silenziosamente per evitare di essere rilevato.",
+      "exp": 4
+    },
+    {
+      "skillId": 75,
+      "skillName": "Freccia di Fuoco",
+      "skillDescription": "Scocca una freccia infuocata.",
+      "exp": 6
+    },
+    {
+      "skillId": 76,
+      "skillName": "Freccia di Ghiaccio",
+      "skillDescription": "Scocca una freccia congelante.",
+      "exp": 5
+    },
+    {
+      "skillId": 77,
+      "skillName": "Freccia Elettrica",
+      "skillDescription": "Scocca una freccia elettrica.",
+      "exp": 7
+    },
+    {
+      "skillId": 78,
+      "skillName": "Tiro Intrappolante",
+      "skillDescription": "Scocca una freccia che intrappola il nemico.",
+      "exp": 3
+    },
+    {
+      "skillId": 79,
+      "skillName": "Esche",
+      "skillDescription": "Crea un'esca per distrarre i nemici.",
+      "exp": 2
+    },
+    {
+      "skillId": 80,
+      "skillName": "Corridore del Vento",
+      "skillDescription": "Aumenta la velocità di movimento.",
+      "exp": 1
+    },
+    {
+      "skillId": 81,
+      "skillName": "Maestria delle Trappole",
+      "skillDescription": "Migliora l'efficacia delle trappole.",
+      "exp": 4
+    },
+    {
+      "skillId": 82,
+      "skillName": "Marchio del Cacciatore",
+      "skillDescription": "Segna un nemico per infliggere danni extra.",
+      "exp": 3
+    },
+    {
+      "skillId": 83,
+      "skillName": "Bomba Flash",
+      "skillDescription": "Acceca temporaneamente i nemici.",
+      "exp": 2
+    },
+    {
+      "skillId": 84,
+      "skillName": "Tracciamento",
+      "skillDescription": "Traccia i movimenti dei nemici.",
+      "exp": 1
+    },
+    {
+      "skillId": 85,
+      "skillName": "Freccia Ombra",
+      "skillDescription": "Scocca una freccia che oscura l'area.",
+      "exp": 5
+    },
+    {
+      "skillId": 86,
+      "skillName": "Tiro a Raffica",
+      "skillDescription": "Scocca più frecce in rapida successione.",
+      "exp": 6
+    },
+    {
+      "skillId": 87,
+      "skillName": "Trappola Velenosa",
+      "skillDescription": "Imposta una trappola che avvelena i nemici.",
+      "exp": 7
+    },
+    {
+      "skillId": 88,
+      "skillName": "Tiro di Precisione",
+      "skillDescription": "Scocca una freccia con precisione assoluta.",
+      "exp": 8
+    },
+    {
+      "skillId": 89,
+      "skillName": "Tiro a Spargimento",
+      "skillDescription": "Scocca frecce in una vasta area.",
+      "exp": 5
+    },
+    {
+      "skillId": 90,
+      "skillName": "Riflessi del Cacciatore",
+      "skillDescription": "Aumenta la possibilità di schivata.",
+      "exp": 2
+    }
   ]
 }
