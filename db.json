@@ -168,6 +168,19 @@
         "Carisma": 8
       },
       "img": "https://example.com/gnome.jpg"
+    },
+    {
+      "raceId": 6,
+      "raceName": "Undead",
+      "bio": "Gli undead sono creature risorte dalla morte, animate da un'energia oscura e spesso dotate di abilità sovrannaturali.",
+      "traits": {
+        "Forza": 6,
+        "Agilità": 5,
+        "Intelligenza": 7,
+        "Resistenza": 10,
+        "Carisma": 3
+      },
+      "img": "https://example.com/undead.jpg"
     }
   ],
   "skills": [
