@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { iCharacter } from '../../interfaces/icharacter';
 import { iSkills } from '../../interfaces/skills';
 import { iClassi } from '../../interfaces/classe';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { iRaces } from '../../interfaces/iraces';
 import { AuthService } from '../../auth/auth.service';
 import { SkillsService } from '../../services/skills.service';
 import { CharactersService } from '../../services/characters.service';
 import { ClassesService } from '../../services/classes.service';
+import { RacesService } from '../../services/races.service';
 
 @Component({
   selector: 'app-creazione-pg',
@@ -16,32 +18,46 @@ import { ClassesService } from '../../services/classes.service';
 export class CreazionePgComponent {
   characterForm!: FormGroup;
   classes: iClassi[] = [];
+  races: iRaces[] = [];
   skills: iSkills[] = [];
   selectedSkills: iSkills[] = [];
   availableExp: number = 50;
   selectedClassIndex: number = -1;
+  selectedRaceId: number = -1;
+  classSelected: boolean = false;
+  raceSelected: boolean = false;
+
   constructor(
     private fb: FormBuilder,
     private classesSvc: ClassesService,
     private charactersSvc: CharactersService,
     private skillsSvc: SkillsService,
-    private authSvc: AuthService
+    private authSvc: AuthService,
+    private racesSvc: RacesService
   ) {}
 
   ngOnInit(): void {
     this.characterForm = this.fb.group({
       characterName: ['', Validators.required],
       classId: ['', Validators.required],
+      raceId: ['', Validators.required],
       selectedSkills: [[]],
       expTot: [50, Validators.required],
     });
 
     this.loadClasses();
+    this.loadRaces();
   }
 
   loadClasses(): void {
     this.classesSvc.getClasses().subscribe((data: iClassi[]) => {
       this.classes = data;
+    });
+  }
+
+  loadRaces(): void {
+    this.racesSvc.getRaces().subscribe((data: iRaces[]) => {
+      this.races = data;
     });
   }
 
@@ -62,6 +78,11 @@ export class CreazionePgComponent {
         (c) => c.classId === classId
       );
     }
+  }
+
+  onRaceChange(raceId: number): void {
+    this.characterForm.patchValue({ raceId });
+    this.selectedRaceId = raceId; // Assicurati di impostare selectedRaceId
   }
 
   onSkillSelect(event: any, skill: iSkills): void {
@@ -110,9 +131,13 @@ export class CreazionePgComponent {
       console.log('Form is invalid');
     }
   }
-
+  isSelected(skill: iSkills): boolean {
+    return this.selectedSkills.some(
+      (selectedSkill) => selectedSkill.skillId === skill.skillId
+    );
+  }
   resetSkills(): void {
-    // Deseleziona tutte le checkbox
+    // Deselect all checkboxes
     this.skills.forEach((skill) => {
       const checkbox = document.getElementById(
         `checkbox-${skill.skillId}`
@@ -121,14 +146,6 @@ export class CreazionePgComponent {
         checkbox.checked = false;
       }
     });
-    // Resetta l'array delle abilità selezionate e l'exp disponibile
-    this.selectedSkills = [];
-    this.availableExp = 50;
-    // Aggiorna i valori del form
-    this.updateFormValues();
-  }
-
-  isSelected(skill: iSkills): boolean {
-    return this.selectedSkills.includes(skill);
+    // Reset the selected skills array and available experience
   }
 }
