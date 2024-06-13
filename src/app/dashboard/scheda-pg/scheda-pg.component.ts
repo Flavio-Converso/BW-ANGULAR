@@ -119,6 +119,8 @@ export class SchedaPgComponent {
   }
 
   goToHome(): void {
-    this.router.navigate(['/']);
+    this.router.navigate(['/']).then(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    });
   }
 }
