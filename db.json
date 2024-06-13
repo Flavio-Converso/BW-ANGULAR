@@ -52,25 +52,91 @@
       "id": 1
     },
     {
-      "characterName": "gabibbo",
+      "characterName": "test",
+      "classs": 4,
+      "race": 1,
+      "selectedSkills": [
+        91,
+        130,
+        129,
+        128,
+        127,
+        126,
+        125,
+        124,
+        123,
+        101
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "characterName": "Ilario Alicante",
+      "classs": 6,
+      "race": 3,
+      "selectedSkills": [
+        178,
+        177,
+        176,
+        175,
+        174,
+        173,
+        172,
+        171,
+        170,
+        169,
+        180,
+        100
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "characterName": "luca",
+      "classs": 5,
+      "race": 6,
+      "selectedSkills": [
+        99,
+        131,
+        133,
+        140,
+        138,
+        136,
+        146,
+        145,
+        143,
+        142,
+        141,
+        147,
+        97
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "characterName": "adadadd",
       "classs": 3,
       "race": 5,
       "selectedSkills": [
-        63,
-        65,
-        66,
-        67,
-        68,
-        69,
-        70,
-        71,
-        72,
+        80,
+        82,
+        84,
+        74,
         75,
-        84
+        76,
+        78,
+        77,
+        69,
+        68,
+        66,
+        67
       ],
       "expTot": 0,
-      "userId": 2,
-      "id": 2
+      "userId": 1,
+      "id": 5
     }
   ],
   "classes": [
@@ -125,7 +191,7 @@
     {
       "classs": 2,
       "className": "Mago",
-      "bio": "Maestro delle arti arcane, il Mago lancia incantesimi potenti da lontano e manipola le energie magiche. Formidabile negli scontri a distanza, la sua debolezza risiede negli scontri.",
+      "bio": "Maestro delle arti arcane, il Mago lancia incantesimi potenti da lontano e manipola le energie magiche. Formidabile negli scontri a distanza, la sua debolezza risiede negli scontri ravvicinati.",
       "img": "https://th.bing.com/th/id/OIG2.giN_VixGaT5nHdJ58EaN?pid=ImgGn",
       "skills": [
         31,
