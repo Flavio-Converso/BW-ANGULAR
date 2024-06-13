@@ -75,6 +75,17 @@
               <ul>
                 <li *ngFor="let guest of eventForm.get('event')?.value.guests">
                   {{ guest.characterName }} {{ getUserName(guest.userId) }}
+                  <button
+                    *ngIf="currentUser && currentUser.id === guest.userId"
+                    (click)="
+                      rimuoviIscrizione(
+                        eventForm.get('event')?.value.id,
+                        guest.id
+                      )
+                    "
+                  >
+                    Delete
+                  </button>
                 </li>
               </ul>
             </div>
