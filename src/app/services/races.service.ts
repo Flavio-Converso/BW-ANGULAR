@@ -15,8 +15,8 @@ export class RacesService {
     return this.http.get<iRaces[]>(this.apiUrl);
   }
 
-  getRaceById(raceId: number): Observable<iRaces> {
-    return this.http.get<iRaces[]>(`${this.apiUrl}/?raceId=${raceId}`).pipe(
+  getRaceById(race: number): Observable<iRaces> {
+    return this.http.get<iRaces[]>(`${this.apiUrl}/?race=${race}`).pipe(
       map((races) => {
         if (races.length > 0) {
           return races[0];
@@ -31,11 +31,11 @@ export class RacesService {
     return this.http.post<iRaces>(this.apiUrl, newRace);
   }
 
-  updateRace(raceId: number, updatedRace: iRaces): Observable<iRaces> {
-    return this.http.put<iRaces>(`${this.apiUrl}/?raceId=${raceId}`, updatedRace);
+  updateRace(race: number, updatedRace: iRaces): Observable<iRaces> {
+    return this.http.put<iRaces>(`${this.apiUrl}/?race=${race}`, updatedRace);
   }
 
-  deleteRace(raceId: number): Observable<void> {
-    return this.http.delete<void>(`${this.apiUrl}/?raceId=${raceId}`);
+  deleteRace(race: number): Observable<void> {
+    return this.http.delete<void>(`${this.apiUrl}/?race=${race}`);
   }
 }

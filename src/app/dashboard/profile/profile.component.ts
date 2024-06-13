@@ -53,7 +53,7 @@ export class ProfileComponent {
     characterObs.subscribe((chars: iCharacter[]) => {
       this.characters = chars;
       chars.forEach((character) => {
-        this.raceSvc.getRaceById(character.raceId).subscribe((race: iRaces) => {
+        this.raceSvc.getRaceById(character.race).subscribe((race: iRaces) => {
           this.race[character.id] = race;
           this.addToCombina();
         });

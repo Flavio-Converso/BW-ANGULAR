@@ -24,7 +24,7 @@ export class CombinaService {
     characters.forEach((character) => {
       // Trova la classe corrispondente al personaggio
       const classe = classes.find((c) => c.classs === character.classs);
-      const race = races.find((r) => r.raceId === character.raceId);
+      const race = races.find((r) => r.race === character.race);
       if (classe && race) {
         // Crea una combinazione con il personaggio, la classe e le skills
         const selectedSkills = character.selectedSkills

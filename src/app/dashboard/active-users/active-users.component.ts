@@ -66,7 +66,7 @@ export class ActiveUsersComponent implements OnInit {
         this.characters[char.userId].push(char);
 
         // Fetch race for each character
-        this.raceSvc.getRaceById(char.raceId).subscribe((race: iRaces) => {
+        this.raceSvc.getRaceById(char.race).subscribe((race: iRaces) => {
           if (!this.races[char.userId]) {
             this.races[char.userId] = {};
           }

@@ -1,5 +1,5 @@
 export interface iRaces {
-  raceId: number;
+  race: number;
   raceName: string;
   raceBio: string;
   traits: {

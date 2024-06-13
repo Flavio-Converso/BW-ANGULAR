@@ -5,5 +5,5 @@ export interface iCharacter {
   characterName: string;
   expTot: number; //da dare fisso eventualmente
   selectedSkills: number[];
-  raceId: number;
+  race: number;
 }

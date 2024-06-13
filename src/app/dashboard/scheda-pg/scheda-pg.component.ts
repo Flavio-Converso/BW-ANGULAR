@@ -84,9 +84,9 @@ export class SchedaPgComponent {
   }
 
   loadCharacterRace(): void {
-    if (this.character && this.character.raceId) {
-      // Assumi che raceId sia una proprietà del personaggio
-      this.raceSrc.getRaceById(this.character.raceId).subscribe(
+    if (this.character && this.character.race) {
+      // Assumi che race sia una proprietà del personaggio
+      this.raceSrc.getRaceById(this.character.race).subscribe(
         (raceChar: iRaces) => {
           console.log('Razza:', raceChar);
           this.race = raceChar; // Assegna l'intero oggetto della razza

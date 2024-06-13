@@ -25,7 +25,7 @@ export class CreazionePgComponent {
   availableExp: number = 50;
   selectedClassIndex: number = -1;
   selectedRaceIndex: number = -1;
-  selectedRaceId: number = -1;
+  selectedRace: number = -1;
   classSelected: boolean = false;
   raceSelected: boolean = false;
 
@@ -43,7 +43,7 @@ export class CreazionePgComponent {
     this.characterForm = this.fb.group({
       characterName: ['', Validators.required],
       classs: ['', Validators.required],
-      raceId: ['', Validators.required],
+      race: ['', Validators.required],
       selectedSkills: [[]],
       expTot: [50, Validators.required],
     });
@@ -83,10 +83,10 @@ export class CreazionePgComponent {
     }
   }
 
-  onRaceChange(raceId: number): void {
-    this.characterForm.patchValue({ raceId });
-    this.selectedRaceId = raceId; // Assicurati di impostare selectedRaceId
-    this.selectedRaceIndex = this.races.findIndex((r) => r.raceId === raceId);
+  onRaceChange(race: number): void {
+    this.characterForm.patchValue({ race });
+    this.selectedRace = race; // Assicurati di impostare selectedRace
+    this.selectedRaceIndex = this.races.findIndex((r) => r.race === race);
   }
 
   onSkillSelect(event: any, skill: iSkills): void {
