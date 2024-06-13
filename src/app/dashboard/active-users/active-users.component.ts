@@ -16,7 +16,7 @@ import { iRaces } from '../../interfaces/iraces';
 @Component({
   selector: 'app-active-users',
   templateUrl: './active-users.component.html',
-  styleUrls: ['./active-users.component.scss']
+  styleUrls: ['./active-users.component.scss'],
 })
 export class ActiveUsersComponent implements OnInit {
   user!: iUsers | null;
@@ -47,19 +47,19 @@ export class ActiveUsersComponent implements OnInit {
       }
     });
 
-    console.log("Fetching all users...");
+    console.log('Fetching all users...');
     this.userSvc.getAllUsers().subscribe((users) => {
-      console.log("All users received:", users);
+      console.log('All users received:', users);
       this.users = users;
-      this.users.forEach(user => this.fetchClassAndSkills(user));
+      this.users.forEach((user) => this.fetchClassAndSkills(user));
     });
   }
 
   fetchAllData() {
-    console.log("Fetching all data for user:", this.user);
+    console.log('Fetching all data for user:', this.user);
     this.characterSvc.getCharacters().subscribe((chars: iCharacter[]) => {
-      console.log("All characters received:", chars);
-      chars.forEach(char => {
+      console.log('All characters received:', chars);
+      chars.forEach((char) => {
         if (!this.characters[char.userId]) {
           this.characters[char.userId] = [];
         }
@@ -78,20 +78,22 @@ export class ActiveUsersComponent implements OnInit {
   }
 
   fetchClassAndSkills(user: iUsers) {
-    console.log("Fetching class and skills for user:", user);
+    console.log('Fetching class and skills for user:', user);
     this.classSvc.getClassByUserId(user.id).subscribe((caClass: iClassi[]) => {
-      console.log("Classes received:", caClass);
+      console.log('Classes received:', caClass);
       this.class[user.id] = caClass;
-      this.skillSvc.getSkillByUserId(user.id).subscribe((kSkills: iSkills[]) => {
-        console.log("Skills received:", kSkills);
-        this.iSkills[user.id] = kSkills;
-        this.addToCombina(user.id);
-      });
+      this.skillSvc
+        .getSkillByUserId(user.id)
+        .subscribe((kSkills: iSkills[]) => {
+          console.log('Skills received:', kSkills);
+          this.iSkills[user.id] = kSkills;
+          this.addToCombina(user.id);
+        });
     });
   }
 
   addToCombina(userId: number) {
-    console.log("Adding to combina for user:", userId);
+    console.log('Adding to combina for user:', userId);
     if (
       this.characters[userId] &&
       this.class[userId] &&
@@ -99,13 +101,17 @@ export class ActiveUsersComponent implements OnInit {
       this.races[userId] &&
       Object.keys(this.races[userId]).length === this.characters[userId].length
     ) {
-      console.log("Combining data for user:", userId);
+      console.log('Combining data for user:', userId);
       const combinedData = this.characters[userId].map((character) => {
         return {
           characters: character,
-          classe: this.class[userId].find((c) => c.classId === character.classId)!,
+          classe: this.class[userId].find(
+            (c) => c.classs === character.classs
+          )!,
           race: this.races[userId][character.id],
-          skills: this.iSkills[userId].filter((skill) => character.selectedSkills.includes(skill.skillId)),
+          skills: this.iSkills[userId].filter((skill) =>
+            character.selectedSkills.includes(skill.skillId)
+          ),
         };
       });
       this.combina[userId] = this.combinaSvc.combineData(

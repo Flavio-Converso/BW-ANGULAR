@@ -82,9 +82,11 @@ export class ProfileComponent {
       const combinedData = this.characters.map((character) => {
         return {
           characters: character,
-          classe: this.class.find((c) => c.classId === character.classId)!,
+          classe: this.class.find((c) => c.classs === character.classs)!,
           race: this.race[character.id],
-          skills: this.iSkills.filter((skill) => character.selectedSkills.includes(skill.skillId)),
+          skills: this.iSkills.filter((skill) =>
+            character.selectedSkills.includes(skill.skillId)
+          ),
         };
       });
       this.combina = this.combinaSvc.combineData(
@@ -96,4 +98,3 @@ export class ProfileComponent {
     }
   }
 }
-
