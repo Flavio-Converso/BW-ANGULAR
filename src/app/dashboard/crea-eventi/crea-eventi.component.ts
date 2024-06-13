@@ -20,7 +20,7 @@ export class CreaEventiComponent implements OnInit {
       master: new FormControl('', Validators.required),
       titolo: new FormControl('', Validators.required),
       descrizione: new FormControl(''),
-      urlImmagine: new FormControl('', Validators.required),
+      urlImmagine: new FormControl(''),
       data: new FormControl('', Validators.required),
       tipo: new FormControl('', Validators.required),
       numeroGiocatori: new FormControl('', [Validators.required, Validators.min(1)]),

@@ -1,0 +1,50 @@
+<div *ngIf="events && events.length > 0">
+  <h2>Eventi Creati</h2>
+  <div *ngFor="let eventForm of eventForms">
+    <h3>{{ eventForm.get("event")?.value.titolo }}</h3>
+    <p>{{ eventForm.get("event")?.value.descrizione }}</p>
+    <img
+      [src]="eventForm.get('event')?.value.urlImmagine"
+      [alt]="eventForm.get('event')?.value.titolo"
+    />
+    <p>Master: {{ eventForm.get("event")?.value.master }}</p>
+    <p>Data: {{ eventForm.get("event")?.value.data }}</p>
+    <p>Tipo: {{ eventForm.get("event")?.value.tipo }}</p>
+    <p>Numero Giocatori: {{ eventForm.get("event")?.value.numeroGiocatori }}</p>
+    <p>Indirizzo: {{ eventForm.get("event")?.value.indirizzo }}</p>
+
+    <form [formGroup]="eventForm">
+      <div *ngIf="characters && characters.length > 0">
+        <h4>Scegli il personaggio:</h4>
+        <select formControlName="selectedCharacter">
+          <option *ngFor="let character of characters" [ngValue]="character">
+            {{ character.characterName }}
+          </option>
+        </select>
+      </div>
+
+      <!-- Pulsante Iscriviti -->
+      <button
+        (click)="iscriviti(eventForm)"
+        [disabled]="!eventForm.get('selectedCharacter')?.value"
+      >
+        Iscriviti
+      </button>
+    </form>
+
+    <!-- Mostra i personaggi iscritti -->
+    <div
+      *ngIf="
+        eventForm.get('event')?.value.guests &&
+        eventForm.get('event')?.value.guests.length > 0
+      "
+    >
+      <h4>Personaggi Iscritti:</h4>
+      <ul>
+        <li *ngFor="let guest of eventForm.get('event')?.value.guests">
+          {{ guest.characterName }} {{ getUserName(guest.userId) }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
