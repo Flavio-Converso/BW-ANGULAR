@@ -50,6 +50,27 @@
       "expTot": 0,
       "userId": 1,
       "id": 1
+    },
+    {
+      "characterName": "gabibbo",
+      "classs": 3,
+      "race": 5,
+      "selectedSkills": [
+        63,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        75,
+        84
+      ],
+      "expTot": 0,
+      "userId": 2,
+      "id": 2
     }
   ],
   "classes": [
