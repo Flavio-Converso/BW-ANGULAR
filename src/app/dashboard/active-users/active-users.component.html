@@ -17,11 +17,8 @@
               alt="{{ iscritto?.username }}"
             />
             {{ iscritto?.username }}
-            {{ iscritto.id }}
+            Id: {{ iscritto.id }}
             {{ iscritto?.email }}
-            {{ iscritto?.nome }}
-            {{ iscritto?.cognome }}
-            {{ iscritto?.genere }}
           </li>
           <div class="activebg" *ngIf="combina[iscritto.id].length > 0">
             <button
@@ -47,27 +44,22 @@
                       alt="{{ character.characters.characterName }}"
                     />
                     <div class="card-body activebg">
-                      <h5 class="card-title activebg">
+                      <h5 class="card-title activebg text-center">
                         {{ character.characters.characterName }}
                       </h5>
-                      <p class="card-text activebg">
-                        {{ character.characters.classId }}
+                      <p class="card-text activebg mb-1">
+                        {{ character.classe.className }}
+                      </p>
+                      <p class="card-text activebg border-top">
+                        {{ character.classe.bio }}
+                      </p>
+                      <p class="card-text activebg mb-1">
+                        {{ character.race.raceName }}
+                      </p>
+                      <p class="card-text activebg border-top">
+                        {{ character.race.raceBio }}
                       </p>
                     </div>
-                    <ul class="list-group list-group-flush activebg">
-                      <li class="list-group-item activebg">
-                        <strong>Razza:</strong>
-                        {{ character.characters.classId }}
-                      </li>
-                      <li class="list-group-item activebg">
-                        <strong>Classe:</strong>
-                        {{ character.characters.characterName }}
-                      </li>
-                      <li class="list-group-item activebg">
-                        <strong>Livello:</strong>
-                        {{ character.characters.characterId }}
-                      </li>
-                    </ul>
                   </div>
                 </div>
               </div>
