@@ -25,7 +25,7 @@ export class CreazionePgComponent {
   availableExp: number = 50;
   selectedClassIndex: number = -1;
   selectedRaceIndex: number = -1;
-  selectedRaceId: number = -1;
+  selectedRace: number = -1;
   classSelected: boolean = false;
   raceSelected: boolean = false;
 
@@ -42,8 +42,8 @@ export class CreazionePgComponent {
   ngOnInit(): void {
     this.characterForm = this.fb.group({
       characterName: ['', Validators.required],
-      classId: ['', Validators.required],
-      raceId: ['', Validators.required],
+      classs: ['', Validators.required],
+      race: ['', Validators.required],
       selectedSkills: [[]],
       expTot: [50, Validators.required],
     });
@@ -64,29 +64,29 @@ export class CreazionePgComponent {
     });
   }
 
-  onClassChange(classId: number): void {
-    const selectedClass = this.classes.find((c) => c.classId === classId);
+  onClassChange(classs: number): void {
+    const selectedClass = this.classes.find((c) => c.classs === classs);
     if (selectedClass) {
       this.skillsSvc.getSkills().subscribe((allSkills: iSkills[]) => {
         this.skills = allSkills.filter((skill) =>
-          selectedClass.skills.includes(skill.skillId)
+          selectedClass.skills.includes(skill.skill)
         );
         console.log('Filtered skills:', this.skills);
       });
-      this.characterForm.patchValue({ classId });
+      this.characterForm.patchValue({ classs });
       this.selectedSkills = [];
       this.availableExp = 50;
       this.updateFormValues();
       this.selectedClassIndex = this.classes.findIndex(
-        (c) => c.classId === classId
+        (c) => c.classs === classs
       );
     }
   }
 
-  onRaceChange(raceId: number): void {
-    this.characterForm.patchValue({ raceId });
-    this.selectedRaceId = raceId; // Assicurati di impostare selectedRaceId
-    this.selectedRaceIndex = this.races.findIndex((r) => r.raceId === raceId);
+  onRaceChange(race: number): void {
+    this.characterForm.patchValue({ race });
+    this.selectedRace = race; // Assicurati di impostare selectedRace
+    this.selectedRaceIndex = this.races.findIndex((r) => r.race === race);
   }
 
   onSkillSelect(event: any, skill: iSkills): void {
@@ -100,7 +100,7 @@ export class CreazionePgComponent {
       }
     } else {
       const index = this.selectedSkills.findIndex(
-        (s) => s.skillId === skill.skillId
+        (s) => s.skill === skill.skill
       );
       if (index !== -1) {
         this.selectedSkills.splice(index, 1);
@@ -112,7 +112,7 @@ export class CreazionePgComponent {
 
   updateFormValues(): void {
     this.characterForm.patchValue({
-      selectedSkills: this.selectedSkills.map((s) => s.skillId),
+      selectedSkills: this.selectedSkills.map((s) => s.skill),
       expTot: this.availableExp,
     });
   }
@@ -138,14 +138,14 @@ export class CreazionePgComponent {
   }
   isSelected(skill: iSkills): boolean {
     return this.selectedSkills.some(
-      (selectedSkill) => selectedSkill.skillId === skill.skillId
+      (selectedSkill) => selectedSkill.skill === skill.skill
     );
   }
   resetSkills(): void {
     // Deselect all checkboxes
     this.skills.forEach((skill) => {
       const checkbox = document.getElementById(
-        `checkbox-${skill.skillId}`
+        `checkbox-${skill.skill}`
       ) as HTMLInputElement;
       if (checkbox) {
         checkbox.checked = false;
