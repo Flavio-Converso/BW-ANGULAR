@@ -10,7 +10,7 @@ export class GuestGuard{
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
     if (this.authSvc.syncIsLoggedIn) {
-      this.router.navigate(['/404']);
+      this.router.navigate(['/']);
       return false;
     }
     return true;
