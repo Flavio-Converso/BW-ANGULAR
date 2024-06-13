@@ -11,16 +11,28 @@
         >
           <li class="m-2 fs-1 d-flex justify-content-center fw-bold activebg">
             <img
+              *ngIf="iscritto?.immagine"
               [src]="iscritto?.immagine"
               width="50px"
               class="me-3 rounded-circle"
               alt="{{ iscritto?.username }}"
             />
+            <img
+              *ngIf="!iscritto?.immagine"
+              src="../../../assets/img/profilovuoto.jpg"
+              width="50px"
+              class="me-3 rounded-circle"
+              alt="{{ iscritto?.username }}"
+            />
+
             {{ iscritto?.username }}
-            Id: {{ iscritto.id }}
+
             {{ iscritto?.email }}
           </li>
-          <div class="activebg" *ngIf="combina[iscritto.id].length > 0">
+          <div
+            class="activebg"
+            *ngIf="combina[iscritto.id]; else noCharactersTemplate"
+          >
             <button
               class="btn m-auto d-flex justify-content-center fs-2 activebg"
               type="button"
@@ -31,6 +43,7 @@
             >
               Personaggi di {{ iscritto.username }}
             </button>
+
             <div class="collapse activebg" [id]="'collapseExample' + i">
               <div class="row activebg justify-content-center">
                 <div
@@ -38,11 +51,24 @@
                   class="col-12 col-md-6 col-lg-3 my-5 activebg"
                 >
                   <div class="card card-equal-height m-4 activebg">
-                    <img
-                      [src]="character.classe.img"
-                      class="card-img-top activebg"
-                      alt="{{ character.characters.characterName }}"
-                    />
+                    <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front imgFade">
+                          <img
+                            [src]="character.classe.img"
+                            alt="img"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="flip-box-back imgFade">
+                          <img
+                            [src]="character.race.img"
+                            alt="img"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
                     <div class="card-body activebg">
                       <h5 class="card-title activebg text-center">
                         {{ character.characters.characterName }}
@@ -65,6 +91,11 @@
               </div>
             </div>
           </div>
+          <ng-template #noCharactersTemplate>
+            <div class="text-center fs-2 activebg mt-2">
+              {{ iscritto.username }} non ha ancora personaggi.
+            </div>
+          </ng-template>
         </ul>
       </div>
     </div>
@@ -96,20 +127,24 @@
     <div class="col-12 text-center activebg">
       <h2 class="py-3 activebg">Citazioni famose</h2>
       <blockquote class="blockquote">
-        <p class="mb-0 activebg">
-          "Non è il destino che determina il nostro futuro, ma le nostre
-          scelte." - Eberron
+        <p class="mb-0">
+          "Non esistono limiti all'immaginazione. Puoi essere chi vuoi, andare
+          dove vuoi." - Volo
         </p>
         <footer class="blockquote-footer mt-3">Dungeons & Dragons</footer>
       </blockquote>
       <blockquote class="blockquote">
         <p class="mb-0">
-          "Un eroe è qualcuno che ha dato la sua vita a qualcosa di più grande
-          di se stesso." - Joseph Campbell
+          "L'avventura è là fuori, devi solo andare a cercarla." - Elminster
         </p>
-        <footer class="blockquote-footer mt-3">
-          La Maschera e il Mantello
-        </footer>
+        <footer class="blockquote-footer mt-3">Dungeons & Dragons</footer>
+      </blockquote>
+      <blockquote class="blockquote">
+        <p class="mb-0 activebg">
+          "Il vero coraggio non è l'assenza di paura, ma agire nonostante essa."
+          - Minsc
+        </p>
+        <footer class="blockquote-footer mt-3">Dungeons & Dragons</footer>
       </blockquote>
     </div>
   </div>

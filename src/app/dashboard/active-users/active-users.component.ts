@@ -109,7 +109,9 @@ export class ActiveUsersComponent implements OnInit {
             (c) => c.classs === character.classs
           )!,
           race: this.races[userId][character.id],
-          skills: this.iSkills[userId].filter((skill) => character.selectedSkills.includes(skill.skill)),
+          skills: this.iSkills[userId].filter((skill) =>
+            character.selectedSkills.includes(skill.skill)
+          ),
         };
       });
       this.combina[userId] = this.combinaSvc.combineData(

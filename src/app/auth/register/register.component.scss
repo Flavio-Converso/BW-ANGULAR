@@ -6,7 +6,10 @@
   background-color: #10111a;
   color: white;
 }
-
+.clicca-qui {
+  text-decoration: underline;
+  color: rgb(199, 15, 255);
+}
 @layer fantasy-btn, fantasy-presets;
 
 @layer fantasy-presets {
