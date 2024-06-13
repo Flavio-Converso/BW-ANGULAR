@@ -16,7 +16,7 @@ export class ClassesService {
   }
 
   getClassById(classs: number): Observable<iClassi> {
-    return this.http.get<iClassi[]>(`${this.apiUrl}/?classs=${classs}`).pipe(
+    return this.http.get<iClassi[]>(`${this.apiUrl}/?class=${classs}`).pipe(
       map((classes) => {
         if (classes.length > 0) {
           return classes[0];
@@ -38,12 +38,12 @@ export class ClassesService {
 
   updateClass(classs: number, updatedClass: iClassi): Observable<iClassi> {
     return this.http.put<iClassi>(
-      `${this.apiUrl}/?classs=${classs}`,
+      `${this.apiUrl}/?class=${classs}`,
       updatedClass
     );
   }
 
   deleteClass(classs: number): Observable<void> {
-    return this.http.delete<void>(`${this.apiUrl}/?classs=${classs}`);
+    return this.http.delete<void>(`${this.apiUrl}/?class=${classs}`);
   }
 }

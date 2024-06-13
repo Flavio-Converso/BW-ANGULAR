@@ -25,10 +25,36 @@
       "id": 2
     }
   ],
-  "characters": [],
+  "characters": [
+    {
+      "characterName": "Giorgio",
+      "classs": 4,
+      "race": 2,
+      "selectedSkills": [
+        91,
+        92,
+        95,
+        93,
+        94,
+        97,
+        109,
+        111,
+        117,
+        121,
+        125,
+        124,
+        123,
+        122,
+        102
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 1
+    }
+  ],
   "classes": [
     {
-      "class": 1,
+      "classs": 1,
       "className": "Guerriero",
       "bio": "Il Guerriero è un combattente robusto e coraggioso, in grado di affrontare i nemici in prima linea con forza bruta e abilità nel corpo a corpo.",
       "img": "https://th.bing.com/th/id/OIG2.Ip.LAra1eCHTU9Ea3Wxw?pid=ImgGn",
@@ -76,7 +102,7 @@
       ]
     },
     {
-      "class": 2,
+      "classs": 2,
       "className": "Mago",
       "bio": "Maestro delle arti arcane, il Mago lancia incantesimi potenti da lontano e manipola le energie magiche. Formidabile negli scontri a distanza, la sua debolezza risiede negli scontri ravvicinati.",
       "img": "https://th.bing.com/th/id/OIG2.giN_VixGaT5nHdJ58EaN?pid=ImgGn",
@@ -124,7 +150,7 @@
       ]
     },
     {
-      "class": 3,
+      "classs": 3,
       "className": "Cacciatore",
       "bio": "Il cacciatore, esperto di tiro con l'arco, colpisce i nemici a distanza con precisione letale e può muoversi furtivamente sul campo di battaglia.",
       "img": "https://th.bing.com/th/id/OIG1.ndTSh3IP6PIYPRpplv_Z?pid=ImgGn",
@@ -172,7 +198,7 @@
       ]
     },
     {
-      "class": 4,
+      "classs": 4,
       "className": "Sciamano",
       "bio": "Lo Sciamano è un esperto di magia naturale e spiriti, capace di evocare creature, curare ferite, e proteggere con la forza della natura.",
       "img": "https://tse3.mm.bing.net/th?id=OIG4.uQSedqiaXHgj48m1jvvo&pid=ImgGn",
@@ -220,7 +246,7 @@
       ]
     },
     {
-      "class": 5,
+      "classs": 5,
       "className": "Druido",
       "bio": "Il Druido è un custode della natura, in grado di trasformarsi in animali e utilizzare potenti magie legate agli elementi terra, fuoco e acqua.",
       "img": "https://tse3.mm.bing.net/th?id=OIG2.iV3OG8yqioI54f7tu1pd&pid=ImgGn",
@@ -268,7 +294,7 @@
       ]
     },
     {
-      "class": 6,
+      "classs": 6,
       "className": "Monaco",
       "bio": "Il Monaco è un maestro della fede e della guarigione, capace di usare incantesimi sacri per curare, proteggere e purificare alleati e ambienti circostanti.",
       "img": "https://tse4.mm.bing.net/th?id=OIG4.CoLIvoQlGtWxqMMAij_1&pid=ImgGn",
