@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { iUsers } from '../../interfaces/iusers';
 import { AuthService } from '../../auth/auth.service';
 import { UsersService } from '../../services/users.service';
@@ -10,17 +10,20 @@ import { iCharacter } from '../../interfaces/icharacter';
 import { iClassi } from '../../interfaces/classe';
 import { iSkills } from '../../interfaces/skills';
 import { SkillsService } from '../../services/skills.service';
+import { RacesService } from '../../services/races.service';
+import { iRaces } from '../../interfaces/iraces';
 
 @Component({
   selector: 'app-active-users',
   templateUrl: './active-users.component.html',
   styleUrls: ['./active-users.component.scss']
 })
-export class ActiveUsersComponent {
+export class ActiveUsersComponent implements OnInit {
   user!: iUsers | null;
   iSkills: { [userId: number]: iSkills[] } = {};
   characters: { [userId: number]: iCharacter[] } = {};
   class: { [userId: number]: iClassi[] } = {};
+  races: { [userId: number]: { [characterId: number]: iRaces } } = {};
   combina: { [userId: number]: iCombinazione[] } = {};
   users: iUsers[] = [];
   isCollapsed: boolean = true;
@@ -32,7 +35,8 @@ export class ActiveUsersComponent {
     private characterSvc: CharactersService,
     private classSvc: ClassesService,
     private combinaSvc: CombinaService,
-    private skillSvc: SkillsService
+    private skillSvc: SkillsService,
+    private raceSvc: RacesService
   ) {}
 
   ngOnInit() {
@@ -60,6 +64,15 @@ export class ActiveUsersComponent {
           this.characters[char.userId] = [];
         }
         this.characters[char.userId].push(char);
+
+        // Fetch race for each character
+        this.raceSvc.getRaceById(char.raceId).subscribe((race: iRaces) => {
+          if (!this.races[char.userId]) {
+            this.races[char.userId] = {};
+          }
+          this.races[char.userId][char.id] = race;
+          this.addToCombina(char.userId);
+        });
       });
     });
   }
@@ -79,9 +92,28 @@ export class ActiveUsersComponent {
 
   addToCombina(userId: number) {
     console.log("Adding to combina for user:", userId);
-    if (this.characters[userId] && this.class[userId] && this.iSkills[userId]) {
+    if (
+      this.characters[userId] &&
+      this.class[userId] &&
+      this.iSkills[userId] &&
+      this.races[userId] &&
+      Object.keys(this.races[userId]).length === this.characters[userId].length
+    ) {
       console.log("Combining data for user:", userId);
-      this.combina[userId] = this.combinaSvc.combineData(this.characters[userId], this.class[userId], this.iSkills[userId]);
+      const combinedData = this.characters[userId].map((character) => {
+        return {
+          characters: character,
+          classe: this.class[userId].find((c) => c.classId === character.classId)!,
+          race: this.races[userId][character.id],
+          skills: this.iSkills[userId].filter((skill) => character.selectedSkills.includes(skill.skillId)),
+        };
+      });
+      this.combina[userId] = this.combinaSvc.combineData(
+        this.characters[userId],
+        this.class[userId],
+        this.iSkills[userId],
+        Object.values(this.races[userId])
+      );
     }
   }
 }

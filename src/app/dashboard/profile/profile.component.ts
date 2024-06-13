@@ -9,68 +9,91 @@ import { iCharacter } from '../../interfaces/icharacter';
 import { ClassesService } from '../../services/classes.service';
 import { iClassi } from '../../interfaces/classe';
 import { iCombinazione } from '../../interfaces/icombinazione';
-
 import { SkillsService } from '../../services/skills.service';
+import { RacesService } from '../../services/races.service';
+import { iRaces } from '../../interfaces/iraces';
 
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
-  styleUrl: './profile.component.scss',
+  styleUrls: ['./profile.component.scss'],
 })
 export class ProfileComponent {
   user!: iUsers | null;
   characters: iCharacter[] = [];
-class: iClassi[]=[];
-iSkills: iSkills[]=[];
-combina: iCombinazione[] = [];
+  class: iClassi[] = [];
+  iSkills: iSkills[] = [];
+  combina: iCombinazione[] = [];
+  race: { [characterId: number]: iRaces } = {};
 
-
-
-
-
-  constructor(private authSvc: AuthService, private userSvc: UsersService,  private characterSvc: CharactersService, private classSvc: ClassesService,
-     private combinaSvc: CombinaService,private skillSvc: SkillsService ) {}
+  constructor(
+    private authSvc: AuthService,
+    private userSvc: UsersService,
+    private characterSvc: CharactersService,
+    private classSvc: ClassesService,
+    private combinaSvc: CombinaService,
+    private skillSvc: SkillsService,
+    private raceSvc: RacesService
+  ) {}
 
   ngOnInit() {
     this.authSvc.user$.subscribe((user: iUsers | null) => {
       this.user = user;
       if (this.user) {
-        this.characterSvc.getCharactersByUserId(this.user.id).subscribe((chars: iCharacter[]) => {
-          this.characters = chars;
-          this.addToCombina();
-        });
-
-         this.classSvc.getClassByUserId(this.user.id).subscribe((caClass: iClassi[]) => {
-          this.class = caClass;
-          this.addToCombina();
-        });
-
-         this.skillSvc.getSkillByUserId(this.user.id).subscribe((kSkills:iSkills[])=>{
-         this.iSkills =kSkills;
-         this.addToCombina();
-        });
-
-
+        this.fetchData();
       }
     });
+  }
 
+  fetchData() {
+    const characterObs = this.characterSvc.getCharactersByUserId(this.user!.id);
+    const classObs = this.classSvc.getClassByUserId(this.user!.id);
+    const skillObs = this.skillSvc.getSkillByUserId(this.user!.id);
 
+    characterObs.subscribe((chars: iCharacter[]) => {
+      this.characters = chars;
+      chars.forEach((character) => {
+        this.raceSvc.getRaceById(character.raceId).subscribe((race: iRaces) => {
+          this.race[character.id] = race;
+          this.addToCombina();
+        });
+      });
+    });
+
+    classObs.subscribe((caClass: iClassi[]) => {
+      this.class = caClass;
+      this.addToCombina();
+    });
+
+    skillObs.subscribe((kSkills: iSkills[]) => {
+      this.iSkills = kSkills;
+      this.addToCombina();
+    });
   }
 
   addToCombina() {
-    if (this.characters.length > 0 && this.class.length > 0 && this.iSkills.length > 0) {
+    if (
+      this.characters.length > 0 &&
+      this.class.length > 0 &&
+      this.iSkills.length > 0 &&
+      Object.keys(this.race).length === this.characters.length
+    ) {
       // Chiamata al servizio per combinare i dati
-      this.combina = this.combinaSvc.combineData(this.characters, this.class, this.iSkills);
+      const combinedData = this.characters.map((character) => {
+        return {
+          characters: character,
+          classe: this.class.find((c) => c.classId === character.classId)!,
+          race: this.race[character.id],
+          skills: this.iSkills.filter((skill) => character.selectedSkills.includes(skill.skillId)),
+        };
+      });
+      this.combina = this.combinaSvc.combineData(
+        this.characters,
+        this.class,
+        this.iSkills,
+        Object.values(this.race)
+      );
     }
   }
-
-
-
-
-
-  }
-
-
-
-
+}
 

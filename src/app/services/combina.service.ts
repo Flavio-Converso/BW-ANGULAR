@@ -3,6 +3,7 @@ import { iCharacter } from '../interfaces/icharacter';
 import { iClassi } from '../interfaces/classe';
 import { iCombinazione } from '../interfaces/icombinazione';
 import { iSkills } from '../interfaces/skills';
+import { iRaces } from '../interfaces/iraces';
 
 @Injectable({
   providedIn: 'root'
@@ -12,14 +13,15 @@ export class CombinaService {
   constructor() { }
 
   // Funzione per combinare i personaggi, le classi e le skills in una singola combinazione
-  combineData(characters: iCharacter[], classes: iClassi[], skills: iSkills[] ): iCombinazione[] {
+  combineData(characters: iCharacter[], classes: iClassi[], skills: iSkills[],races: iRaces[] ): iCombinazione[] {
     const combinazioni: iCombinazione[] = [];
 
     // Cicla su ogni personaggio
     characters.forEach((character) => {
       // Trova la classe corrispondente al personaggio
       const classe = classes.find((c) => c.classId === character.classId);
-      if (classe) {
+      const race = races.find((r) => r.raceId === character.raceId);
+      if (classe  && race) {
         // Crea una combinazione con il personaggio, la classe e le skills
         const selectedSkills = character.selectedSkills.map(skillId => {
           const skill = skills.find(skill => skill.skillId === skillId);
@@ -29,6 +31,7 @@ export class CombinaService {
         const combinazione: iCombinazione = {
           characters: character,
           classe: classe,
+          race: race,
           skills: selectedSkills
         };
         // Aggiungi la combinazione al array di combinazioni

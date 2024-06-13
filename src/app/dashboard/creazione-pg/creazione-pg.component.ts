@@ -127,7 +127,7 @@ export class CreazionePgComponent {
           .addCharacter(characterData)
           .subscribe((character: iCharacter) => {
             console.log('Character created:', character);
-            this.router.navigate(['dashboard/schedapg', character.id]);
+            this.router.navigate(['dashboard', 'schedapg', character.id]);
           });
       } else {
         console.log('User not logged in');
@@ -162,6 +162,6 @@ export class CreazionePgComponent {
     // Rimuovi le classi del modale e lo sfondo scuro quando il componente viene distrutto
     document.body.classList.remove('modal-open');
     const modals = document.querySelectorAll('.modal-backdrop');
-    modals.forEach(modal => modal.remove());
+    modals.forEach((modal) => modal.remove());
   }
 }
