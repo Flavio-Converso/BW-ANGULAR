@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, map } from 'rxjs';
 import { iClassi } from '../interfaces/classe';
 
 @Injectable({
@@ -16,7 +16,15 @@ export class ClassesService {
   }
 
   getClassById(classId: number): Observable<iClassi> {
-    return this.http.get<iClassi>(`${this.apiUrl}/${classId}`);
+    return this.http.get<iClassi[]>(`${this.apiUrl}/?classId=${classId}`).pipe(
+      map((classes) => {
+        if (classes.length > 0) {
+          return classes[0];
+        } else {
+          throw new Error('Classe non trovata');
+        }
+      })
+    );
   }
 
   getClassByUserId(userId: number): Observable<iClassi[]> {
@@ -30,10 +38,13 @@ export class ClassesService {
   }
 
   updateClass(classId: number, updatedClass: iClassi): Observable<iClassi> {
-    return this.http.put<iClassi>(`${this.apiUrl}/${classId}`, updatedClass);
+    return this.http.put<iClassi>(
+      `${this.apiUrl}/?classId=${classId}`,
+      updatedClass
+    );
   }
 
   deleteClass(classId: number): Observable<void> {
-    return this.http.delete<void>(`${this.apiUrl}/${classId}`);
+    return this.http.delete<void>(`${this.apiUrl}/?classId=${classId}`);
   }
 }

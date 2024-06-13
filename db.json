@@ -27,60 +27,802 @@
   ],
   "characters": [
     {
-      "characterName": "speriamofix",
+      "characterName": "amed",
+      "classId": 5,
+      "raceId": 6,
+      "selectedSkills": [
+        138,
+        142,
+        150,
+        149,
+        148,
+        144,
+        145,
+        91,
+        92,
+        99,
+        93,
+        94,
+        95,
+        100,
+        98,
+        97
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "characterName": "amed",
       "classId": 2,
-      "selectedSkills": [3],
-      "expTot": 97,
+      "raceId": 2,
+      "selectedSkills": [
+        58,
+        54,
+        53,
+        51,
+        55,
+        59,
+        91,
+        92,
+        93,
+        94,
+        96,
+        95,
+        97,
+        98,
+        100,
+        99,
+        35,
+        39
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "characterName": "amed",
+      "classId": 5,
+      "raceId": 5,
+      "selectedSkills": [
+        142,
+        148,
+        150,
+        149,
+        147,
+        146,
+        143,
+        145,
+        140,
+        141
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "characterName": "amed",
+      "classId": 6,
+      "raceId": 6,
+      "selectedSkills": [
+        180,
+        179,
+        178,
+        177,
+        172,
+        173,
+        174,
+        175,
+        171,
+        170,
+        100
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "characterName": "amed",
+      "classId": 2,
+      "raceId": 2,
+      "selectedSkills": [
+        100,
+        99,
+        92,
+        56,
+        52,
+        43,
+        39,
+        34,
+        33,
+        38,
+        46
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "characterName": "Giorgio",
+      "classId": 5,
+      "raceId": 5,
+      "selectedSkills": [
+        132,
+        133,
+        138,
+        143,
+        137,
+        142,
+        136,
+        131,
+        146,
+        147,
+        148,
+        98,
+        97,
+        96,
+        95
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "characterName": "Gianni",
+      "classId": 4,
+      "raceId": 6,
+      "selectedSkills": [
+        116,
+        121,
+        127,
+        130,
+        126,
+        125,
+        119,
+        124,
+        120,
+        102
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 7
+    },
+    {
+      "characterName": "Denton Puckett",
+      "classId": 2,
+      "raceId": 2,
+      "selectedSkills": [
+        41,
+        47,
+        48,
+        54,
+        49,
+        43,
+        36,
+        37,
+        45,
+        35,
+        44,
+        92
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 8
+    },
+    {
+      "characterName": "Giorgio2",
+      "classId": 2,
+      "raceId": 2,
+      "selectedSkills": [
+        34,
+        35,
+        36,
+        42,
+        48,
+        47,
+        53,
+        54,
+        52,
+        60,
+        51,
+        55
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 9
+    },
+    {
+      "characterName": "AdminPG",
+      "classId": 3,
+      "raceId": 2,
+      "selectedSkills": [
+        88,
+        89,
+        66,
+        87,
+        86,
+        92,
+        93,
+        99,
+        100,
+        95,
+        96,
+        69,
+        73,
+        68
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 10
+    },
+    {
+      "characterName": "Giorgio",
+      "classId": 2,
+      "raceId": 5,
+      "selectedSkills": [
+        56,
+        53,
+        50,
+        59,
+        54,
+        58,
+        46,
+        35,
+        91
+      ],
+      "expTot": 0,
       "userId": 1,
       "id": 11
     },
     {
-      "characterName": "speriamofix2",
-      "classId": 3,
-      "selectedSkills": [6],
-      "expTot": 93,
-      "userId": 2,
+      "characterName": "Gianni",
+      "classId": 2,
+      "raceId": 2,
+      "selectedSkills": [
+        56,
+        59,
+        49,
+        46,
+        47,
+        50,
+        42,
+        37,
+        35
+      ],
+      "expTot": 0,
+      "userId": 1,
       "id": 12
     },
     {
-      "characterName": "test",
-      "classId": 1,
-      "selectedSkills": [1],
-      "expTot": 48,
-      "userId": 1,
-      "id": 13
-    },
-    {
-      "characterName": "anna",
+      "characterName": "Giorgio",
       "classId": 2,
-      "selectedSkills": [31, 33, 35],
-      "expTot": 42,
+      "raceId": 2,
+      "selectedSkills": [
+        52,
+        49,
+        46,
+        50,
+        47,
+        53,
+        57,
+        56,
+        35
+      ],
+      "expTot": 0,
       "userId": 1,
       "id": 13
     },
     {
-      "characterName": "gianni",
-      "classId": 1,
-      "selectedSkills": [2, 3, 4],
-      "expTot": 37,
+      "characterName": "222",
+      "classId": 2,
+      "raceId": 2,
+      "selectedSkills": [
+        49,
+        50,
+        47,
+        53,
+        46,
+        42,
+        39,
+        44
+      ],
+      "expTot": 0,
       "userId": 1,
       "id": 14
     },
     {
-      "characterName": "provaprovaprova",
+      "characterName": "Giorgioasdada",
       "classId": 2,
-      "selectedSkills": [39, 34, 35, 44, 43],
-      "expTot": 27,
+      "raceId": 2,
+      "selectedSkills": [
+        42,
+        40,
+        37,
+        33,
+        36,
+        39,
+        56,
+        53,
+        60,
+        99,
+        94
+      ],
+      "expTot": 0,
       "userId": 1,
       "id": 15
     },
     {
-      "characterName": "giannigiorgi",
+      "characterName": "asdafsfasf",
       "classId": 2,
-      "selectedSkills": [41, 47, 40, 36, 33, 39, 38, 31, 35],
+      "raceId": 5,
+      "selectedSkills": [
+        39,
+        36,
+        33,
+        37,
+        40,
+        43,
+        47,
+        49,
+        98,
+        97
+      ],
       "expTot": 0,
       "userId": 1,
       "id": 16
+    },
+    {
+      "characterName": "nnnnnnn",
+      "classId": 2,
+      "raceId": 2,
+      "selectedSkills": [
+        32,
+        39,
+        42,
+        40,
+        43,
+        37,
+        33,
+        36,
+        34,
+        60,
+        93
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 17
+    },
+    {
+      "characterName": "aaaaaaaaa",
+      "classId": 2,
+      "raceId": 2,
+      "selectedSkills": [
+        52,
+        46,
+        49,
+        48,
+        51,
+        54,
+        57,
+        91,
+        58,
+        99,
+        100,
+        97,
+        98
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 18
+    },
+    {
+      "characterName": "Giorgio",
+      "classId": 2,
+      "raceId": 5,
+      "selectedSkills": [
+        49,
+        50,
+        43,
+        40,
+        37,
+        33,
+        36,
+        34,
+        92
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 19
+    },
+    {
+      "characterName": "11231312",
+      "classId": 2,
+      "raceId": 2,
+      "selectedSkills": [
+        40,
+        34,
+        91,
+        53,
+        41,
+        48,
+        42,
+        43,
+        49
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 20
+    },
+    {
+      "characterName": "Giorgio123123dsaf",
+      "classId": 2,
+      "raceId": 2,
+      "selectedSkills": [
+        39,
+        40,
+        43,
+        47,
+        46,
+        45,
+        48,
+        54,
+        100
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 21
+    },
+    {
+      "characterName": "123132132131321",
+      "classId": 1,
+      "raceId": 5,
+      "selectedSkills": [
+        22,
+        19,
+        18,
+        15,
+        16,
+        12,
+        8,
+        4,
+        3,
+        7,
+        11
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 22
+    },
+    {
+      "characterName": "1231312313",
+      "classId": 2,
+      "raceId": 2,
+      "selectedSkills": [
+        42,
+        43,
+        40,
+        39,
+        37,
+        32,
+        31,
+        34,
+        45,
+        56,
+        98
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 23
+    },
+    {
+      "characterName": "Giorgio",
+      "classId": 5,
+      "raceId": 2,
+      "selectedSkills": [
+        95,
+        132,
+        143,
+        144,
+        138,
+        139,
+        145,
+        150,
+        149,
+        148,
+        100,
+        93,
+        94,
+        92,
+        91
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 24
+    },
+    {
+      "characterName": "Giorgio",
+      "classId": 5,
+      "raceId": 2,
+      "selectedSkills": [
+        95,
+        132,
+        143,
+        144,
+        138,
+        139,
+        145,
+        150,
+        149,
+        148,
+        100,
+        93,
+        94,
+        92,
+        91
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 25
+    },
+    {
+      "characterName": "Giorgio",
+      "classId": 5,
+      "raceId": 2,
+      "selectedSkills": [
+        95,
+        132,
+        143,
+        144,
+        138,
+        139,
+        145,
+        150,
+        149,
+        148,
+        100,
+        93,
+        94,
+        92,
+        91
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 26
+    },
+    {
+      "characterName": "Giorgio",
+      "classId": 5,
+      "raceId": 2,
+      "selectedSkills": [
+        95,
+        132,
+        143,
+        144,
+        138,
+        139,
+        145,
+        150,
+        149,
+        148,
+        100,
+        93,
+        94,
+        92,
+        91
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 27
+    },
+    {
+      "characterName": "Giorgio",
+      "classId": 5,
+      "raceId": 2,
+      "selectedSkills": [
+        95,
+        132,
+        143,
+        144,
+        138,
+        139,
+        145,
+        150,
+        149,
+        148,
+        100,
+        93,
+        94,
+        92,
+        91
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 28
+    },
+    {
+      "characterName": "Giorgio",
+      "classId": 5,
+      "raceId": 2,
+      "selectedSkills": [
+        95,
+        132,
+        143,
+        144,
+        138,
+        139,
+        145,
+        150,
+        149,
+        148,
+        100,
+        93,
+        94,
+        92,
+        91
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 29
+    },
+    {
+      "characterName": "Giorgio",
+      "classId": 5,
+      "raceId": 2,
+      "selectedSkills": [
+        95,
+        132,
+        143,
+        144,
+        138,
+        139,
+        145,
+        150,
+        149,
+        148,
+        100,
+        93,
+        94,
+        92,
+        91
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 30
+    },
+    {
+      "characterName": "Giorgio",
+      "classId": 5,
+      "raceId": 2,
+      "selectedSkills": [
+        95,
+        132,
+        137,
+        143,
+        148,
+        147,
+        142,
+        136,
+        131,
+        94,
+        100,
+        135,
+        141,
+        146
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 31
+    },
+    {
+      "characterName": "asdasdadsa",
+      "classId": 2,
+      "raceId": 2,
+      "selectedSkills": [
+        34,
+        48,
+        53,
+        59,
+        60,
+        98,
+        97,
+        96,
+        51,
+        45,
+        39,
+        32,
+        31,
+        37,
+        35
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 32
+    },
+    {
+      "characterName": "asdasda",
+      "classId": 5,
+      "raceId": 2,
+      "selectedSkills": [
+        95,
+        94,
+        142,
+        136,
+        137,
+        138,
+        144,
+        149,
+        150,
+        145,
+        141,
+        98
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 33
+    },
+    {
+      "characterName": "sdgfsgsdgs",
+      "classId": 2,
+      "raceId": 2,
+      "selectedSkills": [
+        34,
+        35,
+        41,
+        47,
+        40,
+        46,
+        45,
+        39,
+        32,
+        94,
+        97
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 34
+    },
+    {
+      "characterName": "sdgsdgds",
+      "classId": 2,
+      "raceId": 2,
+      "selectedSkills": [
+        52,
+        53,
+        57,
+        91,
+        56,
+        59,
+        60,
+        94,
+        93,
+        54,
+        50,
+        37,
+        32
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 35
+    },
+    {
+      "characterName": "sadasda",
+      "classId": 2,
+      "raceId": 2,
+      "selectedSkills": [
+        40,
+        44,
+        47,
+        43,
+        42,
+        46,
+        39,
+        35,
+        36,
+        94
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 36
     }
   ],
   "classes": [
@@ -90,7 +832,46 @@
       "bio": "Il Guerriero è un combattente robusto e coraggioso, in grado di affrontare i nemici in prima linea con forza bruta e abilità nel corpo a corpo.",
       "img": "https://th.bing.com/th/id/OIG2.Ip.LAra1eCHTU9Ea3Wxw?pid=ImgGn",
       "skills": [
-        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100
       ]
     },
     {
@@ -99,7 +880,46 @@
       "bio": "Maestro delle arti arcane, il Mago lancia incantesimi potenti da lontano e manipola le energie magiche. Formidabile negli scontri a distanza, la sua debolezza risiede negli scontri ravvicinati.",
       "img": "https://th.bing.com/th/id/OIG2.giN_VixGaT5nHdJ58EaN?pid=ImgGn",
       "skills": [
-        31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60,  91, 92, 93, 94, 95, 96, 97, 98, 99, 100
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100
       ]
     },
     {
@@ -108,34 +928,190 @@
       "bio": "Il cacciatore, esperto di tiro con l'arco, colpisce i nemici a distanza con precisione letale e può muoversi furtivamente sul campo di battaglia.",
       "img": "https://th.bing.com/th/id/OIG1.ndTSh3IP6PIYPRpplv_Z?pid=ImgGn",
       "skills": [
-        61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90,  91, 92, 93, 94, 95, 96, 97, 98, 99, 100
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100
       ]
     },
     {
       "classId": 4,
       "className": "Sciamano",
-      "bio": "Lo Sciamano è un esperto di magia naturale e spiriti, capace di evocare creature e utilizzare la forza della natura per curare e proteggere.",
-      "img": "https://th.bing.com/th/id/OIG2.Sciamano?pid=ImgGn",
+      "bio": "Lo Sciamano è un esperto di magia naturale e spiriti, capace di evocare creature, curare ferite, e proteggere con la forza della natura.",
+      "img": "https://tse3.mm.bing.net/th?id=OIG4.uQSedqiaXHgj48m1jvvo&pid=ImgGn",
       "skills": [
-        101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130,  91, 92, 93, 94, 95, 96, 97, 98, 99, 100
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100
       ]
     },
     {
       "classId": 5,
       "className": "Druido",
-      "bio": "Il Druido è un custode della natura, capace di trasformarsi in animali e utilizzare magie legate alla terra, al fuoco e all'acqua.",
-      "img": "https://th.bing.com/th/id/OIG2.Druido?pid=ImgGn",
+      "bio": "Il Druido è un custode della natura, in grado di trasformarsi in animali e utilizzare potenti magie legate agli elementi terra, fuoco e acqua.",
+      "img": "https://tse3.mm.bing.net/th?id=OIG2.iV3OG8yqioI54f7tu1pd&pid=ImgGn",
       "skills": [
-        131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160,  91, 92, 93, 94, 95, 96, 97, 98, 99,100
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100
       ]
     },
     {
       "classId": 6,
-      "className": "Prete",
-      "bio": "Il Prete è un maestro della fede e della guarigione, capace di utilizzare incantesimi sacri per curare, proteggere e purificare.",
-      "img": "https://th.bing.com/th/id/OIG2.Prete?pid=ImgGn",
+      "className": "Monaco",
+      "bio": "Il Monaco è un maestro della fede e della guarigione, capace di usare incantesimi sacri per curare, proteggere e purificare alleati e ambienti circostanti.",
+      "img": "https://tse4.mm.bing.net/th?id=OIG4.CoLIvoQlGtWxqMMAij_1&pid=ImgGn",
       "skills": [
-        161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190,  91, 92, 93, 94, 95, 96, 97, 98, 99, 100
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100
       ]
     }
   ],
@@ -143,261 +1119,1102 @@
     {
       "raceId": 1,
       "raceName": "Umano",
-      "raceBio": "Gli umani sono una razza versatile e resistente, in grado di adattarsi a diverse situazioni e ambienti.",
+      "raceBio": "Con una natura versatile e una resistenza innata, gli umani si adattano facilmente a una vasta gamma di situazioni e ambienti.",
       "traits": {
         "Forza": 7,
-        "Agilità": 6,
+        "Agilita": 6,
         "Intelligenza": 7,
         "Resistenza": 7,
         "Carisma": 8
       },
-      "img": "https://example.com/human.jpg"
+      "img": "https://th.bing.com/th/id/OIG1.5s.stPrNz3tAbDp7u9gX?pid=ImgGn"
     },
     {
       "raceId": 2,
       "raceName": "Elfo",
-      "raceBio": "Gli elfi sono noti per la loro agilità e connessione con la natura, eccellendo nelle arti magiche e nell'arcieria.",
+      "raceBio": "Noti per la loro agilità e connessione con la natura, eccellono nelle arti magiche e nell'arcieria.",
       "traits": {
         "Forza": 5,
-        "Agilità": 9,
+        "Agilita": 9,
         "Intelligenza": 10,
         "Resistenza": 6,
         "Carisma": 7
       },
-      "img": "https://example.com/elf.jpg"
+      "img": "https://th.bing.com/th/id/OIG3.toJ6.GPR_bzvI3QMauUf?pid=ImgGn"
     },
     {
       "raceId": 3,
       "raceName": "Nano",
-      "raceBio": "I nani sono robusti e forti, famosi per la loro abilità nella metallurgia e nel combattimento corpo a corpo.",
+      "raceBio": "Robusti e forti, i nani sono famosi per la loro abilità nella metallurgia e nel combattimento corpo a corpo.",
       "traits": {
         "Forza": 8,
-        "Agilità": 5,
+        "Agilita": 5,
         "Intelligenza": 6,
         "Resistenza": 9,
         "Carisma": 6
       },
-      "img": "https://example.com/dwarf.jpg"
+      "img": "https://th.bing.com/th/id/OIG2.myUcacw0OiCLHN_KbvI3?pid=ImgGn"
     },
     {
       "raceId": 4,
       "raceName": "Orco",
-      "raceBio": "Gli orchi sono guerrieri potenti e feroci, noti per la loro forza bruta e resistenza in battaglia.",
+      "raceBio": "Come guerrieri brutali e possenti, gli orchi sono famigerati per la loro forza bruta e la resistenza straordinaria in battaglia.",
       "traits": {
         "Forza": 10,
-        "Agilità": 6,
+        "Agilita": 6,
         "Intelligenza": 5,
         "Resistenza": 8,
         "Carisma": 4
       },
-      "img": "https://example.com/orc.jpg"
+      "img": "https://th.bing.com/th/id/OIG1.B1keeKz22XRPe26sqiuK?pid=ImgGn"
     },
     {
       "raceId": 5,
       "raceName": "Gnomo",
-      "raceBio": "Gli gnomi sono piccoli ma ingegnosi, abili nell'ingegneria e nell'uso delle tecnologie magiche.",
+      "raceBio": "Piccoli ma ingegnosi, gli gnomi sono abili nell'ingegneria e nell'utilizzo delle tecnologie magiche.",
       "traits": {
         "Forza": 4,
-        "Agilità": 7,
+        "Agilita": 7,
         "Intelligenza": 9,
         "Resistenza": 5,
         "Carisma": 8
       },
-      "img": "https://example.com/gnome.jpg"
+      "img": "https://th.bing.com/th/id/OIG1.VRRaRo9pT6XEJqehJJWV?pid=ImgGn"
     },
     {
       "raceId": 6,
       "raceName": "Undead",
-      "bio": "Gli undead sono creature risorte dalla morte, animate da un'energia oscura e spesso dotate di abilità sovrannaturali.",
+      "raceBio": "Creature risorte dalla morte, gli undead sono animate da un'energia oscura e spesso dotate di abilità sovrannaturali.",
       "traits": {
         "Forza": 6,
-        "Agilità": 5,
+        "Agilita": 5,
         "Intelligenza": 7,
         "Resistenza": 10,
         "Carisma": 3
       },
-      "img": "https://example.com/undead.jpg"
+      "img": "https://th.bing.com/th/id/OIG3.VpLI46nUCA78CiRn9Kpo?pid=ImgGn"
     }
   ],
   "skills": [
-    { "skillId": 1, "skillName": "Colpo Pesante", "skillDescription": "Un colpo potente che infligge danni extra.", "exp": 2 },
-    { "skillId": 2, "skillName": "Urlo di Guerra", "skillDescription": "Un urlo che aumenta il morale degli alleati.", "exp": 3 },
-    { "skillId": 3, "skillName": "Carica", "skillDescription": "Carica contro il nemico per infliggere danni e stordire.", "exp": 4 },
-    { "skillId": 4, "skillName": "Terremoto", "skillDescription": "Colpisce il terreno creando un'onda d'urto.", "exp": 6 },
-    { "skillId": 5, "skillName": "Turbine", "skillDescription": "Gira su se stesso colpendo tutti i nemici vicini.", "exp": 5 },
-    { "skillId": 6, "skillName": "Ruggito", "skillDescription": "Un ruggito che intimorisce i nemici.", "exp": 1 },
-    { "skillId": 7, "skillName": "Pelle di Pietra", "skillDescription": "Indurisce la pelle per ridurre i danni subiti.", "exp": 3 },
-    { "skillId": 8, "skillName": "Furia", "skillDescription": "Aumenta la velocità d'attacco e i danni.", "exp": 2 },
-    { "skillId": 9, "skillName": "Salto", "skillDescription": "Salta verso una posizione bersaglio, infliggendo danni all'impatto.", "exp": 4 },
-    { "skillId": 10, "skillName": "Frenesia", "skillDescription": "Entra in uno stato di frenesia per infliggere danni massicci.", "exp": 7 },
-    { "skillId": 11, "skillName": "Sete di Sangue", "skillDescription": "Ripristina la salute con ogni attacco.", "exp": 5 },
-    { "skillId": 12, "skillName": "Colpo Selvaggio", "skillDescription": "Un attacco brutale che infligge danni pesanti.", "exp": 6 },
-    { "skillId": 13, "skillName": "Urlo di Battaglia", "skillDescription": "Aumenta il morale degli alleati, aumentando i loro danni.", "exp": 3 },
-    { "skillId": 14, "skillName": "Trance di Battaglia", "skillDescription": "Entra in trance per ridurre i danni subiti.", "exp": 4 },
-    { "skillId": 15, "skillName": "Scudo", "skillDescription": "Colpisce un nemico con lo scudo.", "exp": 2 },
-    { "skillId": 16, "skillName": "Tuono", "skillDescription": "Colpisce creando un'onda d'urto.", "exp": 5 },
-    { "skillId": 17, "skillName": "Volontà di Ferro", "skillDescription": "Aumenta la resistenza agli effetti di controllo della folla.", "exp": 3 },
-    { "skillId": 18, "skillName": "Carica Avventata", "skillDescription": "Carica senza riguardo, infliggendo più danni ma subendo di più.", "exp": 4 },
-    { "skillId": 19, "skillName": "Invulnerabilità", "skillDescription": "Diventa temporaneamente invulnerabile.", "exp": 8 },
-    { "skillId": 20, "skillName": "Colpo Schiacciante", "skillDescription": "Un colpo potente che frantuma l'armatura.", "exp": 7 },
-    { "skillId": 21, "skillName": "Colosso", "skillDescription": "Aumenta la salute e la difesa.", "exp": 6 },
-    { "skillId": 22, "skillName": "Assalto", "skillDescription": "Una serie di attacchi brutali.", "exp": 5 },
-    { "skillId": 23, "skillName": "Presa del Titano", "skillDescription": "Impugna due armi pesanti contemporaneamente.", "exp": 7 },
-    { "skillId": 24, "skillName": "Ruggito Possente", "skillDescription": "Un ruggito forte che intimorisce e indebolisce i nemici.", "exp": 3 },
-    { "skillId": 25, "skillName": "Resistenza", "skillDescription": "Aumenta temporaneamente la resistenza e riduce la fatica.", "exp": 2 },
-    { "skillId": 26, "skillName": "Ruggito Selvaggio", "skillDescription": "Un ruggito terrificante che spaventa i nemici.", "exp": 4 },
-    { "skillId": 27, "skillName": "Colpo del Colosso", "skillDescription": "Un colpo devastante che ignora l'armatura.", "exp": 6 },
-    { "skillId": 28, "skillName": "Colpo Vendicativo", "skillDescription": "Un colpo potente alimentato dalla rabbia.", "exp": 5 },
-    { "skillId": 29, "skillName": "Rottura", "skillDescription": "Un attacco che causa sanguinamento nel tempo.", "exp": 3 },
-    { "skillId": 30, "skillName": "Sentiero di Guerra", "skillDescription": "Lascia un sentiero di distruzione mentre ti muovi.", "exp": 7 },
-
-
-    { "skillId": 31, "skillName": "Palla di Fuoco", "skillDescription": "Una palla di fuoco che brucia il nemico.", "exp": 3 },
-    { "skillId": 32, "skillName": "Spina di Ghiaccio", "skillDescription": "Una spina di ghiaccio che perfora il nemico.", "exp": 2 },
-    { "skillId": 33, "skillName": "Dardo Fulminante", "skillDescription": "Un dardo di fulmine che fulmina il nemico.", "exp": 4 },
-    { "skillId": 34, "skillName": "Esplosione Arcana", "skillDescription": "Una esplosione di energia arcana.", "exp": 6 },
-    { "skillId": 35, "skillName": "Cura", "skillDescription": "Ripristina la salute di un alleato.", "exp": 1 },
-    { "skillId": 36, "skillName": "Scudo di Mana", "skillDescription": "Uno scudo che assorbe i danni usando il mana.", "exp": 5 },
-    { "skillId": 37, "skillName": "Teletrasporto", "skillDescription": "Muoviti istantaneamente in una posizione vicina.", "exp": 2 },
-    { "skillId": 38, "skillName": "Evoca Familiare", "skillDescription": "Evoca una creatura magica per assistere in battaglia.", "exp": 7 },
-    { "skillId": 39, "skillName": "Tempesta di Ghiaccio", "skillDescription": "Una tempesta di ghiaccio che danneggia tutti i nemici in un'area.", "exp": 8 },
-    { "skillId": 40, "skillName": "Pioggia di Meteore", "skillDescription": "Evoca meteore per schiantarsi sui nemici.", "exp": 10 },
-    { "skillId": 41, "skillName": "Fulmine a Catena", "skillDescription": "Un fulmine che salta tra i nemici.", "exp": 6 },
-    { "skillId": 42, "skillName": "Scudo di Fiamme", "skillDescription": "Uno scudo di fiamme che brucia gli attaccanti.", "exp": 4 },
-    { "skillId": 43, "skillName": "Nova di Ghiaccio", "skillDescription": "Un'esplosione di ghiaccio che congela i nemici vicini.", "exp": 5 },
-    { "skillId": 44, "skillName": "Missili Arcani", "skillDescription": "Lancia più missili arcani.", "exp": 3 },
-    { "skillId": 45, "skillName": "Bruciatura di Mana", "skillDescription": "Brucia il mana del nemico.", "exp": 2 },
-    { "skillId": 46, "skillName": "Invisibilità", "skillDescription": "Rende l'incantatore invisibile.", "exp": 7 },
-    { "skillId": 47, "skillName": "Polimorfismo", "skillDescription": "Trasforma un nemico in una creatura innocua.", "exp": 6 },
-    { "skillId": 48, "skillName": "Armatura Magica", "skillDescription": "Aumenta le difese magiche.", "exp": 5 },
-    { "skillId": 49, "skillName": "Distorsione Temporale", "skillDescription": "Rallenta il tempo per i nemici.", "exp": 8 },
-    { "skillId": 50, "skillName": "Fenice", "skillDescription": "Evoca una fenice per combattere al tuo fianco.", "exp": 9 },
-    { "skillId": 51, "skillName": "Maestria Elementale", "skillDescription": "Aumenta i danni elementali.", "exp": 4 },
-    { "skillId": 52, "skillName": "Esplosione Mentale", "skillDescription": "Attacco mentale che stordisce il nemico.", "exp": 3 },
-    { "skillId": 53, "skillName": "Torrente di Acqua", "skillDescription": "Un getto d'acqua ad alta pressione.", "exp": 5 },
-    { "skillId": 54, "skillName": "Fuoco Spirituale", "skillDescription": "Fiamme che bruciano l'anima.", "exp": 6 },
-    { "skillId": 55, "skillName": "Raggio di Luce", "skillDescription": "Un raggio di luce purificante.", "exp": 2 },
-    { "skillId": 56, "skillName": "Portale", "skillDescription": "Crea un portale per una città amica.", "exp": 7 },
-    { "skillId": 57, "skillName": "Illusione", "skillDescription": "Crea un'illusione per confondere i nemici.", "exp": 4 },
-    { "skillId": 58, "skillName": "Tornado", "skillDescription": "Evoca un tornado che travolge i nemici.", "exp": 8 },
-    { "skillId": 59, "skillName": "Vampirismo", "skillDescription": "Drena la vita dai nemici.", "exp": 6 },
-    { "skillId": 60, "skillName": "Rigenerazione", "skillDescription": "Accelera la guarigione.", "exp": 3 },
-
-
-    { "skillId": 61, "skillName": "Tiro Rapido", "skillDescription": "Un tiro con l'arco rapido.", "exp": 1 },
-    { "skillId": 62, "skillName": "Tiro Potente", "skillDescription": "Un tiro con l'arco potente che infligge più danni.", "exp": 3 },
-    { "skillId": 63, "skillName": "Tiro Multiplo", "skillDescription": "Spara più frecce contemporaneamente.", "exp": 5 },
-    { "skillId": 64, "skillName": "Freccia Perforante", "skillDescription": "Una freccia che perfora i nemici.", "exp": 7 },
-    { "skillId": 65, "skillName": "Pioggia di Frecce", "skillDescription": "Una pioggia di frecce che colpisce più bersagli.", "exp": 9 },
-    { "skillId": 66, "skillName": "Freccia Esplosiva", "skillDescription": "Una freccia che esplode all'impatto.", "exp": 8 },
-    { "skillId": 67, "skillName": "Freccia Velenosa", "skillDescription": "Una freccia che avvelena il nemico.", "exp": 4 },
-    { "skillId": 68, "skillName": "Trappola a Strangolo", "skillDescription": "Imposta una trappola che immobilizza i nemici.", "exp": 2 },
-    { "skillId": 69, "skillName": "Occhio d'Aquila", "skillDescription": "Aumenta la precisione e la portata.", "exp": 6 },
-    { "skillId": 70, "skillName": "Mimetizzazione", "skillDescription": "Confonditi con l'ambiente per diventare meno visibile.", "exp": 1 },
-    { "skillId": 71, "skillName": "Raffica di Frecce", "skillDescription": "Una raffica di frecce.", "exp": 5 },
-    { "skillId": 72, "skillName": "Compagno Falco", "skillDescription": "Evoca un falco per attaccare i nemici.", "exp": 3 },
-    { "skillId": 73, "skillName": "Trappola a Rete", "skillDescription": "Imposta una trappola a rete per catturare i nemici.", "exp": 2 },
-    { "skillId": 74, "skillName": "Passo Silenzioso", "skillDescription": "Muoviti silenziosamente per evitare di essere rilevato.", "exp": 4 },
-    { "skillId": 75, "skillName": "Freccia di Fuoco", "skillDescription": "Scocca una freccia infuocata.", "exp": 6 },
-    { "skillId": 76, "skillName": "Freccia di Ghiaccio", "skillDescription": "Scocca una freccia congelante.", "exp": 5 },
-    { "skillId": 77, "skillName": "Freccia Elettrica", "skillDescription": "Scocca una freccia elettrica.", "exp": 7 },
-    { "skillId": 78, "skillName": "Tiro Intrappolante", "skillDescription": "Scocca una freccia che intrappola il nemico.", "exp": 3 },
-    { "skillId": 79, "skillName": "Esche", "skillDescription": "Crea un'esca per distrarre i nemici.", "exp": 2 },
-    { "skillId": 80, "skillName": "Corridore del Vento", "skillDescription": "Aumenta la velocità di movimento.", "exp": 1 },
-    { "skillId": 81, "skillName": "Maestria delle Trappole", "skillDescription": "Migliora l'efficacia delle trappole.", "exp": 4 },
-    { "skillId": 82, "skillName": "Marchio del Cacciatore", "skillDescription": "Segna un nemico per infliggere danni extra.", "exp": 3 },
-    { "skillId": 83, "skillName": "Bomba Flash", "skillDescription": "Acceca temporaneamente i nemici.", "exp": 2 },
-    { "skillId": 84, "skillName": "Tracciamento", "skillDescription": "Traccia i movimenti dei nemici.", "exp": 1 },
-    { "skillId": 85, "skillName": "Freccia Ombra", "skillDescription": "Scocca una freccia che oscura l'area.", "exp": 5 },
-    { "skillId": 86, "skillName": "Tiro a Raffica", "skillDescription": "Scocca più frecce in rapida successione.", "exp": 6 },
-    { "skillId": 87, "skillName": "Trappola Velenosa", "skillDescription": "Imposta una trappola che avvelena i nemici.", "exp": 7 },
-    { "skillId": 88, "skillName": "Tiro di Precisione", "skillDescription": "Scocca una freccia con precisione assoluta.", "exp": 8 },
-    { "skillId": 89, "skillName": "Tiro a Spargimento", "skillDescription": "Scocca frecce in una vasta area.", "exp": 5 },
-    { "skillId": 90, "skillName": "Riflessi del Cacciatore", "skillDescription": "Aumenta la possibilità di schivata.", "exp": 2 },
-
-    { "skillId": 91, "skillName": "Calcio", "skillDescription": "Un calcio potente che può stordire il nemico.", "exp": 1},
-    { "skillId": 92, "skillName": "Schivata", "skillDescription": "Esegui una rapida schivata per evitare un attacco.", "exp": 2},
-    { "skillId": 93, "skillName": "Parata", "skillDescription": "Usa la tua arma o scudo per parare un attacco in arrivo.", "exp": 3},
-    { "skillId": 94, "skillName": "Colpo Rotante", "skillDescription": "Esegui un attacco rotante che colpisce tutti i nemici intorno a te.", "exp": 4},
-    { "skillId": 95, "skillName": "Sprint", "skillDescription": "Aumenta temporaneamente la tua velocità di movimento.", "exp": 1},
-    { "skillId": 96, "skillName": "Affondo", "skillDescription": "Esegui un attacco veloce con la tua arma per colpire un nemico.", "exp": 3},
-    { "skillId": 97, "skillName": "Urlo di Guerra","skillDescription": "Emetti un potente urlo che aumenta temporaneamente il morale e le capacità di combattimento.", "exp": 5},
-    { "skillId": 98, "skillName": "Meditazione", "skillDescription": "Rilassati e concentrati per recuperare energia e salute.", "exp": 2},
-    { "skillId": 99, "skillName": "Berserk", "skillDescription": "Entra in uno stato di furia, aumentando temporaneamente la tua forza e velocità di attacco.", "exp": 6 },
-    { "skillId": 100, "skillName": "Contrattacco", "skillDescription": "Sfrutta l'attacco del nemico per contrattaccare con un colpo potente.", "exp": 4 },
-
-    { "skillId": 101, "skillName": "Evoca Spirito", "skillDescription": "Evoca uno spirito che combatte al tuo fianco.", "exp": 1 },
-    { "skillId": 102, "skillName": "Fulmine", "skillDescription": "Scaglia un fulmine contro il nemico.", "exp": 2 },
-    { "skillId": 103, "skillName": "Furia della Natura", "skillDescription": "Rilascia la furia della natura su tutti i nemici.", "exp": 3 },
-    { "skillId": 104, "skillName": "Scudo Spirituale", "skillDescription": "Crea uno scudo protettivo che assorbe i danni.", "exp": 4 },
-    { "skillId": 105, "skillName": "Curare", "skillDescription": "Guarisce un alleato o te stesso.", "exp": 2 },
-    { "skillId": 106, "skillName": "Terremoto", "skillDescription": "Scatena un terremoto che danneggia i nemici.", "exp": 5 },
-    { "skillId": 107, "skillName": "Vento Tornado", "skillDescription": "Crea un tornado che trascina i nemici.", "exp": 6 },
-    { "skillId": 108, "skillName": "Maledizione", "skillDescription": "Lancia una maledizione che indebolisce il nemico.", "exp": 3 },
-    { "skillId": 109, "skillName": "Rituale di Cura", "skillDescription": "Rituale che ripristina la salute degli alleati.", "exp": 4 },
-    { "skillId": 110, "skillName": "Rivitalizzazione", "skillDescription": "Rinvigorisce gli alleati, aumentando la loro forza.", "exp": 5 },
-    { "skillId": 111, "skillName": "Fiamma Sacra", "skillDescription": "Lancia una fiamma sacra che brucia i nemici.", "exp": 6 },
-    { "skillId": 112, "skillName": "Resistenza Spirituale", "skillDescription": "Aumenta la resistenza ai danni magici.", "exp": 2 },
-    { "skillId": 113, "skillName": "Anima del Lupo", "skillDescription": "Evoca l'anima di un lupo per combattere con te.", "exp": 3 },
-    { "skillId": 114, "skillName": "Tempesta", "skillDescription": "Scatena una tempesta che danneggia e confonde i nemici.", "exp": 4 },
-    { "skillId": 115, "skillName": "Aura di Protezione", "skillDescription": "Crea un'aura che protegge gli alleati dalle magie.", "exp": 5 },
-    { "skillId": 116, "skillName": "Rinascita", "skillDescription": "Rianima un alleato caduto in battaglia.", "exp": 6 },
-    { "skillId": 117, "skillName": "Rinascita", "skillDescription": "Rianima un alleato caduto in battaglia.", "exp": 6 },
-    { "skillId": 118, "skillName": "Totem di Guarigione", "skillDescription": "Piazza un totem che cura gli alleati vicini.", "exp": 3 },
-    { "skillId": 119, "skillName": "Catene Spirituali", "skillDescription": "Intrappola i nemici con catene spirituali.", "exp": 5 },
-    { "skillId": 120, "skillName": "Anima del Lupo", "skillDescription": "Evoca l'anima di un lupo per combattere con te.", "exp": 3 },
-    { "skillId": 121, "skillName": "Scudo di Fulmini", "skillDescription": "Circonda te stesso o un alleato con un campo elettrico.", "exp": 4 },
-    { "skillId": 122, "skillName": "Evocazione di Terra", "skillDescription": "Richiama la forza della terra per proteggere e attaccare.", "exp": 5 },
-    { "skillId": 123, "skillName": "Conciliazione", "skillDescription": "Placa gli spiriti inquieti per ottenere aiuto.", "exp": 6 },
-    { "skillId": 124, "skillName": "Invocazione degli Antenati", "skillDescription": "Chiedi agli spiriti degli antenati di combattere al tuo fianco.", "exp": 7 },
-    { "skillId": 125, "skillName": "Protezione Spirituale", "skillDescription": "Aumenta la resistenza magica temporaneamente.", "exp": 4 },
-    { "skillId": 126, "skillName": "Anima di Aquila", "skillDescription": "Evoca l'anima di un'aquila per esplorare e attaccare.", "exp": 5 },
-    { "skillId": 127, "skillName": "Richiamo del Tuono", "skillDescription": "Scatena una potente esplosione di tuono sui nemici.", "exp": 6 },
-    { "skillId": 128, "skillName": "Guarigione di Gruppo", "skillDescription": "Guarisce tutti gli alleati vicini in un'area.", "exp": 7 },
-    { "skillId": 129, "skillName": "Onda di Energia", "skillDescription": "Libera un'onda di energia che danneggia e respinge i nemici.", "exp": 5 },
-    { "skillId": 130, "skillName": "Comunione con gli Spiriti", "skillDescription": "Ottieni potenziamenti temporanei comunicando con gli spiriti.", "exp": 8 },
-
-    { "skillId": 131, "skillName": "Trasformazione in Orso", "skillDescription": "Trasformati in un orso, aumentando la tua forza e resistenza.", "exp": 4 },
-    { "skillId": 132, "skillName": "Cura della Natura", "skillDescription": "Guarisce te stesso o un alleato con la magia della natura.", "exp": 3 },
-    { "skillId": 133, "skillName": "Radici Avvolgenti", "skillDescription": "Avvolge il nemico con radici, immobilizzandolo.", "exp": 2 },
-    { "skillId": 134, "skillName": "Furia della Tempesta", "skillDescription": "Scatena una tempesta che danneggia tutti i nemici vicini.", "exp": 5 },
-    { "skillId": 135, "skillName": "Trasformazione in Aquila", "skillDescription": "Trasformati in un'aquila per volare e attaccare dall'alto.", "exp": 6 },
-    { "skillId": 136, "skillName": "Richiamo della Foresta", "skillDescription": "Evoca creature della foresta per combattere al tuo fianco.", "exp": 4 },
-    { "skillId": 137, "skillName": "Guardiano della Natura", "skillDescription": "Aumenta temporaneamente la tua resistenza fisica e magica.", "exp": 3 },
-    { "skillId": 138, "skillName": "Evocazione degli Elementali", "skillDescription": "Evoca elementali di terra, fuoco, acqua e aria per combattere.", "exp": 7 },
-    { "skillId": 139, "skillName": "Rigenerazione", "skillDescription": "Rigenera lentamente la salute tua o di un alleato nel tempo.", "exp": 2 },
-    { "skillId": 140, "skillName": "Crescita Rapida", "skillDescription": "Accelera la crescita delle piante, creando ostacoli o copertura.", "exp": 5 },
-    { "skillId": 141, "skillName": "Aura di Calma", "skillDescription": "Calma le creature intorno a te, riducendo la loro aggressività.", "exp": 4 },
-    { "skillId": 142, "skillName": "Radici Immobilizzanti", "skillDescription": "Immobilizza tutti i nemici in un'area con radici crescenti.", "exp": 5 },
-    { "skillId": 143, "skillName": "Benedizione della Natura", "skillDescription": "Aumenta temporaneamente le capacità fisiche di un alleato.", "exp": 3 },
-    { "skillId": 144, "skillName": "Richiamo del Vento", "skillDescription": "Evoca un potente vento che spinge e danneggia i nemici.", "exp": 6 },
-    { "skillId": 145, "skillName": "Incarnazione del Lupo", "skillDescription": "Trasformati in un lupo, aumentando la tua velocità e agilità.", "exp": 4 },
-    { "skillId": 146, "skillName": "Comunione con la Natura", "skillDescription": "Ottieni saggezza e potere temporaneo dalla natura.", "exp": 7 },
-    { "skillId": 147, "skillName": "Evocazione di Spine", "skillDescription": "Evoca un campo di spine che danneggia i nemici che lo attraversano.", "exp": 3 },
-    { "skillId": 148, "skillName": "Pelle di Corteccia", "skillDescription": "Aumenta la tua difesa temporaneamente con una pelle di corteccia.", "exp": 5 },
-    { "skillId": 149, "skillName": "Rinascita Arborea", "skillDescription": "Rinascita istantanea in caso di morte, una volta per battaglia.", "exp": 8 },
-    { "skillId": 150, "skillName": "Furore della Natura", "skillDescription": "Scatena l'ira della natura su un singolo nemico, infliggendo enormi danni.", "exp": 6 },
-
-    { "skillId": 161, "skillName": "Preghiera di Guarigione", "skillDescription": "Guarisce te stesso o un alleato con una preghiera sacra.", "exp": 2 },
-    { "skillId": 162, "skillName": "Scudo Divino", "skillDescription": "Crea uno scudo che assorbe i danni per un breve periodo.", "exp": 3 },
-    { "skillId": 163, "skillName": "Luce Sacra", "skillDescription": "Infligge danni sacri a un nemico.", "exp": 2 },
-    { "skillId": 164, "skillName": "Resurrezione", "skillDescription": "Rianima un alleato caduto.", "exp": 5 },
-    { "skillId": 165, "skillName": "Purificazione", "skillDescription": "Rimuove tutti i debuff da te o da un alleato.", "exp": 3 },
-    { "skillId": 166, "skillName": "Preghiera di Forza", "skillDescription": "Aumenta temporaneamente la forza di un alleato.", "exp": 4 },
-    { "skillId": 167, "skillName": "Barriera Sacra", "skillDescription": "Crea una barriera che protegge tutti gli alleati vicini.", "exp": 5 },
-    { "skillId": 168, "skillName": "Luce Curativa", "skillDescription": "Cura un alleato con una potente luce sacra.", "exp": 4 },
-    { "skillId": 169, "skillName": "Benedizione", "skillDescription": "Conferisce una benedizione che aumenta tutte le statistiche.", "exp": 6 },
-    { "skillId": 170, "skillName": "Raggio Divino", "skillDescription": "Infligge danni sacri a tutti i nemici in un'area.", "exp": 5 },
-    { "skillId": 171, "skillName": "Protezione Angelica", "skillDescription": "Evoca un angelo che protegge e cura gli alleati.", "exp": 7 },
-    { "skillId": 172, "skillName": "Muro di Luce", "skillDescription": "Crea un muro di luce che blocca i nemici.", "exp": 4 },
-    { "skillId": 173, "skillName": "Punizione Divina", "skillDescription": "Infligge un grande danno sacro a un singolo nemico.", "exp": 6 },
-    { "skillId": 174, "skillName": "Meditazione", "skillDescription": "Ripristina rapidamente la tua energia magica.", "exp": 3 },
-    { "skillId": 175, "skillName": "Luce della Speranza", "skillDescription": "Aumenta la rigenerazione di salute di tutti gli alleati vicini.", "exp": 4 },
-    { "skillId": 176, "skillName": "Scudo di Fede", "skillDescription": "Aumenta temporaneamente la difesa di un alleato.", "exp": 2 },
-    { "skillId": 177, "skillName": "Fiamma Purificatrice", "skillDescription": "Infligge danni da fuoco sacro a un nemico.", "exp": 3 },
-    { "skillId": 178, "skillName": "Incantesimo Protettivo", "skillDescription": "Riduce i danni subiti da un alleato per un breve periodo.", "exp": 5 },
-    { "skillId": 179, "skillName": "Richiamo Celeste", "skillDescription": "Evoca una luce celeste che cura tutti gli alleati e danneggia i nemici.", "exp": 8 },
-    { "skillId": 180, "skillName": "Aura di Santità", "skillDescription": "Aumenta temporaneamente la resistenza magica di tutti gli alleati vicini.", "exp": 4 }
-
+    {
+      "skillId": 1,
+      "skillName": "Colpo Pesante",
+      "skillDescription": "Un colpo potente che infligge danni extra.",
+      "exp": 2
+    },
+    {
+      "skillId": 2,
+      "skillName": "Urlo di Guerra",
+      "skillDescription": "Un urlo che aumenta il morale degli alleati.",
+      "exp": 3
+    },
+    {
+      "skillId": 3,
+      "skillName": "Carica",
+      "skillDescription": "Carica contro il nemico per infliggere danni e stordire.",
+      "exp": 4
+    },
+    {
+      "skillId": 4,
+      "skillName": "Terremoto",
+      "skillDescription": "Colpisce il terreno creando un'onda d'urto.",
+      "exp": 6
+    },
+    {
+      "skillId": 5,
+      "skillName": "Turbine",
+      "skillDescription": "Gira su se stesso colpendo tutti i nemici vicini.",
+      "exp": 5
+    },
+    {
+      "skillId": 6,
+      "skillName": "Ruggito",
+      "skillDescription": "Un ruggito che intimorisce i nemici.",
+      "exp": 1
+    },
+    {
+      "skillId": 7,
+      "skillName": "Pelle di Pietra",
+      "skillDescription": "Indurisce la pelle per ridurre i danni subiti.",
+      "exp": 3
+    },
+    {
+      "skillId": 8,
+      "skillName": "Furia",
+      "skillDescription": "Aumenta la velocità d'attacco e i danni.",
+      "exp": 2
+    },
+    {
+      "skillId": 9,
+      "skillName": "Salto",
+      "skillDescription": "Salta verso una posizione bersaglio, infliggendo danni all'impatto.",
+      "exp": 4
+    },
+    {
+      "skillId": 10,
+      "skillName": "Frenesia",
+      "skillDescription": "Entra in uno stato di frenesia per infliggere danni massicci.",
+      "exp": 7
+    },
+    {
+      "skillId": 11,
+      "skillName": "Sete di Sangue",
+      "skillDescription": "Ripristina la salute con ogni attacco.",
+      "exp": 5
+    },
+    {
+      "skillId": 12,
+      "skillName": "Colpo Selvaggio",
+      "skillDescription": "Un attacco brutale che infligge danni pesanti.",
+      "exp": 6
+    },
+    {
+      "skillId": 13,
+      "skillName": "Urlo di Battaglia",
+      "skillDescription": "Aumenta il morale degli alleati, aumentando i loro danni.",
+      "exp": 3
+    },
+    {
+      "skillId": 14,
+      "skillName": "Trance di Battaglia",
+      "skillDescription": "Entra in trance per ridurre i danni subiti.",
+      "exp": 4
+    },
+    {
+      "skillId": 15,
+      "skillName": "Scudo",
+      "skillDescription": "Colpisce un nemico con lo scudo.",
+      "exp": 2
+    },
+    {
+      "skillId": 16,
+      "skillName": "Tuono",
+      "skillDescription": "Colpisce creando un'onda d'urto.",
+      "exp": 5
+    },
+    {
+      "skillId": 17,
+      "skillName": "Volontà di Ferro",
+      "skillDescription": "Aumenta la resistenza agli effetti di controllo della folla.",
+      "exp": 3
+    },
+    {
+      "skillId": 18,
+      "skillName": "Carica Avventata",
+      "skillDescription": "Carica senza riguardo, infliggendo più danni ma subendo di più.",
+      "exp": 4
+    },
+    {
+      "skillId": 19,
+      "skillName": "Invulnerabilità",
+      "skillDescription": "Diventa temporaneamente invulnerabile.",
+      "exp": 8
+    },
+    {
+      "skillId": 20,
+      "skillName": "Colpo Schiacciante",
+      "skillDescription": "Un colpo potente che frantuma l'armatura.",
+      "exp": 7
+    },
+    {
+      "skillId": 21,
+      "skillName": "Colosso",
+      "skillDescription": "Aumenta la salute e la difesa.",
+      "exp": 6
+    },
+    {
+      "skillId": 22,
+      "skillName": "Assalto",
+      "skillDescription": "Una serie di attacchi brutali.",
+      "exp": 5
+    },
+    {
+      "skillId": 23,
+      "skillName": "Presa del Titano",
+      "skillDescription": "Impugna due armi pesanti contemporaneamente.",
+      "exp": 7
+    },
+    {
+      "skillId": 24,
+      "skillName": "Ruggito Possente",
+      "skillDescription": "Un ruggito forte che intimorisce e indebolisce i nemici.",
+      "exp": 3
+    },
+    {
+      "skillId": 25,
+      "skillName": "Resistenza",
+      "skillDescription": "Aumenta temporaneamente la resistenza e riduce la fatica.",
+      "exp": 2
+    },
+    {
+      "skillId": 26,
+      "skillName": "Ruggito Selvaggio",
+      "skillDescription": "Un ruggito terrificante che spaventa i nemici.",
+      "exp": 4
+    },
+    {
+      "skillId": 27,
+      "skillName": "Colpo del Colosso",
+      "skillDescription": "Un colpo devastante che ignora l'armatura.",
+      "exp": 6
+    },
+    {
+      "skillId": 28,
+      "skillName": "Colpo Vendicativo",
+      "skillDescription": "Un colpo potente alimentato dalla rabbia.",
+      "exp": 5
+    },
+    {
+      "skillId": 29,
+      "skillName": "Rottura",
+      "skillDescription": "Un attacco che causa sanguinamento nel tempo.",
+      "exp": 3
+    },
+    {
+      "skillId": 30,
+      "skillName": "Sentiero di Guerra",
+      "skillDescription": "Lascia un sentiero di distruzione mentre ti muovi.",
+      "exp": 7
+    },
+    {
+      "skillId": 31,
+      "skillName": "Palla di Fuoco",
+      "skillDescription": "Una palla di fuoco che brucia il nemico.",
+      "exp": 3
+    },
+    {
+      "skillId": 32,
+      "skillName": "Spina di Ghiaccio",
+      "skillDescription": "Una spina di ghiaccio che perfora il nemico.",
+      "exp": 2
+    },
+    {
+      "skillId": 33,
+      "skillName": "Dardo Fulminante",
+      "skillDescription": "Un dardo di fulmine che fulmina il nemico.",
+      "exp": 4
+    },
+    {
+      "skillId": 34,
+      "skillName": "Esplosione Arcana",
+      "skillDescription": "Una esplosione di energia arcana.",
+      "exp": 6
+    },
+    {
+      "skillId": 35,
+      "skillName": "Cura",
+      "skillDescription": "Ripristina la salute di un alleato.",
+      "exp": 1
+    },
+    {
+      "skillId": 36,
+      "skillName": "Scudo di Mana",
+      "skillDescription": "Uno scudo che assorbe i danni usando il mana.",
+      "exp": 5
+    },
+    {
+      "skillId": 37,
+      "skillName": "Teletrasporto",
+      "skillDescription": "Muoviti istantaneamente in una posizione vicina.",
+      "exp": 2
+    },
+    {
+      "skillId": 38,
+      "skillName": "Evoca Familiare",
+      "skillDescription": "Evoca una creatura magica per assistere in battaglia.",
+      "exp": 7
+    },
+    {
+      "skillId": 39,
+      "skillName": "Tempesta di Ghiaccio",
+      "skillDescription": "Una tempesta di ghiaccio che danneggia tutti i nemici in un'area.",
+      "exp": 8
+    },
+    {
+      "skillId": 40,
+      "skillName": "Pioggia di Meteore",
+      "skillDescription": "Evoca meteore per schiantarsi sui nemici.",
+      "exp": 10
+    },
+    {
+      "skillId": 41,
+      "skillName": "Fulmine a Catena",
+      "skillDescription": "Un fulmine che salta tra i nemici.",
+      "exp": 6
+    },
+    {
+      "skillId": 42,
+      "skillName": "Scudo di Fiamme",
+      "skillDescription": "Uno scudo di fiamme che brucia gli attaccanti.",
+      "exp": 4
+    },
+    {
+      "skillId": 43,
+      "skillName": "Nova di Ghiaccio",
+      "skillDescription": "Un'esplosione di ghiaccio che congela i nemici vicini.",
+      "exp": 5
+    },
+    {
+      "skillId": 44,
+      "skillName": "Missili Arcani",
+      "skillDescription": "Lancia più missili arcani.",
+      "exp": 3
+    },
+    {
+      "skillId": 45,
+      "skillName": "Bruciatura di Mana",
+      "skillDescription": "Brucia il mana del nemico.",
+      "exp": 2
+    },
+    {
+      "skillId": 46,
+      "skillName": "Invisibilità",
+      "skillDescription": "Rende l'incantatore invisibile.",
+      "exp": 7
+    },
+    {
+      "skillId": 47,
+      "skillName": "Polimorfismo",
+      "skillDescription": "Trasforma un nemico in una creatura innocua.",
+      "exp": 6
+    },
+    {
+      "skillId": 48,
+      "skillName": "Armatura Magica",
+      "skillDescription": "Aumenta le difese magiche.",
+      "exp": 5
+    },
+    {
+      "skillId": 49,
+      "skillName": "Distorsione Temporale",
+      "skillDescription": "Rallenta il tempo per i nemici.",
+      "exp": 8
+    },
+    {
+      "skillId": 50,
+      "skillName": "Fenice",
+      "skillDescription": "Evoca una fenice per combattere al tuo fianco.",
+      "exp": 9
+    },
+    {
+      "skillId": 51,
+      "skillName": "Maestria Elementale",
+      "skillDescription": "Aumenta i danni elementali.",
+      "exp": 4
+    },
+    {
+      "skillId": 52,
+      "skillName": "Esplosione Mentale",
+      "skillDescription": "Attacco mentale che stordisce il nemico.",
+      "exp": 3
+    },
+    {
+      "skillId": 53,
+      "skillName": "Torrente di Acqua",
+      "skillDescription": "Un getto d'acqua ad alta pressione.",
+      "exp": 5
+    },
+    {
+      "skillId": 54,
+      "skillName": "Fuoco Spirituale",
+      "skillDescription": "Fiamme che bruciano l'anima.",
+      "exp": 6
+    },
+    {
+      "skillId": 55,
+      "skillName": "Raggio di Luce",
+      "skillDescription": "Un raggio di luce purificante.",
+      "exp": 2
+    },
+    {
+      "skillId": 56,
+      "skillName": "Portale",
+      "skillDescription": "Crea un portale per una città amica.",
+      "exp": 7
+    },
+    {
+      "skillId": 57,
+      "skillName": "Illusione",
+      "skillDescription": "Crea un'illusione per confondere i nemici.",
+      "exp": 4
+    },
+    {
+      "skillId": 58,
+      "skillName": "Tornado",
+      "skillDescription": "Evoca un tornado che travolge i nemici.",
+      "exp": 8
+    },
+    {
+      "skillId": 59,
+      "skillName": "Vampirismo",
+      "skillDescription": "Drena la vita dai nemici.",
+      "exp": 6
+    },
+    {
+      "skillId": 60,
+      "skillName": "Rigenerazione",
+      "skillDescription": "Accelera la guarigione.",
+      "exp": 3
+    },
+    {
+      "skillId": 61,
+      "skillName": "Tiro Rapido",
+      "skillDescription": "Un tiro con l'arco rapido.",
+      "exp": 1
+    },
+    {
+      "skillId": 62,
+      "skillName": "Tiro Potente",
+      "skillDescription": "Un tiro con l'arco potente che infligge più danni.",
+      "exp": 3
+    },
+    {
+      "skillId": 63,
+      "skillName": "Tiro Multiplo",
+      "skillDescription": "Spara più frecce contemporaneamente.",
+      "exp": 5
+    },
+    {
+      "skillId": 64,
+      "skillName": "Freccia Perforante",
+      "skillDescription": "Una freccia che perfora i nemici.",
+      "exp": 7
+    },
+    {
+      "skillId": 65,
+      "skillName": "Pioggia di Frecce",
+      "skillDescription": "Una pioggia di frecce che colpisce più bersagli.",
+      "exp": 9
+    },
+    {
+      "skillId": 66,
+      "skillName": "Freccia Esplosiva",
+      "skillDescription": "Una freccia che esplode all'impatto.",
+      "exp": 8
+    },
+    {
+      "skillId": 67,
+      "skillName": "Freccia Velenosa",
+      "skillDescription": "Una freccia che avvelena il nemico.",
+      "exp": 4
+    },
+    {
+      "skillId": 68,
+      "skillName": "Trappola a Strangolo",
+      "skillDescription": "Imposta una trappola che immobilizza i nemici.",
+      "exp": 2
+    },
+    {
+      "skillId": 69,
+      "skillName": "Occhio d'Aquila",
+      "skillDescription": "Aumenta la precisione e la portata.",
+      "exp": 6
+    },
+    {
+      "skillId": 70,
+      "skillName": "Mimetizzazione",
+      "skillDescription": "Confonditi con l'ambiente per diventare meno visibile.",
+      "exp": 1
+    },
+    {
+      "skillId": 71,
+      "skillName": "Raffica di Frecce",
+      "skillDescription": "Una raffica di frecce.",
+      "exp": 5
+    },
+    {
+      "skillId": 72,
+      "skillName": "Compagno Falco",
+      "skillDescription": "Evoca un falco per attaccare i nemici.",
+      "exp": 3
+    },
+    {
+      "skillId": 73,
+      "skillName": "Trappola a Rete",
+      "skillDescription": "Imposta una trappola a rete per catturare i nemici.",
+      "exp": 2
+    },
+    {
+      "skillId": 74,
+      "skillName": "Passo Silenzioso",
+      "skillDescription": "Muoviti silenziosamente per evitare di essere rilevato.",
+      "exp": 4
+    },
+    {
+      "skillId": 75,
+      "skillName": "Freccia di Fuoco",
+      "skillDescription": "Scocca una freccia infuocata.",
+      "exp": 6
+    },
+    {
+      "skillId": 76,
+      "skillName": "Freccia di Ghiaccio",
+      "skillDescription": "Scocca una freccia congelante.",
+      "exp": 5
+    },
+    {
+      "skillId": 77,
+      "skillName": "Freccia Elettrica",
+      "skillDescription": "Scocca una freccia elettrica.",
+      "exp": 7
+    },
+    {
+      "skillId": 78,
+      "skillName": "Tiro Intrappolante",
+      "skillDescription": "Scocca una freccia che intrappola il nemico.",
+      "exp": 3
+    },
+    {
+      "skillId": 79,
+      "skillName": "Esche",
+      "skillDescription": "Crea un'esca per distrarre i nemici.",
+      "exp": 2
+    },
+    {
+      "skillId": 80,
+      "skillName": "Corridore del Vento",
+      "skillDescription": "Aumenta la velocità di movimento.",
+      "exp": 1
+    },
+    {
+      "skillId": 81,
+      "skillName": "Maestria delle Trappole",
+      "skillDescription": "Migliora l'efficacia delle trappole.",
+      "exp": 4
+    },
+    {
+      "skillId": 82,
+      "skillName": "Marchio del Cacciatore",
+      "skillDescription": "Segna un nemico per infliggere danni extra.",
+      "exp": 3
+    },
+    {
+      "skillId": 83,
+      "skillName": "Bomba Flash",
+      "skillDescription": "Acceca temporaneamente i nemici.",
+      "exp": 2
+    },
+    {
+      "skillId": 84,
+      "skillName": "Tracciamento",
+      "skillDescription": "Traccia i movimenti dei nemici.",
+      "exp": 1
+    },
+    {
+      "skillId": 85,
+      "skillName": "Freccia Ombra",
+      "skillDescription": "Scocca una freccia che oscura l'area.",
+      "exp": 5
+    },
+    {
+      "skillId": 86,
+      "skillName": "Tiro a Raffica",
+      "skillDescription": "Scocca più frecce in rapida successione.",
+      "exp": 6
+    },
+    {
+      "skillId": 87,
+      "skillName": "Trappola Velenosa",
+      "skillDescription": "Imposta una trappola che avvelena i nemici.",
+      "exp": 7
+    },
+    {
+      "skillId": 88,
+      "skillName": "Tiro di Precisione",
+      "skillDescription": "Scocca una freccia con precisione assoluta.",
+      "exp": 8
+    },
+    {
+      "skillId": 89,
+      "skillName": "Tiro a Spargimento",
+      "skillDescription": "Scocca frecce in una vasta area.",
+      "exp": 5
+    },
+    {
+      "skillId": 90,
+      "skillName": "Riflessi del Cacciatore",
+      "skillDescription": "Aumenta la possibilità di schivata.",
+      "exp": 2
+    },
+    {
+      "skillId": 91,
+      "skillName": "Calcio",
+      "skillDescription": "Un calcio potente che può stordire il nemico.",
+      "exp": 1
+    },
+    {
+      "skillId": 92,
+      "skillName": "Schivata",
+      "skillDescription": "Esegui una rapida schivata per evitare un attacco.",
+      "exp": 1
+    },
+    {
+      "skillId": 93,
+      "skillName": "Parata",
+      "skillDescription": "Usa la tua arma o scudo per parare un attacco in arrivo.",
+      "exp": 1
+    },
+    {
+      "skillId": 94,
+      "skillName": "Colpo Rotante",
+      "skillDescription": "Esegui un attacco rotante che colpisce tutti i nemici intorno a te.",
+      "exp": 1
+    },
+    {
+      "skillId": 95,
+      "skillName": "Sprint",
+      "skillDescription": "Aumenta temporaneamente la tua velocità di movimento.",
+      "exp": 1
+    },
+    {
+      "skillId": 96,
+      "skillName": "Affondo",
+      "skillDescription": "Esegui un attacco veloce con la tua arma per colpire un nemico.",
+      "exp": 1
+    },
+    {
+      "skillId": 97,
+      "skillName": "Urlo di Guerra",
+      "skillDescription": "Emetti un potente urlo che aumenta temporaneamente il morale e le capacità di combattimento.",
+      "exp": 1
+    },
+    {
+      "skillId": 98,
+      "skillName": "Meditazione",
+      "skillDescription": "Rilassati e concentrati per recuperare energia e salute.",
+      "exp": 1
+    },
+    {
+      "skillId": 99,
+      "skillName": "Berserk",
+      "skillDescription": "Entra in uno stato di furia, aumentando temporaneamente la tua forza e velocità di attacco.",
+      "exp": 1
+    },
+    {
+      "skillId": 100,
+      "skillName": "Contrattacco",
+      "skillDescription": "Sfrutta l'attacco del nemico per contrattaccare con un colpo potente.",
+      "exp": 1
+    },
+    {
+      "skillId": 101,
+      "skillName": "Evoca Spirito",
+      "skillDescription": "Evoca uno spirito che combatte al tuo fianco.",
+      "exp": 1
+    },
+    {
+      "skillId": 102,
+      "skillName": "Fulmine",
+      "skillDescription": "Scaglia un fulmine contro il nemico.",
+      "exp": 2
+    },
+    {
+      "skillId": 103,
+      "skillName": "Furia della Natura",
+      "skillDescription": "Rilascia la furia della natura su tutti i nemici.",
+      "exp": 3
+    },
+    {
+      "skillId": 104,
+      "skillName": "Scudo Spirituale",
+      "skillDescription": "Crea uno scudo protettivo che assorbe i danni.",
+      "exp": 4
+    },
+    {
+      "skillId": 105,
+      "skillName": "Curare",
+      "skillDescription": "Guarisce un alleato o te stesso.",
+      "exp": 2
+    },
+    {
+      "skillId": 106,
+      "skillName": "Terremoto",
+      "skillDescription": "Scatena un terremoto che danneggia i nemici.",
+      "exp": 5
+    },
+    {
+      "skillId": 107,
+      "skillName": "Vento Tornado",
+      "skillDescription": "Crea un tornado che trascina i nemici.",
+      "exp": 6
+    },
+    {
+      "skillId": 108,
+      "skillName": "Maledizione",
+      "skillDescription": "Lancia una maledizione che indebolisce il nemico.",
+      "exp": 3
+    },
+    {
+      "skillId": 109,
+      "skillName": "Rituale di Cura",
+      "skillDescription": "Rituale che ripristina la salute degli alleati.",
+      "exp": 4
+    },
+    {
+      "skillId": 110,
+      "skillName": "Rivitalizzazione",
+      "skillDescription": "Rinvigorisce gli alleati, aumentando la loro forza.",
+      "exp": 5
+    },
+    {
+      "skillId": 111,
+      "skillName": "Fiamma Sacra",
+      "skillDescription": "Lancia una fiamma sacra che brucia i nemici.",
+      "exp": 6
+    },
+    {
+      "skillId": 112,
+      "skillName": "Resistenza Spirituale",
+      "skillDescription": "Aumenta la resistenza ai danni magici.",
+      "exp": 2
+    },
+    {
+      "skillId": 113,
+      "skillName": "Anima del Lupo",
+      "skillDescription": "Evoca l'anima di un lupo per combattere con te.",
+      "exp": 3
+    },
+    {
+      "skillId": 114,
+      "skillName": "Tempesta",
+      "skillDescription": "Scatena una tempesta che danneggia e confonde i nemici.",
+      "exp": 4
+    },
+    {
+      "skillId": 115,
+      "skillName": "Aura di Protezione",
+      "skillDescription": "Crea un'aura che protegge gli alleati dalle magie.",
+      "exp": 5
+    },
+    {
+      "skillId": 116,
+      "skillName": "Rinascita",
+      "skillDescription": "Rianima un alleato caduto in battaglia.",
+      "exp": 6
+    },
+    {
+      "skillId": 117,
+      "skillName": "Rinascita",
+      "skillDescription": "Rianima un alleato caduto in battaglia.",
+      "exp": 6
+    },
+    {
+      "skillId": 118,
+      "skillName": "Totem di Guarigione",
+      "skillDescription": "Piazza un totem che cura gli alleati vicini.",
+      "exp": 3
+    },
+    {
+      "skillId": 119,
+      "skillName": "Catene Spirituali",
+      "skillDescription": "Intrappola i nemici con catene spirituali.",
+      "exp": 5
+    },
+    {
+      "skillId": 120,
+      "skillName": "Anima del Lupo",
+      "skillDescription": "Evoca l'anima di un lupo per combattere con te.",
+      "exp": 3
+    },
+    {
+      "skillId": 121,
+      "skillName": "Scudo di Fulmini",
+      "skillDescription": "Circonda te stesso o un alleato con un campo elettrico.",
+      "exp": 4
+    },
+    {
+      "skillId": 122,
+      "skillName": "Evocazione di Terra",
+      "skillDescription": "Richiama la forza della terra per proteggere e attaccare.",
+      "exp": 5
+    },
+    {
+      "skillId": 123,
+      "skillName": "Conciliazione",
+      "skillDescription": "Placa gli spiriti inquieti per ottenere aiuto.",
+      "exp": 6
+    },
+    {
+      "skillId": 124,
+      "skillName": "Invocazione degli Antenati",
+      "skillDescription": "Chiedi agli spiriti degli antenati di combattere al tuo fianco.",
+      "exp": 7
+    },
+    {
+      "skillId": 125,
+      "skillName": "Protezione Spirituale",
+      "skillDescription": "Aumenta la resistenza magica temporaneamente.",
+      "exp": 4
+    },
+    {
+      "skillId": 126,
+      "skillName": "Anima di Aquila",
+      "skillDescription": "Evoca l'anima di un'aquila per esplorare e attaccare.",
+      "exp": 5
+    },
+    {
+      "skillId": 127,
+      "skillName": "Richiamo del Tuono",
+      "skillDescription": "Scatena una potente esplosione di tuono sui nemici.",
+      "exp": 6
+    },
+    {
+      "skillId": 128,
+      "skillName": "Guarigione di Gruppo",
+      "skillDescription": "Guarisce tutti gli alleati vicini in un'area.",
+      "exp": 7
+    },
+    {
+      "skillId": 129,
+      "skillName": "Onda di Energia",
+      "skillDescription": "Libera un'onda di energia che danneggia e respinge i nemici.",
+      "exp": 5
+    },
+    {
+      "skillId": 130,
+      "skillName": "Comunione con gli Spiriti",
+      "skillDescription": "Ottieni potenziamenti temporanei comunicando con gli spiriti.",
+      "exp": 8
+    },
+    {
+      "skillId": 131,
+      "skillName": "Trasformazione in Orso",
+      "skillDescription": "Trasformati in un orso, aumentando la tua forza e resistenza.",
+      "exp": 4
+    },
+    {
+      "skillId": 132,
+      "skillName": "Cura della Natura",
+      "skillDescription": "Guarisce te stesso o un alleato con la magia della natura.",
+      "exp": 3
+    },
+    {
+      "skillId": 133,
+      "skillName": "Radici Avvolgenti",
+      "skillDescription": "Avvolge il nemico con radici, immobilizzandolo.",
+      "exp": 2
+    },
+    {
+      "skillId": 134,
+      "skillName": "Furia della Tempesta",
+      "skillDescription": "Scatena una tempesta che danneggia tutti i nemici vicini.",
+      "exp": 5
+    },
+    {
+      "skillId": 135,
+      "skillName": "Trasformazione in Aquila",
+      "skillDescription": "Trasformati in un'aquila per volare e attaccare dall'alto.",
+      "exp": 6
+    },
+    {
+      "skillId": 136,
+      "skillName": "Richiamo della Foresta",
+      "skillDescription": "Evoca creature della foresta per combattere al tuo fianco.",
+      "exp": 4
+    },
+    {
+      "skillId": 137,
+      "skillName": "Guardiano della Natura",
+      "skillDescription": "Aumenta temporaneamente la tua resistenza fisica e magica.",
+      "exp": 3
+    },
+    {
+      "skillId": 138,
+      "skillName": "Evocazione degli Elementali",
+      "skillDescription": "Evoca elementali di terra, fuoco, acqua e aria per combattere.",
+      "exp": 7
+    },
+    {
+      "skillId": 139,
+      "skillName": "Rigenerazione",
+      "skillDescription": "Rigenera lentamente la salute tua o di un alleato nel tempo.",
+      "exp": 2
+    },
+    {
+      "skillId": 140,
+      "skillName": "Crescita Rapida",
+      "skillDescription": "Accelera la crescita delle piante, creando ostacoli o copertura.",
+      "exp": 5
+    },
+    {
+      "skillId": 141,
+      "skillName": "Aura di Calma",
+      "skillDescription": "Calma le creature intorno a te, riducendo la loro aggressività.",
+      "exp": 4
+    },
+    {
+      "skillId": 142,
+      "skillName": "Radici Immobilizzanti",
+      "skillDescription": "Immobilizza tutti i nemici in un'area con radici crescenti.",
+      "exp": 5
+    },
+    {
+      "skillId": 143,
+      "skillName": "Benedizione della Natura",
+      "skillDescription": "Aumenta temporaneamente le capacità fisiche di un alleato.",
+      "exp": 3
+    },
+    {
+      "skillId": 144,
+      "skillName": "Richiamo del Vento",
+      "skillDescription": "Evoca un potente vento che spinge e danneggia i nemici.",
+      "exp": 6
+    },
+    {
+      "skillId": 145,
+      "skillName": "Incarnazione del Lupo",
+      "skillDescription": "Trasformati in un lupo, aumentando la tua velocità e agilità.",
+      "exp": 4
+    },
+    {
+      "skillId": 146,
+      "skillName": "Comunione con la Natura",
+      "skillDescription": "Ottieni saggezza e potere temporaneo dalla natura.",
+      "exp": 7
+    },
+    {
+      "skillId": 147,
+      "skillName": "Evocazione di Spine",
+      "skillDescription": "Evoca un campo di spine che danneggia i nemici che lo attraversano.",
+      "exp": 3
+    },
+    {
+      "skillId": 148,
+      "skillName": "Pelle di Corteccia",
+      "skillDescription": "Aumenta la tua difesa temporaneamente con una pelle di corteccia.",
+      "exp": 5
+    },
+    {
+      "skillId": 149,
+      "skillName": "Rinascita Arborea",
+      "skillDescription": "Rinascita istantanea in caso di morte, una volta per battaglia.",
+      "exp": 8
+    },
+    {
+      "skillId": 150,
+      "skillName": "Furore della Natura",
+      "skillDescription": "Scatena l'ira della natura su un singolo nemico, infliggendo enormi danni.",
+      "exp": 6
+    },
+    {
+      "skillId": 161,
+      "skillName": "Preghiera di Guarigione",
+      "skillDescription": "Guarisce te stesso o un alleato con una preghiera sacra.",
+      "exp": 2
+    },
+    {
+      "skillId": 162,
+      "skillName": "Scudo Divino",
+      "skillDescription": "Crea uno scudo che assorbe i danni per un breve periodo.",
+      "exp": 3
+    },
+    {
+      "skillId": 163,
+      "skillName": "Luce Sacra",
+      "skillDescription": "Infligge danni sacri a un nemico.",
+      "exp": 2
+    },
+    {
+      "skillId": 164,
+      "skillName": "Resurrezione",
+      "skillDescription": "Rianima un alleato caduto.",
+      "exp": 5
+    },
+    {
+      "skillId": 165,
+      "skillName": "Purificazione",
+      "skillDescription": "Rimuove tutti i debuff da te o da un alleato.",
+      "exp": 3
+    },
+    {
+      "skillId": 166,
+      "skillName": "Preghiera di Forza",
+      "skillDescription": "Aumenta temporaneamente la forza di un alleato.",
+      "exp": 4
+    },
+    {
+      "skillId": 167,
+      "skillName": "Barriera Sacra",
+      "skillDescription": "Crea una barriera che protegge tutti gli alleati vicini.",
+      "exp": 5
+    },
+    {
+      "skillId": 168,
+      "skillName": "Luce Curativa",
+      "skillDescription": "Cura un alleato con una potente luce sacra.",
+      "exp": 4
+    },
+    {
+      "skillId": 169,
+      "skillName": "Benedizione",
+      "skillDescription": "Conferisce una benedizione che aumenta tutte le statistiche.",
+      "exp": 6
+    },
+    {
+      "skillId": 170,
+      "skillName": "Raggio Divino",
+      "skillDescription": "Infligge danni sacri a tutti i nemici in un'area.",
+      "exp": 5
+    },
+    {
+      "skillId": 171,
+      "skillName": "Protezione Angelica",
+      "skillDescription": "Evoca un angelo che protegge e cura gli alleati.",
+      "exp": 7
+    },
+    {
+      "skillId": 172,
+      "skillName": "Muro di Luce",
+      "skillDescription": "Crea un muro di luce che blocca i nemici.",
+      "exp": 4
+    },
+    {
+      "skillId": 173,
+      "skillName": "Punizione Divina",
+      "skillDescription": "Infligge un grande danno sacro a un singolo nemico.",
+      "exp": 6
+    },
+    {
+      "skillId": 174,
+      "skillName": "Meditazione",
+      "skillDescription": "Ripristina rapidamente la tua energia magica.",
+      "exp": 3
+    },
+    {
+      "skillId": 175,
+      "skillName": "Luce della Speranza",
+      "skillDescription": "Aumenta la rigenerazione di salute di tutti gli alleati vicini.",
+      "exp": 4
+    },
+    {
+      "skillId": 176,
+      "skillName": "Scudo di Fede",
+      "skillDescription": "Aumenta temporaneamente la difesa di un alleato.",
+      "exp": 2
+    },
+    {
+      "skillId": 177,
+      "skillName": "Fiamma Purificatrice",
+      "skillDescription": "Infligge danni da fuoco sacro a un nemico.",
+      "exp": 3
+    },
+    {
+      "skillId": 178,
+      "skillName": "Incantesimo Protettivo",
+      "skillDescription": "Riduce i danni subiti da un alleato per un breve periodo.",
+      "exp": 5
+    },
+    {
+      "skillId": 179,
+      "skillName": "Richiamo Celeste",
+      "skillDescription": "Evoca una luce celeste che cura tutti gli alleati e danneggia i nemici.",
+      "exp": 8
+    },
+    {
+      "skillId": 180,
+      "skillName": "Aura di Santità",
+      "skillDescription": "Aumenta temporaneamente la resistenza magica di tutti gli alleati vicini.",
+      "exp": 4
+    }
   ]
 }
