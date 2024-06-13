@@ -5,18 +5,20 @@ import { iEventi } from '../../interfaces/ieventi';
 @Component({
   selector: 'app-eventi-disponibili',
   templateUrl: './eventi-disponibili.component.html',
-  styleUrls: ['./eventi-disponibili.component.scss']
+  styleUrls: ['./eventi-disponibili.component.scss'],
 })
 export class EventiDisponibiliComponent implements OnInit {
   events: iEventi[] = [];
 
-  constructor(private eventService: EventService) { }
-
+  constructor(private eventService: EventService) {}
   ngOnInit(): void {
-    this.eventService.getEventi().subscribe((data: iEventi[]) => {
-      this.events = data;
-    }, error => {
-      console.error('Errore nel recupero degli eventi:', error);
-    });
+    this.eventService.getEventi().subscribe(
+      (data: iEventi[]) => {
+        this.events = data;
+      },
+      (error) => {
+        console.error('Errore nel recupero degli eventi:', error);
+      }
+    );
   }
 }

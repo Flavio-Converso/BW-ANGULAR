@@ -1,18 +1,13 @@
 <div *ngIf="events">
   <h2>Eventi Creati</h2>
-  <ul>
-    <li *ngFor="let event of events">
-      <h3>{{ event.title }}</h3>
-      <p>{{ event.campain }}</p>
-      <img [src]="event.img" alt="{{ event.title }}" />
-      <p>Master: {{ event.master }}</p>
-      <p>Data: {{ event.date }}</p>
-      <p>Tipo: {{ event.liveoronline }}</p>
-      <p>Numero Giocatori: {{ event.counter }}</p>
-      <p>Indirizzo: {{ event.adress}}</p>
-    </li>
-  </ul>
-</div>
-<div >
-  <p>Nessun evento disponibile.</p>
+  <div *ngFor="let event of events">
+    <h3>{{ event.titolo }}</h3>
+    <p>{{ event.descrizione }}</p>
+    <img [src]="event.urlImmagine" alt="{{ event.titolo }}" />
+    <p>Master: {{ event.master }}</p>
+    <p>Data: {{ event.data }}</p>
+    <p>Tipo: {{ event.tipo }}</p>
+    <p>Numero Giocatori: {{ event.numeroGiocatori }}</p>
+    <p>Indirizzo: {{ event.indirizzo }}</p>
+  </div>
 </div>
