@@ -3,14 +3,24 @@
     <a class="" routerLink="">
       <img class="cla1" src="../../../assets/img_logo/Logo ridimensionato.png" alt="Logo" />
     </a>
-    <button (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample"
-      class="navbar-toggler" type="button">
+    <button
+      (click)="isCollapsed = !isCollapsed"
+      [attr.aria-expanded]="!isCollapsed"
+      aria-controls="collapseExample"
+      class="navbar-toggler"
+      type="button"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" [ngClass]="{ show: !isCollapsed }">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-2 fw-bold">
         <li class="nav-item">
-          <a class="nav-link text-white" routerLink="" routerLinkActive="active-link">Home</a>
+          <a
+            class="nav-link text-white"
+            routerLink=""
+            routerLinkActive="active-link"
+            >Home</a
+          >
         </li>
 
 
@@ -30,17 +40,31 @@
         </li>
       </ul>
       <div class="d-flex">
-        <div class="nav-item dropdown me-auto mb-2 mb-lg-0 fs-2 fw-bold" *ngIf="!isLoggedIn"
-          [ngClass]="{ show: openDropdown === 'login' }" (mouseleave)="closeDropdown()">
-          <a class="nav-link dropdown-toggle text-white" id="dropdownMenuButtonLogin" aria-expanded="false"
-            (click)="toggleDropdown('login')" [attr.aria-expanded]="openDropdown === 'login'">
+        <div
+          class="nav-item dropdown me-auto mb-2 mb-lg-0 fs-2 fw-bold"
+          *ngIf="!isLoggedIn"
+          [ngClass]="{ show: openDropdown === 'login' }"
+          (mouseleave)="closeDropdown()"
+        >
+          <a
+            class="nav-link dropdown-toggle text-white"
+            id="dropdownMenuButtonLogin"
+            aria-expanded="false"
+            (click)="toggleDropdown('login')"
+            [attr.aria-expanded]="openDropdown === 'login'"
+          >
             Accedi
           </a>
-          <ul class="dropdown-menu" [ngClass]="{ show: openDropdown === 'login' }"
-            aria-labelledby="dropdownMenuButtonLogin">
+          <ul
+            class="dropdown-menu"
+            [ngClass]="{ show: openDropdown === 'login' }"
+            aria-labelledby="dropdownMenuButtonLogin"
+          >
             <li><a class="dropdown-item" routerLink="/auth/login">Login</a></li>
             <li>
-              <a class="dropdown-item" routerLink="/auth/register">Registrati</a>
+              <a class="dropdown-item" routerLink="/auth/register"
+                >Registrati</a
+              >
             </li>
           </ul>
         </div>
@@ -55,14 +79,21 @@
             <!-- qui ci va l'immagine del profilo (dinamica) metto temporaneamente un template con un immagine finta -->
             {{ user?.username }}
           </a>
-          <ul class="dropdown-menu" [ngClass]="{ show: openDropdown === 'user' }"
-            aria-labelledby="dropdownMenuButtonUser">
+          <ul
+            class="dropdown-menu"
+            [ngClass]="{ show: openDropdown === 'user' }"
+            aria-labelledby="dropdownMenuButtonUser"
+          >
             <li>
-              <a class="dropdown-item" routerLink="/dashboard/profile">Account</a>
+              <a class="dropdown-item" routerLink="/dashboard/profile"
+                >Account</a
+              >
             </li>
 
             <li>
-              <a class="dropdown-item" routerLink="/dashboard/active_users">Giocatori attivi</a>
+              <a class="dropdown-item" routerLink="/dashboard/active_users"
+                >Giocatori attivi</a
+              >
             </li>
             <li class="dropdown-item clickable" *ngIf="isLoggedIn" (click)="logout()">
               <span class="nav-link" routerLinkActive="active-link">
