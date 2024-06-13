@@ -6,11 +6,9 @@
         <div class="mb-3 cd my-5">
           <div class="row">
             <div class="col-md-4">
-              <img
-                [src]="[user?.immagine]"
-                class="img-fluid rounded-start rounded-circle"
-                alt="..."
-              />
+              <img *ngIf="user?.immagine" [src]="[user?.immagine]" class="img-fluid rounded-start rounded-circle"
+                alt="..." />
+              <img *ngIf="!user?.immagine" src="" class="img-fluid rounded-start rounded-circle" alt="..." />
             </div>
             <div class="col-md-8 myGradient rounded-5 p-4">
               <div class="card-body text-light">
@@ -49,11 +47,7 @@
         <!--inserire dati  attualmente sono place older-->
 
         <!--ngfor da inserire-->
-        <div
-          #draggable
-          class="col d-flex justify-content-center px-0 m-3"
-          *ngFor="let pg of combina"
-        >
+        <div #draggable class="col d-flex justify-content-center px-0 m-3" *ngFor="let pg of combina">
           <div class="mb-3 cd my-5">
             <div class="row">
               <div class="col myGradient text-light rounded-5 p-4">
@@ -99,11 +93,7 @@
                     </div>
                   </div>
                   <div class="col-6 d-flex justify-content-center">
-                    <img
-                      [src]="[pg.classe.img]"
-                      class="img-fluid rad"
-                      alt="immagine avventuriero"
-                    />
+                    <img [src]="[pg.classe.img]" class="img-fluid rad" alt="immagine avventuriero" />
                   </div>
                 </div>
                 <!--------------------------------------->
@@ -135,10 +125,7 @@
                         </tbody>
                       </table>
                     </div>
-                    <button
-                      class="btn myBtn"
-                      (click)="deleteCharacter(pg.characters.id)"
-                    >
+                    <button class="btn myBtn" (click)="deleteCharacter(pg.characters.id)">
                       ELIMINA PERSONAGGIO
                     </button>
                   </div>
