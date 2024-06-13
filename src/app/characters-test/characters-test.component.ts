@@ -31,7 +31,7 @@ export class CharactersTestComponent implements OnInit {
   ngOnInit(): void {
     this.characterForm = this.fb.group({
       characterName: ['', Validators.required],
-      classId: ['', Validators.required],
+      classs: ['', Validators.required],
       selectedSkills: [[]],
       expTot: [50, Validators.required],
     });
@@ -46,8 +46,8 @@ export class CharactersTestComponent implements OnInit {
   }
 
   onClassChange(event: any): void {
-    const classId = +event.target.value;
-    const selectedClass = this.classes.find((c) => c.classId === classId);
+    const classs = +event.target.value;
+    const selectedClass = this.classes.find((c) => c.classs === classs);
     if (selectedClass) {
       this.skillsSvc.getSkills().subscribe((allSkills: iSkills[]) => {
         this.skills = allSkills.filter((skill) =>

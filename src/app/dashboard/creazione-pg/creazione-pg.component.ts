@@ -42,7 +42,7 @@ export class CreazionePgComponent {
   ngOnInit(): void {
     this.characterForm = this.fb.group({
       characterName: ['', Validators.required],
-      classId: ['', Validators.required],
+      classs: ['', Validators.required],
       raceId: ['', Validators.required],
       selectedSkills: [[]],
       expTot: [50, Validators.required],
@@ -64,8 +64,8 @@ export class CreazionePgComponent {
     });
   }
 
-  onClassChange(classId: number): void {
-    const selectedClass = this.classes.find((c) => c.classId === classId);
+  onClassChange(classs: number): void {
+    const selectedClass = this.classes.find((c) => c.classs === classs);
     if (selectedClass) {
       this.skillsSvc.getSkills().subscribe((allSkills: iSkills[]) => {
         this.skills = allSkills.filter((skill) =>
@@ -73,12 +73,12 @@ export class CreazionePgComponent {
         );
         console.log('Filtered skills:', this.skills);
       });
-      this.characterForm.patchValue({ classId });
+      this.characterForm.patchValue({ classs });
       this.selectedSkills = [];
       this.availableExp = 50;
       this.updateFormValues();
       this.selectedClassIndex = this.classes.findIndex(
-        (c) => c.classId === classId
+        (c) => c.classs === classs
       );
     }
   }

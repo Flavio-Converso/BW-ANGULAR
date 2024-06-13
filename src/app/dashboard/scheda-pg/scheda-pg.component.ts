@@ -67,8 +67,8 @@ export class SchedaPgComponent {
   }
 
   loadCharacterClass(): void {
-    if (this.character && this.character.classId) {
-      this.classSrc.getClassById(this.character.classId).subscribe(
+    if (this.character && this.character.classs) {
+      this.classSrc.getClassById(this.character.classs).subscribe(
         (classChar: iClassi) => {
           console.log('Classe:', classChar);
           this.class = classChar; // Assegna l'intero oggetto della classe
@@ -84,7 +84,8 @@ export class SchedaPgComponent {
   }
 
   loadCharacterRace(): void {
-    if (this.character && this.character.raceId) { // Assumi che raceId sia una proprietà del personaggio
+    if (this.character && this.character.raceId) {
+      // Assumi che raceId sia una proprietà del personaggio
       this.raceSrc.getRaceById(this.character.raceId).subscribe(
         (raceChar: iRaces) => {
           console.log('Razza:', raceChar);
