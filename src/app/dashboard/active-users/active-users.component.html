@@ -5,62 +5,34 @@
   <div class="container activebg">
     <div class="row m-0">
       <div class="col-12 activebg">
-        <ul
-          class="list-group p-2"
-          *ngFor="let iscritto of users; let i = index"
-        >
+        <ul class="list-group p-2" *ngFor="let iscritto of users; let i = index">
           <li class="m-2 fs-1 d-flex justify-content-center fw-bold activebg">
-            <img
-              *ngIf="iscritto?.immagine"
-              [src]="iscritto?.immagine"
-              width="50px"
-              class="me-3 rounded-circle"
-              alt="{{ iscritto?.username }}"
-            />
-            <img
-              *ngIf="!iscritto?.immagine"
-              src="../../../assets/img/profilovuoto.jpg"
-              width="50px"
-              class="me-3 rounded-circle"
-              alt="{{ iscritto?.username }}"
-            />
+            <img *ngIf="iscritto?.immagine" [src]="iscritto?.immagine" width="50px" class="me-3 rounded-circle"
+              alt="{{ iscritto?.username }}" />
+            <img *ngIf="!iscritto?.immagine" src="../../../assets/img/profilovuoto.jpg" width="50px"
+              class="me-3 rounded-circle" alt="{{ iscritto?.username }}" />
+
             {{ iscritto?.username }}
 
             {{ iscritto?.email }}
           </li>
-          <div class="activebg" *ngIf="combina[iscritto.id].length > 0">
-            <button
-              class="btn m-auto d-flex justify-content-center fs-2 activebg"
-              type="button"
-              data-bs-toggle="collapse"
-              [attr.data-bs-target]="'#collapseExample' + i"
-              aria-expanded="false"
-              [attr.aria-controls]="'collapseExample' + i"
-            >
+          <div class="activebg" *ngIf="iscritto">
+            <button class="btn m-auto d-flex justify-content-center fs-2 activebg" type="button"
+              data-bs-toggle="collapse" [attr.data-bs-target]="'#collapseExample' + i" aria-expanded="false"
+              [attr.aria-controls]="'collapseExample' + i">
               Personaggi di {{ iscritto.username }}
             </button>
             <div class="collapse activebg" [id]="'collapseExample' + i">
               <div class="row activebg justify-content-center">
-                <div
-                  *ngFor="let character of combina[iscritto.id]"
-                  class="col-12 col-md-6 col-lg-3 my-5 activebg"
-                >
+                <div *ngFor="let character of combina[iscritto.id]" class="col-12 col-md-6 col-lg-3 my-5 activebg">
                   <div class="card card-equal-height m-4 activebg">
                     <div class="flip-box">
                       <div class="flip-box-inner">
                         <div class="flip-box-front imgFade">
-                          <img
-                            [src]="character.classe.img"
-                            alt="img"
-                            class="img-fluid"
-                          />
+                          <img [src]="character.classe.img" alt="img" class="img-fluid" />
                         </div>
                         <div class="flip-box-back imgFade">
-                          <img
-                            [src]="character.race.img"
-                            alt="img"
-                            class="img-fluid"
-                          />
+                          <img [src]="character.race.img" alt="img" class="img-fluid" />
                         </div>
                       </div>
                     </div>

@@ -25,18 +25,7 @@
       "id": 2
     },
     {
-      "email": "tazzine@stupende.com",
-      "password": "$2a$10$sIHpam39pX3Tl67.wq1fGuB6iJbo/HP5hgkjVjY32kklx1UJ/z6Eq",
-      "nome": "Teapot",
-      "cognome": "Tè verde",
-      "confermaEmail": "tazzine@stupende.com",
-      "confermaPassword": "Teapot00-",
-      "genere": "altro",
-      "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdrpLDNM122Bk7fA-tuW-HjLff-OPDZe3O28p2i_7C_eSKG0Y4HEdKjopRGXzm-pHDnHc&usqp=CAU",
-      "username": "TheKingOfTeapot",
-    "id":3
-  },
-      {"email": "user2@user2.com",
+      "email": "user2@user2.com",
       "password": "$2a$10$vau2moJ.ZR9ZFUYPIL6qU.3X2DPDOFuR4Gmt8U2aZ18zHxelg.eey",
       "nome": "Giancarlo",
       "cognome": "Carlini",
@@ -45,10 +34,67 @@
       "genere": "maschio",
       "immagine": null,
       "username": "Giancarlo7",
+      "id": 3
+    },
+    {
+      "email": "user3@user3.com",
+      "password": "$2a$10$14GWq2zsB5s4e.9qkp4D3eKT.SgW31.eD6D5PCw11b8fBz13Tck4y",
+      "nome": "giorgio",
+      "cognome": "giorgini",
+      "confermaEmail": "user3@user3.com",
+      "confermaPassword": "Pa$$w0rd!",
+      "genere": "femmina",
+      "immagine": null,
+      "username": "giorgio",
       "id": 4
     }
   ],
   "characters": [
+    {
+      "characterName": "Giorgio",
+      "classs": 4,
+      "race": 2,
+      "selectedSkills": [
+        91,
+        92,
+        95,
+        93,
+        94,
+        97,
+        109,
+        111,
+        117,
+        121,
+        125,
+        124,
+        123,
+        122,
+        102
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "characterName": "test",
+      "classs": 4,
+      "race": 1,
+      "selectedSkills": [
+        91,
+        130,
+        129,
+        128,
+        127,
+        126,
+        125,
+        124,
+        123,
+        101
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 2
+    },
     {
       "characterName": "Ilario Alicante",
       "classs": 6,
@@ -113,30 +159,77 @@
         67
       ],
       "expTot": 0,
-      "userId": 2,
-      "id": 2
+      "userId": 1,
+      "id": 5
     },
     {
-      "characterName": "Nostradamus",
-      "classs": 5,
+      "characterName": "Giorgio",
+      "classs": 1,
       "race": 4,
       "selectedSkills": [
-        149,
-        147,
-        145,
-        143,
-        141,
-        139,
-        150,
-        148,
-        146,
-        144,
-        97,
-        96
+        15,
+        14,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        28,
+        27,
+        26,
+        25,
+        91,
+        92,
+        94
       ],
       "expTot": 0,
       "userId": 1,
-      "id": 3
+      "id": 6
+    },
+    {
+      "characterName": "Giorgio",
+      "classs": 5,
+      "race": 2,
+      "selectedSkills": [
+        150,
+        149,
+        148,
+        147,
+        146,
+        144,
+        145,
+        143,
+        142,
+        139,
+        99
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 7
+    },
+    {
+      "characterName": "asdasda",
+      "classs": 2,
+      "race": 2,
+      "selectedSkills": [
+        44,
+        46,
+        47,
+        49,
+        50,
+        51,
+        52,
+        53,
+        92,
+        95,
+        97,
+        98,
+        100
+      ],
+      "expTot": 0,
+      "userId": 2,
+      "id": 8
     }
   ],
   "classes": [
