@@ -3,7 +3,7 @@
 }
 
 .gap-20 {
-  gap: 20px;
+  gap: 10px;
 }
 
 .myTextColor {
@@ -176,9 +176,15 @@
 }
 
 .my-table {
-  width: 100%;
+  width: 70%;
 }
 
 .table-adjust {
   width: 35%;
+}
+
+@media (max-width: 990px) {
+  .my-table {
+    width: 100%;
+  }
 }
