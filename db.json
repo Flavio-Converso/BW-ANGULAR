@@ -47,6 +47,18 @@
       "immagine": null,
       "username": "giorgio",
       "id": 4
+    },
+    {
+      "email": "hahifecu@mailinator.com",
+      "password": "$2a$10$LmfFfuvMP1YkUhIm6xgiiudxBU7yPuBIjGmifvZzvLodYPTYsvaFu",
+      "nome": "Impeditquassitt",
+      "cognome": "ExexplicaboAutmo",
+      "confermaEmail": "hahifecu@mailinator.com",
+      "confermaPassword": "Pa$$w0rd!",
+      "genere": "maschio",
+      "immagine": "C:\\fakepath\\event-registration-template.png",
+      "username": "pisohoto",
+      "id": 5
     }
   ],
   "characters": [
