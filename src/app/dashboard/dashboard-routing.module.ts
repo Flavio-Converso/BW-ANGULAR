@@ -5,7 +5,7 @@ import { DashboardComponent } from './dashboard.component';
 import { ActiveUsersComponent } from './active-users/active-users.component';
 import { CreazionePgComponent } from './creazione-pg/creazione-pg.component';
 import { SchedaPgComponent } from './scheda-pg/scheda-pg.component';
-import { MarketplaceComponent } from './marketplace/marketplace.component';
+import { CreaEventiComponent } from './crea-eventi/crea-eventi.component';
 
 
 const routes: Routes = [
@@ -14,7 +14,7 @@ const routes: Routes = [
   {path:'profile', component: ProfileComponent},
 { path: 'newpg', component: CreazionePgComponent},
 { path: 'schedapg/:id', component: SchedaPgComponent},
-{path: 'eventi',component: MarketplaceComponent}
+{path: 'eventi',component: CreaEventiComponent }
 ];
 
 @NgModule({
