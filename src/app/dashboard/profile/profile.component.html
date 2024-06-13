@@ -50,6 +50,7 @@
 
         <!--ngfor da inserire-->
         <div
+          #draggable
           class="col d-flex justify-content-center px-0 m-3"
           *ngFor="let pg of combina"
         >
@@ -134,6 +135,12 @@
                         </tbody>
                       </table>
                     </div>
+                    <button
+                      class="btn myBtn"
+                      (click)="deleteCharacter(pg.characters.id)"
+                    >
+                      ELIMINA PERSONAGGIO
+                    </button>
                   </div>
                 </div>
               </div>
