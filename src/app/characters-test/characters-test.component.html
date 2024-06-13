@@ -16,7 +16,7 @@
       <label>Select Skills:</label>
       <div *ngFor="let skill of skills">
         <label>
-          <input type="checkbox" [value]="skill.skillId" (change)="onSkillSelect($event, skill)">
+          <input type="checkbox" [value]="skill.skill" (change)="onSkillSelect($event, skill)">
           {{ skill.skillName }} - Exp: {{ skill.exp }}
         </label>
       </div>

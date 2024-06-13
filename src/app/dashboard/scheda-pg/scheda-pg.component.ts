@@ -15,7 +15,7 @@ import { iRaces } from '../../interfaces/iraces';
   styleUrl: './scheda-pg.component.scss',
 })
 export class SchedaPgComponent {
-  characterId!: number;
+  id!: number;
   character!: iCharacter;
   allSkills: iSkills[] = [];
   characterSkills: iSkills[] = [];
@@ -33,14 +33,14 @@ export class SchedaPgComponent {
 
   ngOnInit(): void {
     this.route.params.subscribe((params) => {
-      this.characterId = params['id'];
+      this.id = params['id'];
       this.loadCharacterDetails();
     });
   }
 
   loadCharacterDetails(): void {
     this.charactersSvc
-      .getCharacterById(this.characterId)
+      .getCharacterById(this.id)
       .subscribe((character: iCharacter) => {
         if (character) {
           this.character = character;
@@ -102,7 +102,7 @@ export class SchedaPgComponent {
 
   deleteCharacter(): void {
     if (confirm('Sei sicuro di voler eliminare questo personaggio?')) {
-      this.charactersSvc.deleteCharacter(this.characterId).subscribe(
+      this.charactersSvc.deleteCharacter(this.id).subscribe(
         () => {
           console.log('Character deleted');
           this.router.navigate(['/']);

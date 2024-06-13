@@ -15,8 +15,8 @@ export class CharactersService {
     return this.http.get<iCharacter[]>(this.apiUrl);
   }
 
-  getCharacterById(characterId: number): Observable<iCharacter> {
-    return this.http.get<iCharacter>(`${this.apiUrl}/${characterId}`);
+  getCharacterById(id: number): Observable<iCharacter> {
+    return this.http.get<iCharacter>(`${this.apiUrl}/${id}`);
   }
 
 
@@ -33,16 +33,16 @@ export class CharactersService {
   }
 
   updateCharacter(
-    characterId: number,
+    id: number,
     updatedCharacter: iCharacter
   ): Observable<iCharacter> {
     return this.http.put<iCharacter>(
-      `${this.apiUrl}/${characterId}`,
+      `${this.apiUrl}/${id}`,
       updatedCharacter
     );
   }
 
-  deleteCharacter(characterId: number): Observable<void> {
-    return this.http.delete<void>(`${this.apiUrl}/${characterId}`);
+  deleteCharacter(id: number): Observable<void> {
+    return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }
 }

@@ -23,7 +23,7 @@ export class ActiveUsersComponent implements OnInit {
   iSkills: { [userId: number]: iSkills[] } = {};
   characters: { [userId: number]: iCharacter[] } = {};
   class: { [userId: number]: iClassi[] } = {};
-  races: { [userId: number]: { [characterId: number]: iRaces } } = {};
+  races: { [userId: number]: { [id: number]: iRaces } } = {};
   combina: { [userId: number]: iCombinazione[] } = {};
   users: iUsers[] = [];
   isCollapsed: boolean = true;
@@ -105,7 +105,7 @@ export class ActiveUsersComponent implements OnInit {
           characters: character,
           classe: this.class[userId].find((c) => c.classId === character.classId)!,
           race: this.races[userId][character.id],
-          skills: this.iSkills[userId].filter((skill) => character.selectedSkills.includes(skill.skillId)),
+          skills: this.iSkills[userId].filter((skill) => character.selectedSkills.includes(skill.skill)),
         };
       });
       this.combina[userId] = this.combinaSvc.combineData(

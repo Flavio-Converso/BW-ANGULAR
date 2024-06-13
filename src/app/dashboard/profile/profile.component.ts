@@ -24,7 +24,7 @@ export class ProfileComponent {
   class: iClassi[] = [];
   iSkills: iSkills[] = [];
   combina: iCombinazione[] = [];
-  race: { [characterId: number]: iRaces } = {};
+  race: { [id: number]: iRaces } = {};
 
   constructor(
     private authSvc: AuthService,
@@ -84,7 +84,7 @@ export class ProfileComponent {
           characters: character,
           classe: this.class.find((c) => c.classId === character.classId)!,
           race: this.race[character.id],
-          skills: this.iSkills.filter((skill) => character.selectedSkills.includes(skill.skillId)),
+          skills: this.iSkills.filter((skill) => character.selectedSkills.includes(skill.skill)),
         };
       });
       this.combina = this.combinaSvc.combineData(

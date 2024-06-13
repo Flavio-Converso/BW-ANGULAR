@@ -151,13 +151,13 @@
                     >
                       <input
                         type="checkbox"
-                        [value]="skill.skillId"
+                        [value]="skill.skill"
                         (change)="onSkillSelect($event, skill)"
                         style="display: none"
                         [disabled]="
                           skill.exp > characterForm.get('expTot')?.value
                         "
-                        id="checkbox-{{ skill.skillId }}"
+                        id="checkbox-{{ skill.skill }}"
                       />
                       <span class="custom-checkbox"></span>
                       Seleziona

@@ -51,7 +51,7 @@ export class CharactersTestComponent implements OnInit {
     if (selectedClass) {
       this.skillsSvc.getSkills().subscribe((allSkills: iSkills[]) => {
         this.skills = allSkills.filter((skill) =>
-          selectedClass.skills.includes(skill.skillId)
+          selectedClass.skills.includes(skill.skill)
         );
         console.log('Filtered skills:', this.skills);
       });
@@ -72,7 +72,7 @@ export class CharactersTestComponent implements OnInit {
       }
     } else {
       const index = this.selectedSkills.findIndex(
-        (s) => s.skillId === skill.skillId
+        (s) => s.skill === skill.skill
       );
       if (index !== -1) {
         this.selectedSkills.splice(index, 1);
@@ -84,7 +84,7 @@ export class CharactersTestComponent implements OnInit {
 
   updateFormValues(): void {
     this.characterForm.patchValue({
-      selectedSkills: this.selectedSkills.map((s) => s.skillId),
+      selectedSkills: this.selectedSkills.map((s) => s.skill),
       expTot: this.availableExp,
     });
   }
