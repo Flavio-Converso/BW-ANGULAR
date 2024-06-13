@@ -23,6 +23,18 @@
       "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS_gxP60EK2bos3VAEilLguzqSvZMCjXq5bA&usqp=CAU",
       "username": "admin",
       "id": 2
+    },
+    {
+      "email": "user2@user2.com",
+      "password": "$2a$10$vau2moJ.ZR9ZFUYPIL6qU.3X2DPDOFuR4Gmt8U2aZ18zHxelg.eey",
+      "nome": "Giancarlo",
+      "cognome": "Carlini",
+      "confermaEmail": "user2@user2.com",
+      "confermaPassword": "Pa$$w0rd!",
+      "genere": "maschio",
+      "immagine": null,
+      "username": "Giancarlo7",
+      "id": 3
     }
   ],
   "characters": [
@@ -137,6 +149,52 @@
       "expTot": 0,
       "userId": 1,
       "id": 5
+    },
+    {
+      "characterName": "Giorgio",
+      "classs": 1,
+      "race": 4,
+      "selectedSkills": [
+        15,
+        14,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        28,
+        27,
+        26,
+        25,
+        91,
+        92,
+        94
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "characterName": "Giorgio",
+      "classs": 5,
+      "race": 2,
+      "selectedSkills": [
+        150,
+        149,
+        148,
+        147,
+        146,
+        144,
+        145,
+        143,
+        142,
+        139,
+        99
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 7
     }
   ],
   "classes": [

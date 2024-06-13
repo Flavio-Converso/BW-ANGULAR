@@ -1,28 +1,52 @@
-.cla1{width: 50px;
-  height: 50px;}
+.cla1 {
+  width: 50px;
+  height: 50px;
+}
 
-  #sfondo{
-    background: linear-gradient(180deg, rgba(25,26,40,1) 15%, rgba(16,17,26,1) 78%);
-    font-size: 1.5em;
+#sfondo {
+  background: linear-gradient(
+    180deg,
+    rgba(25, 26, 40, 1) 15%,
+    rgba(16, 17, 26, 1) 78%
+  );
+  font-size: 1.5em;
+}
 
-  }
+.imgP {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
 
-  #imgP{width: 50px;
-      height: 50px;
-      border-radius: 50%;
-  }
+.myBorder {
+  border-color: #51566b !important ;
+}
 
-  .myBorder{
-    border-color: #51566B !important ;
-  }
-
-  #dropdownMenuButtonLogin{
-    cursor: pointer;
-  }
-#dropdownMenuButtonUser{
+#dropdownMenuButtonLogin {
+  cursor: pointer;
+}
+#dropdownMenuButtonUser {
   cursor: pointer;
 }
 
-#dropdownMenuButton{
+#dropdownMenuButton {
   cursor: pointer;
+}
+
+.dropdown-menu {
+  background: linear-gradient(
+    135deg,
+    rgba(14, 86, 196, 0.8) 30%,
+    rgba(75, 62, 223, 0.8) 90%
+  );
+  border: none; /* Remove border if not needed */
+}
+
+/* Optional: Adjust dropdown item styles for better readability */
+.dropdown-menu .dropdown-item {
+  color: white; /* Text color */
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Hover effect */
 }
