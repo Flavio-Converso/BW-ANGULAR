@@ -1,0 +1,13 @@
+<div *ngIf="events">
+  <h2>Eventi Creati</h2>
+  <div *ngFor="let event of events">
+    <h3>{{ event.titolo }}</h3>
+    <p>{{ event.descrizione }}</p>
+    <img [src]="event.urlImmagine" alt="{{ event.titolo }}" />
+    <p>Master: {{ event.master }}</p>
+    <p>Data: {{ event.data }}</p>
+    <p>Tipo: {{ event.tipo }}</p>
+    <p>Numero Giocatori: {{ event.numeroGiocatori }}</p>
+    <p>Indirizzo: {{ event.indirizzo }}</p>
+  </div>
+</div>

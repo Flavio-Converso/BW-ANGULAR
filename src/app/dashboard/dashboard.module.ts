@@ -9,6 +9,7 @@ import { CreazionePgComponent } from './creazione-pg/creazione-pg.component';
 import { ActiveUsersComponent } from './active-users/active-users.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SchedaPgComponent } from './scheda-pg/scheda-pg.component';
+import { EventiDisponibiliComponent } from './eventi-disponibili/eventi-disponibili.component';
 
 
 
@@ -19,7 +20,8 @@ import { SchedaPgComponent } from './scheda-pg/scheda-pg.component';
     CreaEventiComponent ,
     CreazionePgComponent,
     ActiveUsersComponent,
-    SchedaPgComponent
+    SchedaPgComponent,
+    EventiDisponibiliComponent
   ],
   imports: [
     CommonModule,

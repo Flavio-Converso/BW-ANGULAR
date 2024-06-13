@@ -1,14 +1,14 @@
-import { iUsers } from "./iusers";
+import { iUsers } from './iusers';
 
 export interface iEventi {
-  id:number,
-  master:string,
-  campain: string,
-  title:string,
-  img:string,
-  date: string,
-  liveoronline:string,
-  counter:number,
-  guests: iUsers[],
-  adress: string
+  id: number;
+  master: string;
+  descrizione: string;
+  titolo: string;
+  urlImmagine: string;
+  data: string;
+  tipo: string;
+  numeroGiocatori: number;
+  indirizzo: string;
+  guests: iUsers[];
 }
