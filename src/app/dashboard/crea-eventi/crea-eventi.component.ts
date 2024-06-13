@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-crea-eventi',
@@ -6,5 +7,30 @@ import { Component } from '@angular/core';
   styleUrl: './crea-eventi.component.scss'
 })
 export class CreaEventiComponent {
+
+eventForm!: FormGroup;
+formSubmitted = false;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
