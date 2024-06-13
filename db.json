@@ -25,28 +25,16 @@
       "id": 2
     },
     {
-      "email": "user2@user2.com",
-      "password": "$2a$10$vau2moJ.ZR9ZFUYPIL6qU.3X2DPDOFuR4Gmt8U2aZ18zHxelg.eey",
-      "nome": "Giancarlo",
-      "cognome": "Carlini",
-      "confermaEmail": "user2@user2.com",
+      "email": "test@immagine.com",
+      "password": "$2a$10$cFLf2TcfuSjFhfBawTqgXOPAYEa6gE57Pue2EOfVJO6NTrZkGyNPu",
+      "nome": "Test",
+      "cognome": "Immagine",
+      "confermaEmail": "test@immagine.com",
       "confermaPassword": "Pa$$w0rd!",
       "genere": "maschio",
       "immagine": null,
-      "username": "Giancarlo7",
+      "username": "Test Immagine",
       "id": 3
-    },
-    {
-      "email": "user3@user3.com",
-      "password": "$2a$10$14GWq2zsB5s4e.9qkp4D3eKT.SgW31.eD6D5PCw11b8fBz13Tck4y",
-      "nome": "giorgio",
-      "cognome": "giorgini",
-      "confermaEmail": "user3@user3.com",
-      "confermaPassword": "Pa$$w0rd!",
-      "genere": "femmina",
-      "immagine": null,
-      "username": "giorgio",
-      "id": 4
     }
   ],
   "characters": [
@@ -76,33 +64,80 @@
       "id": 1
     },
     {
-      "characterName": "Balgruf",
-      "classs": 3,
-      "race": 2,
-      "selectedSkills": [
-        62,
-        70,
-        73,
-        84,
-        80,
-        77,
-        75,
-        93,
-        94,
-        90,
-        88,
-        86,
-        85,
-        98,
-        99,
-        100,
-        96,
-        95,
-        97
-      ],
+      "characterName": "test",
+      "classs": 4,
+      "race": 1,
+      "selectedSkills": [91, 130, 129, 128, 127, 126, 125, 124, 123, 101],
       "expTot": 0,
       "userId": 1,
       "id": 2
+    },
+    {
+      "characterName": "Ilario Alicante",
+      "classs": 6,
+      "race": 3,
+      "selectedSkills": [
+        178, 177, 176, 175, 174, 173, 172, 171, 170, 169, 180, 100
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "characterName": "luca",
+      "classs": 5,
+      "race": 6,
+      "selectedSkills": [
+        99, 131, 133, 140, 138, 136, 146, 145, 143, 142, 141, 147, 97
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "characterName": "adadadd",
+      "classs": 3,
+      "race": 5,
+      "selectedSkills": [80, 82, 84, 74, 75, 76, 78, 77, 69, 68, 66, 67],
+      "expTot": 0,
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "characterName": "fabio",
+      "classs": 2,
+      "race": 6,
+      "selectedSkills": [31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 45],
+      "expTot": 0,
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "characterName": "flavio",
+      "classs": 3,
+      "race": 2,
+      "selectedSkills": [65, 64, 63, 66, 69, 71, 77, 82],
+      "expTot": 0,
+      "userId": 3,
+      "id": 7
+    },
+    {
+      "characterName": "andrea",
+      "classs": 5,
+      "race": 5,
+      "selectedSkills": [149, 150, 148, 147, 146, 145, 144, 143, 142, 139, 100],
+      "expTot": 0,
+      "userId": 3,
+      "id": 8
+    },
+    {
+      "characterName": "fausto sinagra",
+      "classs": 5,
+      "race": 4,
+      "selectedSkills": [150, 149, 148, 147, 146, 145, 144, 142, 143, 139, 100],
+      "expTot": 0,
+      "userId": 3,
+      "id": 9
     }
   ],
   "classes": [
@@ -1510,26 +1545,15 @@
       "id": 1
     },
     {
-      "master": "gabibbo",
-      "titolo": "una bella campagna",
-      "descrizione": "come si può intuire è una bella campagna",
-      "urlImmagine": "data:image/webp;base64,UklGRgQTAABXRUJQVlA4IPgSAAAQXACdASoRAZ4APrFOoEqnJKMhrLc7EOAWCWoAyQ5zfy3Xwhp83+UHtj21/E/kL2K+P/Q/nKc3/nL2qf7n1YfoP2CP1U/X7rq/uN6if2n/cP3av9l6sP7h/pPYM/u/9660/0Wf2o9Ob2av7f/3fTIjEd6C7RRM7A4W6SIcciFSWPSaoDJ6kkDEm9MVqgkNtJBhFzEv7rq1Ft9YTG0aqVZbeJibpanihGoeerbuJmmLVKEYMpINukJ6QLYKMD/B0xacgyxA0PHwaXZz3ASZiuWGEuIQgOktEOqQjjyP/8eexvG9sPiov4WtZsMYht2GZp93dL4h9pV/9hNn4Ct12kt1sJpH1fwKMBkn08arbYXTBphp59HW9cIO1kRwI7ScgA3DMW0FeDysBE3qF9yBR6wbS9I+izKIs4JL8pptDBzJBunOeZ3x6ubUB1ZspX6XYt3dhE0i+vl5qjBgqWY9CDhnMaGRlRQvV1t2JkeezR9gZyfMctPDrqu/ztkOEoxXuWpG+j8Rh8BKXP+8tlqOYpng7vt/WmHJVduPewp2Ax8QgOv7DLLSWJ3eECPWZmVVi2LY99oIe3Oo6bDpv4ILBZX+epQLg0rSdhc6wc9IWK1aie/UNcatkOaPyL/pfBnN4prisr2VLKP0Pe+2n1KUpSbEHUBF5YYQWMKW0lKpqLm41PQ8IKMk+LtdsH3GY9h+hebh0oiwFRkzZye7qAa/m/qvNMbcyOfVZt2QIznoroYAYUE6kDnjh4O4lihntu8ZVMIaDUqkR+cZFUDvgYFjwnKH7W3LE34AohbmV2sC5E+4Y7OSbDECzOwe1Xdg1VoZdZasLhSBYXo2dFzPXN/QOiYnlmUkSVxqwSr8tAXDJ7cWi8TSenge/0kgobd8PjuVWd20cwBl40hm+eVYxlRdEKqVP5wWKGN7XfHEvY9EqXvYNlgmqLCgZNJG8XnNQYJ4YY6cRoBG0cSltEdnpNP+Qzp2FhSNEdGV50AAAP7xVof/nk/WPOiK/4RoqRVDGXTgFsNM3XhGPmptWBHWejj9TwYjU+CnYkLCwt6KqwbqEAx1x5Kt0dAtzlNesxe9DWH48811b0OHhmm3/Ei48PKBdsJ1CPn5Fmv/rZnid5FBcEQuRd2xVOLJUbJ6leYBnr463LNfUJ9glOVRzzyXsUv/yVhF7tE1+dYHD8o216VhNBOBzGUO44jSdKcIhfgQNdr8JEROYmX/nNWNZOqie0ije8VaisnbQH4klFhvgEq2Gu+OfT1cA8LtP1YGi02dm/fporqNUTH/d3KIFjqANd5wfyfA2iQxupi9Oq4F/Uafo6l/INqipdXabMjUPcWGlQ0X12t96cp5a/mxc/Dx3fvy2cKvd1h3hNTwvwSCNj4vLg+8IhhMysAou/GxoGzh97b2GmlxfPOmDZLGrhzgKNJ8Y8lWHdOdGEpW9S4OpOxwALHxUh/jWZ4JBHzjanuAcekOrZRP2MMtR+RGHmEd5ApV7Enxdg5a64IfUPxdtvBFx20KAU1dI9d2bngkpqw6NwjuKeZw3dR/txcM0jOVA9JxmHKoqc009mHNdbmnHPwT5X+qFbK+uXh1oiaDR83T4tphAYHRWD4FSu6MEKCiiFl0KpKTZftBJZYI13Uye68gHkwtwbm9A6U1EmLlJopy0pqPIZet/zXyx5porpeMBcBOJjvme2bPsrI/mBr43/wtogxj2ocZrBvCRNVzBXGrYwdBnfKBSgah+a5/dfVEQuJgVqU+pg0qRfJ60F7Z0S4m+SonIyF3ACIA2OiNc2S8wuUZQlAwYyPwBO0N8RgZziNemqqLtSdugKyydae5qDOQdakJ+TNoWnzGexzxQszdpnGDGy8xnFFWi/DLgKoDEmhaSrthyRDfyGbTwEmTKNhTe+w+LKpX+JGD0ae7dVMbqVYxzuhR1+nIfRSs2Gl9+8tPilcckQajzGl2xGP3EvEUxRauG7ZHLsG2n9562ufeHfQH8uoyYHpIVs/G2AYlJU5CxnOSzyvQ5AqXUSuMykadtU0bMkOc5AjYkMXAR+6Xny6hn2YxgKLvKp5JL1cIWhDpB1L85ZccnedORAT2XK5qC7nZGKBLgOYZqRfwX8aBG7mOQAzcp+9ZWfT5uogoDfHkBClZd+/99vJbwxdNXgxRLac6aukFKSOFe47KGH0cumuM9N/lxZ1Yeq1OHfrAQWdmLmEe8jAw9+E3T7apx42zamUxlCxZ+7XiMpVVdCatWKAHc/+OnvS1U4tUFiFSNF537+6nQOMhMc47hHKyj+1/gi4/TZoGTt5OX78X+CssSi8j0OfegB4Y37w85Hx7K7EWb3Uoc7D4/AeNdYOJYUXPnOBZBifYt20RHuax7Tn2aAvIw1cysZGVO75Q4+lI/lOCjXyjQvXGfatDcLrE0rPcDo9C7P3k6nqDAJaxWr86r9yOfkyobQyTDsNSETejw28gF0vCk+CSXjb2XQl3uccyFhUh2XJ90YQxR66aje8WBPrm/Eib2trnn7f7ui0pWkmWSfrz9PDEfVLbGBaWQCt2IzgbosL0MdK52HG4smcb2N+5DPPva3ax8NRQIapUfl8ZR7XWjnv6a0W7e7YT+4WQtSoaU6mLIX8PD7meZpt5jT0ZhdehDdBgtTiYVrfFCVvtLrQPIgJqbHlyQt1IRiBMkJyPuaBmk/mNlhxIwgt5w4fRmAU5N2hOjvfOmISQbUXN3xIHQmTeQDBl7DrlMA+DxeasDH8gm1UvseBrcniy3Kb3SkkOmXdGqW9yHDx7yaxLTx7/QagPAlsasz8cqU5/kkXk5V46q0ZxXIKchCdYEWQoDUGiQiEWA0QpMSIUzLV2wuNHT4hCjkSxPCD6QPUkBq+vIo4Csy22x7EKZ/cvB4G9K1EJe2eOZxUUP+pZopU7PkFKELrN12HM6waaorkP7982/vy0/MCwwECwjylNbreqHBKpch6JTFltLl2q9cs7fokFvQ5QgPKZqZnI4JP7+1M/pNWoHFBeCzLZ4hzU0NPQQ4agOizIdv/8h7FO0ZQHy6fx97RmMoGtu6YUDsFF3LYhNZ5JEc2ku9n9ayoSTJ2+092WpAKrN0A4u2nUEaCeFSCqcozpGvQ84jj+4Ctw/y8INfxbdWWSwYrfIOlyVnss5JIt7y02LXwzEwDQcJjmbRAyd5q6nh3NHqLE3VbMQspQnE6wrfQFSLddWe7UnItr/XUgIXS9XmF6dLVdJTzOd5xBqVHNkTJmDcsO9M+1+CmLR1tNemizGzxcLz+Ho0Lted2Xj1eYM+y5Lzu8OobDTXvCLH3oIyLivE1jtc6CqkApr8XbfNs8ql9BMR8WEtabqP7GDkmIR5acHFzrE3nYTatXrujZYp1pOodsIp/ltNv9an1EgP7pcyYodnMO9Gzg1W4MSeqJCqeKGKZKn6QbDeypWLkQPfl+7UFeLOgYnvv1MI6eXXS4sTPkCWVO3MScHZzsUgkVkChfvw+wfRfDVMKHYErp8VhuWEscAHxcErSl+U2PWhdUQoSRVMuUhH801/szFVOq5VQ/b3t0Mqdb90Z0WBiC4TlZzp5q23FEK80xUD3QdgEt0kWifPVAVb8S9Zet4+UrALMwidQY+5n0BG+QtXXJMnKguCNkNc6l9OoEWf0BBgbRwIZUswePREHC/9OEVx8Dxgjcd98oSdWDxXkN+f3Vn+kgokKMhXHGW1IleOsbb4YEK1YDw4mNT3/QTVF+Z3jPdUSJ/wMVMwweP1Gc/ocdb+VQukvQEWZ5+zPhAOJgJb+x0vFOXI5YbpmLt6Eql7dXgPp3RCpx1/vLxc54zZKtJ/psGSxq1MR6A3n7OuR65py+pPlLgsF+9/qJSDIsC5gKVFyEN40k1d69Pv6tVpi0OQ8U4BW90egKAQynB8O0QqmO0NjesyrPt4nF0UZaRYhKaUeLEDUzIHpGRqLSDvLFA1xkK+W7lDtiaAJMxCPB3LsbnvVsYw6eRLp0nhqOYi33cJw9J6AyKAIkNwwTWs/ylWJnRj8mb+Bq2HHHwRtzhjAB8ZpGXjeZ20C0M/iRjbXLbIQHnV09jIsmc1f0gkRIzvr6FntF4mqfuhLPfJYOi02xH+vJKbZ5k4MbaabHyGJfR3/L3zOl8ujcGTAfwYh8GHzT2mvrwshdsKGmEujh1Ev1iGGSYE2h/uhLeneomkIjI170jX0ENa0Hq2PfNtPhMidUbHLKWl0xU0l/iafeIUsCtwOhGXOXk/e1UxGuRltsSC2KGunGQ/P/N8EirGzNiyZYRMZraYDtmZiKhN0cBAI00jEFlMpvlYAex4259uXl+xQbWkxwq3p3BChO8iX3HOFbymbrVwgmDIkViTTuJARMUwOSTQNCUxEQiMIEPLmwBOVXkeyXUaWYy4b7+tO9dbqmNkOODiiG/Jt6C5TWjJg46xrIJYtLT0D7gfNiwWOIDWv/TMGrlaN7OKTEe/bFH18XmeqRwH1QG2lS5H0HMDk7/BrQgm7VHzWFBCv+7PWBJ8yxW7PEj9oYlx5udkTtAuutidE/ZIESKNY4WLwPJBJfD56aN5D5uHIyzHbtDKWVB+BycgPVc51zpQIsJ+2A/Fcbh0E6gTEnixAXEwSIEOr8n35nWs1iar4hUvAbyFo+qlc4/8bVnrfWV93kFh2dDQN5B4+vmV8mISc4rnbXVUvpTio9R89HUPlKWwPkCXeYnkf0tm2Opb225YM3HeaC3aEGoHuyKobVh8ChMr5anTZtAXKcpqMM9FYOQ56PjKZe1y3JfhArfIGjX3amevqgJjXZWZ6tFa/nVC8ZIWrTjB4uUiRE3/KU0rIt3eR1+2nUi1czN1kRueIdEfgd45J+L/4tCbtWiAnkLx7+V3MOBfym09YzjDIn6A1wLTSBX4EpioJDGyWECtpsyLVI8w4mO/DoJQwwqUEw0uB6szAWQfhYwUi640gngbwFzR8Y6ijl+g7zgddeIkqszudM7LldPrnAQ0TCA6Fd12jdK6GA6Ya3XPtP7aHDJ9oAljdI2ZqmIsxRpi42T2i/XDBG4xGKQ6S34OyJoougGgbdl9naN2M4Rsy17hEqY+dWurrzSp6bSU5SiuL/N0igkKhT87ljp/6P5jYPedzw1eMCtpHlW8MxAgJ/afQr8gnF0qO6k4acIGdn2EC0+PG2LS65XmVqYqXlwm+eal2pjzvpRHhFlxJ5Jn8jM/bAc2XJOceWqm3cFUVEh2pFOnEbINN6nLQuZ28pPJ34zcLA7DsgzJosbNyQzD1Gd2gP3PARVe2dSzQ4msEHDgumlCyQ2VwgXEcKoEzPbwJZT/vdWcgh8e2STi6FXWu8ectdL2wz4GEQ+6FbR+Du8sbdozsQyjUCcovx4MZyFRe7WAVyc02fvjEVwtWfolEBMWmSJqk0uo4ZgTw2fMLUSKvDp0HAQlhkTvqSCP7zxLYycOHNR3fe8KuGyQRtkzOSoW+rBCAD7bX1j0iwxlitYdIyW8NaZ3WjvPDLkfnUYJhDBMpo2GLBRxMTCFd8VnRiXpUaFv/UkQmvF+Gwl2y8h3T6yZQ6Zv82HuJR/PNwJLFOuyxDQLhWoDEGE3ESW1rq/JbVS2P7xIE/0FoZ9Zb6bOaC+CHsNxC/cS7aP06Tn347Nqw0s23RysQaGoj5YrLrtwEKzcRFOx9BjNuxdTqf8QEdJyEu1KdM27f59SzDu+Ky2P9rxItM3ywfIgsCxFZJG67tHd1Wmc6B1PRAznudTB1QqX17rQnPExSjycUK+bFPMSLo+oQXJ+yVmC877YX9OepTtpAEwQwVLAXDXtTqeC+5icJqo/xjW402z62KnK+q/rX/rcroWPutCae/ifphCee8fqFjQQhLRuPsMwXxUvadVAJwrViIq8d2A7yU36TtLymd1z4K6F2Dwmkct5/L4VMG3YOAeo6MG/cJn4Zz0+TH8e75QeKfydVYioagRmXytkMoEY09rzyR19Jy32wII/g3ljDrulkDEDAwGZU0YE//RO+QqIjbCY6B5Rj0VGlKj/JYcTng1HyUDgYnXJULiQj1KmxHnVqvwVY5+TOZ8bjfCs2G3vUIwO5jMlTu0LhqRW83C+oCU2zmAce22yRaj45tmIFSR1cUlOhZmD0PEnifrw+gQudIXCO+k5eSq0BU662mdVPElJBRutCz6yf0OelBnkY4pUPmJshgsNHqffpebRvu9DYH+rNN2PN+T1oJ5GiJriRN/ClswJg6VW6Bv1qn01ZsSw5BXyN/EgSoVKk5YhWerg8brZChGnfPBegWiph0HSkNkOVrovN8ytHaowwGuXko9L4FvRzt6X5Z2M6j40c8pjPRxPXuw9qWpZ2U9dujAScSo/sBYAMy3zT/+xafqRraJciJggfYLYz07Kn2vpg4GZIULGuCIrDLq2UJAmaThCe82vrUmFM2pgB0nvIkwSjgezBsI75M8p1kETUp4RND8bkztkuyh3jo04Wa53rl7Ob3oKIs9CH68FYOUP3mU/hYG5VF40P9fYAAAA==",
-      "data": "2024-06-06",
+      "master": "Aspernatur quis dign",
+      "titolo": "Voluptatem Aut libe",
+      "descrizione": "Eos eos autem eos",
+      "urlImmagine": "https://www.joluvesunixew.me.uk",
+      "data": "1979-08-01",
       "tipo": "online",
-      "numeroGiocatori": 4,
-      "indirizzo": "un vero link",
+      "numeroGiocatori": 61,
+      "indirizzo": "Non dolore tempora e",
       "id": 2
-    },
-    {
-      "master": "gabibbo",
-      "titolo": "una bella campagna",
-      "descrizione": "come si può intuire è una bella campagna",
-      "urlImmagine": "data:image/webp;base64,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",
-      "data": "2024-06-06",
-      "tipo": "online",
-      "numeroGiocatori": 4,
-      "indirizzo": "un vero link",
-      "id": 3
     }
   ]
 }

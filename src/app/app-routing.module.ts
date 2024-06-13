@@ -13,8 +13,8 @@ const routes: Routes = [
   { path: '', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
   { path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule), canActivate: [AuthGuard],
     canActivateChild: [AuthGuard]  },
-  { path: '404' , component: Page404Component}
-
+  { path: '404' , component: Page404Component},
+  { path: '**', redirectTo: '404' }
 ];
 
 @NgModule({

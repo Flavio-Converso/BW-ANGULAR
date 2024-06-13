@@ -11,7 +11,7 @@ export class AuthGuard implements CanActivate, CanActivateChild {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot):boolean {
       if (!this.authSvc.syncIsLoggedIn) {
-        this.router.navigate(['/404']);
+        this.router.navigate(['/auth/login']);
         return false;
       }
       return true;
