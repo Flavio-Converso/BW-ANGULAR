@@ -1,16 +1,15 @@
-<form>
-  <input type="text" placeholder="master" />
-  <input type="text" placeholder="Titolo" />
-  <input type="textarea" placeholder="descrizione" />
-  <input type="url" placeholder="url immagine" />
-  <input type="date" placeholder="data" />
-  <input type="text" placeholder="master" />
-  <select>
-    <option value="selectPlaceholder" disabled selected>Seleziona...</option>
+<form [formGroup]="eventForm" (ngSubmit)="onSubmit()">
+  <input type="text" formControlName="master" placeholder="Master" />
+  <input type="text" formControlName="titolo" placeholder="Titolo" />
+  <textarea formControlName="descrizione" placeholder="Descrizione"></textarea>
+  <input type="url" formControlName="urlImmagine" placeholder="URL Immagine" />
+  <input type="date" formControlName="data" placeholder="Data" />
+  <select formControlName="tipo">
+    <option value="" disabled selected>Seleziona...</option>
     <option value="live">Live</option>
     <option value="online">Online</option>
   </select>
-  <input type="number" placeholder="numero giocatori" />
-  <input type="text" placeholder="indirizzo o link discord" />
-  <button type="submit">crea evento</button>
+  <input type="number" formControlName="numeroGiocatori" placeholder="Numero Giocatori" />
+  <input type="text" formControlName="indirizzo" placeholder="Indirizzo o link Discord" />
+  <button type="submit" [disabled]="eventForm.invalid">Crea Evento</button>
 </form>
