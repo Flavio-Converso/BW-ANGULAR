@@ -1,4 +1,4 @@
-import { iUsers } from './iusers';
+import { iCharacter } from './icharacter';
 
 export interface iEventi {
   id: number;
@@ -10,5 +10,6 @@ export interface iEventi {
   tipo: string;
   numeroGiocatori: number;
   indirizzo: string;
-  guests: iUsers[];
+  guests: iCharacter[];
+
 }
