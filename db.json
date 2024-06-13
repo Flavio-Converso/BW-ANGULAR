@@ -27,51 +27,6 @@
   ],
   "characters": [
     {
-      "characterName": "Giorgio",
-      "classs": 4,
-      "race": 2,
-      "selectedSkills": [
-        91,
-        92,
-        95,
-        93,
-        94,
-        97,
-        109,
-        111,
-        117,
-        121,
-        125,
-        124,
-        123,
-        122,
-        102
-      ],
-      "expTot": 0,
-      "userId": 1,
-      "id": 1
-    },
-    {
-      "characterName": "test",
-      "classs": 4,
-      "race": 1,
-      "selectedSkills": [
-        91,
-        130,
-        129,
-        128,
-        127,
-        126,
-        125,
-        124,
-        123,
-        101
-      ],
-      "expTot": 0,
-      "userId": 1,
-      "id": 2
-    },
-    {
       "characterName": "Ilario Alicante",
       "classs": 6,
       "race": 3,
