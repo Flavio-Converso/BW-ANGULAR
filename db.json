@@ -52,23 +52,24 @@
       "id": 1
     },
     {
-      "characterName": "test",
-      "classs": 4,
-      "race": 1,
+      "characterName": "gabibbo",
+      "classs": 3,
+      "race": 5,
       "selectedSkills": [
-        91,
-        130,
-        129,
-        128,
-        127,
-        126,
-        125,
-        124,
-        123,
-        101
+        63,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        75,
+        84
       ],
       "expTot": 0,
-      "userId": 1,
+      "userId": 2,
       "id": 2
     }
   ],
@@ -124,7 +125,7 @@
     {
       "classs": 2,
       "className": "Mago",
-      "bio": "Maestro delle arti arcane, il Mago lancia incantesimi potenti da lontano e manipola le energie magiche. Formidabile negli scontri a distanza, la sua debolezza risiede negli scontri ravvicinati.",
+      "bio": "Maestro delle arti arcane, il Mago lancia incantesimi potenti da lontano e manipola le energie magiche. Formidabile negli scontri a distanza, la sua debolezza risiede negli scontri.",
       "img": "https://th.bing.com/th/id/OIG2.giN_VixGaT5nHdJ58EaN?pid=ImgGn",
       "skills": [
         31,

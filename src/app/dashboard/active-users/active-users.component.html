@@ -5,50 +5,61 @@
   <div class="container activebg">
     <div class="row m-0">
       <div class="col-12 activebg">
-        <ul class="list-group p-2" *ngFor="let iscritto of users; let i = index">
+        <ul
+          class="list-group p-2"
+          *ngFor="let iscritto of users; let i = index"
+        >
           <li class="m-2 fs-1 d-flex justify-content-center fw-bold activebg">
-            <img [src]="iscritto?.immagine" width="50px" class="me-3 rounded-circle" alt="{{ iscritto?.username }}" />
+            <img
+              [src]="iscritto?.immagine"
+              width="50px"
+              class="me-3 rounded-circle"
+              alt="{{ iscritto?.username }}"
+            />
             {{ iscritto?.username }}
-            {{ iscritto.id }}
+            Id: {{ iscritto.id }}
             {{ iscritto?.email }}
-            {{ iscritto?.nome }}
-            {{ iscritto?.cognome }}
-            {{ iscritto?.genere }}
           </li>
           <div class="activebg" *ngIf="combina[iscritto.id].length > 0">
-            <button class="btn m-auto d-flex justify-content-center fs-2 activebg" type="button"
-              data-bs-toggle="collapse" [attr.data-bs-target]="'#collapseExample' + i" aria-expanded="false"
-              [attr.aria-controls]="'collapseExample' + i">
+            <button
+              class="btn m-auto d-flex justify-content-center fs-2 activebg"
+              type="button"
+              data-bs-toggle="collapse"
+              [attr.data-bs-target]="'#collapseExample' + i"
+              aria-expanded="false"
+              [attr.aria-controls]="'collapseExample' + i"
+            >
               Personaggi di {{ iscritto.username }}
             </button>
             <div class="collapse activebg" [id]="'collapseExample' + i">
               <div class="row activebg justify-content-center">
-                <div *ngFor="let character of combina[iscritto.id]" class="col-12 col-md-6 col-lg-3 my-5 activebg">
+                <div
+                  *ngFor="let character of combina[iscritto.id]"
+                  class="col-12 col-md-6 col-lg-3 my-5 activebg"
+                >
                   <div class="card card-equal-height m-4 activebg">
-                    <img [src]="character.classe.img" class="card-img-top activebg"
-                      alt="{{ character.characters.characterName }}" />
+                    <img
+                      [src]="character.classe.img"
+                      class="card-img-top activebg"
+                      alt="{{ character.characters.characterName }}"
+                    />
                     <div class="card-body activebg">
-                      <h5 class="card-title activebg">
+                      <h5 class="card-title activebg text-center">
                         {{ character.characters.characterName }}
                       </h5>
-                      <p class="card-text activebg">
-                        {{ character.characters.classs }}
+                      <p class="card-text activebg mb-1">
+                        {{ character.classe.className }}
+                      </p>
+                      <p class="card-text activebg border-top">
+                        {{ character.classe.bio }}
+                      </p>
+                      <p class="card-text activebg mb-1">
+                        {{ character.race.raceName }}
+                      </p>
+                      <p class="card-text activebg border-top">
+                        {{ character.race.raceBio }}
                       </p>
                     </div>
-                    <ul class="list-group list-group-flush activebg">
-                      <li class="list-group-item activebg">
-                        <strong>Razza:</strong>
-                        {{ character.characters.classs }}
-                      </li>
-                      <li class="list-group-item activebg">
-                        <strong>Classe:</strong>
-                        {{ character.characters.characterName }}
-                      </li>
-                      <li class="list-group-item activebg">
-                        <strong>Livello:</strong>
-                        {{ character.characters.id }}
-                      </li>
-                    </ul>
                   </div>
                 </div>
               </div>
