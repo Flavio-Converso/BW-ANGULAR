@@ -15,20 +15,20 @@ export class SkillsService {
     return this.http.get<iSkills[]>(this.apiUrl);
   }
 
-  getSkillById(skillId: number): Observable<iSkills> {
-    return this.http.get<iSkills>(`${this.apiUrl}/${skillId}`);
+  getSkillById(skill: number): Observable<iSkills> {
+    return this.http.get<iSkills>(`${this.apiUrl}/${skill}`);
   }
 
   addSkill(newSkill: iSkills): Observable<iSkills> {
     return this.http.post<iSkills>(this.apiUrl, newSkill);
   }
 
-  updateSkill(skillId: number, updatedSkill: iSkills): Observable<iSkills> {
-    return this.http.put<iSkills>(`${this.apiUrl}/${skillId}`, updatedSkill);
+  updateSkill(skill: number, updatedSkill: iSkills): Observable<iSkills> {
+    return this.http.put<iSkills>(`${this.apiUrl}/${skill}`, updatedSkill);
   }
 
-  deleteSkill(skillId: number): Observable<void> {
-    return this.http.delete<void>(`${this.apiUrl}/${skillId}`);
+  deleteSkill(skill: number): Observable<void> {
+    return this.http.delete<void>(`${this.apiUrl}/${skill}`);
   }
 
   getSkillByUserId(userId: number): Observable<iSkills[]> {

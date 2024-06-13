@@ -24,7 +24,7 @@ export class CombinaService {
       if (classe  && race) {
         // Crea una combinazione con il personaggio, la classe e le skills
         const selectedSkills = character.selectedSkills.map(skillId => {
-          const skill = skills.find(skill => skill.skillId === skillId);
+          const skill = skills.find(skill => skill.skill === skillId);
           return skill ? { ...skill } : skill!; // Restituiamo una copia dell'oggetto skill
         }).filter(skill => !!skill);
 

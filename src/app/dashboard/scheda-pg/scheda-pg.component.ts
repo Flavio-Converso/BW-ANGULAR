@@ -59,7 +59,7 @@ export class SchedaPgComponent {
       this.allSkills = skills;
       if (this.character?.selectedSkills) {
         this.characterSkills = this.allSkills.filter((skill) =>
-          this.character.selectedSkills!.includes(skill.skillId)
+          this.character.selectedSkills!.includes(skill.skill)
         );
         console.log('Character skills:', this.characterSkills);
       }
