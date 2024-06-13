@@ -6,17 +6,17 @@
       <input type="text" formControlName="characterName" class="form-control" id="characterName">
     </div>
     <div class="form-group">
-      <label for="classId">Select Class:</label>
-      <select formControlName="classId" class="form-control" id="classId" (change)="onClassChange($event)">
+      <label for="classs">Select Class:</label>
+      <select formControlName="classs" class="form-control" id="classs" (change)="onClassChange($event)">
         <option value="">Select a class</option>
-        <option *ngFor="let class of classes" [value]="class.classId">{{ class.className }}</option>
+        <option *ngFor="let class of classes" [value]="class.classs">{{ class.className }}</option>
       </select>
     </div>
     <div class="form-group">
       <label>Select Skills:</label>
       <div *ngFor="let skill of skills">
         <label>
-          <input type="checkbox" [value]="skill.skillId" (change)="onSkillSelect($event, skill)">
+          <input type="checkbox" [value]="skill.skill" (change)="onSkillSelect($event, skill)">
           {{ skill.skillName }} - Exp: {{ skill.exp }}
         </label>
       </div>

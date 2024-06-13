@@ -15,7 +15,7 @@ import { iRaces } from '../../interfaces/iraces';
   styleUrl: './scheda-pg.component.scss',
 })
 export class SchedaPgComponent {
-  characterId!: number;
+  id!: number;
   character!: iCharacter;
   allSkills: iSkills[] = [];
   characterSkills: iSkills[] = [];
@@ -33,14 +33,14 @@ export class SchedaPgComponent {
 
   ngOnInit(): void {
     this.route.params.subscribe((params) => {
-      this.characterId = params['id'];
+      this.id = params['id'];
       this.loadCharacterDetails();
     });
   }
 
   loadCharacterDetails(): void {
     this.charactersSvc
-      .getCharacterById(this.characterId)
+      .getCharacterById(this.id)
       .subscribe((character: iCharacter) => {
         if (character) {
           this.character = character;
@@ -59,7 +59,7 @@ export class SchedaPgComponent {
       this.allSkills = skills;
       if (this.character?.selectedSkills) {
         this.characterSkills = this.allSkills.filter((skill) =>
-          this.character.selectedSkills!.includes(skill.skillId)
+          this.character.selectedSkills!.includes(skill.skill)
         );
         console.log('Character skills:', this.characterSkills);
       }
@@ -67,8 +67,8 @@ export class SchedaPgComponent {
   }
 
   loadCharacterClass(): void {
-    if (this.character && this.character.classId) {
-      this.classSrc.getClassById(this.character.classId).subscribe(
+    if (this.character && this.character.classs) {
+      this.classSrc.getClassById(this.character.classs).subscribe(
         (classChar: iClassi) => {
           console.log('Classe:', classChar);
           this.class = classChar; // Assegna l'intero oggetto della classe
@@ -84,8 +84,9 @@ export class SchedaPgComponent {
   }
 
   loadCharacterRace(): void {
-    if (this.character && this.character.raceId) { // Assumi che raceId sia una proprietà del personaggio
-      this.raceSrc.getRaceById(this.character.raceId).subscribe(
+    if (this.character && this.character.race) {
+      // Assumi che race sia una proprietà del personaggio
+      this.raceSrc.getRaceById(this.character.race).subscribe(
         (raceChar: iRaces) => {
           console.log('Razza:', raceChar);
           this.race = raceChar; // Assegna l'intero oggetto della razza
@@ -102,7 +103,7 @@ export class SchedaPgComponent {
 
   deleteCharacter(): void {
     if (confirm('Sei sicuro di voler eliminare questo personaggio?')) {
-      this.charactersSvc.deleteCharacter(this.characterId).subscribe(
+      this.charactersSvc.deleteCharacter(this.id).subscribe(
         () => {
           console.log('Character deleted');
           this.router.navigate(['/']);

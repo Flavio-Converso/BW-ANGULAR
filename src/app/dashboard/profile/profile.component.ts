@@ -24,7 +24,7 @@ export class ProfileComponent {
   class: iClassi[] = [];
   iSkills: iSkills[] = [];
   combina: iCombinazione[] = [];
-  race: { [characterId: number]: iRaces } = {};
+  race: { [id: number]: iRaces } = {};
 
   constructor(
     private authSvc: AuthService,
@@ -53,7 +53,7 @@ export class ProfileComponent {
     characterObs.subscribe((chars: iCharacter[]) => {
       this.characters = chars;
       chars.forEach((character) => {
-        this.raceSvc.getRaceById(character.raceId).subscribe((race: iRaces) => {
+        this.raceSvc.getRaceById(character.race).subscribe((race: iRaces) => {
           this.race[character.id] = race;
           this.addToCombina();
         });
@@ -82,9 +82,9 @@ export class ProfileComponent {
       const combinedData = this.characters.map((character) => {
         return {
           characters: character,
-          classe: this.class.find((c) => c.classId === character.classId)!,
+          classe: this.class.find((c) => c.classs === character.classs)!,
           race: this.race[character.id],
-          skills: this.iSkills.filter((skill) => character.selectedSkills.includes(skill.skillId)),
+          skills: this.iSkills.filter((skill) => character.selectedSkills.includes(skill.skill)),
         };
       });
       this.combina = this.combinaSvc.combineData(
@@ -96,4 +96,3 @@ export class ProfileComponent {
     }
   }
 }
-
