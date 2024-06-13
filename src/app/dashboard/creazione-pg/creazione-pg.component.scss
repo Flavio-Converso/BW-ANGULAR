@@ -2,6 +2,10 @@
   background-color: #10111a;
 }
 
+.gap-20 {
+  gap: 20px;
+}
+
 .myTextColor {
   color: #51566b;
 }
@@ -163,4 +167,18 @@
 }
 .myTextColor3 {
   color: rgba(39, 124, 251);
+}
+
+//table
+
+.div-table {
+  font-size: 1.5rem;
+}
+
+.my-table {
+  width: 100%;
+}
+
+.table-adjust {
+  width: 35%;
 }

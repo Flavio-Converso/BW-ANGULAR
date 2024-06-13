@@ -141,6 +141,30 @@
       "expTot": 0,
       "userId": 1,
       "id": 5
+    },
+    {
+      "characterName": "anna",
+      "classId": 5,
+      "raceId": 6,
+      "selectedSkills": [
+        94,
+        95,
+        138,
+        149,
+        136,
+        146,
+        97,
+        145,
+        131,
+        139,
+        144,
+        143,
+        96,
+        99
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 6
     }
   ],
   "classes": [
