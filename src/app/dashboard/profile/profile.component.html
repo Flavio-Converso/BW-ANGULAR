@@ -67,7 +67,30 @@
                       <h5 class="card-title fw-bolder mb-3 fs-2 gradtitolo">
                         {{ pg.race.raceName }}
                       </h5>
-
+                      <p>{{ pg.race.raceBio }}</p>
+                      <h3 class="card-text mb-2 fs-3 gradtitolo">
+                        Statistiche
+                      </h3>
+                      <p>
+                        Agilità-
+                        {{ pg.race.traits.Agilita }}
+                      </p>
+                      <p>
+                        Carisma-
+                        {{ pg.race.traits.Carisma }}
+                      </p>
+                      <p>
+                        Forza-
+                        {{ pg.race.traits.Forza }}
+                      </p>
+                      <p>
+                        Intelligenza-
+                        {{ pg.race.traits.Intelligenza }}
+                      </p>
+                      <p>
+                        Resistenza-
+                        {{ pg.race.traits.Resistenza }}
+                      </p>
                       <label class="fs-5">Classe</label>
                       <h3 class="card-text mb-2 fw-bolder fs-2 gradtitolo">
                         {{ pg.classe.className }}

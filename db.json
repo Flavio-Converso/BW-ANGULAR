@@ -141,6 +141,29 @@
       "expTot": 0,
       "userId": 1,
       "id": 5
+    },
+    {
+      "characterName": "Gabbibbo",
+      "classId": 4,
+      "raceId": 2,
+      "selectedSkills": [
+        106,
+        107,
+        115,
+        114,
+        123,
+        124,
+        108,
+        92,
+        121,
+        125,
+        113,
+        93,
+        91
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 6
     }
   ],
   "classes": [
