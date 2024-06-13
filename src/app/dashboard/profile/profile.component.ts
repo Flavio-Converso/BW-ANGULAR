@@ -21,7 +21,6 @@ import { iRaces } from '../../interfaces/iraces';
 })
 export class ProfileComponent {
 
-  @ViewChild('draggable') private draggableElement?: ElementRef;
 
   user!: iUsers | null;
   characters: iCharacter[] = [];
@@ -104,10 +103,8 @@ export class ProfileComponent {
     if (confirm('Sei sicuro di voler eliminare questo personaggio?')) {
       this.characterSvc.deleteCharacter(id).subscribe(
         () => {
-          if (this.draggableElement) {
             // Rimuove l'elemento solo se esiste
-            this.draggableElement.nativeElement.remove();
-          }
+            this.combina = this.combina.filter(pg => pg.characters.id !== id);
           console.log('Character deleted');
         },
         (error) => {

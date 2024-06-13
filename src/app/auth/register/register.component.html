@@ -184,6 +184,9 @@
           L'username è richiesto.
         </div>
       </div>
+      <div *ngIf="errorMessage" class="alert alert-danger">
+        {{ errorMessage }}
+      </div>
 
       <div class="d-flex justify-content-center button-registrati">
         <button
