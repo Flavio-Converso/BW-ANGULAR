@@ -1,15 +1,49 @@
-<div class="container">
-  <div *ngIf="events">
-    <h2>Eventi Creati</h2>
-    <div *ngFor="let event of events">
-      <h3>{{ event.titolo }}</h3>
-      <p>{{ event.descrizione }}</p>
-      <img [src]="event.urlImmagine" alt="{{ event.titolo }}" />
-      <p>Master: {{ event.master }}</p>
-      <p>Data: {{ event.data }}</p>
-      <p>Tipo: {{ event.tipo }}</p>
-      <p>Numero Giocatori: {{ event.numeroGiocatori }}</p>
-      <p>Indirizzo: {{ event.indirizzo }}</p>
+<div class="container text-light">
+  <H1 class="my-5 text-center">EVENTI IN PROGRAMMA</H1>
+  <p>parti subito per la tua prossima avventura!</p>
+
+  <div class="row">
+    <div class="col" *ngFor="let event of events">
+      <div>
+        <h3>{{ event.titolo }}</h3>
+        <p>{{ event.descrizione }}</p>
+        <img [src]="event.urlImmagine" alt="{{ event.titolo }}" />
+        <p>Master: {{ event.master }}</p>
+        <p>Data: {{ event.data }}</p>
+        <p>Tipo: {{ event.tipo }}</p>
+        <p>Numero Giocatori: {{ event.numeroGiocatori }}</p>
+        <p>Indirizzo: {{ event.indirizzo }}</p>
+      </div>
     </div>
   </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <div class="myGradient rounded-5 card text-light" style="width: 30em">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN__rsvIF_VFmDva57YV9kX7AS89LkAN6G8w&s"
+        class="img-fluid rounded-top-5"
+        alt="..."
+        style="height: 20rem"
+      />
+      <div class="card-body px-5">
+        <h5 class="card-title fw-bolder mb-3 fs-1 gradtitolo text-center">
+          LA campagna dei Dementi
+        </h5>
+        <p class="card-text fw-bolder mb-3 fs-4">Master: Magurmo</p>
+        <p class="card-text">
+          Tu ed un gruppo di idioti partite all'avventura alla ricerca della
+          Loli leggendaria di centesimo livello!
+        </p>
+        <p class="card-text">Data: Tipo:</p>
+        <p class="card-text">Numero Giocatori:</p>
+        <p class="card-text">Indirizzo:</p>
+
+        <a href="#" class="btn btn-primary">Iscriviti</a>
+      </div>
+    </div>
+  </div>
+
+  <!-------------------------------------------------------------------------------------->
 </div>
