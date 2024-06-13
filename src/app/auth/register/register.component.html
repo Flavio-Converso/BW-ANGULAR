@@ -1,19 +1,9 @@
-<div class="py-5 text-center myBg">
+<div class="py-5 text-center vh-100 myBg">
   <div class="container w-50">
-    <form
-      [formGroup]="registerForm"
-      (ngSubmit)="register()"
-      class="p-4 form-registrati rounded shadow-sm"
-    >
+    <form [formGroup]="registerForm" (ngSubmit)="register()" class="p-4 form-registrati rounded shadow-sm">
       <div class="form-floating mb-3">
-        <input
-          id="nome"
-          formControlName="nome"
-          type="text"
-          class="form-control"
-          [ngClass]="{ 'is-invalid': isTouchedInvalid('nome') }"
-          placeholder="Nome"
-        />
+        <input id="nome" formControlName="nome" type="text" class="form-control"
+          [ngClass]="{ 'is-invalid': isTouchedInvalid('nome') }" placeholder="Nome" />
         <label for="nome">Nome</label>
         <div *ngIf="isTouchedInvalid('nome')" class="invalid-feedback">
           Il nome è richiesto.
@@ -21,14 +11,8 @@
       </div>
 
       <div class="form-floating mb-3">
-        <input
-          id="cognome"
-          formControlName="cognome"
-          type="text"
-          class="form-control"
-          [ngClass]="{ 'is-invalid': isTouchedInvalid('cognome') }"
-          placeholder="Cognome"
-        />
+        <input id="cognome" formControlName="cognome" type="text" class="form-control"
+          [ngClass]="{ 'is-invalid': isTouchedInvalid('cognome') }" placeholder="Cognome" />
         <label for="cognome">Cognome</label>
         <div *ngIf="isTouchedInvalid('cognome')" class="invalid-feedback">
           Il cognome è richiesto.
@@ -36,115 +20,68 @@
       </div>
 
       <div class="form-floating mb-3">
-        <input
-          id="email"
-          formControlName="email"
-          type="email"
-          class="form-control"
-          [ngClass]="{
+        <input id="email" formControlName="email" type="email" class="form-control" [ngClass]="{
             'is-invalid':
               isTouchedInvalid('email') || registerForm.hasError('isValidEmail')
-          }"
-          placeholder="Email"
-        />
+          }" placeholder="Email" />
         <label for="email">Email</label>
         <div *ngIf="isTouchedInvalid('email')" class="invalid-feedback">
           L'email è richiesta.
         </div>
-        <div
-          *ngIf="registerForm.hasError('isValidEmail')"
-          class="invalid-feedback"
-        >
+        <div *ngIf="registerForm.hasError('isValidEmail')" class="invalid-feedback">
           L'email selezionata non è valida.
         </div>
       </div>
 
       <div class="form-floating mb-3">
-        <input
-          id="confermaEmail"
-          formControlName="confermaEmail"
-          type="email"
-          class="form-control"
-          [ngClass]="{
+        <input id="confermaEmail" formControlName="confermaEmail" type="email" class="form-control" [ngClass]="{
             'is-invalid':
               isTouchedInvalid('confermaEmail') ||
               registerForm.hasError('emailMatch')
-          }"
-          placeholder="Conferma Email"
-        />
+          }" placeholder="Conferma Email" />
         <label for="confermaEmail">Conferma Email</label>
         <div *ngIf="isTouchedInvalid('confermaEmail')" class="invalid-feedback">
           Conferma email è richiesta.
         </div>
-        <div
-          *ngIf="registerForm.hasError('emailMatch')"
-          class="invalid-feedback"
-        >
+        <div *ngIf="registerForm.hasError('emailMatch')" class="invalid-feedback">
           Le email non corrispondono.
         </div>
       </div>
 
       <div class="form-floating mb-3">
-        <input
-          id="password"
-          formControlName="password"
-          type="password"
-          class="form-control"
-          [ngClass]="{
+        <input id="password" formControlName="password" type="password" class="form-control" [ngClass]="{
             'is-invalid':
               isTouchedInvalid('password') ||
               registerForm.hasError('isValidPassword')
-          }"
-          placeholder="Password"
-        />
+          }" placeholder="Password" />
         <label for="password">Password</label>
         <div *ngIf="isTouchedInvalid('password')" class="invalid-feedback">
           La password è richiesta.
         </div>
-        <div
-          *ngIf="registerForm.hasError('isValidPassword')"
-          class="invalid-feedback"
-        >
+        <div *ngIf="registerForm.hasError('isValidPassword')" class="invalid-feedback">
           La password deve contenere caratteri speciali, un numero, una
           maiuscola e deve essere tra 8 e 16 caratteri.
         </div>
       </div>
 
       <div class="form-floating mb-3">
-        <input
-          id="confermaPassword"
-          formControlName="confermaPassword"
-          type="password"
-          class="form-control"
-          [ngClass]="{
+        <input id="confermaPassword" formControlName="confermaPassword" type="password" class="form-control" [ngClass]="{
             'is-invalid':
               isTouchedInvalid('confermaPassword') ||
               registerForm.hasError('passwordMatch')
-          }"
-          placeholder="Conferma Password"
-        />
+          }" placeholder="Conferma Password" />
         <label for="confermaPassword">Conferma Password</label>
-        <div
-          *ngIf="isTouchedInvalid('confermaPassword')"
-          class="invalid-feedback"
-        >
+        <div *ngIf="isTouchedInvalid('confermaPassword')" class="invalid-feedback">
           Conferma password è richiesta.
         </div>
-        <div
-          *ngIf="registerForm.hasError('passwordMatch')"
-          class="invalid-feedback"
-        >
+        <div *ngIf="registerForm.hasError('passwordMatch')" class="invalid-feedback">
           Le password non corrispondono.
         </div>
       </div>
 
       <div class="form-floating mb-3">
-        <select
-          id="genere"
-          formControlName="genere"
-          class="form-select"
-          [ngClass]="{ 'is-invalid': isTouchedInvalid('genere') }"
-        >
+        <select id="genere" formControlName="genere" class="form-select"
+          [ngClass]="{ 'is-invalid': isTouchedInvalid('genere') }">
           <option value="selectPlaceholder" disabled selected>
             Seleziona...
           </option>
@@ -159,24 +96,13 @@
       </div>
 
       <div class="form-floating mb-3">
-        <input
-          id="immagine"
-          formControlName="immagine"
-          type="file"
-          class="form-control"
-        />
+        <input id="immagine" formControlName="immagine" type="file" class="form-control" />
         <label for="immagine">Immagine</label>
       </div>
 
       <div class="form-floating mb-3">
-        <input
-          id="username"
-          formControlName="username"
-          type="text"
-          class="form-control"
-          [ngClass]="{ 'is-invalid': isTouchedInvalid('username') }"
-          placeholder="Username"
-        />
+        <input id="username" formControlName="username" type="text" class="form-control"
+          [ngClass]="{ 'is-invalid': isTouchedInvalid('username') }" placeholder="Username" />
         <label for="username">Username</label>
         <div *ngIf="isTouchedInvalid('username')" class="invalid-feedback">
           L'username è richiesto.
@@ -184,14 +110,14 @@
       </div>
 
       <div class="d-flex justify-content-center button-registrati">
-        <button
-          type="submit"
-          class="fantasy-btn-md"
-          [disabled]="formSubmitted && registerForm.invalid"
-        >
+        <button type="submit" class="fantasy-btn-md" [disabled]="formSubmitted && registerForm.invalid">
           Registrati
         </button>
       </div>
+      <p class="text-white">
+        Hai già un account?
+        <a class="clicca-qui" routerLink="/auth/login">Clicca qui</a>
+      </p>
     </form>
   </div>
 </div>
