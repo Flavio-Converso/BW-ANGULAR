@@ -1,22 +1,16 @@
-<div class="col-12">
-  <h1 class="text-white text-center">CREA IL TUO PERSONAGGIO</h1>
-  <h3 class="text-white text-center mb-3">
-    1. SCEGLI LA TUA <span class="myTextColor3">CLASSE</span>
-  </h3>
-  <div class="row mt-4 justify-content-center">
-    <div
-      class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center justify-content-center mx-4 mt-5"
-    >
-      <label class="card-container mb-4">
-        <input type="radio" formControlName="classs" style="display: none" />
-        <div class="card">
-          <img [src]="" alt="class" class="img-fluid" />
-          <div class="card-body myBg">
-            <h4 class="text-white text-center mt-3"></h4>
-            <p class="myTextColor2 fs-4 text-center"></p>
-          </div>
-        </div>
-      </label>
-    </div>
-  </div>
-</div>
+<form>
+  <input type="text" placeholder="master" />
+  <input type="text" placeholder="Titolo" />
+  <input type="textarea" placeholder="descrizione" />
+  <input type="url" placeholder="url immagine" />
+  <input type="date" placeholder="data" />
+  <input type="text" placeholder="master" />
+  <select>
+    <option value="selectPlaceholder" disabled selected>Seleziona...</option>
+    <option value="live">Live</option>
+    <option value="online">Online</option>
+  </select>
+  <input type="number" placeholder="numero giocatori" />
+  <input type="text" placeholder="indirizzo o link discord" />
+  <button type="submit">crea evento</button>
+</form>
