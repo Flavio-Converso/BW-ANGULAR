@@ -230,6 +230,49 @@
       "expTot": 0,
       "userId": 3,
       "id": 9
+    },
+    {
+      "characterName": "Gino",
+      "classs": 2,
+      "race": 1,
+      "selectedSkills": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        42,
+        91
+      ],
+      "expTot": 0,
+      "userId": 2,
+      "id": 10
+    },
+    {
+      "characterName": "Nico",
+      "classs": 3,
+      "race": 3,
+      "selectedSkills": [
+        69,
+        68,
+        66,
+        65,
+        64,
+        71,
+        72,
+        73,
+        74,
+        80,
+        83,
+        93
+      ],
+      "expTot": 0,
+      "userId": 2,
+      "id": 11
     }
   ],
   "classes": [
