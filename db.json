@@ -35,6 +35,42 @@
       "immagine": null,
       "username": "Test Immagine",
       "id": 3
+    },
+    {
+      "email": "user3@user3.com",
+      "password": "$2a$10$14GWq2zsB5s4e.9qkp4D3eKT.SgW31.eD6D5PCw11b8fBz13Tck4y",
+      "nome": "giorgio",
+      "cognome": "giorgini",
+      "confermaEmail": "user3@user3.com",
+      "confermaPassword": "Pa$$w0rd!",
+      "genere": "femmina",
+      "immagine": null,
+      "username": "giorgio",
+      "id": 4
+    },
+    {
+      "email": "hahifecu@mailinator.com",
+      "password": "$2a$10$LmfFfuvMP1YkUhIm6xgiiudxBU7yPuBIjGmifvZzvLodYPTYsvaFu",
+      "nome": "Impeditquassitt",
+      "cognome": "ExexplicaboAutmo",
+      "confermaEmail": "hahifecu@mailinator.com",
+      "confermaPassword": "Pa$$w0rd!",
+      "genere": "maschio",
+      "immagine": "C:\\fakepath\\event-registration-template.png",
+      "username": "pisohoto",
+      "id": 5
+    },
+    {
+      "email": "peve@mailinator.com",
+      "password": "$2a$10$7lwaVlSxXnFZsKuIr336R.S60lXOLjrdlIEgjuk71kSXQJVyIligW",
+      "nome": "Doloribus in Nam vit",
+      "cognome": "Dolorem culpa conse",
+      "confermaEmail": "peve@mailinator.com",
+      "confermaPassword": "Pa$$w0rd!",
+      "genere": "femmina",
+      "immagine": "Distinctio Quis har",
+      "username": "nylyhe",
+      "id": 6
     }
   ],
   "characters": [
@@ -230,6 +266,27 @@
       "expTot": 0,
       "userId": 3,
       "id": 9
+    },
+    {
+      "characterName": "provaiscriver",
+      "classs": 1,
+      "race": 6,
+      "selectedSkills": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        28,
+        27,
+        29,
+        94
+      ],
+      "expTot": 0,
+      "userId": 6,
+      "id": 10
     }
   ],
   "classes": [
@@ -1653,26 +1710,6 @@
           "expTot": 0,
           "userId": 3,
           "id": 7
-        },
-        {
-          "characterName": "test",
-          "classs": 4,
-          "race": 1,
-          "selectedSkills": [
-            91,
-            130,
-            129,
-            128,
-            127,
-            126,
-            125,
-            124,
-            123,
-            101
-          ],
-          "expTot": 0,
-          "userId": 1,
-          "id": 2
         }
       ]
     },
@@ -1707,31 +1744,6 @@
           "expTot": 0,
           "userId": 3,
           "id": 8
-        },
-        {
-          "characterName": "Giorgio",
-          "classs": 4,
-          "race": 2,
-          "selectedSkills": [
-            91,
-            92,
-            95,
-            93,
-            94,
-            97,
-            109,
-            111,
-            117,
-            121,
-            125,
-            124,
-            123,
-            122,
-            102
-          ],
-          "expTot": 0,
-          "userId": 1,
-          "id": 1
         },
         {
           "characterName": "provaiscriver",
@@ -1787,31 +1799,6 @@
           "expTot": 0,
           "userId": 3,
           "id": 9
-        },
-        {
-          "characterName": "Giorgio",
-          "classs": 4,
-          "race": 2,
-          "selectedSkills": [
-            91,
-            92,
-            95,
-            93,
-            94,
-            97,
-            109,
-            111,
-            117,
-            121,
-            125,
-            124,
-            123,
-            122,
-            102
-          ],
-          "expTot": 0,
-          "userId": 1,
-          "id": 1
         },
         {
           "characterName": "provaiscriver",
