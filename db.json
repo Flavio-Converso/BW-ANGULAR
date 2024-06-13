@@ -35,9 +35,66 @@
       "immagine": null,
       "username": "Giancarlo7",
       "id": 3
+    },
+    {
+      "email": "user3@user3.com",
+      "password": "$2a$10$14GWq2zsB5s4e.9qkp4D3eKT.SgW31.eD6D5PCw11b8fBz13Tck4y",
+      "nome": "giorgio",
+      "cognome": "giorgini",
+      "confermaEmail": "user3@user3.com",
+      "confermaPassword": "Pa$$w0rd!",
+      "genere": "femmina",
+      "immagine": null,
+      "username": "giorgio",
+      "id": 4
     }
   ],
   "characters": [
+    {
+      "characterName": "Giorgio",
+      "classs": 4,
+      "race": 2,
+      "selectedSkills": [
+        91,
+        92,
+        95,
+        93,
+        94,
+        97,
+        109,
+        111,
+        117,
+        121,
+        125,
+        124,
+        123,
+        122,
+        102
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "characterName": "test",
+      "classs": 4,
+      "race": 1,
+      "selectedSkills": [
+        91,
+        130,
+        129,
+        128,
+        127,
+        126,
+        125,
+        124,
+        123,
+        101
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 2
+    },
     {
       "characterName": "Ilario Alicante",
       "classs": 6,
@@ -150,6 +207,29 @@
       "expTot": 0,
       "userId": 1,
       "id": 7
+    },
+    {
+      "characterName": "asdasda",
+      "classs": 2,
+      "race": 2,
+      "selectedSkills": [
+        44,
+        46,
+        47,
+        49,
+        50,
+        51,
+        52,
+        53,
+        92,
+        95,
+        97,
+        98,
+        100
+      ],
+      "expTot": 0,
+      "userId": 2,
+      "id": 8
     }
   ],
   "classes": [
