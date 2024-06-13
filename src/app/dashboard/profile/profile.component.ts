@@ -1,6 +1,6 @@
 import { CombinaService } from './../../services/combina.service';
 import { iSkills } from './../../interfaces/skills';
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { AuthService } from '../../auth/auth.service';
 import { iUsers } from '../../interfaces/iusers';
 import { UsersService } from '../../services/users.service';
@@ -13,12 +13,16 @@ import { SkillsService } from '../../services/skills.service';
 import { RacesService } from '../../services/races.service';
 import { iRaces } from '../../interfaces/iraces';
 
+
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.scss'],
 })
 export class ProfileComponent {
+
+  @ViewChild('draggable') private draggableElement?: ElementRef;
+
   user!: iUsers | null;
   characters: iCharacter[] = [];
   class: iClassi[] = [];
@@ -92,6 +96,26 @@ export class ProfileComponent {
         this.class,
         this.iSkills,
         Object.values(this.race)
+      );
+    }
+  }
+
+  deleteCharacter(id:number): void {
+    if (confirm('Sei sicuro di voler eliminare questo personaggio?')) {
+      this.characterSvc.deleteCharacter(id).subscribe(
+        () => {
+          if (this.draggableElement) {
+            // Rimuove l'elemento solo se esiste
+            this.draggableElement.nativeElement.remove();
+          }
+          console.log('Character deleted');
+        },
+        (error) => {
+          console.error(
+            "Errore durante l'eliminazione del personaggio:",
+            error
+          );
+        }
       );
     }
   }

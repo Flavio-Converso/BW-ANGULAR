@@ -42,18 +42,6 @@ ul {
   padding: 0.5em 0;
 }
 
-.fantasy {
-  background: linear-gradient(
-    90deg,
-    rgba(39, 124, 251, 1) 19%,
-    rgba(87, 73, 238, 1) 58%
-  );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  font-weight: 800;
-  font-size: 1.3em;
-}
-
 .myBtnSmall {
   background: linear-gradient(
     180deg,
@@ -70,8 +58,8 @@ ul {
 
 .flip-box {
   background-color: transparent;
-  width: 400px;
-  height: 260px;
+  width: 100%;
+  height: 200px;
 
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -112,4 +100,10 @@ ul {
   background-color: dodgerblue;
   color: white;
   transform: rotateY(180deg);
+}
+
+.imgFade img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Adatta l'immagine senza deformarla */
 }

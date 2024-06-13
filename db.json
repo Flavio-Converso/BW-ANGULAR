@@ -23,6 +23,29 @@
       "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS_gxP60EK2bos3VAEilLguzqSvZMCjXq5bA&usqp=CAU",
       "username": "admin",
       "id": 2
+    },
+    {
+      "email": "tazzine@stupende.com",
+      "password": "$2a$10$sIHpam39pX3Tl67.wq1fGuB6iJbo/HP5hgkjVjY32kklx1UJ/z6Eq",
+      "nome": "Teapot",
+      "cognome": "Tè verde",
+      "confermaEmail": "tazzine@stupende.com",
+      "confermaPassword": "Teapot00-",
+      "genere": "altro",
+      "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdrpLDNM122Bk7fA-tuW-HjLff-OPDZe3O28p2i_7C_eSKG0Y4HEdKjopRGXzm-pHDnHc&usqp=CAU",
+      "username": "TheKingOfTeapot",
+    "id":3
+  },
+      {"email": "user2@user2.com",
+      "password": "$2a$10$vau2moJ.ZR9ZFUYPIL6qU.3X2DPDOFuR4Gmt8U2aZ18zHxelg.eey",
+      "nome": "Giancarlo",
+      "cognome": "Carlini",
+      "confermaEmail": "user2@user2.com",
+      "confermaPassword": "Pa$$w0rd!",
+      "genere": "maschio",
+      "immagine": null,
+      "username": "Giancarlo7",
+      "id": 4
     }
   ],
   "characters": [
@@ -72,9 +95,46 @@
       "characterName": "adadadd",
       "classs": 3,
       "race": 5,
+      "selectedSkills": [
+        80,
+        82,
+        84,
+        74,
+        75,
+        76,
+        78,
+        77,
+        69,
+        68,
+        66,
+        67
+      ],
+      "expTot": 0,
+      "userId": 2,
+      "id": 2
+    },
+    {
+      "characterName": "Nostradamus",
+      "classs": 5,
+      "race": 4,
+      "selectedSkills": [
+        149,
+        147,
+        145,
+        143,
+        141,
+        139,
+        150,
+        148,
+        146,
+        144,
+        97,
+        96
+      ],
       "selectedSkills": [80, 82, 84, 74, 75, 76, 78, 77, 69, 68, 66, 67],
       "expTot": 0,
       "userId": 1,
+      "id": 3
       "id": 5
     },
     {
@@ -1258,3 +1318,4 @@
     }
   ]
 }
+
