@@ -50,6 +50,26 @@
       "expTot": 0,
       "userId": 1,
       "id": 1
+    },
+    {
+      "characterName": "test",
+      "classs": 4,
+      "race": 1,
+      "selectedSkills": [
+        91,
+        130,
+        129,
+        128,
+        127,
+        126,
+        125,
+        124,
+        123,
+        101
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 2
     }
   ],
   "classes": [
