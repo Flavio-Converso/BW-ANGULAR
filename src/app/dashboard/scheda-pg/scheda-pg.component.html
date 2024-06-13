@@ -1,10 +1,9 @@
 <div class="row myBg m-0 p-0">
-  <div class="col-12 mt-3">
-    <div
-      *ngIf="character"
-      class="text-center d-flex flex-column align-items-center justify-content-center"
-    >
-      <h1 class="text-white fw-bolder">RECAP DEL PERSONAGGIO</h1>
+
+  <div class="col-12 mt-3" *ngIf="class">
+    <div *ngIf="race" class="text-center d-flex flex-column align-items-center justify-content-center">
+      <h1 class="text-white fw-bolder">RECAP DEL PERSONAGGIO
+      </h1>
       <div class="row justify-content-center align-items-center">
         <div class="flip-box col-4 mt-3">
           <div class="flip-box-inner">
@@ -12,7 +11,7 @@
               <img [src]="class.img" alt="img" class="img-fluid" />
               <p class="fs-2 text-white" id="raceText">{{ class.className }}</p>
             </div>
-            <div class="flip-box-back imgFade" *ngIf="race">
+            <div class="flip-box-back imgFade">
               <img [src]="race.img" alt="img" class="img-fluid" />
               <p class="fs-2" id="raceTextTwo">{{ race.raceName }}</p>
             </div>
@@ -24,15 +23,12 @@
 
         <p class="text-white fs-2"><span class="fantasy">ABILITÀ</span></p>
         <div class="col-4 d-flex flex-column">
-          <p
-            class="text-white myBtnSmall mx-2 fs-2"
-            *ngFor="let skill of characterSkills"
-          >
+          <p class="text-white myBtnSmall mx-2 fs-2" *ngFor="let skill of characterSkills">
             {{ skill.skillName }} - Exp {{ skill.exp }}
           </p>
         </div>
 
-        <!-- Bottoni -->
+
         <button class="btn btn-danger" (click)="deleteCharacter()">
           Elimina Personaggio
         </button>
