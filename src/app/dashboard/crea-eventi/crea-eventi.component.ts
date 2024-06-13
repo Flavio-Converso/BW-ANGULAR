@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { EventService } from '../../services/event.service';
 import { iEventi } from '../../interfaces/ieventi';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-crea-eventi',
@@ -12,7 +13,7 @@ export class CreaEventiComponent implements OnInit {
   eventForm!: FormGroup;
   formSubmitted = false;
 
-  constructor(private eventService: EventService) {}
+  constructor(private eventService: EventService, private router: Router) {}
 
   ngOnInit(): void {
     this.eventForm = new FormGroup({
@@ -34,11 +35,12 @@ export class CreaEventiComponent implements OnInit {
       this.eventService.addEventi(newEvent).subscribe(
         response => {
           console.log('Event created', response);
-        },
-        error => {
-          console.error('Error creating event', error);
-        }
-      );
+        this.router.navigate(['/dashboard/eventi-disponibili']);
+          },
+          error => {
+            console.error('Error creating event', error);
+            }
+            );
     }
   }
 }

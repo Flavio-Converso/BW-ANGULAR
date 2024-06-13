@@ -1,7 +1,9 @@
-<div class="py-5 text-center vh-100 myBg">
+<div
+  class="py-5 text-center vh-100 myBg d-flex align-items-center justify-content-center"
+>
   <div class="container w-50">
-    <div class="form-accedi p-5">
-      <form class="m-2 mt-5" [formGroup]="loginForm" (ngSubmit)="login()">
+    <div class="form-accedi">
+      <form class="m-2 mt-4" [formGroup]="loginForm" (ngSubmit)="login()">
         <div class="form-floating mb-3">
           <input
             type="email"
@@ -17,7 +19,7 @@
           </div>
         </div>
 
-        <div class="form-floating">
+        <div class="form-floating mb-3">
           <input
             [type]="hidePassword ? 'password' : 'text'"
             class="form-control"
@@ -26,19 +28,12 @@
             placeholder="Password"
             [ngClass]="{ 'is-invalid': isTouchedInvalid('password') }"
           />
-          <!-- <button
-            type="button"
-            class="btn btn-outline-secondary"
-            (click)="togglePasswordVisibility()"
-          >
-            {{ hidePassword ? "Show" : "Hide" }}
-          </button> -->
-
           <label for="password">Password</label>
           <div *ngIf="isTouchedInvalid('password')" class="invalid-feedback">
             La password è richiesta e deve rispettare i criteri di sicurezza.
           </div>
         </div>
+
         <div *ngIf="errorMessage" class="alert alert-danger">
           {{ errorMessage }}
         </div>

@@ -1,0 +1,17 @@
+.myGradient {
+  background: linear-gradient(
+    180deg,
+    rgba(27, 28, 43, 0.6054796918767507) 19%,
+    rgba(16, 17, 26, 0.6138830532212884) 77%
+  );
+}
+
+.gradtitolo {
+  background: linear-gradient(
+    90deg,
+    rgba(39, 124, 251, 1) 19%,
+    rgba(87, 73, 238, 1) 58%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}

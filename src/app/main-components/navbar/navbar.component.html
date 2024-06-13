@@ -3,11 +3,12 @@
     <a class="" routerLink="">
       <img class="cla1" src="../../../assets/img_logo/Logo ridimensionato.png" alt="Logo" />
     </a>
-    <button (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample"
-      class="navbar-toggler" type="button">
+    <button (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
+      aria-controls="navbarSupportedContent" class="navbar-toggler" type="button"
+      [ngClass]="{ 'menu-open': !isCollapsed }">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" [ngClass]="{ show: !isCollapsed }">
+    <div class="collapse navbar-collapse" [ngClass]="{ 'show': !isCollapsed }" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-2 fw-bold">
         <li class="nav-item">
           <a class="nav-link text-white" routerLink="" routerLinkActive="active-link">Home</a>

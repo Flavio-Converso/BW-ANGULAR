@@ -25,16 +25,40 @@
       "id": 2
     },
     {
-      "email": "test@immagine.com",
-      "password": "$2a$10$cFLf2TcfuSjFhfBawTqgXOPAYEa6gE57Pue2EOfVJO6NTrZkGyNPu",
-      "nome": "Test",
-      "cognome": "Immagine",
-      "confermaEmail": "test@immagine.com",
+      "email": "user2@user2.com",
+      "password": "$2a$10$vau2moJ.ZR9ZFUYPIL6qU.3X2DPDOFuR4Gmt8U2aZ18zHxelg.eey",
+      "nome": "Giancarlo",
+      "cognome": "Carlini",
+      "confermaEmail": "user2@user2.com",
       "confermaPassword": "Pa$$w0rd!",
       "genere": "maschio",
       "immagine": null,
-      "username": "Test Immagine",
+      "username": "Giancarlo7",
       "id": 3
+    },
+    {
+      "email": "user3@user3.com",
+      "password": "$2a$10$14GWq2zsB5s4e.9qkp4D3eKT.SgW31.eD6D5PCw11b8fBz13Tck4y",
+      "nome": "giorgio",
+      "cognome": "giorgini",
+      "confermaEmail": "user3@user3.com",
+      "confermaPassword": "Pa$$w0rd!",
+      "genere": "femmina",
+      "immagine": null,
+      "username": "giorgio",
+      "id": 4
+    },
+    {
+      "email": "hahifecu@mailinator.com",
+      "password": "$2a$10$LmfFfuvMP1YkUhIm6xgiiudxBU7yPuBIjGmifvZzvLodYPTYsvaFu",
+      "nome": "Impeditquassitt",
+      "cognome": "ExexplicaboAutmo",
+      "confermaEmail": "hahifecu@mailinator.com",
+      "confermaPassword": "Pa$$w0rd!",
+      "genere": "maschio",
+      "immagine": "C:\\fakepath\\event-registration-template.png",
+      "username": "pisohoto",
+      "id": 5
     }
   ],
   "characters": [
@@ -102,13 +126,13 @@
         100
       ],
       "expTot": 0,
-      "userId": 1,
-      "id": 3
+      "userId": 2,
+      "id": 8
     },
     {
       "characterName": "luca",
-      "classs": 5,
-      "race": 6,
+      "classs": 6,
+      "race": 3,
       "selectedSkills": [
         99,
         131,
@@ -284,7 +308,7 @@
     {
       "classs": 2,
       "className": "Mago",
-      "bio": "Maestro delle arti arcane, lancia incantesimi potenti da lontano e manipola le energie magiche. Formidabile negli scontri a distanza.",
+      "bio": "Maestro delle arti arcane, il Mago lancia incantesimi potenti da lontano e manipola le energie magiche. Formidabile negli scontri a distanza, la sua debolezza risiede negli scontri ravvicinati.",
       "img": "https://th.bing.com/th/id/OIG2.giN_VixGaT5nHdJ58EaN?pid=ImgGn",
       "skills": [
         31,
@@ -476,7 +500,7 @@
     {
       "classs": 6,
       "className": "Monaco",
-      "bio": "Il Monaco è un maestro della fede e della guarigione, capace di usare incantesimi sacri per curare, proteggere e purificare alleati.",
+      "bio": "Il Monaco è un maestro della fede e della guarigione, capace di usare incantesimi sacri per curare, proteggere e purificare alleati e ambienti circostanti.",
       "img": "https://tse4.mm.bing.net/th?id=OIG4.CoLIvoQlGtWxqMMAij_1&pid=ImgGn",
       "skills": [
         161,
@@ -526,7 +550,7 @@
     {
       "race": 1,
       "raceName": "Umano",
-      "raceBio": "Con una natura versatile e una resistenza innata, gli umani si adattano a situazioni e ambienti.",
+      "raceBio": "Con una natura versatile e una resistenza innata, gli umani si adattano facilmente a una vasta gamma di situazioni e ambienti.",
       "traits": {
         "Forza": 7,
         "Agilita": 6,
@@ -565,7 +589,7 @@
     {
       "race": 4,
       "raceName": "Orco",
-      "raceBio": "Come guerrieri brutali e possenti, gli orchi sono famigerati per la loro forza bruta e la resistenza straordinaria.",
+      "raceBio": "Come guerrieri brutali e possenti, gli orchi sono famigerati per la loro forza bruta e la resistenza straordinaria in battaglia.",
       "traits": {
         "Forza": 10,
         "Agilita": 6,
@@ -591,7 +615,7 @@
     {
       "race": 6,
       "raceName": "Undead",
-      "raceBio": "Creature risorte dalla morte, sono animate da un'energia oscura e spesso dotate di abilità sovrannaturali.",
+      "raceBio": "Creature risorte dalla morte, gli undead sono animate da un'energia oscura e spesso dotate di abilità sovrannaturali.",
       "traits": {
         "Forza": 6,
         "Agilita": 5,

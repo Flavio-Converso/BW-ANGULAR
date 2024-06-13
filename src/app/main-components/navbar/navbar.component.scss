@@ -36,21 +36,42 @@
 .dropdown-menu {
   background: linear-gradient(
     135deg,
-    rgba(14, 86, 196, 0.8) 30%,
+    rgba(28, 116, 247, 0.8) 30%,
     rgba(75, 62, 223, 0.8) 90%
   );
   border: none; /* Remove border if not needed */
 }
 
-/* Optional: Adjust dropdown item styles for better readability */
+/* Modifica per gestire lo stato attivo e l'hover */
 .dropdown-menu .dropdown-item {
-  color: white; /* Text color */
+  color: white; /* Testo bianco */
 }
 
 .dropdown-menu .dropdown-item:hover {
-  background-color: rgba(255, 255, 255, 0.1); /* Hover effect */
+  background-color: rgba(255, 255, 255, 0.1); /* Effetto hover */
+}
+
+.dropdown-menu .dropdown-item:focus {
+  background-color: transparent; /* Rimuove lo sfondo bianco sul click */
 }
 
 .clickable {
   cursor: pointer;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(14, 106, 216, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler {
+  outline: none; /* Rimuovi l'outline predefinito, se necessario */
+  box-shadow: none; /* Rimuovi l'ombra predefinita, se necessario */
+  border-color: rgba(
+    14,
+    106,
+    216,
+    1
+  ) !important; /* Cambia il colore del bordo quando è attivo */
+}
+
+.navbar-toggler.menu-open {
+  border-color: rgb(87, 160, 250) !important;
 }

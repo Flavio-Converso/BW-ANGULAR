@@ -12,7 +12,7 @@ export class NavbarComponent {
   isCollapsed: boolean = true;
   openDropdown: string | null = null;
   isLoggedIn: boolean = false;
-
+  isMenuOpen: boolean = false;
   //test
   user!: iUsers | null;
   users: iUsers[] = [];
