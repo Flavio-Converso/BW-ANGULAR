@@ -35,42 +35,6 @@
       "immagine": null,
       "username": "Test Immagine",
       "id": 3
-    },
-    {
-      "email": "user3@user3.com",
-      "password": "$2a$10$14GWq2zsB5s4e.9qkp4D3eKT.SgW31.eD6D5PCw11b8fBz13Tck4y",
-      "nome": "giorgio",
-      "cognome": "giorgini",
-      "confermaEmail": "user3@user3.com",
-      "confermaPassword": "Pa$$w0rd!",
-      "genere": "femmina",
-      "immagine": null,
-      "username": "giorgio",
-      "id": 4
-    },
-    {
-      "email": "hahifecu@mailinator.com",
-      "password": "$2a$10$LmfFfuvMP1YkUhIm6xgiiudxBU7yPuBIjGmifvZzvLodYPTYsvaFu",
-      "nome": "Impeditquassitt",
-      "cognome": "ExexplicaboAutmo",
-      "confermaEmail": "hahifecu@mailinator.com",
-      "confermaPassword": "Pa$$w0rd!",
-      "genere": "maschio",
-      "immagine": "C:\\fakepath\\event-registration-template.png",
-      "username": "pisohoto",
-      "id": 5
-    },
-    {
-      "email": "peve@mailinator.com",
-      "password": "$2a$10$7lwaVlSxXnFZsKuIr336R.S60lXOLjrdlIEgjuk71kSXQJVyIligW",
-      "nome": "Doloribus in Nam vit",
-      "cognome": "Dolorem culpa conse",
-      "confermaEmail": "peve@mailinator.com",
-      "confermaPassword": "Pa$$w0rd!",
-      "genere": "femmina",
-      "immagine": "Distinctio Quis har",
-      "username": "nylyhe",
-      "id": 6
     }
   ],
   "characters": [
@@ -266,27 +230,6 @@
       "expTot": 0,
       "userId": 3,
       "id": 9
-    },
-    {
-      "characterName": "provaiscriver",
-      "classs": 1,
-      "race": 6,
-      "selectedSkills": [
-        15,
-        16,
-        17,
-        18,
-        19,
-        20,
-        21,
-        28,
-        27,
-        29,
-        94
-      ],
-      "expTot": 0,
-      "userId": 6,
-      "id": 10
     }
   ],
   "classes": [
@@ -1692,186 +1635,19 @@
       "numeroGiocatori": 5,
       "indirizzo": "Indirizzo",
       "id": 1,
-      "guests": [
-        {
-          "characterName": "flavio",
-          "classs": 3,
-          "race": 2,
-          "selectedSkills": [
-            65,
-            64,
-            63,
-            66,
-            69,
-            71,
-            77,
-            82
-          ],
-          "expTot": 0,
-          "userId": 3,
-          "id": 7
-        }
-      ]
+      "guests": []
     },
     {
-      "master": "master 2",
-      "titolo": "titolo2",
-      "descrizione": "descrizione2",
-      "urlImmagine": "",
-      "data": "2024-06-26",
-      "tipo": "live",
-      "numeroGiocatori": 2,
-      "indirizzo": "ddddd",
+      "master": "Aspernatur quis dign",
+      "titolo": "Voluptatem Aut libe",
+      "descrizione": "Eos eos autem eos",
+      "urlImmagine": "https://www.joluvesunixew.me.uk",
+      "data": "1979-08-01",
+      "tipo": "online",
+      "numeroGiocatori": 61,
+      "indirizzo": "Non dolore tempora e",
       "id": 2,
-      "guests": [
-        {
-          "characterName": "andrea",
-          "classs": 5,
-          "race": 5,
-          "selectedSkills": [
-            149,
-            150,
-            148,
-            147,
-            146,
-            145,
-            144,
-            143,
-            142,
-            139,
-            100
-          ],
-          "expTot": 0,
-          "userId": 3,
-          "id": 8
-        },
-        {
-          "characterName": "Giorgio",
-          "classs": 4,
-          "race": 2,
-          "selectedSkills": [
-            91,
-            92,
-            95,
-            93,
-            94,
-            97,
-            109,
-            111,
-            117,
-            121,
-            125,
-            124,
-            123,
-            122,
-            102
-          ],
-          "expTot": 0,
-          "userId": 1,
-          "id": 1
-        },
-        {
-          "characterName": "provaiscriver",
-          "classs": 1,
-          "race": 6,
-          "selectedSkills": [
-            15,
-            16,
-            17,
-            18,
-            19,
-            20,
-            21,
-            28,
-            27,
-            29,
-            94
-          ],
-          "expTot": 0,
-          "userId": 6,
-          "id": 10
-        }
-      ]
-    },
-    {
-      "master": "master 2",
-      "titolo": "titolo2",
-      "descrizione": "descrizione2",
-      "urlImmagine": "",
-      "data": "2024-06-26",
-      "tipo": "live",
-      "numeroGiocatori": 2,
-      "indirizzo": "ddddd",
-      "id": 3,
-      "guests": [
-        {
-          "characterName": "fausto sinagra",
-          "classs": 5,
-          "race": 4,
-          "selectedSkills": [
-            150,
-            149,
-            148,
-            147,
-            146,
-            145,
-            144,
-            142,
-            143,
-            139,
-            100
-          ],
-          "expTot": 0,
-          "userId": 3,
-          "id": 9
-        },
-        {
-          "characterName": "Giorgio",
-          "classs": 4,
-          "race": 2,
-          "selectedSkills": [
-            91,
-            92,
-            95,
-            93,
-            94,
-            97,
-            109,
-            111,
-            117,
-            121,
-            125,
-            124,
-            123,
-            122,
-            102
-          ],
-          "expTot": 0,
-          "userId": 1,
-          "id": 1
-        },
-        {
-          "characterName": "provaiscriver",
-          "classs": 1,
-          "race": 6,
-          "selectedSkills": [
-            15,
-            16,
-            17,
-            18,
-            19,
-            20,
-            21,
-            28,
-            27,
-            29,
-            94
-          ],
-          "expTot": 0,
-          "userId": 6,
-          "id": 10
-        }
-      ]
+      "guests": []
     }
   ]
 }
