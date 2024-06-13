@@ -11,3 +11,11 @@ ul {
   background-color: #10111a;
   color: white;
 }
+.card-equal-height {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.card-equal-height .card-body {
+  flex-grow: 1;
+}
