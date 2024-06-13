@@ -1,9 +1,11 @@
-<div class="py-5 text-center vh-100 myBg">
-  <div class="container w-50">
+<div
+  class="py-5 m-0 text-center myBg d-flex align-items-center justify-content-center row"
+>
+  <div class="col-10 col-md-6">
     <form
       [formGroup]="registerForm"
       (ngSubmit)="register()"
-      class="p-4 form-registrati rounded shadow-sm"
+      class="p-4 form-registrati"
     >
       <div class="form-floating mb-3">
         <input
@@ -195,7 +197,7 @@
           Registrati
         </button>
       </div>
-      <p class="text-white">
+      <p class="text-white mt-3">
         Hai già un account?
         <a class="clicca-qui" routerLink="/auth/login">Clicca qui</a>
       </p>
