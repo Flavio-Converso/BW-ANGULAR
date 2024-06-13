@@ -34,7 +34,7 @@ export class RegisterComponent {
         confermaPassword: [null, [Validators.required]],
         genere: ['selectPlaceholder', [Validators.required]],
         immagine: [null],
-        username: [null, [Validators.required]],
+        username: [null, [Validators.required, Validators.minLength(3)]],
       },
       {
         validators: [
