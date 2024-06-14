@@ -35,34 +35,57 @@
       "immagine": null,
       "username": "Test Immagine",
       "id": 3
+    },
+    {
+      "email": "user3@user3.com",
+      "password": "$2a$10$14GWq2zsB5s4e.9qkp4D3eKT.SgW31.eD6D5PCw11b8fBz13Tck4y",
+      "nome": "giorgio",
+      "cognome": "giorgini",
+      "confermaEmail": "user3@user3.com",
+      "confermaPassword": "Pa$$w0rd!",
+      "genere": "femmina",
+      "immagine": null,
+      "username": "giorgio",
+      "id": 4
+    },
+    {
+      "email": "hahifecu@mailinator.com",
+      "password": "$2a$10$LmfFfuvMP1YkUhIm6xgiiudxBU7yPuBIjGmifvZzvLodYPTYsvaFu",
+      "nome": "Impeditquassitt",
+      "cognome": "ExexplicaboAutmo",
+      "confermaEmail": "hahifecu@mailinator.com",
+      "confermaPassword": "Pa$$w0rd!",
+      "genere": "maschio",
+      "immagine": "C:\\fakepath\\event-registration-template.png",
+      "username": "pisohoto",
+      "id": 5
+    },
+    {
+      "email": "peve@mailinator.com",
+      "password": "$2a$10$7lwaVlSxXnFZsKuIr336R.S60lXOLjrdlIEgjuk71kSXQJVyIligW",
+      "nome": "Doloribus in Nam vit",
+      "cognome": "Dolorem culpa conse",
+      "confermaEmail": "peve@mailinator.com",
+      "confermaPassword": "Pa$$w0rd!",
+      "genere": "femmina",
+      "immagine": "Distinctio Quis har",
+      "username": "nylyhe",
+      "id": 6
+    },
+    {
+      "email": "ruryla@mailinator.com",
+      "password": "$2a$10$JMq7WURsWpHBPYDPmflWVuz21El9RRuvKQd9AlJvEq9p1vUBN2bje",
+      "nome": "Mollit magni qui odi",
+      "cognome": "Facilis quia sit se",
+      "confermaEmail": "ruryla@mailinator.com",
+      "confermaPassword": "Pa$$w0rd!",
+      "genere": "femmina",
+      "immagine": "",
+      "username": "bisal",
+      "id": 7
     }
   ],
   "characters": [
-    {
-      "characterName": "Giorgio",
-      "classs": 4,
-      "race": 2,
-      "selectedSkills": [
-        91,
-        92,
-        95,
-        93,
-        94,
-        97,
-        109,
-        111,
-        117,
-        121,
-        125,
-        124,
-        123,
-        122,
-        102
-      ],
-      "expTot": 0,
-      "userId": 1,
-      "id": 1
-    },
     {
       "characterName": "test",
       "classs": 4,
@@ -187,74 +210,46 @@
       "id": 11
     },
     {
-      "characterName": "adasa",
-      "classs": 1,
-      "race": 2,
+      "characterName": "Igor vallo",
+      "classs": 6,
+      "race": 1,
       "selectedSkills": [
-        7,
-        9,
-        10,
-        8,
-        11,
-        12,
-        13,
-        15,
-        14,
-        16,
-        17,
-        18,
-        25
+        164,
+        165,
+        167,
+        166,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        93
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 12
+    },
+    {
+      "characterName": "hjuh",
+      "classs": 5,
+      "race": 6,
+      "selectedSkills": [
+        98,
+        133,
+        134,
+        136,
+        138,
+        146,
+        148,
+        149,
+        150,
+        147,
+        139
       ],
       "expTot": 0,
       "userId": 1,
       "id": 13
-    },
-    {
-      "characterName": "Banana",
-      "classs": 1,
-      "race": 2,
-      "selectedSkills": [
-        162,
-        164,
-        168,
-        167,
-        166,
-        165,
-        163,
-        100,
-        161,
-        171,
-        170,
-        169,
-        176,
-        98
-      ],
-      "expTot": 0,
-      "userId": 1,
-      "id": 15
-    },
-    {
-      "characterName": "amed",
-      "classs": 1,
-      "race": 1,
-      "selectedSkills": [
-        1,
-        2,
-        3,
-        4,
-        6,
-        5,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        15
-      ],
-      "expTot": 0,
-      "userId": 1,
-      "id": 16
     }
   ],
   "classes": [
@@ -1659,7 +1654,31 @@
       "tipo": "live",
       "numeroGiocatori": 1,
       "indirizzo": "rrrr",
-      "id": 1
+      "id": 1,
+      "scaduto": false,
+      "guests": [
+        {
+          "characterName": "Igor vallo",
+          "classs": 6,
+          "race": 1,
+          "selectedSkills": [
+            164,
+            165,
+            167,
+            166,
+            168,
+            169,
+            170,
+            171,
+            172,
+            173,
+            93
+          ],
+          "expTot": 0,
+          "userId": 1,
+          "id": 12
+        }
+      ]
     },
     {
       "master": "ddee",
@@ -1707,33 +1726,18 @@
       "indirizzo": "wervqerar",
       "id": 5,
       "scaduto": false,
-      "guests": [
-        {
-          "characterName": "Giorgio",
-          "classs": 4,
-          "race": 2,
-          "selectedSkills": [
-            91,
-            92,
-            95,
-            93,
-            94,
-            97,
-            109,
-            111,
-            117,
-            121,
-            125,
-            124,
-            123,
-            122,
-            102
-          ],
-          "expTot": 0,
-          "userId": 1,
-          "id": 1
-        }
-      ]
+      "guests": []
+    },
+    {
+      "master": "gino",
+      "titolo": "Bulu",
+      "descrizione": "mamma mia",
+      "urlImmagine": "",
+      "data": "2024-06-13T00:00:00.000Z",
+      "tipo": "online",
+      "numeroGiocatori": 5,
+      "indirizzo": "uuuuuuuuuuuuuu",
+      "id": 6
     }
   ]
 }
