@@ -104,58 +104,70 @@
                       </h3>
                     </div>
                   </div>
-                  <div class="col-6 d-flex justify-content-center">
-                    <img
-                      [src]="[pg.classe.img]"
-                      class="img-fluid rad"
-                      alt="immagine avventuriero"
-                    />
-                  </div>
-                </div>
-                <!--------------------------------------->
-                <div class="row">
-                  <div class="col-12 px-5">
-                    <p class="card-text mb-4">
-                      {{ pg.classe.bio }}
-                    </p>
-                  </div>
-                  <div class="col-12 text-center">
-                    <label for="" class="py-2 fs-2 gradtitolo mt-3"
-                      >ABILITÀ</label
-                    >
-                    <div class="table-container">
-                      <table class="skill-table">
-                        <thead>
-                          <tr>
-                            <th>Nome Abilità</th>
-                            <th>Effetto</th>
-                            <th>Costo XP</th>
-                          </tr>
-                        </thead>
-                        <tbody *ngFor="let sk of pg.skills">
-                          <!--ng for per le abilità legate al pc-->
-                          <tr>
-                            <td>{{ sk.skillName }}</td>
-                            <td>{{ sk.skillDescription }}</td>
-                            <td>{{ sk.exp }}</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                  <div class="flip-box col-6 d-flex justify-content-center">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front imgFade">
+                        <img
+                          [src]="pg.classe.img"
+                          alt="immagine avventuriero"
+                          class="img-fluid rad"
+                        />
+                      </div>
+                      <div class="flip-box-back">
+                        <img
+                          [src]="pg.race.img"
+                          alt="immagine avventuriero"
+                          class="img-fluid rad"
+                        />
+                      </div>
                     </div>
-                    <button
-                      class="btn myBtn"
-                      (click)="deleteCharacter(pg.characters.id)"
-                    >
-                      ELIMINA PERSONAGGIO
-                    </button>
+                  </div>
+
+                  <!--------------------------------------->
+                  <div class="row">
+                    <div class="col-12 px-5">
+                      <p class="card-text mb-4">
+                        {{ pg.classe.bio }}
+                      </p>
+                    </div>
+                    <div class="col-12 text-center">
+                      <label for="" class="py-2 fs-2 gradtitolo mt-3"
+                        >ABILITÀ</label
+                      >
+                      <div class="table-container">
+                        <table class="skill-table">
+                          <thead>
+                            <tr>
+                              <th>Nome Abilità</th>
+                              <th>Effetto</th>
+                              <th>Costo XP</th>
+                            </tr>
+                          </thead>
+                          <tbody *ngFor="let sk of pg.skills">
+                            <!--ng for per le abilità legate al pc-->
+                            <tr>
+                              <td>{{ sk.skillName }}</td>
+                              <td>{{ sk.skillDescription }}</td>
+                              <td>{{ sk.exp }}</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <button
+                        class="btn myBtn"
+                        (click)="deleteCharacter(pg.characters.id)"
+                      >
+                        ELIMINA PERSONAGGIO
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <!--fine col-->
       </div>
-      <!--fine col-->
     </div>
   </div>
 </div>
