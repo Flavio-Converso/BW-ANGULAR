@@ -119,3 +119,15 @@ ul {
   border: 2px solid white;
   font-size: 1.5rem;
 }
+
+.btn-reset {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 79, 79, 1) 19%,
+    /* Rosso */ rgba(187, 0, 0, 1) 77%
+  );
+  color: white;
+  border: 2px solid white;
+  font-size: 1.5rem;
+  cursor: default;
+}
