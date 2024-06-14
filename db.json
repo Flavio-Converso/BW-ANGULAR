@@ -58,7 +58,7 @@
       "genere": "Maschio",
       "immagine": "https://www.meme-arsenal.com/memes/8540acc8bc2487bccd490feb43336f4e.jpg",
       "username": "KingMacci",
-      "id":5
+      "id": 5
     },
     {
       "email": "ale@mail.com",
@@ -157,6 +157,218 @@
       "expTot": 0,
       "userId": 2,
       "id": 2
+    },
+    {
+      "characterName": "Monny",
+      "classs": 6,
+      "race": 1,
+      "selectedSkills": [
+        91,
+        165,
+        166,
+        168,
+        176,
+        175,
+        174,
+        173,
+        163,
+        99
+      ],
+      "expTot": 0,
+      "userId": 5,
+      "id": 3
+    },
+    {
+      "characterName": "Elrian",
+      "classs": 3,
+      "race": 2,
+      "selectedSkills": [
+        63,
+        62,
+        61,
+        65,
+        66,
+        67
+      ],
+      "expTot": 0,
+      "userId": 5,
+      "id": 4
+    },
+    {
+      "characterName": "Belfegar",
+      "classs": 1,
+      "race": 4,
+      "selectedSkills": [
+        5,
+        15,
+        17,
+        22,
+        91,
+        93,
+        92,
+        96,
+        98,
+        25,
+        24,
+        13,
+        8
+      ],
+      "expTot": 0,
+      "userId": 4,
+      "id": 5
+    },
+    {
+      "characterName": "Nostradamus",
+      "classs": 2,
+      "race": 3,
+      "selectedSkills": [
+        32,
+        33,
+        37,
+        39,
+        41,
+        43,
+        93,
+        98,
+        99
+      ],
+      "expTot": 0,
+      "userId": 8,
+      "id": 6
+    },
+    {
+      "characterName": "PHPLOVER",
+      "classs": 3,
+      "race": 6,
+      "selectedSkills": [
+        63,
+        61,
+        65,
+        66,
+        69,
+        92
+      ],
+      "expTot": 0,
+      "userId": 8,
+      "id": 7
+    },
+    {
+      "characterName": "Terra",
+      "classs": 6,
+      "race": 1,
+      "selectedSkills": [
+        161,
+        99,
+        98,
+        97,
+        96,
+        165,
+        166,
+        167,
+        168,
+        169,
+        176
+      ],
+      "expTot": 0,
+      "userId": 7,
+      "id": 8
+    },
+    {
+      "characterName": "Nico",
+      "classs": 4,
+      "race": 4,
+      "selectedSkills": [
+        93,
+        92,
+        91,
+        97,
+        99,
+        100,
+        101,
+        105,
+        104,
+        103,
+        102,
+        106,
+        107,
+        94
+      ],
+      "expTot": 0,
+      "userId": 7,
+      "id": 9
+    },
+    {
+      "characterName": "Biba",
+      "classs": 5,
+      "race": 1,
+      "selectedSkills": [
+        98,
+        134,
+        135,
+        146,
+        149,
+        147
+      ],
+      "expTot": 0,
+      "userId": 3,
+      "id": 10
+    },
+    {
+      "characterName": "Lobix",
+      "classs": 5,
+      "race": 2,
+      "selectedSkills": [
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        143
+      ],
+      "expTot": 0,
+      "userId": 6,
+      "id": 11
+    },
+    {
+      "characterName": "MysticSura",
+      "classs": 3,
+      "race": 6,
+      "selectedSkills": [
+        62,
+        70,
+        83,
+        81,
+        82,
+        79,
+        88,
+        87
+      ],
+      "expTot": 0,
+      "userId": 9,
+      "id": 12
+    },
+    {
+      "characterName": "Kimihory",
+      "classs": 6,
+      "race": 4,
+      "selectedSkills": [
+        161,
+        96,
+        97,
+        94,
+        93,
+        164,
+        163,
+        169,
+        168,
+        174,
+        177,
+        100
+      ],
+      "expTot": 0,
+      "userId": 10,
+      "id": 13
     }
   ],
   "classes": [
@@ -1581,6 +1793,22 @@
           "expTot": 0,
           "userId": 1,
           "id": 1
+        },
+        {
+          "characterName": "Elrian",
+          "classs": 3,
+          "race": 2,
+          "selectedSkills": [
+            63,
+            62,
+            61,
+            65,
+            66,
+            67
+          ],
+          "expTot": 0,
+          "userId": 5,
+          "id": 4
         }
       ]
     },
@@ -1613,6 +1841,158 @@
           "expTot": 0,
           "userId": 2,
           "id": 2
+        },
+        {
+          "characterName": "MysticSura",
+          "classs": 3,
+          "race": 6,
+          "selectedSkills": [
+            62,
+            70,
+            83,
+            81,
+            82,
+            79,
+            88,
+            87
+          ],
+          "expTot": 0,
+          "userId": 9,
+          "id": 12
+        },
+        {
+          "characterName": "Monny",
+          "classs": 6,
+          "race": 1,
+          "selectedSkills": [
+            91,
+            165,
+            166,
+            168,
+            176,
+            175,
+            174,
+            173,
+            163,
+            99
+          ],
+          "expTot": 0,
+          "userId": 5,
+          "id": 3
+        }
+      ]
+    },
+    {
+      "master": "Freya",
+      "titolo": "Il Segreto della Cittadella Nascosta",
+      "descrizione": "Nel cuore delle remote montagne di Eldoria giace la leggendaria Cittadella Nascosta, avvolta in mistero e protetta da antiche magie. Un gruppo di eroi intraprende un viaggio per svelare i segreti custoditi all'interno della fortezza perduta, affrontando prove mortali e avversari determinati a mantenere il suo segreto millenario.",
+      "urlImmagine": "https://i0.wp.com/pixnio.com/free-images/2023/06/12/2023-06-12-19-51-24-1344x753.jpg?ssl=1",
+      "data": "2024-06-21T00:00:00.000Z",
+      "tipo": "online",
+      "numeroGiocatori": 5,
+      "indirizzo": "https://discord.gg/SegretoCittadellaNascosta",
+      "id": 3,
+      "scaduto": false,
+      "guests": [
+        {
+          "characterName": "MysticSura",
+          "classs": 3,
+          "race": 6,
+          "selectedSkills": [
+            62,
+            70,
+            83,
+            81,
+            82,
+            79,
+            88,
+            87
+          ],
+          "expTot": 0,
+          "userId": 9,
+          "id": 12
+        },
+        {
+          "characterName": "Monny",
+          "classs": 6,
+          "race": 1,
+          "selectedSkills": [
+            91,
+            165,
+            166,
+            168,
+            176,
+            175,
+            174,
+            173,
+            163,
+            99
+          ],
+          "expTot": 0,
+          "userId": 5,
+          "id": 3
+        }
+      ]
+    },
+    {
+      "master": "AlicanteXX",
+      "titolo": "Il Labirinto - ONESHOT",
+      "descrizione": "Nel cuore di un'antica foresta si nasconde un labirinto misterioso, conosciuto solo per le sue ricchezze leggendarie e le sfide mortali che offre. Un gruppo di avventurieri intraprende una pericolosa spedizione per conquistare le sue ricompense nascoste, affrontando guardiani magici e enigmi intricati lungo il cammino.",
+      "urlImmagine": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/49bb5373-3f86-4cc8-b341-1ed3a9ae07e0/dg5fcdx-2e2f76ea-164b-4557-a2cd-8ae6faae969e.png/v1/fill/w_1920,h_1760,q_80,strp/the_labyrinth_of_forgotten_whispers_by_vestesta_dg5fcdx-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTc2MCIsInBhdGgiOiJcL2ZcLzQ5YmI1MzczLTNmODYtNGNjOC1iMzQxLTFlZDNhOWFlMDdlMFwvZGc1ZmNkeC0yZTJmNzZlYS0xNjRiLTQ1NTctYTJjZC04YWU2ZmFhZTk2OWUucG5nIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.T_R0JWPKEjHvqhXSUzWkl7fXTHkryNuPD6HfRC4hEN4",
+      "data": "2024-06-16T00:00:00.000Z",
+      "tipo": "online",
+      "numeroGiocatori": 4,
+      "indirizzo": "https://discord.gg/oneShotLaby",
+      "id": 4,
+      "scaduto": false,
+      "guests": [
+        {
+          "characterName": "Elrian",
+          "classs": 3,
+          "race": 2,
+          "selectedSkills": [
+            63,
+            62,
+            61,
+            65,
+            66,
+            67
+          ],
+          "expTot": 0,
+          "userId": 5,
+          "id": 4
+        }
+      ]
+    },
+    {
+      "master": "Misterio",
+      "titolo": "Le Cronache del Regno Diviso",
+      "descrizione": "Per pochi!\nIn un'epoca di conflitti e tradimenti, il regno di Tarsis è sull'orlo della rovina. Dopo secoli di prosperità, antiche divisioni hanno portato a una guerra civile che ha spezzato l'unità del regno. Le Cronache del Regno Diviso seguono le gesta di un gruppo di eroi destinati a influenzare il destino della nazione. Con intrighi politici, alleanze instabili e forze oscure che tramano nell'ombra, gli eroi devono navigare tra le difficoltà per riunire Tarsis o scegliere i propri percorsi attraverso il caos crescente.",
+      "urlImmagine": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/32f0e972797009.5bf3ea98bad50.jpg",
+      "data": "2024-06-15T00:00:00.000Z",
+      "tipo": "live",
+      "numeroGiocatori": 10,
+      "indirizzo": "https://discord.gg/misterioPrivate",
+      "id": 5,
+      "scaduto": false,
+      "guests": [
+        {
+          "characterName": "MysticSura",
+          "classs": 3,
+          "race": 6,
+          "selectedSkills": [
+            62,
+            70,
+            83,
+            81,
+            82,
+            79,
+            88,
+            87
+          ],
+          "expTot": 0,
+          "userId": 9,
+          "id": 12
         }
       ]
     }
