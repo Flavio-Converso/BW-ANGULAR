@@ -44,8 +44,9 @@
 
             <form [formGroup]="eventForm">
               <div *ngIf="characters">
-                <h4>Scegli il personaggio:</h4>
-                <select formControlName="selectedCharacter">
+                <h4 class="my-2 text-center">Scegli il personaggio:</h4>
+
+                <select formControlName="selectedCharacter" class="form-select">
                   <option
                     *ngFor="let character of characters"
                     [ngValue]="character"
@@ -56,12 +57,15 @@
               </div>
 
               <!-- Pulsante Iscriviti -->
-              <button
-                (click)="iscriviti(eventForm)"
-                [disabled]="!eventForm.get('selectedCharacter')?.value"
-              >
-                Iscriviti
-              </button>
+              <div class="d-flex justify-content-center py-3">
+                <button
+                  class="btn myBtn"
+                  (click)="iscriviti(eventForm)"
+                  [disabled]="!eventForm.get('selectedCharacter')?.value"
+                >
+                  Iscriviti
+                </button>
+              </div>
             </form>
 
             <!-- Mostra i personaggi iscritti -->
@@ -71,11 +75,18 @@
                 eventForm.get('event')?.value.guests.length > 0
               "
             >
-              <h4>Personaggi Iscritti:</h4>
-              <ul>
-                <li *ngFor="let guest of eventForm.get('event')?.value.guests">
-                  {{ guest.characterName }} {{ getUserName(guest.userId) }}
+              <h4 class="gradtitolo fs-2 text-center">Personaggi Iscritti:</h4>
+              <ul class="text-center">
+                <li
+                  class="my-3"
+                  *ngFor="let guest of eventForm.get('event')?.value.guests"
+                >
+                  <span class="btn bog"
+                    >{{ guest.characterName }}
+                    {{ getUserName(guest.userId) }}</span
+                  >
                   <button
+                    class="btn myBtn"
                     *ngIf="currentUser && currentUser.id === guest.userId"
                     (click)="
                       rimuoviIscrizione(
