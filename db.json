@@ -301,6 +301,58 @@
       "expTot": 0,
       "userId": 1,
       "id": 11
+    },
+    {
+      "characterName": "advs",
+      "classs": 5,
+      "race": 6,
+      "selectedSkills": [
+        98,
+        131,
+        138,
+        136,
+        135,
+        134,
+        133,
+        132,
+        100,
+        99,
+        97,
+        94,
+        95,
+        96,
+        137,
+        139,
+        140,
+        93,
+        92
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 12
+    },
+    {
+      "characterName": "adasa",
+      "classs": 1,
+      "race": 2,
+      "selectedSkills": [
+        7,
+        9,
+        10,
+        8,
+        11,
+        12,
+        13,
+        15,
+        14,
+        16,
+        17,
+        18,
+        25
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 13
     }
   ],
   "classes": [
