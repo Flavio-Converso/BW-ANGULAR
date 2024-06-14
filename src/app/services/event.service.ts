@@ -1,10 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, mergeMap } from 'rxjs';
 import { iEventi } from '../interfaces/ieventi';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class EventService {
   private apiUrl = 'http://localhost:3000/eventi';
@@ -35,19 +35,13 @@ export class EventService {
   deleteEventi(id: number): Observable<void> {
     return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }
+
+  removeGuest(eventId: number, guestId: number): Observable<iEventi> {
+    return this.http.get<iEventi>(`${this.apiUrl}/${eventId}`).pipe(
+      mergeMap((event) => {
+        event.guests = event.guests.filter((guest) => guest.id !== guestId);
+        return this.updateEventi(eventId, event);
+      })
+    );
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

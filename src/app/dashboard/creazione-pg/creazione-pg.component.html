@@ -121,6 +121,7 @@
           <div
             class="custom-checkbox-container d-flex justify-content-center text-center div-table"
           >
+            <
             <table class="table-borderless text-white my-table mt-3">
               <thead>
                 <tr>
@@ -154,10 +155,10 @@
                         [value]="skill.skill"
                         (change)="onSkillSelect($event, skill)"
                         style="display: none"
+                        [checked]="isSelected(skill)"
                         [disabled]="
                           skill.exp > characterForm.get('expTot')?.value
                         "
-                        id="checkbox-{{ skill.skill }}"
                       />
                       <span class="custom-checkbox"></span>
                       Seleziona

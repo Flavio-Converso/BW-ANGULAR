@@ -25,15 +25,15 @@
       "id": 2
     },
     {
-      "email": "user2@user2.com",
-      "password": "$2a$10$vau2moJ.ZR9ZFUYPIL6qU.3X2DPDOFuR4Gmt8U2aZ18zHxelg.eey",
-      "nome": "Giancarlo",
-      "cognome": "Carlini",
-      "confermaEmail": "user2@user2.com",
+      "email": "test@immagine.com",
+      "password": "$2a$10$cFLf2TcfuSjFhfBawTqgXOPAYEa6gE57Pue2EOfVJO6NTrZkGyNPu",
+      "nome": "Test",
+      "cognome": "Immagine",
+      "confermaEmail": "test@immagine.com",
       "confermaPassword": "Pa$$w0rd!",
       "genere": "maschio",
       "immagine": null,
-      "username": "Giancarlo7",
+      "username": "Test Immagine",
       "id": 3
     },
     {
@@ -59,34 +59,33 @@
       "immagine": "C:\\fakepath\\event-registration-template.png",
       "username": "pisohoto",
       "id": 5
+    },
+    {
+      "email": "peve@mailinator.com",
+      "password": "$2a$10$7lwaVlSxXnFZsKuIr336R.S60lXOLjrdlIEgjuk71kSXQJVyIligW",
+      "nome": "Doloribus in Nam vit",
+      "cognome": "Dolorem culpa conse",
+      "confermaEmail": "peve@mailinator.com",
+      "confermaPassword": "Pa$$w0rd!",
+      "genere": "femmina",
+      "immagine": "Distinctio Quis har",
+      "username": "nylyhe",
+      "id": 6
+    },
+    {
+      "email": "ruryla@mailinator.com",
+      "password": "$2a$10$JMq7WURsWpHBPYDPmflWVuz21El9RRuvKQd9AlJvEq9p1vUBN2bje",
+      "nome": "Mollit magni qui odi",
+      "cognome": "Facilis quia sit se",
+      "confermaEmail": "ruryla@mailinator.com",
+      "confermaPassword": "Pa$$w0rd!",
+      "genere": "femmina",
+      "immagine": "",
+      "username": "bisal",
+      "id": 7
     }
   ],
   "characters": [
-    {
-      "characterName": "Giorgio",
-      "classs": 4,
-      "race": 2,
-      "selectedSkills": [
-        91,
-        92,
-        95,
-        93,
-        94,
-        97,
-        109,
-        111,
-        117,
-        121,
-        125,
-        124,
-        123,
-        122,
-        102
-      ],
-      "expTot": 0,
-      "userId": 1,
-      "id": 1
-    },
     {
       "characterName": "test",
       "classs": 4,
@@ -106,94 +105,6 @@
       "expTot": 0,
       "userId": 1,
       "id": 2
-    },
-    {
-      "characterName": "Ilario Alicante",
-      "classs": 6,
-      "race": 3,
-      "selectedSkills": [
-        178,
-        177,
-        176,
-        175,
-        174,
-        173,
-        172,
-        171,
-        170,
-        169,
-        180,
-        100
-      ],
-      "expTot": 0,
-      "userId": 2,
-      "id": 8
-    },
-    {
-      "characterName": "luca",
-      "classs": 6,
-      "race": 3,
-      "selectedSkills": [
-        99,
-        131,
-        133,
-        140,
-        138,
-        136,
-        146,
-        145,
-        143,
-        142,
-        141,
-        147,
-        97
-      ],
-      "expTot": 0,
-      "userId": 1,
-      "id": 4
-    },
-    {
-      "characterName": "adadadd",
-      "classs": 3,
-      "race": 5,
-      "selectedSkills": [
-        80,
-        82,
-        84,
-        74,
-        75,
-        76,
-        78,
-        77,
-        69,
-        68,
-        66,
-        67
-      ],
-      "expTot": 0,
-      "userId": 1,
-      "id": 5
-    },
-    {
-      "characterName": "fabio",
-      "classs": 2,
-      "race": 6,
-      "selectedSkills": [
-        31,
-        32,
-        33,
-        34,
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        45
-      ],
-      "expTot": 0,
-      "userId": 1,
-      "id": 6
     },
     {
       "characterName": "flavio",
@@ -254,6 +165,101 @@
       "expTot": 0,
       "userId": 3,
       "id": 9
+    },
+    {
+      "characterName": "Gino",
+      "classs": 2,
+      "race": 1,
+      "selectedSkills": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        42,
+        91
+      ],
+      "expTot": 0,
+      "userId": 2,
+      "id": 10
+    },
+    {
+      "characterName": "Nico",
+      "classs": 3,
+      "race": 3,
+      "selectedSkills": [
+        69,
+        68,
+        66,
+        65,
+        64,
+        71,
+        72,
+        73,
+        74,
+        80,
+        83,
+        93
+      ],
+      "expTot": 0,
+      "userId": 2,
+      "id": 11
+    },
+    {
+      "characterName": "adasa",
+      "classs": 1,
+      "race": 2,
+      "selectedSkills": [
+        7,
+        9,
+        10,
+        8,
+        11,
+        12,
+        13,
+        15,
+        14,
+        16,
+        17,
+        18,
+        25
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 13
+    },
+    {
+      "characterName": "Banana",
+      "classs": 1,
+      "race": 2,
+      "selectedSkills": [
+        100,
+        99,
+        98,
+        97,
+        96,
+        95,
+        94,
+        93,
+        30,
+        29,
+        28,
+        27,
+        26,
+        25,
+        24,
+        23,
+        92,
+        91,
+        13
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 15
     }
   ],
   "classes": [
@@ -308,7 +314,7 @@
     {
       "classs": 2,
       "className": "Mago",
-      "bio": "Maestro delle arti arcane, il Mago lancia incantesimi potenti da lontano e manipola le energie magiche. Formidabile negli scontri a distanza, la sua debolezza risiede negli scontri ravvicinati.",
+      "bio": "Maestro delle arti arcane, lancia incantesimi potenti da lontano e manipola le energie magiche. Formidabile negli scontri a distanza.",
       "img": "https://th.bing.com/th/id/OIG2.giN_VixGaT5nHdJ58EaN?pid=ImgGn",
       "skills": [
         31,
@@ -500,7 +506,7 @@
     {
       "classs": 6,
       "className": "Monaco",
-      "bio": "Il Monaco è un maestro della fede e della guarigione, capace di usare incantesimi sacri per curare, proteggere e purificare alleati e ambienti circostanti.",
+      "bio": "Il Monaco è un maestro della fede e della guarigione, capace di usare incantesimi sacri per curare, proteggere e purificare alleati.",
       "img": "https://tse4.mm.bing.net/th?id=OIG4.CoLIvoQlGtWxqMMAij_1&pid=ImgGn",
       "skills": [
         161,
@@ -550,7 +556,7 @@
     {
       "race": 1,
       "raceName": "Umano",
-      "raceBio": "Con una natura versatile e una resistenza innata, gli umani si adattano facilmente a una vasta gamma di situazioni e ambienti.",
+      "raceBio": "Con una natura versatile e una resistenza innata, gli umani si adattano a situazioni e ambienti.",
       "traits": {
         "Forza": 7,
         "Agilita": 6,
@@ -589,7 +595,7 @@
     {
       "race": 4,
       "raceName": "Orco",
-      "raceBio": "Come guerrieri brutali e possenti, gli orchi sono famigerati per la loro forza bruta e la resistenza straordinaria in battaglia.",
+      "raceBio": "Come guerrieri brutali e possenti, gli orchi sono famigerati per la loro forza bruta e la resistenza straordinaria.",
       "traits": {
         "Forza": 10,
         "Agilita": 6,
@@ -615,7 +621,7 @@
     {
       "race": 6,
       "raceName": "Undead",
-      "raceBio": "Creature risorte dalla morte, gli undead sono animate da un'energia oscura e spesso dotate di abilità sovrannaturali.",
+      "raceBio": "Creature risorte dalla morte, sono animate da un'energia oscura e spesso dotate di abilità sovrannaturali.",
       "traits": {
         "Forza": 6,
         "Agilita": 5,
@@ -1650,48 +1656,113 @@
   ],
   "eventi": [
     {
-      "master": "master",
-      "titolo": "titolo",
-      "descrizione": "rrrrrrrrrrrrrrr",
-      "urlImmagine": "",
-      "data": "2024-06-14T00:00:00.000Z",
-      "tipo": "live",
-      "numeroGiocatori": 1,
-      "indirizzo": "rrrr",
-      "id": 1
-    },
-    {
-      "master": "rrrr",
-      "titolo": "rrrrr",
-      "descrizione": "rrrrrrrrrrrrrrrrrr",
-      "urlImmagine": "",
-      "data": "2024-06-15T00:00:00.000Z",
-      "tipo": "online",
-      "numeroGiocatori": 1,
-      "indirizzo": "rrrrrrr",
-      "id": 2
-    },
-    {
-      "master": "Alessandro ",
-      "titolo": "dddd",
-      "descrizione": "rrrrrrrrrrrrrrrrrrr",
-      "urlImmagine": "",
-      "data": "2024-06-14T00:00:00.000Z",
-      "tipo": "live",
-      "numeroGiocatori": 5,
-      "indirizzo": "rr",
-      "id": 3
-    },
-    {
-      "master": "dddd",
-      "titolo": "dddd",
-      "descrizione": "55555555555555555",
-      "urlImmagine": "",
-      "data": "2024-06-13T00:00:00.000Z",
+      "master": "Guglielmo",
+      "titolo": "Le lande di Velaris",
+      "descrizione": "I giocatori interpretano un gruppo di eroi scelti dalla profezia dei Guardiani dell'Equilibrio. La loro missione è recuperare e riattivare le Pietre dell'Equilibrio, artefatti leggendari sparsi per Eldoria, per ripristinare le barriere protettive e prevenire il ritorno dell'Oscurità Strisciante. Durante la loro avventura, dovranno affrontare sfide, risolvere enigmi, e combattere contro potenti avversari.",
+      "urlImmagine": "https://images.ctfassets.net/qpn1gztbusu2/4BbCrgjNlBHnOPitzcTohi/73c85bac9b5f086421337d1fc6faa92f/2729_CL_Audible_Magazin_February_Fantasy_2_1356x764.jpg",
+      "data": "2024-06-12",
       "tipo": "online",
       "numeroGiocatori": 5,
-      "indirizzo": "5",
-      "id": 4
+      "indirizzo": "Indirizzo",
+      "id": 1,
+      "guests": [
+        {
+          "characterName": "flavio",
+          "classs": 3,
+          "race": 2,
+          "selectedSkills": [
+            65,
+            64,
+            63,
+            66,
+            69,
+            71,
+            77,
+            82
+          ],
+          "expTot": 0,
+          "userId": 3,
+          "id": 7
+        },
+        {
+          "characterName": "adasa",
+          "classs": 1,
+          "race": 2,
+          "selectedSkills": [
+            7,
+            9,
+            10,
+            8,
+            11,
+            12,
+            13,
+            15,
+            14,
+            16,
+            17,
+            18,
+            25
+          ],
+          "expTot": 0,
+          "userId": 1,
+          "id": 13
+        }
+      ]
+    },
+    {
+      "master": "Balomo",
+      "titolo": "Il tempio delle nubi",
+      "descrizione": "I giocatori si trovano a dover navigare attraverso terre sconosciute e ostili nel continente di Valoria, cercando alleati tra le diverse razze che lo abitano, come i saggi maghi di Lumira, i coraggiosi pirati della Costa delle Tempeste, e gli enigmatici mistici della Foresta di Smeraldo. Ogni regione presenta un proprio set di sfide uniche, come le torri fluttuanti delle Terre delle Nuvole, le giungle pericolose piene di antiche rovine nelle Terre di Zahara, e le catacombe ghiacciate sotto le Montagne di Ghiaccio. Mentre cercano le Pietre dell'Equilibrio, dovranno anche affrontare le trame del malvagio Gorath e dei suoi servitori, che faranno di tutto per impedire loro di completare la missione. Le decisioni dei giocatori influenzeranno il destino di Valoria, determinando se il continente prospererà nella pace o sarà condannato all'oscurità eterna.",
+      "urlImmagine": "https://png.pngtree.com/background/20230526/original/pngtree-fantasy-area-with-a-temple-picture-image_2752362.jpg",
+      "data": "2024-06-26",
+      "tipo": "live",
+      "numeroGiocatori": 2,
+      "indirizzo": "ddddd",
+      "id": 2,
+      "guests": [
+        {
+          "characterName": "andrea",
+          "classs": 5,
+          "race": 5,
+          "selectedSkills": [
+            149,
+            150,
+            148,
+            147,
+            146,
+            145,
+            144,
+            143,
+            142,
+            139,
+            100
+          ],
+          "expTot": 0,
+          "userId": 3,
+          "id": 8
+        },
+        {
+          "characterName": "provaiscriver",
+          "classs": 1,
+          "race": 6,
+          "selectedSkills": [
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            28,
+            27,
+            29,
+            94
+          ],
+          "expTot": 0,
+          "userId": 6,
+          "id": 10
+        }
+      ]
     },
     {
       "master": "ttt",
@@ -1700,8 +1771,74 @@
       "urlImmagine": "",
       "data": "2024-06-06T00:00:00.000Z",
       "tipo": "live",
-      "numeroGiocatori": 6,
-      "indirizzo": "ttt",
+      "numeroGiocatori": 2,
+      "indirizzo": "ddddd",
+      "id": 3,
+      "guests": [
+        {
+          "characterName": "fausto sinagra",
+          "classs": 5,
+          "race": 4,
+          "selectedSkills": [
+            150,
+            149,
+            148,
+            147,
+            146,
+            145,
+            144,
+            142,
+            143,
+            139,
+            100
+          ],
+          "expTot": 0,
+          "userId": 3,
+          "id": 9
+        },
+        {
+          "characterName": "provaiscriver",
+          "classs": 1,
+          "race": 6,
+          "selectedSkills": [
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            28,
+            27,
+            29,
+            94
+          ],
+          "expTot": 0,
+          "userId": 6,
+          "id": 10
+        }
+      ]
+    },
+    {
+      "master": "Igor",
+      "titolo": "Vallelata",
+      "descrizione": "speriamo funzioni",
+      "urlImmagine": "",
+      "data": "2024-06-11",
+      "tipo": "online",
+      "numeroGiocatori": 10,
+      "indirizzo": "banananan",
+      "id": 4
+    },
+    {
+      "master": "Amet necessitatibus",
+      "titolo": "Asperiores ducimus ",
+      "descrizione": "Expedita in repellen",
+      "urlImmagine": "https://www.qicahyvywu.co.uk",
+      "data": "2017-01-25",
+      "tipo": "live",
+      "numeroGiocatori": 64,
+      "indirizzo": "In assumenda molesti",
       "id": 5
     }
   ]

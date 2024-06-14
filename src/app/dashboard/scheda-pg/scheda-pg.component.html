@@ -30,15 +30,16 @@
             <span class="fantasy">ABILITÀ</span>
           </p>
         </div>
-        <div
-          class="col-12 col-md-8 col-lg-6 d-flex flex-column align-items-center"
-        >
-          <p
-            class="text-white mx-2 fs-2 text-center"
-            *ngFor="let skill of characterSkills"
+        <div class="col-10 col-md-8 col-lg-5 d-flex flex-column">
+          <div
+            class="row justify-content-between border border-1 border-white py-4 rounded-5"
           >
-            {{ skill.skillName }}
-          </p>
+            <div class="col-12 col-md-5" *ngFor="let skill of characterSkills">
+              <p class="text-white px-4 fs-2 text-center text-md-start">
+                · {{ skill.skillName }}
+              </p>
+            </div>
+          </div>
         </div>
         <div
           class="col-12 d-flex flex-column flex-md-row justify-content-center align-items-center mt-3"

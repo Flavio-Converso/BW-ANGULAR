@@ -91,17 +91,12 @@ export class CreazionePgComponent {
 
   onSkillSelect(event: any, skill: iSkills): void {
     if (event.target.checked) {
-      if (
-        this.availableExp >= skill.exp &&
-        !this.selectedSkills.includes(skill)
-      ) {
+      if (this.availableExp >= skill.exp && !this.selectedSkills.includes(skill)) {
         this.selectedSkills.push(skill);
         this.availableExp -= skill.exp;
       }
     } else {
-      const index = this.selectedSkills.findIndex(
-        (s) => s.skill === skill.skill
-      );
+      const index = this.selectedSkills.findIndex((s) => s.skill === skill.skill);
       if (index !== -1) {
         this.selectedSkills.splice(index, 1);
         this.availableExp += skill.exp;
@@ -142,19 +137,12 @@ export class CreazionePgComponent {
     );
   }
   resetSkills(): void {
-    // Deselect all checkboxes
-    this.skills.forEach((skill) => {
-      const checkbox = document.getElementById(
-        `checkbox-${skill.skill}`
-      ) as HTMLInputElement;
-      if (checkbox) {
-        checkbox.checked = false;
-      }
-    });
     // Reset the selected skills array
     this.selectedSkills = [];
+
     // Reset available experience points to 50
     this.availableExp = 50;
+
     // Update form values
     this.updateFormValues();
   }
