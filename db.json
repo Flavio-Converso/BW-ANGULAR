@@ -208,35 +208,6 @@
       "expTot": 0,
       "userId": 2,
       "id": 11
-    },
-    {
-      "characterName": "Banana",
-      "classs": 1,
-      "race": 2,
-      "selectedSkills": [
-        100,
-        99,
-        98,
-        97,
-        96,
-        95,
-        94,
-        93,
-        30,
-        29,
-        28,
-        27,
-        26,
-        25,
-        24,
-        23,
-        92,
-        91,
-        13
-      ],
-      "expTot": 0,
-      "userId": 1,
-      "id": 15
     }
   ],
   "classes": [
@@ -1663,7 +1634,9 @@
       "tipo": "online",
       "numeroGiocatori": 1,
       "indirizzo": "fferefrwf",
-      "id": 3
+      "id": 3,
+      "scaduto": false,
+      "guests": []
     },
     {
       "master": "master 5",
@@ -1688,6 +1661,17 @@
       "id": 5,
       "scaduto": false,
       "guests": []
+    },
+    {
+      "master": "gino",
+      "titolo": "Bulu",
+      "descrizione": "mamma mia",
+      "urlImmagine": "",
+      "data": "2024-06-13T00:00:00.000Z",
+      "tipo": "online",
+      "numeroGiocatori": 5,
+      "indirizzo": "uuuuuuuuuuuuuu",
+      "id": 6
     }
   ]
 }
