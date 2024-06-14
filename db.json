@@ -287,6 +287,30 @@
       "expTot": 0,
       "userId": 6,
       "id": 10
+    },
+    {
+      "characterName": "Burbon",
+      "classs": 2,
+      "race": 3,
+      "selectedSkills": [
+        34,
+        45,
+        41,
+        48,
+        57,
+        95,
+        98,
+        97,
+        92,
+        58,
+        33,
+        31,
+        38,
+        94
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 11
     }
   ],
   "classes": [
@@ -1710,6 +1734,27 @@
           "expTot": 0,
           "userId": 3,
           "id": 7
+        },
+        {
+          "characterName": "fabio",
+          "classs": 2,
+          "race": 6,
+          "selectedSkills": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            45
+          ],
+          "expTot": 0,
+          "userId": 1,
+          "id": 6
         }
       ]
     },
