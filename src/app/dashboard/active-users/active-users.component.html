@@ -27,15 +27,13 @@
               />
 
               {{ iscritto?.username }}
-
-              {{ iscritto?.email }}
             </li>
             <div
               class="activebg"
               *ngIf="combina[iscritto.id]; else noCharactersTemplate"
             >
               <button
-                class="btn m-auto d-flex justify-content-center fs-2 activebg"
+                class="btn m-auto my-3 d-flex justify-content-center activebg myBtn fs-5"
                 type="button"
                 data-bs-toggle="collapse"
                 [attr.data-bs-target]="'#collapseExample' + i"

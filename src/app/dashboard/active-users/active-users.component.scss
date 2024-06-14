@@ -108,3 +108,14 @@ ul {
   object-fit: cover; /* Adatta l'immagine senza deformarla */
   object-position: 50% 20%;
 }
+
+.myBtn {
+  background: linear-gradient(
+    180deg,
+    rgba(39, 124, 251, 1) 19%,
+    rgba(87, 73, 238, 1) 77%
+  );
+  color: white;
+  border: 2px solid white;
+  font-size: 1.5rem;
+}
