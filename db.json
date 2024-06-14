@@ -249,7 +249,39 @@
       ],
       "expTot": 0,
       "userId": 1,
-      "id": 13
+      "id": 16
+    },
+    {
+      "characterName": "Gianni",
+      "classs": 4,
+      "race": 2,
+      "selectedSkills": [
+        91,
+        93,
+        92,
+        95,
+        94,
+        96,
+        97,
+        98,
+        99,
+        107,
+        106,
+        105,
+        103,
+        104,
+        102,
+        109,
+        108,
+        114,
+        113,
+        118,
+        101,
+        100
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 17
     }
   ],
   "classes": [
@@ -1658,25 +1690,27 @@
       "scaduto": false,
       "guests": [
         {
-          "characterName": "Igor vallo",
-          "classs": 6,
-          "race": 1,
+          "characterName": "adasa",
+          "classs": 1,
+          "race": 2,
           "selectedSkills": [
-            164,
-            165,
-            167,
-            166,
-            168,
-            169,
-            170,
-            171,
-            172,
-            173,
-            93
+            7,
+            9,
+            10,
+            8,
+            11,
+            12,
+            13,
+            15,
+            14,
+            16,
+            17,
+            18,
+            25
           ],
           "expTot": 0,
           "userId": 1,
-          "id": 12
+          "id": 13
         }
       ]
     },
@@ -1702,7 +1736,28 @@
       "indirizzo": "fferefrwf",
       "id": 3,
       "scaduto": false,
-      "guests": []
+      "guests": [
+        {
+          "characterName": "test",
+          "classs": 4,
+          "race": 1,
+          "selectedSkills": [
+            91,
+            130,
+            129,
+            128,
+            127,
+            126,
+            125,
+            124,
+            123,
+            101
+          ],
+          "expTot": 0,
+          "userId": 1,
+          "id": 2
+        }
+      ]
     },
     {
       "master": "master 5",
@@ -1727,17 +1782,6 @@
       "id": 5,
       "scaduto": false,
       "guests": []
-    },
-    {
-      "master": "gino",
-      "titolo": "Bulu",
-      "descrizione": "mamma mia",
-      "urlImmagine": "",
-      "data": "2024-06-13T00:00:00.000Z",
-      "tipo": "online",
-      "numeroGiocatori": 5,
-      "indirizzo": "uuuuuuuuuuuuuu",
-      "id": 6
     }
   ]
 }

@@ -1,7 +1,9 @@
 <div class="container text-light">
+  <h1 class="my-5 text-start">
+    Ehi, {{ currentUser?.username }} ! Pronto per iniziare?
+  </h1>
   <div *ngIf="events && events.length > 0">
     <h1 class="my-5 text-center">Eventi In Programma</h1>
-
     <div class="row">
       <div class="col-12 col-md-6 my-2" *ngFor="let eventForm of eventForms">
         <div
@@ -12,7 +14,8 @@
         >
           <div class="myGradient rounded-5 card text-light h-100">
             <img
-              class="img-fluid rounded-top-5 imperson"
+              class="img-fluid rounded-top-5"
+              style="height: 20rem"
               *ngIf="
                 eventForm.get('event')?.value.urlImmagine;
                 else placeholder
@@ -22,7 +25,8 @@
             />
             <ng-template #placeholder>
               <img
-                class="img-fluid rounded-top-5 imperson"
+                class="img-fluid rounded-top-5"
+                style="height: 20rem"
                 src="https://i.redd.it/rr9zmj1dm81a1.jpg"
                 alt="Placeholder Image"
               />
@@ -78,19 +82,30 @@
                   </select>
                 </div>
 
-                <!-- Pulsante Iscriviti -->
                 <div class="d-flex justify-content-center py-3">
                   <button
-                    class="btn myBtn"
+                    class="btn myBtnSmall"
                     (click)="iscriviti(eventForm)"
                     [disabled]="!eventForm.get('selectedCharacter')?.value"
                   >
-                    Iscriviti
+                    ISCRIVITI
                   </button>
+                </div>
+
+                <div
+                  *ngIf="eventForm.get('successMessage')?.value"
+                  class="alert"
+                  [ngClass]="{
+                    'alert-success':
+                      eventForm.get('messageType')?.value === 'success',
+                    'alert-danger':
+                      eventForm.get('messageType')?.value === 'error'
+                  }"
+                >
+                  {{ eventForm.get("successMessage")?.value }}
                 </div>
               </form>
 
-              <!-- Mostra i personaggi iscritti -->
               <div
                 *ngIf="
                   eventForm.get('event')?.value.guests &&
@@ -102,15 +117,15 @@
                 </h4>
                 <ul class="text-center">
                   <li
-                    class="my-3"
+                    class="my-3 list-unstyled"
                     *ngFor="let guest of eventForm.get('event')?.value.guests"
                   >
                     <span class="btn bog"
-                      >{{ guest.characterName }} personaggio di:
+                      >{{ guest.characterName }} di
                       {{ getUserName(guest.userId) }}</span
                     >
                     <button
-                      class="btn myBtn"
+                      class="btn myBtn ms-2"
                       *ngIf="currentUser && currentUser.id === guest.userId"
                       (click)="
                         rimuoviIscrizione(
@@ -119,7 +134,7 @@
                         )
                       "
                     >
-                      Delete
+                      CANCELLA
                     </button>
                   </li>
                 </ul>
