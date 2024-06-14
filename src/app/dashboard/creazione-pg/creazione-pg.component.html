@@ -121,18 +121,19 @@
           <div
             class="custom-checkbox-container d-flex justify-content-center text-center div-table"
           >
-            <
             <table class="table-borderless text-white my-table mt-3">
               <thead>
                 <tr>
                   <th class="table-adjust">Abilità</th>
                   <th>Costo (Exp)</th>
+                  <th>Descrizione</th>
                   <th>Seleziona</th>
                 </tr>
               </thead>
               <tbody>
                 <tr
                   *ngFor="let skill of skills"
+                  class="tableRow"
                   [ngStyle]="{
                     display:
                       !isSelected(skill) &&
@@ -143,9 +144,10 @@
                 >
                   <td>{{ skill.skillName }}</td>
                   <td>{{ skill.exp }}</td>
+                  <td>{{ skill.skillDescription }}</td>
                   <td>
                     <label
-                      class="skill-label btn myBtn"
+                      class="skill-label btn myBtn d-flex align-items-center"
                       [ngClass]="{
                         disabled: skill.exp > characterForm.get('expTot')?.value
                       }"
@@ -160,7 +162,9 @@
                           skill.exp > characterForm.get('expTot')?.value
                         "
                       />
+
                       <span class="custom-checkbox"></span>
+
                       Seleziona
                     </label>
                   </td>
