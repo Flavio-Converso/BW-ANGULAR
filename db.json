@@ -255,6 +255,38 @@
       "expTot": 0,
       "userId": 1,
       "id": 16
+    },
+    {
+      "characterName": "Gianni",
+      "classs": 4,
+      "race": 2,
+      "selectedSkills": [
+        91,
+        93,
+        92,
+        95,
+        94,
+        96,
+        97,
+        98,
+        99,
+        107,
+        106,
+        105,
+        103,
+        104,
+        102,
+        109,
+        108,
+        114,
+        113,
+        118,
+        101,
+        100
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 17
     }
   ],
   "classes": [
@@ -1659,7 +1691,33 @@
       "tipo": "live",
       "numeroGiocatori": 1,
       "indirizzo": "rrrr",
-      "id": 1
+      "id": 1,
+      "scaduto": false,
+      "guests": [
+        {
+          "characterName": "adasa",
+          "classs": 1,
+          "race": 2,
+          "selectedSkills": [
+            7,
+            9,
+            10,
+            8,
+            11,
+            12,
+            13,
+            15,
+            14,
+            16,
+            17,
+            18,
+            25
+          ],
+          "expTot": 0,
+          "userId": 1,
+          "id": 13
+        }
+      ]
     },
     {
       "master": "ddee",
@@ -1681,7 +1739,30 @@
       "tipo": "online",
       "numeroGiocatori": 1,
       "indirizzo": "fferefrwf",
-      "id": 3
+      "id": 3,
+      "scaduto": false,
+      "guests": [
+        {
+          "characterName": "test",
+          "classs": 4,
+          "race": 1,
+          "selectedSkills": [
+            91,
+            130,
+            129,
+            128,
+            127,
+            126,
+            125,
+            124,
+            123,
+            101
+          ],
+          "expTot": 0,
+          "userId": 1,
+          "id": 2
+        }
+      ]
     },
     {
       "master": "master 5",
@@ -1705,33 +1786,7 @@
       "indirizzo": "wervqerar",
       "id": 5,
       "scaduto": false,
-      "guests": [
-        {
-          "characterName": "Giorgio",
-          "classs": 4,
-          "race": 2,
-          "selectedSkills": [
-            91,
-            92,
-            95,
-            93,
-            94,
-            97,
-            109,
-            111,
-            117,
-            121,
-            125,
-            124,
-            123,
-            122,
-            102
-          ],
-          "expTot": 0,
-          "userId": 1,
-          "id": 1
-        }
-      ]
+      "guests": []
     }
   ]
 }

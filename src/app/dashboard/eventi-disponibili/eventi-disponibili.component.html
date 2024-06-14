@@ -1,25 +1,17 @@
 <div class="container text-light">
+  <h1 class="my-5 text-start">Ehi, {{ currentUser?.username }} ! Pronto per iniziare?</h1>
   <div *ngIf="events && events.length > 0">
     <h1 class="my-5 text-center">Eventi In Programma</h1>
-
     <div class="row">
       <div class="col-12 col-md-6 my-2" *ngFor="let eventForm of eventForms">
-        <div *ngIf="eventForm.get('event')?.value && !eventForm.get('event')?.value.scaduto" >
+        <div *ngIf="eventForm.get('event')?.value && !eventForm.get('event')?.value.scaduto">
           <div class="myGradient rounded-5 card text-light h-100">
-            <img
-              class="img-fluid rounded-top-5"
-              style="height: 20rem"
+            <img class="img-fluid rounded-top-5" style="height: 20rem"
               *ngIf="eventForm.get('event')?.value.urlImmagine; else placeholder"
-              [src]="eventForm.get('event')?.value.urlImmagine"
-              [alt]="eventForm.get('event')?.value.titolo"
-            />
+              [src]="eventForm.get('event')?.value.urlImmagine" [alt]="eventForm.get('event')?.value.titolo" />
             <ng-template #placeholder>
-              <img
-                class="img-fluid rounded-top-5"
-                style="height: 20rem"
-                src="https://i.redd.it/rr9zmj1dm81a1.jpg"
-                alt="Placeholder Image"
-              />
+              <img class="img-fluid rounded-top-5" style="height: 20rem" src="https://i.redd.it/rr9zmj1dm81a1.jpg"
+                alt="Placeholder Image" />
             </ng-template>
 
             <div class="card-body px-5 d-flex flex-column justify-content-between">
@@ -35,7 +27,7 @@
 
               <p class="card-text fs-5">
                 <span class="gradtitolo fs-4">Data:</span>
-                {{ eventForm.get("event")?.value.data | date:'dd/MM/yyyy'  }}
+                {{ eventForm.get("event")?.value.data | date:'dd/MM/yyyy' }}
 
                 <span class="gradtitolo fs-4">Tipo:</span>
                 {{ eventForm.get("event")?.value.tipo }}
@@ -60,22 +52,27 @@
                   </select>
                 </div>
 
-                <!-- Pulsante Iscriviti -->
                 <div class="d-flex justify-content-center py-3">
-                  <button class="btn myBtn" (click)="iscriviti(eventForm)" [disabled]="!eventForm.get('selectedCharacter')?.value">
-                    Iscriviti
+                  <button class="btn myBtnSmall" (click)="iscriviti(eventForm)"
+                    [disabled]="!eventForm.get('selectedCharacter')?.value">
+                    ISCRIVITI
                   </button>
+                </div>
+
+                <div *ngIf="eventForm.get('successMessage')?.value" class="alert"
+                  [ngClass]="{ 'alert-success': eventForm.get('messageType')?.value === 'success', 'alert-danger': eventForm.get('messageType')?.value === 'error' }">
+                  {{ eventForm.get('successMessage')?.value }}
                 </div>
               </form>
 
-              <!-- Mostra i personaggi iscritti -->
               <div *ngIf="eventForm.get('event')?.value.guests && eventForm.get('event')?.value.guests.length > 0">
                 <h4 class="gradtitolo fs-2 text-center">Personaggi Iscritti:</h4>
                 <ul class="text-center">
-                  <li class="my-3" *ngFor="let guest of eventForm.get('event')?.value.guests">
-                    <span class="btn bog">{{ guest.characterName }} {{ getUserName(guest.userId) }}</span>
-                    <button class="btn myBtn" *ngIf="currentUser && currentUser.id === guest.userId" (click)="rimuoviIscrizione(eventForm.get('event')?.value.id, guest.id)">
-                      Delete
+                  <li class="my-3 list-unstyled" *ngFor="let guest of eventForm.get('event')?.value.guests">
+                    <span class="btn bog">{{ guest.characterName }} di {{ getUserName(guest.userId) }}</span>
+                    <button class="btn myBtn ms-2" *ngIf="currentUser && currentUser.id === guest.userId"
+                      (click)="rimuoviIscrizione(eventForm.get('event')?.value.id, guest.id)">
+                      CANCELLA
                     </button>
                   </li>
                 </ul>
