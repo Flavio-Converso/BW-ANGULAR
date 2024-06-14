@@ -36,7 +36,7 @@ export class CreazionePgComponent {
     private skillsSvc: SkillsService,
     private authSvc: AuthService,
     private racesSvc: RacesService,
-    private router: Router
+    private router: Router,
   ) {}
 
   ngOnInit(): void {

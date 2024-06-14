@@ -1652,176 +1652,57 @@
     {
       "master": "master",
       "titolo": "titolo",
-      "descrizione": "descrizione",
+      "descrizione": "rrrrrrrrrrrrrrr",
       "urlImmagine": "",
-      "data": "2024-06-13",
+      "data": "2024-06-14T00:00:00.000Z",
       "tipo": "live",
       "numeroGiocatori": 1,
-      "indirizzo": "wwww",
-      "id": 1,
-      "guests": [
-        {
-          "characterName": "flavio",
-          "classs": 3,
-          "race": 2,
-          "selectedSkills": [
-            65,
-            64,
-            63,
-            66,
-            69,
-            71,
-            77,
-            82
-          ],
-          "expTot": 0,
-          "userId": 3,
-          "id": 7
-        },
-        {
-          "characterName": "Giorgio",
-          "classs": 4,
-          "race": 2,
-          "selectedSkills": [
-            91,
-            92,
-            95,
-            93,
-            94,
-            97,
-            109,
-            111,
-            117,
-            121,
-            125,
-            124,
-            123,
-            122,
-            102
-          ],
-          "expTot": 0,
-          "userId": 1,
-          "id": 1
-        }
-      ]
+      "indirizzo": "rrrr",
+      "id": 1
     },
     {
-      "master": "master 2",
-      "titolo": "titolo2",
-      "descrizione": "descrizione2",
+      "master": "rrrr",
+      "titolo": "rrrrr",
+      "descrizione": "rrrrrrrrrrrrrrrrrr",
       "urlImmagine": "",
-      "data": "2024-06-26",
-      "tipo": "live",
-      "numeroGiocatori": 2,
-      "indirizzo": "ddddd",
-      "id": 2,
-      "guests": [
-        {
-          "characterName": "andrea",
-          "classs": 5,
-          "race": 5,
-          "selectedSkills": [
-            149,
-            150,
-            148,
-            147,
-            146,
-            145,
-            144,
-            143,
-            142,
-            139,
-            100
-          ],
-          "expTot": 0,
-          "userId": 3,
-          "id": 8
-        },
-        {
-          "characterName": "Giorgio",
-          "classs": 4,
-          "race": 2,
-          "selectedSkills": [
-            91,
-            92,
-            95,
-            93,
-            94,
-            97,
-            109,
-            111,
-            117,
-            121,
-            125,
-            124,
-            123,
-            122,
-            102
-          ],
-          "expTot": 0,
-          "userId": 1,
-          "id": 1
-        }
-      ]
+      "data": "2024-06-15T00:00:00.000Z",
+      "tipo": "online",
+      "numeroGiocatori": 1,
+      "indirizzo": "rrrrrrr",
+      "id": 2
     },
     {
-      "master": "master 2",
-      "titolo": "titolo2",
-      "descrizione": "descrizione2",
+      "master": "Alessandro ",
+      "titolo": "dddd",
+      "descrizione": "rrrrrrrrrrrrrrrrrrr",
       "urlImmagine": "",
-      "data": "2024-06-26",
+      "data": "2024-06-14T00:00:00.000Z",
       "tipo": "live",
-      "numeroGiocatori": 2,
-      "indirizzo": "ddddd",
-      "id": 3,
-      "guests": [
-        {
-          "characterName": "fausto sinagra",
-          "classs": 5,
-          "race": 4,
-          "selectedSkills": [
-            150,
-            149,
-            148,
-            147,
-            146,
-            145,
-            144,
-            142,
-            143,
-            139,
-            100
-          ],
-          "expTot": 0,
-          "userId": 3,
-          "id": 9
-        },
-        {
-          "characterName": "Giorgio",
-          "classs": 4,
-          "race": 2,
-          "selectedSkills": [
-            91,
-            92,
-            95,
-            93,
-            94,
-            97,
-            109,
-            111,
-            117,
-            121,
-            125,
-            124,
-            123,
-            122,
-            102
-          ],
-          "expTot": 0,
-          "userId": 1,
-          "id": 1
-        }
-      ]
+      "numeroGiocatori": 5,
+      "indirizzo": "rr",
+      "id": 3
+    },
+    {
+      "master": "dddd",
+      "titolo": "dddd",
+      "descrizione": "55555555555555555",
+      "urlImmagine": "",
+      "data": "2024-06-13T00:00:00.000Z",
+      "tipo": "online",
+      "numeroGiocatori": 5,
+      "indirizzo": "5",
+      "id": 4
+    },
+    {
+      "master": "ttt",
+      "titolo": "ttt",
+      "descrizione": "tttt",
+      "urlImmagine": "",
+      "data": "2024-06-06T00:00:00.000Z",
+      "tipo": "live",
+      "numeroGiocatori": 6,
+      "indirizzo": "ttt",
+      "id": 5
     }
   ]
 }
