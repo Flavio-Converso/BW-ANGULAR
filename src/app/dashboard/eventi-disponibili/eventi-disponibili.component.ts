@@ -14,14 +14,11 @@ import { UsersService } from '../../services/users.service';
   styleUrls: ['./eventi-disponibili.component.scss'],
 })
 export class EventiDisponibiliComponent implements OnInit {
-
-
   events: iEventi[] = [];
   characters: iCharacter[] = [];
   eventForms: FormGroup[] = [];
   users: iUsers[] = [];
   currentUser: iUsers | null = null;
-
 
   constructor(
     private eventService: EventService,
@@ -39,10 +36,14 @@ export class EventiDisponibiliComponent implements OnInit {
     }
     console.log('Utente loggato:', this.currentUser.username);
 
+    this.caricaDatiIniziali();
+    this.scheduleDailyEventRemoval();
+  }
+
+  caricaDatiIniziali(): void {
     this.caricaEventi();
     this.caricaPersonaggi();
     this.getAllUsers();
-    this.scheduleDailyEventRemoval();
   }
 
   caricaEventi(): void {
@@ -70,10 +71,6 @@ export class EventiDisponibiliComponent implements OnInit {
     );
   }
 
-
-
-
-
   caricaPersonaggi(): void {
     if (!this.currentUser) {
       console.error('Utente non autenticato.');
@@ -82,9 +79,7 @@ export class EventiDisponibiliComponent implements OnInit {
 
     this.charactersService.getCharactersByUserId(this.currentUser.id).subscribe(
       (data: iCharacter[]) => {
-        this.characters = data.filter(
-          (character) => character.userId === this.currentUser!.id
-        );
+        this.characters = data.filter(character => character.userId === this.currentUser!.id);
       },
       (error) => {
         console.error('Errore nel recupero dei personaggi:', error);
@@ -93,12 +88,14 @@ export class EventiDisponibiliComponent implements OnInit {
   }
 
   initEventForms(): void {
-    this.eventForms = this.events.map((event) => {
-      return this.fb.group({
-        event: event,
-        selectedCharacter: new FormControl(null),
+    this.eventForms = this.events
+      .filter(event => !event.scaduto) // Filtra solo gli eventi non scaduti
+      .map(event => {
+        return this.fb.group({
+          event: event,
+          selectedCharacter: new FormControl(null),
+        });
       });
-    });
   }
 
   iscriviti(eventForm: FormGroup): void {
@@ -112,7 +109,7 @@ export class EventiDisponibiliComponent implements OnInit {
 
     if (
       event.guests &&
-      event.guests.some((guest) => guest.userId === selectedCharacter.userId)
+      event.guests.some(guest => guest.userId === selectedCharacter.userId)
     ) {
       console.log(`Hai già un personaggio iscritto all'evento.`);
       return;
@@ -125,20 +122,14 @@ export class EventiDisponibiliComponent implements OnInit {
 
     this.eventService.updateEventi(event.id, event).subscribe(
       (updatedEvent: iEventi) => {
-        console.log(
-          `Personaggio ${selectedCharacter.characterName} iscritto con successo all'evento ${updatedEvent.titolo}.`
-        );
+        console.log(`Personaggio ${selectedCharacter.characterName} iscritto con successo all'evento ${updatedEvent.titolo}.`);
         // Aggiorna l'evento nella lista degli eventi
-        this.events = this.events.map((ev) =>
-          ev.id === updatedEvent.id ? updatedEvent : ev
-        );
+        this.events = this.events.map(ev => ev.id === updatedEvent.id ? updatedEvent : ev);
       },
       (error) => {
         console.error("Errore durante l'iscrizione:", error);
         // Rimuovi il personaggio aggiunto in caso di errore
-        event.guests = event.guests.filter(
-          (guest) => guest.userId !== selectedCharacter.userId
-        );
+        event.guests = event.guests.filter(guest => guest.userId !== selectedCharacter.userId);
       }
     );
   }
@@ -151,17 +142,11 @@ export class EventiDisponibiliComponent implements OnInit {
 
     this.eventService.removeGuest(eventId, guestId).subscribe(
       (updatedEvent: iEventi) => {
-        console.log(
-          `Personaggio con ID ${guestId} rimosso dall'evento con ID ${eventId}.`
-        );
+        console.log(`Personaggio con ID ${guestId} rimosso dall'evento con ID ${eventId}.`);
         // Aggiorna l'evento nella lista degli eventi locali
-        this.events = this.events.map((event) =>
-          event.id === updatedEvent.id ? updatedEvent : event
-        );
+        this.events = this.events.map(event => event.id === updatedEvent.id ? updatedEvent : event);
         // Aggiorna il form associato all'evento
-        const eventForm = this.eventForms.find(
-          (form) => form.get('event')?.value.id === updatedEvent.id
-        );
+        const eventForm = this.eventForms.find(form => form.get('event')?.value.id === updatedEvent.id);
         if (eventForm) {
           eventForm.patchValue({ event: updatedEvent });
         }
@@ -171,9 +156,7 @@ export class EventiDisponibiliComponent implements OnInit {
       }
     );
   }
-  //<button *ngIf="currentUser && currentUser.id === guest.userId" (click)="rimuoviIscrizione(eventForm.get('event')?.value.id, guest.id)">Delete</button>
 
-  //
   getAllUsers(): void {
     this.userService.getAllUsers().subscribe(
       (users: iUsers[]) => {
@@ -185,25 +168,12 @@ export class EventiDisponibiliComponent implements OnInit {
     );
   }
 
-  // Funzione per ottenere il nome dell'utente dato l'ID
   getUserName(userId: number): string {
-    const user = this.users.find((u) => u.id === userId);
+    const user = this.users.find(u => u.id === userId);
     return user ? user.username : 'Nome Utente';
   }
 
-   // Calcola il tempo rimanente fino a un orario specifico
-   getTimeUntilSpecificTime(hour: number, minute: number): number {
-    const now = new Date();
-    const specificTime = new Date();
-    specificTime.setHours(hour, minute, 0, 0);
-
-    // Se l'orario specificato è già passato per oggi, imposta per domani
-    if (specificTime <= now) {
-      specificTime.setDate(specificTime.getDate() + 1);
-    }
-
-    return specificTime.getTime() - now.getTime();
-  }
+  // Rimuove gli eventi scaduti dalla lista
   removeExpiredEvents(): void {
     const today = new Date(); // Data odierna senza ora
     today.setHours(0, 0, 0, 0); // Imposta l'ora a mezzanotte per confronti precisi
@@ -214,9 +184,8 @@ export class EventiDisponibiliComponent implements OnInit {
     });
 
     console.log('Eventi dopo il filtraggio:', this.events);
+    this.initEventForms(); // Aggiorna i form per riflettere gli eventi aggiornati
   }
-
-
 
   // Programma la rimozione quotidiana degli eventi scaduti
   scheduleDailyEventRemoval(): void {
@@ -230,5 +199,19 @@ export class EventiDisponibiliComponent implements OnInit {
         console.log("Eventi aggiornati:", this.events);
       }, 24 * 60 * 60 * 1000); // 24 ore in millisecondi
     }, this.getTimeUntilSpecificTime(24, 0));
+  }
+
+  // Calcola il tempo rimanente fino a un orario specifico
+  getTimeUntilSpecificTime(hour: number, minute: number): number {
+    const now = new Date();
+    const specificTime = new Date();
+    specificTime.setHours(hour, minute, 0, 0);
+
+    // Se l'orario specificato è già passato per oggi, imposta per domani
+    if (specificTime <= now) {
+      specificTime.setDate(specificTime.getDate() + 1);
+    }
+
+    return specificTime.getTime() - now.getTime();
   }
 }

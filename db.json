@@ -1656,190 +1656,61 @@
   ],
   "eventi": [
     {
-      "master": "Guglielmo",
-      "titolo": "Le lande di Velaris",
-      "descrizione": "I giocatori interpretano un gruppo di eroi scelti dalla profezia dei Guardiani dell'Equilibrio. La loro missione è recuperare e riattivare le Pietre dell'Equilibrio, artefatti leggendari sparsi per Eldoria, per ripristinare le barriere protettive e prevenire il ritorno dell'Oscurità Strisciante. Durante la loro avventura, dovranno affrontare sfide, risolvere enigmi, e combattere contro potenti avversari.",
-      "urlImmagine": "https://images.ctfassets.net/qpn1gztbusu2/4BbCrgjNlBHnOPitzcTohi/73c85bac9b5f086421337d1fc6faa92f/2729_CL_Audible_Magazin_February_Fantasy_2_1356x764.jpg",
-      "data": "2024-06-12",
-      "tipo": "online",
-      "numeroGiocatori": 5,
-      "indirizzo": "Indirizzo",
-      "id": 1,
-      "guests": [
-        {
-          "characterName": "flavio",
-          "classs": 3,
-          "race": 2,
-          "selectedSkills": [
-            65,
-            64,
-            63,
-            66,
-            69,
-            71,
-            77,
-            82
-          ],
-          "expTot": 0,
-          "userId": 3,
-          "id": 7
-        },
-        {
-          "characterName": "adasa",
-          "classs": 1,
-          "race": 2,
-          "selectedSkills": [
-            7,
-            9,
-            10,
-            8,
-            11,
-            12,
-            13,
-            15,
-            14,
-            16,
-            17,
-            18,
-            25
-          ],
-          "expTot": 0,
-          "userId": 1,
-          "id": 13
-        }
-      ]
-    },
-    {
-      "master": "Balomo",
-      "titolo": "Il tempio delle nubi",
-      "descrizione": "I giocatori si trovano a dover navigare attraverso terre sconosciute e ostili nel continente di Valoria, cercando alleati tra le diverse razze che lo abitano, come i saggi maghi di Lumira, i coraggiosi pirati della Costa delle Tempeste, e gli enigmatici mistici della Foresta di Smeraldo. Ogni regione presenta un proprio set di sfide uniche, come le torri fluttuanti delle Terre delle Nuvole, le giungle pericolose piene di antiche rovine nelle Terre di Zahara, e le catacombe ghiacciate sotto le Montagne di Ghiaccio. Mentre cercano le Pietre dell'Equilibrio, dovranno anche affrontare le trame del malvagio Gorath e dei suoi servitori, che faranno di tutto per impedire loro di completare la missione. Le decisioni dei giocatori influenzeranno il destino di Valoria, determinando se il continente prospererà nella pace o sarà condannato all'oscurità eterna.",
-      "urlImmagine": "https://png.pngtree.com/background/20230526/original/pngtree-fantasy-area-with-a-temple-picture-image_2752362.jpg",
-      "data": "2024-06-26",
-      "tipo": "live",
-      "numeroGiocatori": 2,
-      "indirizzo": "ddddd",
-      "id": 2,
-      "guests": [
-        {
-          "characterName": "andrea",
-          "classs": 5,
-          "race": 5,
-          "selectedSkills": [
-            149,
-            150,
-            148,
-            147,
-            146,
-            145,
-            144,
-            143,
-            142,
-            139,
-            100
-          ],
-          "expTot": 0,
-          "userId": 3,
-          "id": 8
-        },
-        {
-          "characterName": "provaiscriver",
-          "classs": 1,
-          "race": 6,
-          "selectedSkills": [
-            15,
-            16,
-            17,
-            18,
-            19,
-            20,
-            21,
-            28,
-            27,
-            29,
-            94
-          ],
-          "expTot": 0,
-          "userId": 6,
-          "id": 10
-        }
-      ]
-    },
-    {
-      "master": "ttt",
-      "titolo": "ttt",
-      "descrizione": "tttt",
+      "master": "master",
+      "titolo": "titolo",
+      "descrizione": "rrrrrrrrr",
       "urlImmagine": "",
-      "data": "2024-06-06T00:00:00.000Z",
+      "data": "2024-06-15T00:00:00.000Z",
       "tipo": "live",
-      "numeroGiocatori": 2,
-      "indirizzo": "ddddd",
-      "id": 3,
-      "guests": [
-        {
-          "characterName": "fausto sinagra",
-          "classs": 5,
-          "race": 4,
-          "selectedSkills": [
-            150,
-            149,
-            148,
-            147,
-            146,
-            145,
-            144,
-            142,
-            143,
-            139,
-            100
-          ],
-          "expTot": 0,
-          "userId": 3,
-          "id": 9
-        },
-        {
-          "characterName": "provaiscriver",
-          "classs": 1,
-          "race": 6,
-          "selectedSkills": [
-            15,
-            16,
-            17,
-            18,
-            19,
-            20,
-            21,
-            28,
-            27,
-            29,
-            94
-          ],
-          "expTot": 0,
-          "userId": 6,
-          "id": 10
-        }
-      ]
+      "numeroGiocatori": 1,
+      "indirizzo": "rrrr",
+      "id": 1
     },
     {
-      "master": "Igor",
-      "titolo": "Vallelata",
-      "descrizione": "speriamo funzioni",
+      "master": "ddee",
+      "titolo": "eeee",
+      "descrizione": "eeeeeeeeeeee",
       "urlImmagine": "",
-      "data": "2024-06-11",
+      "data": "2024-06-13T00:00:00.000Z",
+      "tipo": "live",
+      "numeroGiocatori": 3,
+      "indirizzo": "eee",
+      "id": 2
+    },
+    {
+      "master": "master2",
+      "titolo": "fwqjieiqwnvibq",
+      "descrizione": "fwerfwegfwefwe",
+      "urlImmagine": "",
+      "data": "2024-06-14T00:00:00.000Z",
       "tipo": "online",
-      "numeroGiocatori": 10,
-      "indirizzo": "banananan",
+      "numeroGiocatori": 1,
+      "indirizzo": "fferefrwf",
+      "id": 3
+    },
+    {
+      "master": "master 5",
+      "titolo": "333",
+      "descrizione": "333333333333333",
+      "urlImmagine": "",
+      "data": "2024-06-13T00:00:00.000Z",
+      "tipo": "online",
+      "numeroGiocatori": 3,
+      "indirizzo": "3333",
       "id": 4
     },
     {
-      "master": "Amet necessitatibus",
-      "titolo": "Asperiores ducimus ",
-      "descrizione": "Expedita in repellen",
-      "urlImmagine": "https://www.qicahyvywu.co.uk",
-      "data": "2017-01-25",
+      "master": "master 6 ",
+      "titolo": "weocowjonjoqwe",
+      "descrizione": "qfworrngjiqnrvjiqpnerijnvqjirenjie",
+      "urlImmagine": "",
+      "data": "2024-06-17T00:00:00.000Z",
       "tipo": "live",
-      "numeroGiocatori": 64,
-      "indirizzo": "In assumenda molesti",
-      "id": 5
+      "numeroGiocatori": 3,
+      "indirizzo": "wervqerar",
+      "id": 5,
+      "scaduto": false,
+      "guests": []
     }
   ]
 }
