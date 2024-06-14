@@ -105,7 +105,7 @@ export class ProfileComponent {
       this.characterSvc.deleteCharacter(id).pipe(
         catchError((error) => {
           console.error("Errore durante l'eliminazione del personaggio:", error);
-          return of(null);  // Restituisce un observable vuoto in caso di errore
+          return of(null);
         })
       ).subscribe(
         (result) => {
