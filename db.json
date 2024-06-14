@@ -268,46 +268,48 @@
       "id": 9
     },
     {
-      "characterName": "Gino",
-      "classs": 2,
-      "race": 1,
+      "characterName": "provaiscriver",
+      "classs": 1,
+      "race": 6,
       "selectedSkills": [
-        32,
-        33,
-        34,
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        42,
-        91
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        28,
+        27,
+        29,
+        94
       ],
       "expTot": 0,
-      "userId": 2,
+      "userId": 6,
       "id": 10
     },
     {
-      "characterName": "Nico",
-      "classs": 3,
+      "characterName": "Burbon",
+      "classs": 2,
       "race": 3,
       "selectedSkills": [
-        69,
-        68,
-        66,
-        65,
-        64,
-        71,
-        72,
-        73,
-        74,
-        80,
-        83,
-        93
+        34,
+        45,
+        41,
+        48,
+        57,
+        95,
+        98,
+        97,
+        92,
+        58,
+        33,
+        31,
+        38,
+        94
       ],
       "expTot": 0,
-      "userId": 2,
+      "userId": 1,
       "id": 11
     }
   ],
@@ -1808,6 +1810,28 @@
           "expTot": 0,
           "userId": 6,
           "id": 10
+        },
+        {
+          "characterName": "adadadd",
+          "classs": 3,
+          "race": 5,
+          "selectedSkills": [
+            80,
+            82,
+            84,
+            74,
+            75,
+            76,
+            78,
+            77,
+            69,
+            68,
+            66,
+            67
+          ],
+          "expTot": 0,
+          "userId": 1,
+          "id": 5
         }
       ]
     },
@@ -1865,6 +1889,17 @@
           "id": 10
         }
       ]
+    },
+    {
+      "master": "Igor",
+      "titolo": "Vallelata",
+      "descrizione": "speriamo funzioni",
+      "urlImmagine": "",
+      "data": "2024-06-11",
+      "tipo": "online",
+      "numeroGiocatori": 10,
+      "indirizzo": "banananan",
+      "id": 4
     }
   ]
 }
