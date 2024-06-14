@@ -23,6 +23,102 @@
       "immagine": "https://i.pinimg.com/564x/f1/d6/a9/f1d6a97783ebd58d97fd040cb3f1cb8d.jpg",
       "username": "Misterio",
       "id": 2
+    },
+    {
+      "email": "ilaria.rossetti@email.com",
+      "password": "$2a$10$lvQ.xzhSBSIGVX.fpOajEOGiRaXP6fi6s4D4YImVyYc6Eora3KZpm",
+      "nome": "Ilaria",
+      "cognome": "Rossetti",
+      "confermaEmail": "ilaria.rossetti@email.com",
+      "confermaPassword": "Pa$$w0rd!",
+      "genere": "selectPlaceholder",
+      "immagine": "https://megaport.hu/media/king-include/uploads/2023/10/906363-female-avatar-profile-picture-013.jpg",
+      "username": "Illy",
+      "id": 3
+    },
+    {
+      "email": "man@libero.com",
+      "password": "$2a$10$ro3..v5gIVHE7NA9pAqPrO5kq21TiXXuwn5p7kUHuOcIa0bf9IJEC",
+      "nome": "Olaf",
+      "cognome": "Barbanti",
+      "confermaEmail": "man@libero.com",
+      "confermaPassword": "Pa$$w0rd!",
+      "genere": "Maschio",
+      "immagine": "https://t3.ftcdn.net/jpg/05/54/12/28/360_F_554122808_70uodDBTFvbJJjM8Fu9Vy24WHK614SXh.jpg",
+      "username": "Andronicus",
+      "id": 4
+    },
+    {
+      "email": "marco.tocci@email.com",
+      "password": "$2a$10$MuorKDgFMWEEH9AnuzJtiO0saHbaYHCGvFhvi3OTflAiGQF1fJ3Ye",
+      "nome": "Marco",
+      "cognome": "Tocci",
+      "confermaEmail": "marco.tocci@email.com",
+      "confermaPassword": "Pa$$w0rd!",
+      "genere": "Maschio",
+      "immagine": "https://www.meme-arsenal.com/memes/8540acc8bc2487bccd490feb43336f4e.jpg",
+      "username": "KingMacci",
+      "id":5
+    },
+    {
+      "email": "ale@mail.com",
+      "password": "$2a$10$jqoZ8U4TawZrXJZyf0n9R.dop4kQMNubfCUFPcneM/GmZXT3c/dOq",
+      "nome": "Alessa",
+      "cognome": "Volmigoni",
+      "confermaEmail": "ale@mail.com",
+      "confermaPassword": "Pa$$w0rd!",
+      "genere": "Femmina",
+      "immagine": "https://img.freepik.com/foto-premium/ragazza-fantasy-nella-foresta-magica-con-luci-magiche_890191-3913.jpg",
+      "username": "Freya",
+      "id": 6
+    },
+    {
+      "email": "gabibbo@gabibbo.com",
+      "password": "$2a$10$G/QW43trkHZe5jY3sXXjEexgovry8bJWCRrMQJ1vlrEK3Zo.ZkAda",
+      "nome": "sbausto",
+      "cognome": "sbausto",
+      "confermaEmail": "gabibbo@gabibbo.com",
+      "confermaPassword": "Pa$$w0rd!",
+      "genere": "Maschio",
+      "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3MLppprHoUxXN7qmTKSN9bSBMYWGGIM_nMQ&usqp=CAU",
+      "username": "ErGabibbo",
+      "id": 7
+    },
+    {
+      "email": "Teapot@moltobella.com",
+      "password": "$2a$10$aPYzMthhp43gN7X5u5131ekJO65affgENaas5Uy5jAbE8P6mwFJvq",
+      "nome": "Teapot",
+      "cognome": "Teapot",
+      "confermaEmail": "Teapot@moltobella.com",
+      "confermaPassword": "Pa$$w0rd!",
+      "genere": "Maschio",
+      "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8kM9JtET2BUv-1_98MNVsxc6RON5hQGtjBQ&usqp=CAU",
+      "username": "TheKingOfTeapot",
+      "id": 8
+    },
+    {
+      "email": "ilario.alicante@gmail.com",
+      "password": "$2a$10$h8QwfHAXSQTKRT1RkCGTaeur1s7sqQMOLlFJRgutkiqR4WR8Cg/QW",
+      "nome": "Ilario",
+      "cognome": "Alicante",
+      "confermaEmail": "ilario.alicante@gmail.com",
+      "confermaPassword": "Pa$$w0rd!",
+      "genere": "Maschio",
+      "immagine": "https://ege.electronicgroove.com/wp-content/uploads/2021/11/Ilario-Alicante-D.jpg",
+      "username": "AlicanteXX",
+      "id": 9
+    },
+    {
+      "email": "sephiroth@gmail.com",
+      "password": "$2a$10$LglNxwHM1a4uY/CMrRMceePsGVn0bJCaa3Its3tglzjfEyXpBBuCa",
+      "nome": "Sephiroth",
+      "cognome": "Hojo",
+      "confermaEmail": "sephiroth@gmail.com",
+      "confermaPassword": "Pa$$w0rd!",
+      "genere": "Maschio",
+      "immagine": "https://assetsio.gnwcdn.com/news-videogiochi-final-fantasy-7-remake-parte-2-sephiroth-parte-importante-svelati-primi-dettagli-1594043298682.jpg",
+      "username": "SephiFF",
+      "id": 10
     }
   ],
   "characters": [
