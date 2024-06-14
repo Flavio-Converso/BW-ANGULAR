@@ -258,48 +258,46 @@
       "id": 9
     },
     {
-      "characterName": "provaiscriver",
-      "classs": 1,
-      "race": 6,
+      "characterName": "Gino",
+      "classs": 2,
+      "race": 1,
       "selectedSkills": [
-        15,
-        16,
-        17,
-        18,
-        19,
-        20,
-        21,
-        28,
-        27,
-        29,
-        94
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        42,
+        91
       ],
       "expTot": 0,
-      "userId": 6,
+      "userId": 2,
       "id": 10
     },
     {
-      "characterName": "Burbon",
-      "classs": 2,
+      "characterName": "Nico",
+      "classs": 3,
       "race": 3,
       "selectedSkills": [
-        34,
-        45,
-        41,
-        48,
-        57,
-        95,
-        98,
-        97,
-        92,
-        58,
-        33,
-        31,
-        38,
-        94
+        69,
+        68,
+        66,
+        65,
+        64,
+        71,
+        72,
+        73,
+        74,
+        80,
+        83,
+        93
       ],
       "expTot": 0,
-      "userId": 1,
+      "userId": 2,
       "id": 11
     },
     {
@@ -353,6 +351,28 @@
       "expTot": 0,
       "userId": 1,
       "id": 13
+    },
+    {
+      "characterName": "amed",
+      "classs": 3,
+      "race": 4,
+      "selectedSkills": [
+        68,
+        67,
+        65,
+        66,
+        64,
+        63,
+        62,
+        61,
+        69,
+        70,
+        72,
+        84
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 14
     }
   ],
   "classes": [
