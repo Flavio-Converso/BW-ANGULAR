@@ -1793,6 +1793,22 @@
           "expTot": 0,
           "userId": 1,
           "id": 1
+        },
+        {
+          "characterName": "Elrian",
+          "classs": 3,
+          "race": 2,
+          "selectedSkills": [
+            63,
+            62,
+            61,
+            65,
+            66,
+            67
+          ],
+          "expTot": 0,
+          "userId": 5,
+          "id": 4
         }
       ]
     },
@@ -1825,6 +1841,44 @@
           "expTot": 0,
           "userId": 2,
           "id": 2
+        },
+        {
+          "characterName": "MysticSura",
+          "classs": 3,
+          "race": 6,
+          "selectedSkills": [
+            62,
+            70,
+            83,
+            81,
+            82,
+            79,
+            88,
+            87
+          ],
+          "expTot": 0,
+          "userId": 9,
+          "id": 12
+        },
+        {
+          "characterName": "Monny",
+          "classs": 6,
+          "race": 1,
+          "selectedSkills": [
+            91,
+            165,
+            166,
+            168,
+            176,
+            175,
+            174,
+            173,
+            163,
+            99
+          ],
+          "expTot": 0,
+          "userId": 5,
+          "id": 3
         }
       ]
     },
@@ -1837,7 +1891,48 @@
       "tipo": "online",
       "numeroGiocatori": 5,
       "indirizzo": "https://discord.gg/SegretoCittadellaNascosta",
-      "id": 3
+      "id": 3,
+      "scaduto": false,
+      "guests": [
+        {
+          "characterName": "MysticSura",
+          "classs": 3,
+          "race": 6,
+          "selectedSkills": [
+            62,
+            70,
+            83,
+            81,
+            82,
+            79,
+            88,
+            87
+          ],
+          "expTot": 0,
+          "userId": 9,
+          "id": 12
+        },
+        {
+          "characterName": "Monny",
+          "classs": 6,
+          "race": 1,
+          "selectedSkills": [
+            91,
+            165,
+            166,
+            168,
+            176,
+            175,
+            174,
+            173,
+            163,
+            99
+          ],
+          "expTot": 0,
+          "userId": 5,
+          "id": 3
+        }
+      ]
     },
     {
       "master": "AlicanteXX",
@@ -1848,7 +1943,26 @@
       "tipo": "online",
       "numeroGiocatori": 4,
       "indirizzo": "https://discord.gg/oneShotLaby",
-      "id": 4
+      "id": 4,
+      "scaduto": false,
+      "guests": [
+        {
+          "characterName": "Elrian",
+          "classs": 3,
+          "race": 2,
+          "selectedSkills": [
+            63,
+            62,
+            61,
+            65,
+            66,
+            67
+          ],
+          "expTot": 0,
+          "userId": 5,
+          "id": 4
+        }
+      ]
     },
     {
       "master": "Misterio",
@@ -1859,7 +1973,28 @@
       "tipo": "live",
       "numeroGiocatori": 10,
       "indirizzo": "https://discord.gg/misterioPrivate",
-      "id": 5
+      "id": 5,
+      "scaduto": false,
+      "guests": [
+        {
+          "characterName": "MysticSura",
+          "classs": 3,
+          "race": 6,
+          "selectedSkills": [
+            62,
+            70,
+            83,
+            81,
+            82,
+            79,
+            88,
+            87
+          ],
+          "expTot": 0,
+          "userId": 9,
+          "id": 12
+        }
+      ]
     }
   ]
 }
