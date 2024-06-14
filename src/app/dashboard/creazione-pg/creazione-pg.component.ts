@@ -22,7 +22,7 @@ export class CreazionePgComponent {
   races: iRaces[] = [];
   skills: iSkills[] = [];
   selectedSkills: iSkills[] = [];
-  availableExp: number = 50;
+  availableExp: number = 30;
   selectedClassIndex: number = -1;
   selectedRaceIndex: number = -1;
   selectedRace: number = -1;
@@ -36,7 +36,7 @@ export class CreazionePgComponent {
     private skillsSvc: SkillsService,
     private authSvc: AuthService,
     private racesSvc: RacesService,
-    private router: Router,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -75,7 +75,7 @@ export class CreazionePgComponent {
       });
       this.characterForm.patchValue({ classs });
       this.selectedSkills = [];
-      this.availableExp = 50;
+      this.availableExp = 30;
       this.updateFormValues();
       this.selectedClassIndex = this.classes.findIndex(
         (c) => c.classs === classs
@@ -91,12 +91,17 @@ export class CreazionePgComponent {
 
   onSkillSelect(event: any, skill: iSkills): void {
     if (event.target.checked) {
-      if (this.availableExp >= skill.exp && !this.selectedSkills.includes(skill)) {
+      if (
+        this.availableExp >= skill.exp &&
+        !this.selectedSkills.includes(skill)
+      ) {
         this.selectedSkills.push(skill);
         this.availableExp -= skill.exp;
       }
     } else {
-      const index = this.selectedSkills.findIndex((s) => s.skill === skill.skill);
+      const index = this.selectedSkills.findIndex(
+        (s) => s.skill === skill.skill
+      );
       if (index !== -1) {
         this.selectedSkills.splice(index, 1);
         this.availableExp += skill.exp;
@@ -141,10 +146,9 @@ export class CreazionePgComponent {
     this.selectedSkills = [];
 
     // Reset available experience points to 50
-    this.availableExp = 50;
+    this.availableExp = 30;
 
     // Update form values
     this.updateFormValues();
   }
-
 }

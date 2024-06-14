@@ -282,6 +282,27 @@
       "expTot": 0,
       "userId": 1,
       "id": 17
+    },
+    {
+      "characterName": "Gianni",
+      "classs": 2,
+      "race": 2,
+      "selectedSkills": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        45
+      ],
+      "expTot": 0,
+      "userId": 1,
+      "id": 18
     }
   ],
   "classes": [
