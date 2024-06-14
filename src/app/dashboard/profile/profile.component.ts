@@ -1,6 +1,6 @@
 import { CombinaService } from './../../services/combina.service';
 import { iSkills } from './../../interfaces/skills';
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component} from '@angular/core';
 import { AuthService } from '../../auth/auth.service';
 import { iUsers } from '../../interfaces/iusers';
 import { UsersService } from '../../services/users.service';
@@ -12,6 +12,7 @@ import { iCombinazione } from '../../interfaces/icombinazione';
 import { SkillsService } from '../../services/skills.service';
 import { RacesService } from '../../services/races.service';
 import { iRaces } from '../../interfaces/iraces';
+import { catchError, of } from 'rxjs';
 
 
 @Component({
@@ -99,19 +100,20 @@ export class ProfileComponent {
     }
   }
 
-  deleteCharacter(id:number): void {
+  deleteCharacter(id: number): void {
     if (confirm('Sei sicuro di voler eliminare questo personaggio?')) {
-      this.characterSvc.deleteCharacter(id).subscribe(
-        () => {
+      this.characterSvc.deleteCharacter(id).pipe(
+        catchError((error) => {
+          console.error("Errore durante l'eliminazione del personaggio:", error);
+          return of(null);  // Restituisce un observable vuoto in caso di errore
+        })
+      ).subscribe(
+        (result) => {
+          if (result !== null) {
             // Rimuove l'elemento solo se esiste
             this.combina = this.combina.filter(pg => pg.characters.id !== id);
-          console.log('Character deleted');
-        },
-        (error) => {
-          console.error(
-            "Errore durante l'eliminazione del personaggio:",
-            error
-          );
+            console.log('Character deleted');
+          }
         }
       );
     }

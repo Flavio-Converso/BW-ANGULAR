@@ -107,29 +107,6 @@
       "id": 2
     },
     {
-      "characterName": "luca",
-      "classs": 5,
-      "race": 6,
-      "selectedSkills": [
-        99,
-        131,
-        133,
-        140,
-        138,
-        136,
-        146,
-        145,
-        143,
-        142,
-        141,
-        147,
-        97
-      ],
-      "expTot": 0,
-      "userId": 1,
-      "id": 4
-    },
-    {
       "characterName": "fabio",
       "classs": 2,
       "race": 6,
@@ -254,35 +231,6 @@
       "id": 11
     },
     {
-      "characterName": "advs",
-      "classs": 5,
-      "race": 6,
-      "selectedSkills": [
-        98,
-        131,
-        138,
-        136,
-        135,
-        134,
-        133,
-        132,
-        100,
-        99,
-        97,
-        94,
-        95,
-        96,
-        137,
-        139,
-        140,
-        93,
-        92
-      ],
-      "expTot": 0,
-      "userId": 1,
-      "id": 12
-    },
-    {
       "characterName": "adasa",
       "classs": 1,
       "race": 2,
@@ -304,28 +252,6 @@
       "expTot": 0,
       "userId": 1,
       "id": 13
-    },
-    {
-      "characterName": "amed",
-      "classs": 3,
-      "race": 4,
-      "selectedSkills": [
-        68,
-        67,
-        65,
-        66,
-        64,
-        63,
-        62,
-        61,
-        69,
-        70,
-        72,
-        84
-      ],
-      "expTot": 0,
-      "userId": 1,
-      "id": 14
     },
     {
       "characterName": "Banana",
