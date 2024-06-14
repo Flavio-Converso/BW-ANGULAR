@@ -6,10 +6,10 @@ export interface iEventi {
   descrizione: string;
   titolo: string;
   urlImmagine: string;
-  data: string;
+  data: Date;
   tipo: string;
   numeroGiocatori: number;
   indirizzo: string;
   guests: iCharacter[];
-
+  scaduto: boolean;
 }
