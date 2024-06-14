@@ -23,7 +23,7 @@
   -webkit-background-clip: text;
 }
 
-.myBtn{
+.myBtn {
   background: linear-gradient(
     180deg,
     rgba(247, 191, 180, 1) 0%,
@@ -34,7 +34,7 @@
   font-size: 1.8rem;
 }
 
-.myBtn:hover{
+.myBtn:hover {
   opacity: 0.5;
 }
 
@@ -68,7 +68,7 @@
   color: #ffffff;
 }
 
-.skill-table tr:hover {
+tbody > tr:hover {
   background-color: #2e314b;
 }
 
