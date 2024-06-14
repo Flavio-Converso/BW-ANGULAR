@@ -14,11 +14,14 @@ import { UsersService } from '../../services/users.service';
   styleUrls: ['./eventi-disponibili.component.scss'],
 })
 export class EventiDisponibiliComponent implements OnInit {
+
+
   events: iEventi[] = [];
   characters: iCharacter[] = [];
   eventForms: FormGroup[] = [];
   users: iUsers[] = [];
   currentUser: iUsers | null = null;
+
 
   constructor(
     private eventService: EventService,
