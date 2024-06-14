@@ -1738,24 +1738,27 @@
       "scaduto": false,
       "guests": [
         {
-          "characterName": "test",
-          "classs": 4,
-          "race": 1,
+          "characterName": "adasa",
+          "classs": 1,
+          "race": 2,
           "selectedSkills": [
-            91,
-            130,
-            129,
-            128,
-            127,
-            126,
-            125,
-            124,
-            123,
-            101
+            7,
+            9,
+            10,
+            8,
+            11,
+            12,
+            13,
+            15,
+            14,
+            16,
+            17,
+            18,
+            25
           ],
           "expTot": 0,
           "userId": 1,
-          "id": 2
+          "id": 13
         }
       ]
     },
