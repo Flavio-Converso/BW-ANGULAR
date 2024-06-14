@@ -107,27 +107,6 @@
       "id": 2
     },
     {
-      "characterName": "fabio",
-      "classs": 2,
-      "race": 6,
-      "selectedSkills": [
-        31,
-        32,
-        33,
-        34,
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        45
-      ],
-      "expTot": 0,
-      "userId": 1,
-      "id": 6
-    },
-    {
       "characterName": "flavio",
       "classs": 3,
       "race": 2,
