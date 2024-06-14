@@ -21,26 +21,26 @@
             </div>
             <div class="col-md-8 myGradient rounded-5 p-4">
               <div class="card-body text-light">
-                <label class="fs-5"> nome:</label>
-                <h5 class="card-title fw-bolder mb-3 fs-2 gradtitolo">
+                <label class="fs-5 gradtitolo fs-2">NOME</label>
+                <h5 class="card-title fw-bolder mb-3 fs-4">
                   {{ user?.nome }}
                 </h5>
-                <label class="fs-5"> cognome:</label>
-                <h5 class="card-title mb-2 fw-bolder fs-2 gradtitolo">
+                <label class="fs-2 gradtitolo">COGNOME</label>
+                <h5 class="card-title mb-3 fw-bolder fs-4">
                   {{ user?.cognome }}
                 </h5>
-                <label class="fs-5">User name:</label>
-                <h3 class="card-text mb-2 fw-bolder fs-2 gradtitolo">
+                <label class="fs-2 gradtitolo">USERNAME</label>
+                <h3 class="card-text mb-3 fw-bolder fs-4">
                   {{ user?.username }}
                 </h3>
-                <label for="">Email:</label>
-                <p class="card-text mb-2 fw-bolder">
+                <label class="gradtitolo fs-2" for="">EMAIL</label>
+                <p class="card-text mb-3 fs-4 fw-bolder">
                   {{ user?.email }}
                 </p>
-                <label for="">Genere:</label>
-                <p class="card-text mb-2 fw-bolder">{{ user?.genere }}</p>
-                <label for="">Identificativo:</label>
-                <p class="card-text gradtitolo">{{ user?.id }}</p>
+                <label class="gradtitolo fs-2" for="">GENERE</label>
+                <p class="card-text mb-3 fw-bolder fs-4">{{ user?.genere }}</p>
+                <label class="gradtitolo fs-2" for="">IDENTIFICATIVO</label>
+                <p class="card-text fs-4">{{ user?.id }}</p>
               </div>
             </div>
           </div>
@@ -66,17 +66,17 @@
                 <div class="row">
                   <div class="col-6 ps-5">
                     <div class="card-body">
-                      <label class="fs-5"> nome avventuriero:</label>
-                      <h5 class="card-title fw-bolder mb-3 fs-1 gradtitolo">
+                      <label class="fs-2 gradtitolo">NOME AVVENTURIERO</label>
+                      <h5 class="card-title fw-bolder mb-3 fs-3">
                         {{ pg.characters.characterName }}
                       </h5>
-                      <label for="">Razza</label>
-                      <h5 class="card-title fw-bolder mb-3 fs-2 gradtitolo">
+                      <label class="gradtitolo fs-2 mt-3" for="">RAZZA</label>
+                      <h5 class="card-title fw-bolder mb-3 fs-3">
                         {{ pg.race.raceName }}
                       </h5>
                       <p>{{ pg.race.raceBio }}</p>
-                      <h3 class="card-text mb-2 fs-3 gradtitolo">
-                        Statistiche
+                      <h3 class="card-text mb-2 fs-2 mt-4 gradtitolo">
+                        STATISTICHE
                       </h3>
                       <p>
                         Agilità-
@@ -98,8 +98,8 @@
                         Resistenza-
                         {{ pg.race.traits.Resistenza }}
                       </p>
-                      <label class="fs-5">Classe</label>
-                      <h3 class="card-text mb-2 fw-bolder fs-2 gradtitolo">
+                      <label class="fs-2 gradtitolo mt-3">CLASSE</label>
+                      <h3 class="card-text mb-3 fw-bolder fs-3">
                         {{ pg.classe.className }}
                       </h3>
                     </div>
@@ -115,13 +115,14 @@
                 <!--------------------------------------->
                 <div class="row">
                   <div class="col-12 px-5">
-                    <label for="">BG</label>
-                    <p class="card-text mb-2 fw-bolder">
+                    <p class="card-text mb-4">
                       {{ pg.classe.bio }}
                     </p>
                   </div>
                   <div class="col-12 text-center">
-                    <label for="" class="py-2 fs-3">Abilità</label>
+                    <label for="" class="py-2 fs-2 gradtitolo mt-3"
+                      >ABILITÀ</label
+                    >
                     <div class="table-container">
                       <table class="skill-table">
                         <thead>
