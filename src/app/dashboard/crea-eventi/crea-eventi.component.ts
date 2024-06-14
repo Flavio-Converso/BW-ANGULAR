@@ -31,16 +31,20 @@ export class CreaEventiComponent implements OnInit {
   onSubmit(): void {
     this.formSubmitted = true;
     if (this.eventForm.valid) {
-      const newEvent: iEventi = this.eventForm.value;
+      const newEvent: iEventi = {
+        ...this.eventForm.value,
+        data: new Date(this.eventForm.value.data) // Converte la data nel formato desiderato
+      };
+
       this.eventService.addEventi(newEvent).subscribe(
         response => {
           console.log('Event created', response);
-        this.router.navigate(['/dashboard/eventi-disponibili']);
-          },
-          error => {
-            console.error('Error creating event', error);
-            }
-            );
+          this.router.navigate(['/dashboard/eventi-disponibili']);
+        },
+        error => {
+          console.error('Error creating event', error);
+        }
+      );
     }
   }
 }
