@@ -23,6 +23,30 @@
       "immagine": "https://i.pinimg.com/564x/f1/d6/a9/f1d6a97783ebd58d97fd040cb3f1cb8d.jpg",
       "username": "Misterio",
       "id": 2
+    },
+    {
+      "email": "gabibbo@gabibbo.com",
+      "password": "$2a$10$G/QW43trkHZe5jY3sXXjEexgovry8bJWCRrMQJ1vlrEK3Zo.ZkAda",
+      "nome": "sbausto",
+      "cognome": "sbausto",
+      "confermaEmail": "gabibbo@gabibbo.com",
+      "confermaPassword": "Pa$$w0rd!",
+      "genere": "Maschio",
+      "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3MLppprHoUxXN7qmTKSN9bSBMYWGGIM_nMQ&usqp=CAU",
+      "username": "ErGabibbo",
+      "id": 3
+    },
+    {
+      "email": "Teapot@moltobella.com",
+      "password": "$2a$10$aPYzMthhp43gN7X5u5131ekJO65affgENaas5Uy5jAbE8P6mwFJvq",
+      "nome": "Teapot",
+      "cognome": "Teapot",
+      "confermaEmail": "Teapot@moltobella.com",
+      "confermaPassword": "Pa$$w0rd!",
+      "genere": "Maschio",
+      "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8kM9JtET2BUv-1_98MNVsxc6RON5hQGtjBQ&usqp=CAU",
+      "username": "TheKingOfTeapot",
+      "id": 4
     }
   ],
   "characters": [
