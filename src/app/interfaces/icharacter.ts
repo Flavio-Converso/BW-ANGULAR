@@ -1,10 +1,9 @@
-import { iSkills } from "./skills";
-
 export interface iCharacter {
   userId: number;
-  characterId: number;
-  classId: number;
+  id: number;
+  classs: number;
   characterName: string;
   expTot: number; //da dare fisso eventualmente
-selectedSkills:number[]
+  selectedSkills: number[];
+  race: number;
 }

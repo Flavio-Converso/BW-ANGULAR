@@ -12,6 +12,8 @@ import { ValidatorMailPasswordService } from '../validator-mail-password.service
 export class RegisterComponent {
   registerForm!: FormGroup;
   formSubmitted = false;
+  errorMessage: string | null = null;
+
 
   constructor(
     private authSvc: AuthService,
@@ -34,7 +36,7 @@ export class RegisterComponent {
         confermaPassword: [null, [Validators.required]],
         genere: ['selectPlaceholder', [Validators.required]],
         immagine: [null],
-        username: [null, [Validators.required]],
+        username: [null, [Validators.required, Validators.minLength(3)]],
       },
       {
         validators: [
@@ -48,11 +50,13 @@ export class RegisterComponent {
   register() {
     this.formSubmitted = true;
     if (this.registerForm.valid) {
-      this.authSvc.register(this.registerForm.value).subscribe(() => {
+      this.authSvc.register(this.registerForm.value).subscribe(
+        () => {
         this.router.navigate(['auth/login']);
-      });
+      },
+    );
     } else {
-      console.log('Form is invalid');
+     this.errorMessage = "Invalid registration credentials. Please check the fields and try again."
     }
   }
 

@@ -1,0 +1,60 @@
+<div class="row myBg m-0 p-0">
+  <div class="col-12 mt-3" *ngIf="class">
+    <div
+      *ngIf="race"
+      class="text-center d-flex flex-column align-items-center justify-content-center"
+    >
+      <h1 class="text-white fw-bolder">RECAP DEL PERSONAGGIO</h1>
+      <div class="row justify-content-center align-items-center">
+        <div class="flip-box col-12 col-md-6 col-lg-4 mt-3">
+          <div class="flip-box-inner">
+            <div class="flip-box-front imgFade">
+              <img [src]="class.img" alt="img" class="img-fluid" />
+              <p class="fs-2 text-white" id="raceText">{{ class.className }}</p>
+            </div>
+            <div class="flip-box-back imgFade">
+              <img [src]="race.img" alt="img" class="img-fluid" />
+              <p class="fs-2" id="raceTextTwo">{{ race.raceName }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <p class="text-white fs-2 mb-4 text-center" id="name">
+            <span class="fantasy">NOME</span> <br />{{
+              character.characterName
+            }}
+          </p>
+        </div>
+        <div class="col-12">
+          <p class="text-white fs-2 text-center">
+            <span class="fantasy">ABILITÀ</span>
+          </p>
+        </div>
+        <div class="col-10 col-md-8 col-lg-5 d-flex flex-column">
+          <div
+            class="row justify-content-between border border-1 border-white py-4 rounded-5"
+          >
+            <div class="col-12 col-md-5" *ngFor="let skill of characterSkills">
+              <p class="text-white px-4 fs-2 text-center text-md-start">
+                · {{ skill.skillName }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-12 d-flex flex-column flex-md-row justify-content-center align-items-center mt-3"
+        >
+          <button class="btn myBtn m-2" (click)="deleteCharacter()">
+            ELIMINA PERSONAGGIO
+          </button>
+          <button class="btn myBtnSmall m-2" (click)="goToHome()">
+            CONFERMA CREAZIONE
+          </button>
+        </div>
+        <div *ngIf="!character" class="col-12 text-center mt-3">
+          <p>Caricamento in corso...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, map } from 'rxjs';
 import { iClassi } from '../interfaces/classe';
 
 @Injectable({
@@ -15,8 +15,16 @@ export class ClassesService {
     return this.http.get<iClassi[]>(this.apiUrl);
   }
 
-  getClassById(classId: number): Observable<iClassi> {
-    return this.http.get<iClassi>(`${this.apiUrl}/${classId}`);
+  getClassById(classs: number): Observable<iClassi> {
+    return this.http.get<iClassi[]>(`${this.apiUrl}/?classs=${classs}`).pipe(
+      map((classes) => {
+        if (classes.length > 0) {
+          return classes[0];
+        } else {
+          throw new Error('Classe non trovata');
+        }
+      })
+    );
   }
 
   getClassByUserId(userId: number): Observable<iClassi[]> {
@@ -24,16 +32,18 @@ export class ClassesService {
     return this.http.get<iClassi[]>(url);
   }
 
-
   addClass(newClass: iClassi): Observable<iClassi> {
     return this.http.post<iClassi>(this.apiUrl, newClass);
   }
 
-  updateClass(classId: number, updatedClass: iClassi): Observable<iClassi> {
-    return this.http.put<iClassi>(`${this.apiUrl}/${classId}`, updatedClass);
+  updateClass(classs: number, updatedClass: iClassi): Observable<iClassi> {
+    return this.http.put<iClassi>(
+      `${this.apiUrl}/?classs=${classs}`,
+      updatedClass
+    );
   }
 
-  deleteClass(classId: number): Observable<void> {
-    return this.http.delete<void>(`${this.apiUrl}/${classId}`);
+  deleteClass(classs: number): Observable<void> {
+    return this.http.delete<void>(`${this.apiUrl}/?classs=${classs}`);
   }
 }

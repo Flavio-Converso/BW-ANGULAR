@@ -2,6 +2,10 @@
   background-color: #10111a;
 }
 
+.gap-20 {
+  gap: 10px;
+}
+
 .myTextColor {
   color: #51566b;
 }
@@ -104,9 +108,6 @@
   border-image-slice: 1;
 }
 
-.other-elements {
-  z-index: 0;
-}
 /*BOTTONI SKILL*/
 .custom-checkbox {
   display: inline-block;
@@ -138,9 +139,53 @@
 .btn-reset:hover {
   opacity: 0.5;
 }
+.btn-resetSmall {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 79, 79, 1) 19%,
+    /* Rosso */ rgba(187, 0, 0, 1) 77%
+  );
+  color: white;
+  border: 2px solid white;
+  font-size: 1rem;
+}
+
+.btn-resetSmall:hover {
+  opacity: 0.5;
+}
 
 .error-message {
   color: red;
   font-size: 0.8rem;
   margin-top: 0.5rem;
+}
+.traits {
+  color: rgba(39, 124, 251);
+}
+.myTextColor2 {
+  color: rgb(107, 94, 255);
+}
+.myTextColor3 {
+  color: rgba(39, 124, 251);
+}
+
+//table
+
+.div-table {
+  font-size: 1.5rem;
+}
+
+.my-table {
+  width: 70%;
+}
+
+.tableRow:hover{
+  background-color: #2e314b;
+
+}
+
+@media (max-width: 990px) {
+  .my-table {
+    width: 100%;
+  }
 }

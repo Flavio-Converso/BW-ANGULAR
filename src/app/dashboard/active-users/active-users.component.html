@@ -1,40 +1,153 @@
-<div class="activebg vh-100">
+<div class="activebg">
   <h1 class="text-center py-5">
-    Contatta gli altri utenti attivi per avviare con loro fantastiche campagne !
+    Contatta gli altri utenti attivi per avviare con loro fantastiche campagne!
   </h1>
-  <h6 class="text-center pb-2">Sempre se vogliono giocare con te</h6>
-  <div class="row m-0">
-    <div class="col-12">
-      <ul class="list-group p-2" *ngFor="let iscritto of users; let i = index">
-        <li class="m-2 fs-2 d-flex justify-content-center fw-bold">
-          <img
-            [src]="iscritto?.immagine"
-            width="50px"
-            class="me-3 rounded-circle"
-          />
-          {{ iscritto?.username }}
-          {{ iscritto?.id }}
-          {{ iscritto?.email }}
-          {{ iscritto?.nome }}
-          {{ iscritto?.cognome }}
-          {{ iscritto?.genere }}
-        </li>
-        <p class="d-inline-flex gap-1 text-center m-auto fs-4">
-          <button
-            class="btn"
-            type="button"
-            data-bs-toggle="collapse"
-            [attr.data-bs-target]="'#collapseExample' + i"
-            aria-expanded="false"
-            [attr.aria-controls]="'collapseExample' + i"
+  <div class="container activebg mx-auto mx-0 p-0">
+    <div class="row m-0">
+      <div class="col-12 activebg">
+        <div class="row justify-content-center">
+          <ul
+            class="list-group p-2 col-12 col-lg-6"
+            *ngFor="let iscritto of users; let i = index"
           >
-            Personaggi
-          </button>
-        </p>
-        <div class="collapse" [id]="'collapseExample' + i">
-          <h1 class="text-center">ciao</h1>
+            <li class="m-2 fs-1 d-flex justify-content-center fw-bold activebg">
+              <img
+                *ngIf="iscritto?.immagine"
+                [src]="iscritto?.immagine"
+                width="50px"
+                class="me-3 rounded-circle"
+                alt="{{ iscritto?.username }}"
+              />
+              <img
+                *ngIf="!iscritto?.immagine"
+                src="../../../assets/img/profilovuoto.jpg"
+                width="50px"
+                class="me-3 rounded-circle"
+                alt="{{ iscritto?.username }}"
+              />
+
+              {{ iscritto?.username }}
+            </li>
+            <div
+              class="activebg"
+              *ngIf="combina[iscritto.id]; else noCharactersTemplate"
+            >
+              <button
+                class="btn m-auto my-3 d-flex justify-content-center activebg myBtn fs-5"
+                type="button"
+                data-bs-toggle="collapse"
+                [attr.data-bs-target]="'#collapseExample' + i"
+                aria-expanded="false"
+                [attr.aria-controls]="'collapseExample' + i"
+              >
+                Personaggi di {{ iscritto.username }}
+              </button>
+
+              <div class="collapse activebg" [id]="'collapseExample' + i">
+                <div class="row activebg justify-content-center">
+                  <div
+                    *ngFor="let character of combina[iscritto.id]"
+                    class="col-12 col-sm-6 col-lg-5 my-5 activebg mx-lg-2"
+                  >
+                    <div class="card card-equal-height m-4 mx-2 activebg">
+                      <div class="flip-box">
+                        <div class="flip-box-inner">
+                          <div class="flip-box-front imgFade">
+                            <img
+                              [src]="character.classe.img"
+                              alt="img"
+                              class="img-fluid"
+                            />
+                          </div>
+                          <div class="flip-box-back imgFade">
+                            <img
+                              [src]="character.race.img"
+                              alt="img"
+                              class="img-fluid"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body activebg">
+                        <h5 class="card-title activebg text-center">
+                          {{ character.characters.characterName }}
+                        </h5>
+                        <p class="card-text activebg mb-1">
+                          {{ character.classe.className }}
+                        </p>
+                        <p class="card-text activebg border-top">
+                          {{ character.classe.bio }}
+                        </p>
+                        <p class="card-text activebg mb-1">
+                          {{ character.race.raceName }}
+                        </p>
+                        <p class="card-text activebg border-top">
+                          {{ character.race.raceBio }}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ng-template #noCharactersTemplate>
+              <div
+                class="text-center m-auto fs-5 activebg my-3 btn-reset rounded-2 p-2"
+              >
+                {{ iscritto.username }} non ha ancora personaggi.
+              </div>
+            </ng-template>
+          </ul>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-5 mx-0 activebg">
+    <div class="col-12 text-center activebg">
+      <h2 class="py-3 fs-3 activebg">Consigli per i giocatori</h2>
+      <p class="px-5 activebg">
+        Se sei nuovo nel mondo dei giochi di ruolo, non preoccuparti! Ecco
+        alcuni consigli per iniziare:
+      </p>
+      <ul class="list-group list-group-flush activebg">
+        <li class="list-group-item activebg border-0">
+          Sii aperto alla collaborazione e alla creatività.
+        </li>
+        <li class="list-group-item activebg border-0">
+          Conosci il tuo personaggio e il suo background.
+        </li>
+        <li class="list-group-item activebg border-0">
+          Partecipa attivamente e rispetta gli altri giocatori.
+        </li>
+        <li class="list-group-item activebg border-0">
+          Divertiti e goditi l'avventura!
+        </li>
       </ul>
+    </div>
+  </div>
+  <div class="row mt-5 mx-0 activebg">
+    <div class="col-12 text-center activebg">
+      <h2 class="py-3 activebg">Citazioni famose</h2>
+      <blockquote class="blockquote">
+        <p class="mb-0">
+          "Non esistono limiti all'immaginazione. Puoi essere chi vuoi, andare
+          dove vuoi." - Volo
+        </p>
+        <footer class="blockquote-footer mt-3">Dungeons & Dragons</footer>
+      </blockquote>
+      <blockquote class="blockquote">
+        <p class="mb-0">
+          "L'avventura è là fuori, devi solo andare a cercarla." - Elminster
+        </p>
+        <footer class="blockquote-footer mt-3">Dungeons & Dragons</footer>
+      </blockquote>
+      <blockquote class="blockquote">
+        <p class="mb-0 activebg">
+          "Il vero coraggio non è l'assenza di paura, ma agire nonostante essa."
+          - Minsc
+        </p>
+        <footer class="blockquote-footer mt-3">Dungeons & Dragons</footer>
+      </blockquote>
     </div>
   </div>
 </div>

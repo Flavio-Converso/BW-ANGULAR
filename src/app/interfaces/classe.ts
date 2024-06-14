@@ -1,5 +1,5 @@
 export interface iClassi {
-  classId: number;
+  classs: number;
   className: string;
   bio: string;
   img: string;

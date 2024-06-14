@@ -7,4 +7,5 @@ export interface iUsers {
   genere: string;
   immagine: string | null;
   username: string;
+
 }

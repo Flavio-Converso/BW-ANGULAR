@@ -1,0 +1,132 @@
+<div class="myBg">
+  <h1 class="text-center p-5">
+    Qui puoi creare campagne sulla piattaforma, in modo tale da vivere nuove
+    avventure.
+  </h1>
+  <div class="row justify-content-center m-0">
+    <form
+      class="mb-5 col-10 col-md-6 col-lg-4 row justify-content-center m-0 myGradient p-5 rounded-5"
+      [formGroup]="eventForm"
+      (ngSubmit)="onSubmit()"
+    >
+      <input
+        type="text"
+        class="my-2 form-control myColor border-0"
+        formControlName="master"
+        placeholder="Nome del master"
+      />
+
+      <input
+        type="text"
+        class="my-2 form-control myColor border-0"
+        formControlName="titolo"
+        placeholder="Titolo"
+      />
+
+      <input
+        type="url"
+        formControlName="urlImmagine"
+        placeholder="URL Immagine"
+        class="my-2 form-control myColor border-0"
+      />
+      <input
+        type="date"
+        formControlName="data"
+        placeholder="Data"
+        class="my-2 form-control myColor border-0"
+      />
+      <select formControlName="tipo" class="my-2 form-control myColor border-0">
+        <option value="" disabled selected>Seleziona...</option>
+        <option value="live">Live</option>
+        <option value="online">Online</option>
+      </select>
+      <input
+        type="number"
+        formControlName="numeroGiocatori"
+        placeholder="Numero Giocatori Minimo"
+        class="my-2 form-control myColor border-0"
+      />
+      <input
+        type="text"
+        formControlName="indirizzo"
+        placeholder="Indirizzo o link Discord"
+        class="my-2 form-control myColor border-0"
+      />
+      <textarea
+        formControlName="descrizione"
+        placeholder="Descrizione"
+        class="my-2 form-control myColor border-0"
+      ></textarea>
+      <button
+        type="submit"
+        class="mt-4 w-25 myBtn rounded-4 fs-5"
+        [disabled]="eventForm.invalid"
+      >
+        Crea Evento
+      </button>
+    </form>
+  </div>
+
+  <section class="benefits-section my-5">
+    <h2 class="text-center">Perché unirsi a una campagna D&D?</h2>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <h4>Avventure Epiche</h4>
+          <p>
+            Vivi storie incredibili e affronta sfide uniche in mondi fantastici.
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <h4>Amicizie Durature</h4>
+          <p>
+            Crea legami con altri giocatori condividendo esperienze
+            indimenticabili.
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <h4>Sviluppo di Abilità</h4>
+          <p>
+            Affina le tue capacità di problem-solving, teamwork e storytelling.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section mt-5">
+    <h2 class="text-center m-5">Testimonianze dei Giocatori</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <blockquote class="blockquote">
+            <p>
+              "Un'esperienza fantastica che mi ha permesso di fare nuovi amici e
+              vivere avventure incredibili."
+            </p>
+            <footer class="blockquote-footer">Marco, Paladino</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-4 text-center">
+          <blockquote class="blockquote">
+            <p>
+              "D&D è molto più di un gioco, è un modo per esplorare la mia
+              creatività e divertirsi con gli amici."
+            </p>
+            <footer class="blockquote-footer">Luca, Mago</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-4 text-center">
+          <blockquote class="blockquote">
+            <p>
+              "Ogni sessione è un'avventura unica che mi fa dimenticare lo
+              stress quotidiano e mi permette di sognare in grande."
+            </p>
+            <footer class="blockquote-footer">Sara, Ladra</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,68 @@
+.myGradient {
+  background: linear-gradient(
+    180deg,
+    rgba(27, 28, 43, 0.6054796918767507) 19%,
+    rgba(16, 17, 26, 0.6138830532212884) 77%
+  );
+}
+
+.gradtitolo {
+  background: linear-gradient(
+    90deg,
+    rgba(39, 124, 251, 1) 19%,
+    rgba(87, 73, 238, 1) 58%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.myBtnSmall {
+  background: linear-gradient(
+    180deg,
+    rgba(39, 124, 251, 1) 19%,
+    rgba(87, 73, 238, 1) 77%
+  );
+  color: white;
+  border: 2px solid white;
+  font-size: 1.6rem;
+}
+
+.myBtn {
+  background: linear-gradient(
+    180deg,
+    rgba(247, 191, 180, 1) 0%,
+    rgba(193, 41, 46, 1) 77%
+  );
+  color: white;
+  border: 2px solid white;
+  font-size: 1.6rem;
+}
+
+.myBtn:hover {
+  opacity: 0.6;
+}
+
+.myBtnSmall:hover {
+  opacity: 0.6;
+}
+
+.bog {
+  color: white;
+  border: 2px solid white;
+  font-size: 1.5rem;
+}
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 5px;
+}
